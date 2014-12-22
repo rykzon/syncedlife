@@ -80,6 +80,7 @@ class Life_Client_Core
 		class healHospital {};
 		class pushVehicle {};
 		class repairTruck {};
+		class craftAction {};
 		class serviceChopper {};
 		class catchFish {};
 		class catchTurtle {};
@@ -128,6 +129,7 @@ class Life_Client_Core
 	class Config
 	{
 		file = "core\config";
+		class craftCfg {};
 		class licensePrice {};
 		class vehicleColorCfg {};
 		class vehicleColorStr {};
@@ -157,6 +159,9 @@ class Life_Client_Core
 	class Player_Menu
 	{
 		file = "core\pmenu";
+		class craft {};
+		class craft_update {};
+		class craft_updateFilter {};
 		class wantedList {};
 		class wantedInfo {};
 		class wantedMenu {};

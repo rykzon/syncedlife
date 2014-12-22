@@ -5,7 +5,7 @@
 	Description:
 	Adds or appends a unit to the wanted list.
 */
-private["_uid","_type","_index","_data","_crimes","_val","_customBounty","_name"];
+private["_uid","_type","_index","_data","_crimes","_val","_customBounty","_name"," _wantedlist"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _name = [_this,1,"",[""]] call BIS_fnc_param;
 _type = [_this,2,"",[""]] call BIS_fnc_param;
@@ -53,3 +53,12 @@ if(_index != -1) then
 {
 	life_wanted_list pushBack [_name,_uid,[(_type select 0)],(_type select 1)];
 };
+
+diag_log format["WANTED_LIST = %1", life_wanted_list];
+
+_gesuchter = [life_wanted_list] call DB_fnc_mresArray;
+_query = format["UPDATE wanted set list = '%1'", _gesuchter];
+
+
+waitUntil {sleep (random 0.3); !DB_Async_Active};
+_queryResult = [_query,1] call DB_fnc_asyncCall;

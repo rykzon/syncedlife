@@ -118,6 +118,7 @@ client_session_list = [];
 } foreach allUnits;
 
 [] spawn TON_fnc_initHouses;
+[] spawn life_fnc_initWanted;
 
 //Lockup the dome
 private["_dome","_rsb"];

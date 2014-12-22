@@ -27,3 +27,4 @@
 //##MarketContent
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
+#include "craft.hpp"
