@@ -24,3 +24,6 @@
 #include "vehicleShop.h"
 #include "settings.h"
 #include "federalReserve.h"
+//##MarketContent
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"
