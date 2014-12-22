@@ -28,3 +28,4 @@
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
 #include "craft.hpp"
+#include "wantedadd2.hpp"

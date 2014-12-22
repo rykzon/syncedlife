@@ -159,6 +159,8 @@ class Life_Client_Core
 	class Player_Menu
 	{
 		file = "core\pmenu";
+		class wantedadd2 {};
+		class wanted2 {};
 		class craft {};
 		class craft_update {};
 		class craft_updateFilter {};
