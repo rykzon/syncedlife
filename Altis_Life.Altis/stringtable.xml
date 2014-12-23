@@ -3305,6 +3305,15 @@
 			<Italian>Bottiglia d'acqua</Italian>
 			<Portuguese>Garrafa d'água</Portuguese>
 		</Key>
+		<Key ID="STR_Item_zipties">
+		<Original>zipties</Original>
+		<English>Zipties</English>
+			<German>Kabelbinder</German>
+			<French>ZipTies</French>
+			<Italian>ZipTies</Italian>
+			<Portuguese>ZipTies</Portuguese>
+		
+		</Key>
 		<Key ID="STR_Item_Coffee">
 			<Original>Coffee</Original>
 			<English>Coffee</English>

@@ -18,6 +18,7 @@ _containers = nearestObjects[getPosATL _corpse,["WeaponHolderSimulated"],5]; //F
 
 //Set some vars on our new body.
 _unit setVariable["restrained",FALSE,TRUE];
+_unit setVariable["tied",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Again why the fuck am I setting this? Can anyone tell me?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Reset the UID.

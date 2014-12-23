@@ -16,6 +16,7 @@ _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
 _unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
+_unit setVariable["tied",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
 

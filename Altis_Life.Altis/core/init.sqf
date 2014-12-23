@@ -66,7 +66,7 @@ switch (playerSide) do
 		waitUntil {scriptDone _handle};
 	};
 };
-
+player setVariable["tied",false,true];
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];

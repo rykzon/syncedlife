@@ -42,6 +42,8 @@ switch(_shop) do
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						
+						
 					]
 				];
 			};

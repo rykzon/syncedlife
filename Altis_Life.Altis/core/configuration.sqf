@@ -32,8 +32,8 @@ life_removeWanted = false;
 life_action_gathering = false;
 
 //Persistent Saving
-__CONST__(life_save_civ,FALSE); //Save weapons for civs?
-__CONST__(life_save_yinv,FALSE); //Save Y-Inventory for players?
+__CONST__(life_save_civ,TRUE); //Save weapons for civs?
+__CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
@@ -159,7 +159,8 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig"
+	"life_inv_storagebig",
+	"life_inv_zipties"
 ];
 
 //Setup variable inv vars.
@@ -238,7 +239,8 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000]
+	["goldbar",95000],
+	["zipties",200]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -268,7 +270,8 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
-	["storagebig",150000]
+	["storagebig",150000],
+	["zipties",2000]
 ];
 __CONST__(buy_array,buy_array);
 

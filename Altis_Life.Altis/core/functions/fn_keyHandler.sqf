@@ -106,6 +106,24 @@ switch (_code) do
 		{
 			[] call life_fnc_restrainAction;
 		};
+		if(playerSide == civilian) then 
+		{
+		hint "tie:civ==true";
+			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+			{
+		
+			    hint "tie befehl erkannt";
+				if([false,"zipties",1] call life_fnc_handleInv) then
+				{
+					[] call life_fnc_tieAction;
+					hint "Person wurde gefesselt.";
+				}
+				else
+				{
+					hint "Du hast keine Kabelbinder!";
+				};
+			};
+		};
 	};
 	
 	//Knock out, this is experimental and yeah...

@@ -29,3 +29,4 @@
 #include "market.hpp"
 #include "craft.hpp"
 #include "wantedadd2.hpp"
+#include "extended_admin_menu.hpp"

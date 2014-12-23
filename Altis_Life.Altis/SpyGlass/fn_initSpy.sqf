@@ -7,6 +7,7 @@
 	
 	Will also become a standalone system which is why it's setup like this.
 */
+exitWith{};
 private["_binConfigPatches","_cfgPatches","_endM"];
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
@@ -125,7 +126,7 @@ _patchList =
 "A3_Air_F_Heli_Heli_Transport_01","A3_Air_F_Heli_Heli_Transport_02","A3_Air_F_Heli_Heli_Transport_03","A3_Air_F_Heli_Heli_Transport_04",
 "A3_CargoPoses_F_Heli","A3_Soft_F_Heli_Crusher_UGV",
 
-"asdg_jointrails","hlc_core","hlc_wp_ak","rh_m4","rh_m4_cfg",
+"asdg_jointrails","hlc_core","hlc_wp_ak","rh_m4","rh_m4_cfg","hlc_wp_AR15","hlc_wp_m14","hlcweapons_core"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..

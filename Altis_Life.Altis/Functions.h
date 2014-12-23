@@ -48,11 +48,28 @@ class Life_Client_Core
 	class Admin
 	{
 		file = "core\admin";
-		class admininfo {};
+			class admininfo {};
+		class admininfo_Extended {};
 		class adminid {};
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
+		class adminSpectate {};
+		class adminKick {};
+		class adminBan {};	
+		class adminMenu_Extended {};
+		class adminQuery_Extended {};
+		class adminAddMoney {};	
+		class adminSpawnVehicle {};
+		class adminInstaHealth {};
+		class admintp {};
+		class admintpmap {};
+		class admintptome {};	
+		class adminRestrain {};
+		class adminUnrestrain {};		
+		class adminAuthentificate {};
+		class adminCheckAuth {};
+
 	};
 	
 	class Medical_System
@@ -107,6 +124,11 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class tieAction{};
+		class untie{};
+		class robShops {}; 
+ 		
+        	
 	};
 	
 	class Housing
@@ -130,6 +152,7 @@ class Life_Client_Core
 	{
 		file = "core\config";
 		class craftCfg {};
+		class seizeCfg {};
 		class licensePrice {};
 		class vehicleColorCfg {};
 		class vehicleColorStr {};
@@ -257,6 +280,8 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class tie{};
+		class civInteractionMenu {};
 	};
 	
 	class Vehicle
@@ -278,6 +303,10 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
+		class copShowLicense{};
+           class seizeObjects {};
+		class seizePlayerWeapon {};
+		class seizePlayerWeaponAction {};
 		class copMarkers {};
 		class copLights {};
 		class vehInvSearch {};
@@ -301,6 +330,7 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+		class copLicenseShown {};
 	};
 	
 	class Gangs

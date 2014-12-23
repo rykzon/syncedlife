@@ -7,5 +7,5 @@
 #define getSelData(ctrl) (lbData[##ctrl,(lbCurSel ##ctrl)])
 
 //Player based quick macros
-#define grpPlayer group player
-#define steamid getPlayerUID player
+ #define grpPlayer group player
+ #define steamid getPlayerUID player
