@@ -47,6 +47,9 @@ switch (_mode) do
 			case "salt": {"life_inv_salt"};
 			case "salt_r": {"life_inv_saltr"};
 			case "sand": {"life_inv_sand"};
+			case "coalu": {"life_inv_coalu"};
+			case "coalp": {"life_inv_coalp"};
+			case "steel": {"life_inv_steel"};
 			case "glass": {"life_inv_glass"};
 			case "tbacon": {"life_inv_tbacon"};
 			case "lockpick": {"life_inv_lockpick"};
@@ -75,6 +78,9 @@ switch (_mode) do
 		{
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
+			case "life_inv_coalu": {"coalu"};
+			case "life_inv_coalp": {"coalp"};
+			case "life_inv_steel": {"steel"};
 			case "life_inv_heroinu": {"heroinu"};
 			case "life_inv_heroinp": {"heroinp"};
 			case "life_inv_cannabis": {"cannabis"};

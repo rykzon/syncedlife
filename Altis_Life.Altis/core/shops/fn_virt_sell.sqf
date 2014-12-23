@@ -41,6 +41,7 @@ sleep 120;
 [_this select 0,_this select 1] call life_fnc_marketSell;
 };
 ////Marktsystem Ende////
+};
 	[] call life_fnc_virt_update;
 	
 };

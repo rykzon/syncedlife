@@ -3386,6 +3386,23 @@
 			<Italian>Lingotto di ferro</Italian>
 			<Portuguese>Barra de Ferro</Portuguese>
 		</Key>
+			<Key ID="STR_Item_CoalOre">
+			<Original>Coal</Original>
+			<English>Coal Ore</English>
+			<German>Kohleerz</German>
+			<French>Lingot de Fer</French>
+			<Italian>Lingotto di ferro</Italian>
+			<Portuguese>Barra de Ferro</Portuguese>
+		</Key>
+			</Key>
+			<Key ID="STR_Item_Coal">
+			<Original>Coal</Original>
+			<English>Coal</English>
+			<German>Kohle</German>
+			<French>Lingot de Fer</French>
+			<Italian>Lingotto di ferro</Italian>
+			<Portuguese>Barra de Ferro</Portuguese>
+		</Key>
 		<Key ID="STR_Item_CopperIngot">
 			<Original>Copper Ingot</Original>
 			<English>Copper Ingot</English>
@@ -3704,6 +3721,14 @@
 			<Original>Cement Mixing License</Original>
 			<English>Cement Mixing License</English>
 			<German>Zementmisch-Lizenz</German>
+			<French>Fabrication du Ciment</French>
+			<Italian>Processo Cemento</Italian>
+			<Portuguese>Licença de Cimento</Portuguese>
+		</Key>
+		<Key ID="STR_License_Coal">
+			<Original>Coal Processing License</Original>
+			<English>Coal Processing License</English>
+			<German>Kohleverarbeitungs-Lizenz</German>
 			<French>Fabrication du Ciment</French>
 			<Italian>Processo Cemento</Italian>
 			<Portuguese>Licença de Cimento</Portuguese>
@@ -4044,6 +4069,14 @@
 			<Original>Processing Copper</Original>
 			<English>Processing Copper</English>
 			<German>Kupfer wird verarbeitet</German>
+			<French>Fonte de Cuivre</French>
+			<Italian>Processando Rame</Italian>
+			<Portuguese>Processando Bronze</Portuguese>
+		</Key>
+		<Key ID="STR_Process_Coal">
+			<Original>Processing Coal</Original>
+			<English>Processing Coal</English>
+			<German>Kohle wird verarbeitet</German>
 			<French>Fonte de Cuivre</French>
 			<Italian>Processando Rame</Italian>
 			<Portuguese>Processando Bronze</Portuguese>

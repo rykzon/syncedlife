@@ -37,6 +37,10 @@ switch (_item) do
 	case "pickaxe": {2};
 	case "copperore": {4};
 	case "ironore": {5};
+	case "coalu": {4};
+	case "coalp": {4};
+	case "steel": {4};
+	case "plastic": {4};
 	case "copper_r": {3};
 	case "iron_r": {3};
 	case "sand": {3};

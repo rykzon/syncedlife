@@ -113,6 +113,11 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 life_inv_items = 
 [
 	"life_inv_oilu",
+	"life_inv_steelu",
+	"life_inv_steelp",
+	"life_inv_plastic",
+	"life_inv_coalu",
+	"life_inv_coalp",
 	"life_inv_oilp",
 	"life_inv_heroinu",
 	"life_inv_heroinp",
@@ -190,7 +195,10 @@ life_licenses =
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
-	["license_civ_home","civ"]
+	["license_civ_home","civ"],
+	["license_civ_steel","civ"],
+	["license_civ_coal","civ"],
+	["license_civ_plastic","civ"]
 ];
 
 //Setup License Variables
@@ -233,6 +241,9 @@ sell_array =
 	["diamond",750],
 	["diamondc",2000],
 	["iron_r",3200],
+	["coalp",3200],
+	["steel",3200],
+	["plastic",3200],
 	["copper_r",1500],
 	["salt_r",1650],
 	["glass",1450],
