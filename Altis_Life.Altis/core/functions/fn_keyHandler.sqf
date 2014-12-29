@@ -109,7 +109,7 @@ switch (_code) do
 		if(playerSide == civilian) then 
 		{
 		hint "tie:civ==true";
-			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "Incapacitated") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 			{
 		
 			    hint "tie befehl erkannt";

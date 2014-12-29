@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Altis Life RPG">
 
-<Package name="Craft">
+<Package name="Life_Prof">
+<Key ID="STR_Prof_karma">
+<Original>Karma</Original>
+<English>Karma</English>
+<German>Karma</German>
+<French>Karma</French>
+<Italian>Karma</Italian>
+<Portuguese>Los Karmos</Portuguese>
+</Key>
+<Key ID="STR_Prof_mafia">
+<Original>Mafia Rang</Original>
+<English>Mafia Rank</English>
+<German>Mafia Rang</German>
+<French>Mafia</French>
+<Italian>Mafia</Italian>
+<Portuguese>Mafia</Portuguese>
+</Key>
+
+</Package>
+	<Package name="Craft">
 		<Key ID="STR_CRAFT_Title">
 			<Original>Crafting Menu</Original>
  			<English>Crafting Menu</English>

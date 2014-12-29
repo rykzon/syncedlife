@@ -13,6 +13,7 @@ if(__GETC__(life_adminlevel) < 1) then
 {
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];
+	ctrlShow[2024,false];
 };
 
 _side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"};};

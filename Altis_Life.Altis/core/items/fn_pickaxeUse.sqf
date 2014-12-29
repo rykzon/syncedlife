@@ -28,6 +28,7 @@ if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
+_profName = "Karma_Prof";
 for "_i" from 0 to 2 do
 {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
@@ -39,6 +40,11 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 {
 	_itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 	titleText[format[localize "STR_ISTR_Pick_Success",_itemName,_diff],"PLAIN"];
+	
+	if(_profName != "") then
+	{
+	[_profName,10] call life_fnc_addExp;
+	};
 };
 
 life_action_inUse = false;

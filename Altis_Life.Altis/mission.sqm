@@ -3694,14 +3694,14 @@ class Mission
 				class Item0
 				{
 					position[]={16582.428,11,12715.491};
-					azimut=51.994339;
+					azimut=51.994301;
 					special="NONE";
 					id=216;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_5"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -3721,7 +3721,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_4"";  }];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4129,7 +4129,6 @@ class Mission
 					skill=0.60000002;
 					text="Kohleverarbeiter";
 					init="this enableSimulation false; this allowDamage false; this addAction[""Kohle verarbeiten"",life_fnc_processAction,""coal"",0,false,false,"""",' life_inv_coalu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_coal""] call life_fnc_varToStr,[([""coal""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""coal"",0,false,false,"""",' !license_civ_coal && playerSide == civilian '];";
-
 				};
 			};
 		};
@@ -4150,7 +4149,6 @@ class Mission
 					skill=0.60000002;
 					text="Plastikverarbeiter";
 					init="this enableSimulation false; this allowDamage false; this addAction[""Plastik Herstellen"",life_fnc_processAction,""coal"",0,false,false,"""",' life_inv_coalu > 0 && life_inv_oilp >0&& !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_pastic""] call life_fnc_varToStr,[([""coal""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""plastic"",0,false,false,"""",' !license_civ_plastic && playerSide == civilian '];";
-
 				};
 			};
 		};
@@ -31766,7 +31764,7 @@ class Mission
 		class Item191
 		{
 			position[]={13736.468,20.743103,19019.068};
-			name="jail_marker_1";
+			name="jail_marker";
 			type="Empty";
 		};
 		class Item192
@@ -31960,14 +31958,14 @@ class Mission
 		class Item216
 		{
 			position[]={16585.947,11,12720.663};
-			name="car_g_1_1";
+			name="car_g_5";
 			type="Empty";
-			angle=51.99506;
+			angle=51.995098;
 		};
 		class Item217
 		{
 			position[]={16582.004,11,12716.56};
-			name="civ_gar_1_4";
+			name="civ_gar_5";
 			text="Garage";
 			type="o_service";
 			colorName="ColorWhite";
@@ -31975,14 +31973,14 @@ class Mission
 		class Item218
 		{
 			position[]={9215.2324,118.83505,15964.697};
-			name="car_g_1_1_1";
+			name="car_g_4";
 			type="Empty";
-			angle=51.99506;
+			angle=51.995098;
 		};
 		class Item219
 		{
 			position[]={9209.4961,118.75961,15971.517};
-			name="civ_gar_1_4_1";
+			name="civ_gar_4";
 			text="Garage";
 			type="o_service";
 			colorName="ColorWhite";
@@ -32224,7 +32222,6 @@ class Mission
 			text="Stahlhandel";
 			type="b_unknown";
 			colorName="ColorYellow";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Stahlhandel"",life_fnc_virt_menu,""steel""];";
 		};
 		class Item250
 		{
@@ -32234,8 +32231,6 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorCIV";
 			angle=-80.305901;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Stahl verarbeiten"",life_fnc_processAction,""steel"",0,false,false,"""",' life_inv_coalp > 0 && life_inv_ironr &&!life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_steel""] call life_fnc_varToStr,[([""steel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""steel"",0,false,false,"""",' !license_civ_steel && playerSide == civilian '];";
-
 		};
 		class Item251
 		{
@@ -32268,7 +32263,6 @@ class Mission
 			text="Plastik Handel";
 			type="b_unknown";
 			colorName="ColorYellow";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Plastik Handel"",life_fnc_virt_menu,""plastic""];";
 		};
 		class Item255
 		{

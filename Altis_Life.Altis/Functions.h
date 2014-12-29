@@ -177,6 +177,8 @@ class Life_Client_Core
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
+
+		class profType {};
 	};
 
 	class Player_Menu
@@ -250,6 +252,11 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+
+		class profSetUp {};
+		class addExp {};
+
+		
 	};
 	
 	class Network

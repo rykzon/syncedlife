@@ -65,6 +65,13 @@ switch (_var) do
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	case "life_inv_zipties": {(localize "STR_Item_zipties")};
 	
+	
+	
+	//Prof Block
+	case "Karma_Prof": {(localize "STR_Prof_karma")};
+	case "Mafia_Prof": {(localize "STR_Prof_mafia")};
+
+	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
