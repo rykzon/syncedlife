@@ -31,7 +31,20 @@ _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText];
-	life_cash = life_cash + _price;
+	
+	_data = missionNamespace getVariable ("Karma_Prof");
+	_karma = _data select 1;
+	if(_karma >0) then
+	{
+	_extra = (_price/100) * (_karma/50);
+	}
+	else
+	{
+	_extra = 0;
+	};
+	
+	
+	life_cash = life_cash + _price +_extra;
 	////Marktsystem Anfang////
 if(_marketprice != -1) then
 {

@@ -255,6 +255,7 @@ class Life_Client_Core
 
 		class profSetUp {};
 		class addExp {};
+		class addKarma {};
 
 		
 	};
