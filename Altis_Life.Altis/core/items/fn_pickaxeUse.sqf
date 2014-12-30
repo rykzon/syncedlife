@@ -29,6 +29,7 @@ _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
 _profName = "Karma_Prof";
+_karma = 1;//pickaxe hat nur pos karma
 for "_i" from 0 to 2 do
 {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
@@ -43,7 +44,7 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 	
 	if(_profName != "") then
 	{
-	[_profName,10] call life_fnc_addExp;
+	[_profName,1,_karma] call life_fnc_addExp;
 	};
 };
 

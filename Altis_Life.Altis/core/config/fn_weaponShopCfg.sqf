@@ -18,6 +18,10 @@ private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
+
+_data = missionNamespace getVariable ("Karma_Prof");
+_karma = _data select 1;
+
 switch(_shop) do
 {
 	case "cop_basic":
@@ -91,6 +95,32 @@ switch(_shop) do
 						["muzzle_snds_H",nil,2750],
 						["30Rnd_65x39_caseless_mag",nil,130],
 						["30Rnd_9x21_Mag",nil,250]
+					]
+				];
+			};
+		};
+	};
+	
+	
+		case "posKarma_t1":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma < 2000): {"Dein Karma ist zu niedrig!"};
+			default
+			{
+				["Altis Sergeant Officer Shop",
+					[   ["RH_m4",nil,150],
+						["SMG_02_ACO_F",nil,15000],
+						["hgun_ACPC2_F",nil,17500],
+						["HandGrenade_Stone","Flashbang",1700],
+						["arifle_MXC_F",nil,30000],
+						["optic_Arco",nil,2500],
+						["muzzle_snds_H",nil,2750],
+						["30Rnd_65x39_caseless_mag",nil,100],
+						["30Rnd_9x21_Mag",nil,60],
+						["9Rnd_45ACP_Mag",nil,200]
 					]
 				];
 			};

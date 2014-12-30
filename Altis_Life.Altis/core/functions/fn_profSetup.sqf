@@ -5,7 +5,7 @@ Author: Jacob "PapaBear" Tyler
 Description:
 Opens gui and fills info
 */
-hint "profSetup";
+
 createDialog "life_prof_dialog";
 disableSerialization;
  
@@ -37,10 +37,18 @@ _nextLevel2 =  6 * ( _profLevel^2 ) ;
 _nextLevel = _nextLevel - _nextLevel2;
 _nextLevel3 = 20 * _profLevel ;
 _nextLevel = _nextLevel + _nextLevel3 + 200 ;
+if(_profText=="Karma") then
+{
+_struct3 = _struct3 + (format["Exp: %1<br/>", _profExp ]);
+_struct2 = _struct2 + (format["<br/>"]);
+_struct = _struct + format["%1<br/>",_profText];
+}
+else
+{
 _struct3 = _struct3 + (format["Exp: %1/%2<br/>", _profExp,_nextLevel ]);
 _struct2 = _struct2 + (format["LvL: %1<br/>",_profLevel]);
 _struct = _struct + format["%1<br/>",_profText];
- 
+ };
 } foreach life_prof;
  
 _Names ctrlSetStructuredText parseText format["
