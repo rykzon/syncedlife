@@ -137,7 +137,15 @@ switch (_shop) do
 			["C_Boat_Civil_01_F",22000]
 		];
 	};
-
+	
+case "karma_car":
+	{
+		_return =
+		[
+			["LandRover_TK_CIV_EP1",3000]
+			
+		];
+	};
 	case "cop_ship":
 	{
 		_return =

@@ -28,24 +28,21 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
 			default
 			{
-				["Altis Cop Shop",
+				["APD Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
+					
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["HandGrenade_Stone","Flashbang",1700],
+						
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["16Rnd_9x21_Mag",nil,50]
 						
 						
 					]
@@ -74,27 +71,72 @@ switch(_shop) do
 			};
 		};
 	};
+	
+		
 
-	case "cop_patrol":
+	case "cop_officer":
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 2): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Altis Patrol Officer Shop",
+				["APD Officer Shop",
 					[
-						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_9x21_Mag",nil,250]
+					
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+						
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_wrt":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 3): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["APD Wrt. Officer Shop",
+					[
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+						
+						
+						
 					]
 				];
 			};
@@ -102,7 +144,347 @@ switch(_shop) do
 	};
 	
 	
-		case "posKarma_t1":
+	case "cop_sergeant2":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 4): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["Altis Sergeant Officer Shop",
+					[   
+						
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["arifle_mas_mk16_l",nil,4000],
+						["arifle_mas_g36c",nil,4000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+						
+						
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_sergeant1":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["APD Sergeant 1st Shop",
+					[   
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["LMG_mas_M249_F",nil,5000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						["200Rnd_mas_556x45_Stanag",nil,500],
+						
+						
+						["arifle_mas_mk16_l",nil,4000],
+						["arifle_mas_g36c",nil,4000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+						
+					]
+				];
+			};
+		};
+	};
+	case "cop_detective2":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["APD Detective 2nd Shop",
+					[   
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["arifle_mas_mk17",nil,6000],
+						
+						["optic_mas_Arco_camo",nil,700],
+						
+						["20Rnd_mas_762x51_Stanag",nil,300],
+						
+						
+						["LMG_mas_M249_F",nil,5000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						["200Rnd_mas_556x45_Stanag",nil,500],
+						
+						
+						["arifle_mas_mk16_l",nil,4000],
+						["arifle_mas_g36c",nil,4000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+				
+						
+					]
+				];
+			};
+		};
+	};
+	case "cop_detective1":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["APD Sergeant 1st Shop",
+					[   
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["arifle_mas_g3",nil,6000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						
+								["arifle_mas_mk17",nil,6000],
+						
+						["optic_mas_Arco_camo",nil,700],
+						
+						["20Rnd_mas_762x51_Stanag",nil,300],
+						
+						
+						["LMG_mas_M249_F",nil,5000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						["200Rnd_mas_556x45_Stanag",nil,500],
+						
+						
+						["arifle_mas_mk16_l",nil,4000],
+						["arifle_mas_g36c",nil,4000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+					
+						
+					]
+				];
+			};
+		};
+	};
+	case "cop_lt":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["APD Lieutenant Shop",
+					[   
+					
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["srifle_mas_ebr",nil,7000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+				
+						["20Rnd_mas_762x51_Stanag",nil,500],
+						
+						
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["16Rnd_9x21_Mag",nil,50],
+						
+						["arifle_mas_g3",nil,6000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						
+						["arifle_mas_mk17",nil,6000],
+						
+						["optic_mas_Arco_camo",nil,700],
+						
+						["20Rnd_mas_762x51_Stanag",nil,300],
+						
+						
+						["LMG_mas_M249_F",nil,5000],
+						
+						["optic_mas_Arco_blk",nil,500],
+						
+						["200Rnd_mas_556x45_Stanag",nil,500],
+						
+						
+						["arifle_mas_mk16_l",nil,4000],
+						["arifle_mas_g36c",nil,4000],
+						
+						["optic_mas_Arco_blk",nil,700],
+						["optic_mas_Arco_camo",nil,700],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						["arifle_mas_hk416c",nil,3000],
+						["arifle_mas_hk416_d",nil,3000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						
+						
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4c",nil,2000],
+						
+						["optic_mas_aim_c",nil,200],
+						["optic_mas_aim",nil,200],
+						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
+						
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_marksman":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
+			case (__GETC__(life_coplevel) < 1): {"Dir fehlen noch ein paar Abzeichen!"};
+			default
+			{
+				["Nur auf Anweisung!",
+					[
+					
+						["srifle_mas_m110",nil,10000],
+						["srifle_mas_m24_d",nil,10000],
+						["srifle_mas_sr25_d",nil,10000],
+						
+						
+						["optic_mas_zeiss",nil,1000],
+						["optic_mas_LRPS",nil,1000],
+						
+						["20Rnd_mas_762x51_Stanag",nil,500],
+						["5Rnd_mas_762x51_Stanag",nil,500]
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
+	
+	
+		case "posKarma1":
 	{
 		switch(true) do
 		{
@@ -110,97 +492,176 @@ switch(_shop) do
 			case (_karma < 2000): {"Dein Karma ist zu niedrig!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
-					[   ["RH_m4",nil,150],
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
+				["Karma Stufe 1",
+					[   
+					
+						["arifle_mas_mp5",nil,1000],
+						["30Rnd_mas_9x21_Stanag",nil,150]
+						
+					]
+				];
+			};
+		};
+	};
+	
+			case "posKarma2":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma < 5000): {"Dein Karma ist zu niedrig!"};
+			default
+			{
+				["Karma Stufe 2",
+					[   ["hgun_mas_usp_F",nil,1000],
+						["12Rnd_mas_45acp_Mag",nil,150],
+						
+						["arifle_mas_mp5",nil,1000],
+						["30Rnd_mas_9x21_Stanag",nil,150]
+						
+					]
+				];
+			};
+		};
+	};
+	
+			case "posKarma3":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma < 10000): {"Dein Karma ist zu niedrig!"};
+			default
+			{
+				["Karma Stufe 3",
+					[   
+					
+						["RH_ttracker_g",nil,150],
+						["RH_6Rnd_45ACP_Mag",nil,150],
+						
+						["hgun_mas_usp_F",nil,1000],
+						["12Rnd_mas_45acp_Mag",nil,150],
+						
+						["arifle_mas_mp5",nil,1000],
+						["30Rnd_mas_9x21_Stanag",nil,150]
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
+			case "negKarma3":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma > -10000): {"Dein Karma ist zu hoch!"};
+			default
+			{
+				["Negativ Karma 3",
+					[   
+					
+						["arifle_mas_lee",nil,150],
+						["arifle_mas_akms",nil,150],
+						["arifle_mas_m70ab",nil,150],
+						
+						
+						["30Rnd_mas_762x39_mag",nil,150],
+						["5Rnd_mas_762x51_Stanag",nil,150],
+						
+						
+						["kio_skl_msk",nil,15],
+						["kio_skl_msk_red",nil,15],
+						["kio_skl_msk_grn",nil,15],
+						
+						
+						["arifle_mas_aks74u_c",nil,150],
+						["30Rnd_mas_545x39_mag",nil,150],
+						
+						
+						["kio_vfv_mask",nil,15],
+						
+						
+						["arifle_mas_bizon",nil,800],
+						["64Rnd_mas_9x18_mag",nil,15],
+						["H_Shemag_olive",nil,15]
+						
+					]
+				];
+			};
+		};
+	};
+	
+	
+			case "negKarma2":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma > -5000): {"Dein Karma ist zu hoch!"};
+			default
+			{
+				["Negativ Karma 2",
+					[   ["arifle_mas_aks74u_c",nil,150],
+						["30Rnd_mas_545x39_mag",nil,150],
+						
+						
+						["kio_vfv_mask",nil,15],
+						
+						
+						["arifle_mas_bizon",nil,800],
+						["64Rnd_mas_9x18_mag",nil,15],
+						["H_Shemag_olive",nil,15]
+					]
+				];
+			};
+		};
+	};
+	
+			case "negKarma1":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma > -2000): {"Dein Karma ist zu hoch!"};
+			default
+			{
+				["Negativ Karma 1",
+					[   ["arifle_mas_bizon",nil,800],
+						["64Rnd_mas_9x18_mag",nil,15],
+						["H_Shemag_olive",nil,15]
 					]
 				];
 			};
 		};
 	};
 
-	case "cop_sergeant":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
-			default
-			{
-				["Altis Sergeant Officer Shop",
-					[   ["RH_m4",nil,150],
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
-						["arifle_MXC_F",nil,30000],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
-					]
-				];
-			};
-		};
-	};
 	
-	case "rebel":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
-			default
-			{
-				["Mohammed's Jihadi Shop",
-					[
-						["arifle_TRG20_F",nil,25000],
-						["arifle_Katiba_F",nil,30000],
-						["srifle_DMR_01_F",nil,50000],
-						["arifle_SDAR_F",nil,20000],
-						["optic_ACO_grn",nil,3500],
-						["optic_Holosight",nil,3600],
-						["acc_flashlight",nil,1000],
-						["optic_Hamr",nil,7500],
-						["30Rnd_9x21_Mag",nil,200],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["30Rnd_556x45_Stanag",nil,300],
-						["10Rnd_762x51_Mag",nil,500],
-						["30Rnd_65x39_caseless_green",nil,275]
-					]
-				];
-			};
-		};
-	};
+	
+	
 	
 	case "gun":
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_gun): {"Du hast keine Schusswaffenlizenz!"};
 			default
 			{
-				["Billy Joe's Firearms",
+				["Waffenhändler",
 					[
-						["hgun_Rook40_F",nil,6500],
-						["hgun_Pistol_heavy_02_F",nil,9850],
-						["hgun_ACPC2_F",nil,11500],
-						["hgun_PDW2000_F",nil,20000],
-						["optic_ACO_grn_smg",nil,2500],
-						["V_Rangemaster_belt",nil,4900],
-						["16Rnd_9x21_Mag",nil,25],
-						["9Rnd_45ACP_Mag",nil,45],
-						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+					["RH_m9",nil,500],
+					["RH_15Rnd_9x19_M9",nil,500],
+					["RH_muzi",nil,500],
+					["RH_30Rnd_9x19_UZI",nil,500],
+					["RH_m1911",nil,500],
+					["RH_7Rnd_45cal_m1911",nil,500],
+					["RH_g17",nil,500],
+					["RH_17Rnd_9x19_g17",nil,500]
+					
+					
 					]
 				];
 			};
@@ -231,10 +692,20 @@ switch(_shop) do
 			};
 		};
 	};
+	/*case "gasstation":
+	{
+	
+	["Tankstellenshop",
+		[
+		//TODO
+		]
+	
+	]
+	}*/
 	
 	case "genstore":
 	{
-		["Altis General Store",
+		["Synced Gemischtwaren",
 			[
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],

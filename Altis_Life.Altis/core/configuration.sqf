@@ -219,6 +219,7 @@ life_prof =
 ["Fruit_Prof","civ"],
 ["Diamond_Prof","civ"],
 ["Rock_Prof","civ"],
+["Coal_Prof","civ"],
 ["Sand_Prof","civ"]
 
 ];

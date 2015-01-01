@@ -56,7 +56,11 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
-} else {
+	if(!dialog && (playerSide == civilian) &&(_curTarget getVariable["tied",false]) ) then {
+		[_curTarget] call life_fnc_civInteractionMenu;
+	};
+} 
+else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};

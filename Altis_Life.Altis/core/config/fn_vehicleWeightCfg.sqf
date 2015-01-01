@@ -10,9 +10,9 @@ _className = [_this,0,"",[""]] call BIS_fnc_param;
 
 switch (_className) do
 {
-	case "C_Offroad_01_F": {65};
-	case "B_G_Offroad_01_F": {65};
-	case "B_Quadbike_01_F": {25};
+	case "C_Offroad_01_F": {40};
+	case "B_G_Offroad_01_F": {40};
+	case "B_Quadbike_01_F": {10};
 	case "I_Truck_02_covered_F": {250};
 	case "I_Truck_02_transport_F": {200};
 	case "C_Hatchback_01_F": {40};

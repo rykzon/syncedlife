@@ -12,23 +12,23 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 //_kassa = 1000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bistudio.com/wiki/addAction). Give it a try and post below ;)
 _action = [_this,2] call BIS_fnc_param;//Action name
 
-if(side _robber != civilian) exitWith { hint "You can not rob this station!" };
-if(_robber distance _shop > 5) exitWith { hint "You need to be within 5m of the cashier to rob him!" };
+//if(side _robber != civilian) exitWith { hint "Du kannst diese Tankstelle nicht überfallen." };
+if(_robber distance _shop > 5) exitWith { hint "Bleib in der nähe!" };
 
 if !(_kassa) then { _kassa = 1000; };
-if (_rip) exitWith { hint "Robbery already in progress!" };
-if (vehicle player != _robber) exitWith { hint "Get out of your vehicle!" };
+if (_rip) exitWith { hint "Die Tankstelle wird bereits überfallen!" };
+if (vehicle player != _robber) exitWith { hint "Raus aus dem Fahrzeug!" };
 
 if !(alive _robber) exitWith {};
-if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! Get out of here you hobo!" };
-if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
+if (currentWeapon _robber == "") exitWith { hint "Unbewaffnet? Mach dich vom Acker!" };
+if (_kassa == 0) exitWith { hint "Kein Geld." };
 
 _rip = true;
 _kassa = 5000 + round(random 10000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-if(_chance >= 85) then { hint "The cashier hit the silent alarm, police has been alerted!"; [[1,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
+if(_chance >= 0) then { hint "Der Kassierer hat den stummen Alarm betätigt, die Polizei ist unterwegs!"; [[1,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 
 _cops = (west countSide playableUnits);
 //if(_cops < 2) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hint "There isnt enough Police to rob gas station!";};
@@ -37,7 +37,7 @@ disableSerialization;
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (1%1)...","%"];
+_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe(10m) (1%1)...","%"];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
  
@@ -52,17 +52,17 @@ _pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",rou
 _Pos = position player; // by ehno: get player pos
 				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
 				                "Marker200" setMarkerColor "ColorRed";
-				                "Marker200" setMarkerText "!ATTENTION! robbery !ATTENTION!";
+				                "Marker200" setMarkerText "!Achtung! Überfall !Achtung!";
 				                "Marker200" setMarkerType "mil_warning";			
 if(_cP >= 1) exitWith {};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
 if!(alive _robber) exitWith { _rip = false; };
-if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "You need to stay within 10m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
+if(_robber distance _shop > 10.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "Du hast dich zu weit entfernt, der Kassierer hat die Kasse verschlossen..."; 5 cutText ["","PLAIN"]; _rip = false; };
 5 cutText ["","PLAIN"];
 
-titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
+titleText[format["Du hast $%1 erbeutet, Mach dich schnell aus dem Staub!",[_kassa] call life_fnc_numberText],"PLAIN"];
 deleteMarker "Marker200"; // by ehno delete maker
 life_cash = life_cash + _kassa;
 
@@ -72,7 +72,8 @@ sleep (30 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
 [[getPlayerUID _robber,name _robber,"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+["Karma_Prof",5,_karma] call life_fnc_addKarma;
 };
 sleep 300;
-_action = _shop addAction["Rob the Gas Station",life_fnc_robShops];	
+_action = _shop addAction["Tankstellenüberfall",life_fnc_robShops];	
 _shop switchMove "";

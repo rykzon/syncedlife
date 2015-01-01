@@ -42,9 +42,22 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	{
 	_extra = 0;
 	};
+	if(life_shop_type =="mafiaDealer") then
+	{
+	_data = missionNamespace getVariable ("Mafia_Prof");
+	_level = _data select 0;
+	
+	life_cash = life_cash + (_price / 2) + (_price*(0.2+_level/10));
+	["Mafia_Prof",2] call life_fnc_addExp;
+	//TODO SLEEP TIMER
+	
+	}
+	else
+	{
 	
 	
 	life_cash = life_cash + _price +_extra;
+	};
 	////Marktsystem Anfang////
 if(_marketprice != -1) then
 {
@@ -58,6 +71,9 @@ sleep 120;
 	[] call life_fnc_virt_update;
 	
 };
+
+
+
 
 if(life_shop_type == "heroin") then
 {

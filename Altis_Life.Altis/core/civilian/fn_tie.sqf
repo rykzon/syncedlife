@@ -62,6 +62,7 @@ while {player getVariable "tied"} do
 		
 if(alive player) then
 {
+	
 	player switchMove "AmovPercMstpSlowWrflDnon_SaluteIn";
 	player setVariable ["Escorting",false,true];
 	player setVariable ["transporting",false,true];

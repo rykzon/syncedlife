@@ -2005,6 +2005,15 @@
 			<Italian>%1 ha rapinato %2 di €%3</Italian>
 			<Portuguese>%1 roubou R$%3 de %2</Portuguese>
 		</Key>
+		<Key ID="STR_NOTF_Eingetrieben">
+			<Original>%1 hat $%3 als Schutzgeld von %2 eingetrieben! </Original>
+			<English>%1 hat $%3 als Schutzgeld von %2 eingetrieben!</English>
+			<German>%1 hat $%3 als Schutzgeld von %2 eingetrieben!</German>
+			<French>%1 a volés %2 pour $%3</French>
+			<Italian>%1 ha rapinato %2 di €%3</Italian>
+			<Portuguese>%1 roubou R$%3 de %2</Portuguese>
+		</Key>
+		
 		<Key ID="STR_NOTF_RobFail">
 			<Original>%1 doesn't have any money.</Original>
 			<English>%1 doesn't have any money.</English>
@@ -2013,6 +2022,16 @@
 			<Italian>%1 non ha alcun soldo.</Italian>
 			<Portuguese>%1 não tem nenhum dinheiro.</Portuguese>
 		</Key>
+		
+		<Key ID="STR_NOTF_RobFail">
+			<Original>%1 doesn't have any money.</Original>
+			<English>%1 doesn't have any money.</English>
+			<German>%1 hat kein Geld.</German>
+			<French>%1 n'a pas d'argent.</French>
+			<Italian>%1 non ha alcun soldo.</Italian>
+			<Portuguese>%1 não tem nenhum dinheiro.</Portuguese>
+		</Key>
+		
 		<Key ID="STR_NOTF_Tazed">
 			<Original>%1 was tazed by %2</Original>
 			<English>%1 was tazed by %2</English>
@@ -2379,6 +2398,16 @@
 			<Italian>Hai rubato €%1</Italian>
 			<Portuguese>Você roubou R$%1</Portuguese>
 		</Key>
+		
+		<Key ID="STR_Civ_Eingetrieben">
+			<Original>Du hast $%1 eingetrieben!</Original>
+			<English>Du hast $%1 eingetrieben!</English>
+			<German>Du hast $%1 eingetrieben!</German>
+			<French>Vous avez volé $%1</French>
+			<Italian>Hai rubato €%1</Italian>
+			<Portuguese>Você roubou R$%1</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Civ_VaultEmpty">
 			<Original>The safe is empty!</Original>
 			<English>The safe is empty!</English>
@@ -2477,6 +2506,17 @@
 			<Italian>La multa non può essere più di €200.000!</Italian>
 			<Portuguese>A multa não pode ser maior que R$200.000!</Portuguese>
 		</Key>
+		
+		
+		<Key ID="STR_Civ_SchutzgeldFordern">
+			<Original>%1 gave a ticket of $%2 to %3</Original>
+			<English>%1 hat ein Schutzgeld von %3 über $%2 gefordert!</English>
+			<German>%1 hat ein Schutzgeld von %3 über $%2 gefordert!</German>
+			<French>%1 a mis une contravention de $%2 à %3</French>
+			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
+			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
+		</Key>	
+		
 		<Key ID="STR_Cop_TicketGive">
 			<Original>%1 gave a ticket of $%2 to %3</Original>
 			<English>%1 gave a ticket of $%2 to %3</English>
@@ -2529,6 +2569,14 @@
 			<Original>%1 has given you a ticket for $%2</Original>
 			<English>%1 has given you a ticket for $%2</English>
 			<German>%1 hat dir einen Strafzettel von $%2 gegeben</German>
+			<French>%1 vous a donné une amende de $%2</French>
+			<Italian>%1 ti ha dato una multa di €%2</Italian>
+			<Portuguese>%1 lhe aplicou uma multa de R$%2</Portuguese>
+		</Key>
+			<Key ID="STR_Cop_Schutzgeld_GUI_Given">
+			<Original>%1 fordert ein Schutzgeld in höhe von $%2</Original>
+			<English>%1 fordert ein Schutzgeld in höhe von $%2</English>
+			<German>%1 fordert ein Schutzgeld in höhe von $%2</German>
 			<French>%1 vous a donné une amende de $%2</French>
 			<Italian>%1 ti ha dato una multa di €%2</Italian>
 			<Portuguese>%1 lhe aplicou uma multa de R$%2</Portuguese>
@@ -5312,10 +5360,20 @@
 			<Italian>Drop Fishing Net</Italian>		
 			<Portuguese>Jogar Rede de Pesca</Portuguese>
 		</Key>
+		
+		
 		<Key ID="STR_pAct_RobPerson">
 			<Original>Rob Person</Original>
 			<English>Rob Person</English>
 			<German>Person ausrauben</German>
+			<French>Rob Person</French>
+			<Italian>Rob Person</Italian>		
+			<Portuguese>Roubar Jogador</Portuguese>
+		</Key>
+		<Key ID="STR_pAct_SchutzgeldEintreiben">
+			<Original>Schutzgeld eintreiben</Original>
+			<English>Schutzgeld eintreiben</English>
+			<German>Schutzgeld eintreiben</German>
 			<French>Rob Person</French>
 			<Italian>Rob Person</Italian>		
 			<Portuguese>Roubar Jogador</Portuguese>

@@ -11,11 +11,13 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig","zipties"]]};
+	case "tankstelle": {["TTankstelle",["water","apple","redgull","tbacon","fuelF"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
 	case "heroin": {["Drogen Dealer",["cocainep","heroinp","marijuana"]]};
+	case "mafiaDrogen": {["Mafia Dealer",["cocainep","heroinp","marijuana"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Fischmarkt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "glass": {["Glass Händler",["glass"]]};

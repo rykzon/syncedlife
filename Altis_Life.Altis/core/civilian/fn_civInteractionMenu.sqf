@@ -37,14 +37,19 @@ _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_untie; closeDialog 
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
 _Btn2 buttonSetAction "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP";
 
+*/
+
+
+/*
 //Set Search Button
 _Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
-_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
+_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_schutzgeldAction; closeDialog 0;";
 */
+
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
-	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
 } else {
 	_Btn4 ctrlSetText localize "STR_pInAct_Escort";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
@@ -53,7 +58,7 @@ if((_curTarget getVariable["Escorting",false])) then {
 /*
 //Set Ticket Button
 _Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_schutzgeldAction;";
 
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
 _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
@@ -61,10 +66,10 @@ _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
-
+/*
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 
 {
 	_Btn6 ctrlEnable false;
 };
-		
+	*/	

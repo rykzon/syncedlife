@@ -122,14 +122,16 @@ class Life_Client_Core
 		class packupSpikes {};
 		class storeVehicle {};
 		class robAction {};
+		class schutzgeldAction {};
 		class captureHideout {};
 		class gather {};
 		class tieAction{};
 		class untie{};
 		class robShops {}; 
+
+		class surrender {}; 
  		
-        	
-	};
+        	};
 	
 	class Housing
 	{
@@ -256,6 +258,12 @@ class Life_Client_Core
 		class profSetUp {};
 		class addExp {};
 		class addKarma {};
+		class addMafia {};
+
+ 		class UnLockCarSound {};
+		class LockCarSound {};
+
+		
 
 		
 	};
@@ -283,14 +291,17 @@ class Life_Client_Core
 		class tazed {};
 		class knockedOut {};
 		class knockoutAction {};
+		class schutzgeldReceive {};
+		class schutzgeldPerson {};
 		class robReceive {};
 		class robPerson {};
+
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
 		class tie{};
 		class civInteractionMenu {};
-	};
+		};
 	
 	class Vehicle
 	{
@@ -339,6 +350,9 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class copLicenseShown {};
+
+
+	
 	};
 	
 	class Gangs

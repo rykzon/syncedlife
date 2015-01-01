@@ -108,7 +108,7 @@ switch (_code) do
 		};
 		if(playerSide == civilian) then 
 		{
-		hint "tie:civ==true";
+		
 			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 			{
 		
@@ -132,8 +132,9 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false])  && !life_istazed && !(player getVariable["surrender",false])) then
 			{
+				
 				[cursorTarget] spawn life_fnc_knockoutAction;
 			};
 		};
@@ -142,6 +143,22 @@ switch (_code) do
 	//T Key (Trunk)
 	case 20:
 	{
+		if(_shift) then {_handled = true;};
+
+		if (_shift) then
+		{
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player getVariable ["surrender", false]) then
+				{
+					player setVariable ["surrender", false, true];
+				} else
+				{
+					[] spawn life_fnc_surrender;
+				};
+			};
+		};
+	
 		if(!_alt && !_ctrlKey) then
 		{
 			if(vehicle player != player && alive vehicle player) then
@@ -184,6 +201,13 @@ switch (_code) do
 	};
 	//Y Player Menu
 	case 21:
+	{
+		if(!_alt && !_ctrlKey && !dialog) then
+		{
+			[] call life_fnc_p_openMenu;
+		};
+	};
+		case 41:
 	{
 		if(!_alt && !_ctrlKey && !dialog) then
 		{
@@ -257,6 +281,7 @@ switch (_code) do
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
+						[[_veh],"life_fnc_UnLockCarSound",nil,true] spawn life_fnc_MP;
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -264,6 +289,7 @@ switch (_code) do
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
+						[[_veh],"life_fnc_LockCarSound",nil,true] spawn life_fnc_MP;
 					};
 				};
 			};

@@ -1,3 +1,5 @@
+#include <macro.h>
+
 /*
 File: fn_profSetUp.sqf
 Author: Jacob "PapaBear" Tyler
@@ -23,33 +25,88 @@ _struct2 = "";
 _struct3 = "";
 _spacesTill = 20;
 {
-_numSpaces = 0;
-_profText = [_x select 0] call life_fnc_profType;
-_charCount = count _profText;
-_numSpaces = _spacesTill - _charCount;
-_data = missionNamespace getVariable (_x select 0);
-_profLevel = _data select 0;
-_profExp = _data select 1;
- 
-_nextLevel = 0;
-_nextLevel = 4 * ( _profLevel^3 ) ;
-_nextLevel2 =  6 * ( _profLevel^2 ) ;
-_nextLevel = _nextLevel - _nextLevel2;
-_nextLevel3 = 20 * _profLevel ;
-_nextLevel = _nextLevel + _nextLevel3 + 200 ;
-if(_profText=="Karma") then
-{
-_struct3 = _struct3 + (format["Exp: %1<br/>", _profExp ]);
-_struct2 = _struct2 + (format["<br/>"]);
-_struct = _struct + format["%1<br/>",_profText];
-}
-else
-{
-_struct3 = _struct3 + (format["Exp: %1/%2<br/>", _profExp,_nextLevel ]);
-_struct2 = _struct2 + (format["LvL: %1<br/>",_profLevel]);
-_struct = _struct + format["%1<br/>",_profText];
- };
+	_numSpaces = 0;
+	_profText = [_x select 0] call life_fnc_profType;
+	_charCount = count _profText;
+	_numSpaces = _spacesTill - _charCount;
+	_data = missionNamespace getVariable (_x select 0);
+	_profLevel = _data select 0;
+	_profExp = _data select 1;
+	
+	
+	 
+	 /*if(_profText == "mafia") then
+	 {
+		
+		_nextLevel = 0;
+		_nextLevel = 4 * ( _profLevel^3 ) ;
+		_nextLevel2 =  10 * ( _profLevel^2 ) ;
+		_nextLevel = _nextLevel - _nextLevel2;
+		_nextLevel3 = 50 * _profLevel ;
+		_nextLevel = _nextLevel + _nextLevel3;
+		 
+		 /*
+		 if((__GETC__(life_mafialevel) > 0)) then
+		 {
+				hint "mafia";
+				_struct3 = _struct3 + (format["Exp: %1/%2<br/>", _profExp,_nextLevel ]);
+				_struct2 = _struct2 + (format["LvL: %1<br/>",_profLevel]);
+				_struct = _struct + format["%1<br/>",_profText];
+		 
+		 };
+	 }
+	 else
+	 {*/
+
+	 
+		 
+		_nextLevel = 0;
+		_nextLevel = 4 * ( _profLevel^3 ) ;
+		_nextLevel2 =  6 * ( _profLevel^2 ) ;
+		_nextLevel = _nextLevel - _nextLevel2;
+		_nextLevel3 = 20 * _profLevel ;
+		_nextLevel = _nextLevel + _nextLevel3 + 200 ;
+		
+		if(_profText=="mafia") then
+		{
+		
+		_nextLevel = 0;
+		_nextLevel = 4 * ( _profLevel^3 ) ;
+		_nextLevel2 =  10 * ( _profLevel^2 ) ;
+		_nextLevel = _nextLevel - _nextLevel2;
+		_nextLevel3 = 50 * _profLevel ;
+		_nextLevel = _nextLevel + _nextLevel3;
+		
+		};
+		
+		
+
+	//};
+	
+	if(_profText=="Mafia" && (__GETC__(life_mafialevel)) == 0) then
+	{
+	}
+	else
+	{
+	if(_profText=="Karma") then
+			{
+				_struct3 = _struct3 + (format["Exp: %1<br/>", _profExp ]);
+				_struct2 = _struct2 + (format["<br/>"]);
+				_struct = _struct + format["%1<br/>",_profText];
+			}
+			else
+			{
+				_struct3 = _struct3 + (format["Exp: %1/%2<br/>", _profExp,_nextLevel ]);
+				_struct2 = _struct2 + (format["LvL: %1<br/>",_profLevel]);
+				_struct = _struct + format["%1<br/>",_profText];
+			};
+	};
+			
+		 
+	
+	
 } foreach life_prof;
+
  
 _Names ctrlSetStructuredText parseText format["
 <t size='0.8px'>

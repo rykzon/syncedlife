@@ -8,7 +8,7 @@ Add exp to given prof
 //add exp
 _type = [_this,0,"",[""]] call BIS_fnc_param;
 _amount = [_this,1,0,[0]] call BIS_fnc_param;
- if(_type=="Karma_Prof") exitWith{[]};
+ 
 _profData = missionNamespace getVariable (_type);
 //0 = level 
 //1 = exp 

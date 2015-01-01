@@ -32,3 +32,4 @@
 #include "extended_admin_menu.hpp"
 
 #include "prof.hpp"
+#include "schutzgeld.hpp"

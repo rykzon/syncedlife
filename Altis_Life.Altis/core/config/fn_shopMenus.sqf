@@ -32,6 +32,8 @@ switch (_shop) do
 		ctrlShow[2503,false];
 	};
 	
+
+	
 	case "gun":
 	{
 		ctrlSetText[2505,"Altis Gun Store"];
