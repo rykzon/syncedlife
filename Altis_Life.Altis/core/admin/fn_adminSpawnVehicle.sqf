@@ -17,7 +17,7 @@ hint _unit;
 
 hint "Vergiss es, du machst eh nur scheiß!"
 
-/*
+
 hint "Init Vehicle Spawn";
 
 if((call life_adminlevel) < 1) exitWith {};

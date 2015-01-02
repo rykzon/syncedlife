@@ -53,7 +53,16 @@ _units = _units - [player];
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
 					} else {
+					//ANFANG
+						if((headgear _x) in ["H_Shemag_olive"]) then
+						{
+						"<t color='#FFFFFF'>Maskierte Person";
+						}
+						//ENDE
+						else
+						{
 						_x getVariable ["realname",name _x];
+						};
 					};
 				};
 			};

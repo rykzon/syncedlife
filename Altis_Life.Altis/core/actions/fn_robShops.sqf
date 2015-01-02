@@ -12,11 +12,13 @@ _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alrig
 //_kassa = 1000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bistudio.com/wiki/addAction). Give it a try and post below ;)
 _action = [_this,2] call BIS_fnc_param;//Action name
 
-//if(side _robber != civilian) exitWith { hint "Du kannst diese Tankstelle nicht überfallen." };
+if(side _robber != civilian) exitWith { hint "Du kannst diese Tankstelle nicht überfallen." };
+
 if(_robber distance _shop > 5) exitWith { hint "Bleib in der nähe!" };
 
 if !(_kassa) then { _kassa = 1000; };
 if (_rip) exitWith { hint "Die Tankstelle wird bereits überfallen!" };
+
 if (vehicle player != _robber) exitWith { hint "Raus aus dem Fahrzeug!" };
 
 if !(alive _robber) exitWith {};
@@ -28,7 +30,7 @@ _kassa = 5000 + round(random 10000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
-if(_chance >= 0) then { hint "Der Kassierer hat den stummen Alarm betätigt, die Polizei ist unterwegs!"; [[1,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
+if(_chance >= 50) then { hint "Der Kassierer hat den stummen Alarm betätigt, die Polizei ist unterwegs!"; [[1,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 
 _cops = (west countSide playableUnits);
 //if(_cops < 2) exitWith{[[_vault,-1],"disableSerialization;",false,false] spawn life_fnc_MP; hint "There isnt enough Police to rob gas station!";};
@@ -71,7 +73,7 @@ life_use_atm = false;
 sleep (30 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
-[[getPlayerUID _robber,name _robber,"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+//WANTEDEntfernt[[getPlayerUID _robber,name _robber,"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 ["Karma_Prof",5,_karma] call life_fnc_addKarma;
 };
 sleep 300;

@@ -3348,6 +3348,16 @@
 			<Italian>Olio non processato</Italian>
 			<Portuguese>Petróleo não Refinado</Portuguese>
 		</Key>
+		
+		<Key ID="STR_Item_Steel">
+			<Original>Steel</Original>
+			<English>Steel</English>
+			<German>Stahl</German>
+			<French>Pétrole raffiné</French>
+			<Italian>Olio processato</Italian>
+			<Portuguese>Petróleo Refinado</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Item_OilP">
 			<Original>Processed Oil</Original>
 			<English>Processed Oil</English>

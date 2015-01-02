@@ -113,8 +113,7 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 life_inv_items = 
 [
 	"life_inv_oilu",
-	"life_inv_steelu",
-	"life_inv_steelp",
+	"life_inv_steel",
 	"life_inv_plastic",
 	"life_inv_coalu",
 	"life_inv_coalp",

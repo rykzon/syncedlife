@@ -12,18 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
 	
-	["oilp", 3000, 1500, 4500, 4, 2,
-		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["salt_r",1],
-			["cement",1],
-			["glass",1],
-			["coalp",1]
-		]
-	]
-	,
+	
 	
 	["coalp", 800, 500, 1100, 1, 1,  
 		[ 
@@ -33,6 +22,7 @@ life_market_resources = [
 			["salt_r",1],
 			["cement",1],
 			["glass",1],
+			["steel",1],
 			["iron_r",1]
 		] 
 	],
@@ -45,8 +35,22 @@ life_market_resources = [
 			["copper_r",1],
 			["salt_r",1],
 			["cement",1],
+			["steel",1],
 			["glass",1]
 		] 
+	],
+	
+	["oilp", 3000, 1500, 4500, 4, 2,
+		[
+			["diamondc",1],
+			["iron_r",1],
+			["copper_r",1],
+			["salt_r",1],
+			["cement",1],
+			["glass",1],
+			["steel",1],
+			["coalp",1]
+		]
 	],
 	
 	
@@ -58,6 +62,7 @@ life_market_resources = [
 			["copper_r",1],
 			["salt_r",1],
 			["cement",1],
+			["steel",1],
 			["glass",1]
 		] 
 	],
@@ -70,6 +75,7 @@ life_market_resources = [
 			["copper_r",1],
 			["salt_r",1],
 			["cement",1],
+			["steel",1],
 			["glass",1]
 		] 
 	],
@@ -81,6 +87,7 @@ life_market_resources = [
 			["oilp",1],
 			["iron_r",1],
 			["salt_r",1],
+			["steel",1],
 			["cement",1],
 			["glass",1]
 		] 
@@ -94,6 +101,7 @@ life_market_resources = [
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
+			["steel",1],
 			["glass",1]
 		] 
 	],
@@ -105,6 +113,7 @@ life_market_resources = [
 			["oilp",1],
 			["iron_r",1],
 			["copper_r",1],
+			["steel",1],
 			["salt_r",1],
 			["cement",1]
 		] 
@@ -117,6 +126,7 @@ life_market_resources = [
 			["oilp",1],
 			["iron_r",1],
 			["copper_r",1],
+			["steel",1],
 			["salt_r",1],
 			["glass",1]
 		] 
