@@ -23,7 +23,7 @@ _returnCount is the count of entries we are expecting back from the async call.
 The other part is well the SQL statement.
 */
 _query = switch(_side) do {
-case west: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, cop_prof, blacklist FROM players WHERE playerid='%1'",_uid];};
+case west: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, cop_prof, blacklist FROM players WHERE playerid='%1'",_uid];};
 case civilian: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof, mafialevel FROM players WHERE playerid='%1'",_uid];};
 case independent: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, med_prof FROM players WHERE playerid='%1'",_uid];};
 };
@@ -45,7 +45,7 @@ if(typeName _queryResult == "STRING") exitWith {
 if(count _queryResult == 0) exitWith {
 [[],"SOCK_fnc_insertPlayerInfo",_ownerID,false,true] spawn life_fnc_MP;
 };
- 
+
 //Blah conversion thing from a2net->extdb
 private["_tmp"];
 _tmp = _queryResult select 2;
@@ -91,7 +91,9 @@ _queryResult set[9,_old];
 //Parse data for specific side.
 switch (_side) do {
 case west: {
+
 _queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
+
 };
  
 case civilian: {

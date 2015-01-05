@@ -23,8 +23,39 @@ switch (_vehicle) do
 			case 4: {_color = "Dark Red";};
 			case 5: {_color = "Blue / White"};
 			case 6: {_color = "Black"};
-			case 7: {_color = "Black"};
+			case 7: {_color = "Streifenwagen"};
 			case 8: {_color = "Taxi"};
+		};
+	};
+	/*case "RDS_Lada_Civ_01":
+	{
+		switch(_index) do
+		{
+		
+		case 0: {_color = "Dekoriert"};
+		
+		};
+	};
+
+	case "DAR_TahoePPV":
+	{
+		switch(_index) do
+		{
+		case 0: {_color = "Schwarz"};
+		
+		
+		};
+	};*/
+	case "RDS_S1203_Civ_01":
+	{
+		switch(_index) do
+		{
+		case 0: {_color = "Grün"};
+		case 1: {_color = "Orange"};
+		case 2: {_color = "Rot"};
+		case 3: {_color = "Silber"};
+		case 4: {_color = "Weiß"};
+		
 		};
 	};
 	

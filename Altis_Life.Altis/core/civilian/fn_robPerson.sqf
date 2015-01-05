@@ -9,8 +9,27 @@ private["_robber"];
 _robber = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _robber) exitWith {}; //No one to return it to?
 
+_masked = [
+"H_Shemag_olive",
+"kio_skl_msk_grn",
+"kio_skl_msk_red",
+"kio_skl_msk",
+"H_RacingHelmet_1_black_F",
+"H_RacingHelmet_1_blue_F",
+"H_RacingHelmet_1_red_F",
+"H_RacingHelmet_1_orange_F",
+"H_RacingHelmet_1_green_F",
+"H_RacingHelmet_1_white_F",
+"H_RacingHelmet_1_yellow_F",
+"U_C_Driver_2",
+"U_C_Driver_1",
+"U_C_Driver_3",
+"U_C_Driver_4"
+];
+
+
 if(life_cash > 0) then {
-	if(headgear _robber in ["H_Shemag_olive","kio_vfv_mask","kio_skl_msk","kio_skl_msk_red","kio_skl_msk_grn"]) then
+	if([_gear] in _masked == true) then
 	{
 		_name = "<t color='#FFFFFF'>Maskierte Person";
 	}

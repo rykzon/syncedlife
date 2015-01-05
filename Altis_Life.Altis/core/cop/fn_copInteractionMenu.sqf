@@ -15,7 +15,7 @@
 #define Btn8 37457
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -33,6 +33,8 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 = _display displayCtrl Btn5;
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
+		_Btn8 = _display displayCtrl Btn8;
+		
 		life_pInact_curTarget = _curTarget;
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
@@ -45,6 +47,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 ctrlShow false;
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
+		_Btn8 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -59,6 +62,7 @@ _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
 life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
@@ -86,11 +90,17 @@ if((_curTarget getVariable["Escorting",false])) then {
 _Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
+
+//JAIL
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
+_Btn6 buttonSetAction "closeDialog 0; [] call life_fnc_showArrestDialog;";
+//JAIL
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
+
+_Btn8 ctrlSetText localize "STR_pInAct_RevokeLicense";
+_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";// neu eingefügt
 
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

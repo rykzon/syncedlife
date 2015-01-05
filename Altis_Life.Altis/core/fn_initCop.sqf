@@ -28,3 +28,50 @@ player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+
+
+switch (__GETC__(life_coplevel)) do {
+	case 1: { life_paycheck = 1500; };
+	case 2: { life_paycheck = 2500; };
+	case 3: { life_paycheck = 3500; };
+	case 4: { life_paycheck = 4500; };
+	case 5: { life_paycheck = 5500; };
+	case 6: { life_paycheck = 8000; };
+	case 7: { life_paycheck = 10000; };
+	case 8: { life_paycheck = 13000; };
+	default { life_paycheck = 1500; };
+};
+
+
+
+[] spawn    //basic cop
+{
+ while {true} do
+ {
+  waitUntil {uniform player == "U_Rangemaster"};
+  player setObjectTextureGlobal [0,"textures\U_Rangemaster_APD_Officer.paa"];
+  waitUntil {uniform player != "U_Rangemaster"};
+ };
+};
+
+[] spawn     //Sadsdsa
+{
+ while {true} do
+ {
+  waitUntil {uniform player == "U_BG_Guerilla2_3"};
+  player setObjectTextureGlobal [0,"textures\U_BG_Guerilla2_3_APD_Sergeant.paa"];
+  waitUntil {uniform player !=  "U_BG_Guerilla2_3"};
+ };
+};
+
+[] spawn     //asds
+{
+ while {true} do
+ {
+  waitUntil {uniform player == "U_B_CombatUniform_mcam"};
+  player setObjectTextureGlobal [0,"textures\U_B_CombatUniform_wdl_APD_Detective.paa"];
+  waitUntil {uniform player !=  "U_B_CombatUniform_mcam"};
+ };
+};
+

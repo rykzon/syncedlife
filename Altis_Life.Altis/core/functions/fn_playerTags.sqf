@@ -20,6 +20,26 @@ if(isNull _ui) then {
 	_ui = uiNamespace getVariable ["Life_HUD_nameTags",displayNull];
 };
 
+/*
+_masked = [
+"H_Shemag_olive",
+"kio_skl_msk_grn",
+"kio_skl_msk_red",
+"kio_skl_msk",
+"H_RacingHelmet_1_black_F",
+"H_RacingHelmet_1_blue_F",
+"H_RacingHelmet_1_red_F",
+"H_RacingHelmet_1_orange_F",
+"H_RacingHelmet_1_green_F",
+"H_RacingHelmet_1_white_F",
+"H_RacingHelmet_1_yellow_F",
+"U_C_Driver_2",
+"U_C_Driver_1",
+"U_C_Driver_3",
+"U_C_Driver_4"
+];
+*/
+
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
 
 _units = _units - [player];
@@ -54,7 +74,7 @@ _units = _units - [player];
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
 					} else {
 					//ANFANG
-						if((headgear _x) in ["H_Shemag_olive"]) then
+						if((headgear _x) in life_masked) then
 						{
 						"<t color='#FFFFFF'>Maskierte Person";
 						}

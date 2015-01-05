@@ -48,7 +48,7 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
+			["textures\cops\police_offroad.jpg","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"]
 		];
 	};
@@ -89,6 +89,18 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "RDS_S1203_Civ_01":
+	{
+		_ret = 
+		[
+			["\rds_a2port_civ\s1203\data\s1203_green_co.paa","civ"],
+			["\rds_a2port_civ\s1203\data\s1203_orange_co.paa","civ"],
+			["\rds_a2port_civ\s1203\data\s1203_red_co.paa","civ"],
+			["\rds_a2port_civ\s1203\data\s1203_silver_co.paa","civ"],
+			["\rds_a2port_civ\s1203\data\s1203_white_co.paa","civ"]
+		];
+	};
+	
 	case "C_Van_01_transport_F":
 	{
 		_ret = 
@@ -118,7 +130,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","cop"],
+			["\textures\cops\police_heli.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -135,7 +147,29 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,0.8)","med"]
 		];
 	};
+	/*case "RDS_Lada_Civ_01":
+	{
+	_ret =
+		[
 	
+	
+			["\textures\car\lada_eciv1_co.paa","civ"]
+			
+			
+		];
+	};
+		/*case "DAR_TahoePPV":
+	{
+	_ret =
+		[
+	
+	
+			["textures\car\bodyslick_co.paa","cop"]
+			
+			
+		];
+	};
+	*/
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		_ret = 

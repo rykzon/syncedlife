@@ -5,7 +5,7 @@
 	Description:
 	Removes a person from the wanted list.
 */
-private["_uid","_index"," _wantedlist"];
+private["_uid","_index","_wantedlist"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 if(_uid == "") exitWith {}; //Bad data
 

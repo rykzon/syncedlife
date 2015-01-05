@@ -179,8 +179,12 @@ class Life_Client_Core
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
+		class clothing_karma{};
+		class clothing_mafia{};
 
 		class profType {};
+
+		class masked {};
 	};
 
 	class Player_Menu
@@ -209,6 +213,8 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
+		class revokeLicense {};
+		
 	};
 	
 	class Functions
@@ -260,9 +266,13 @@ class Life_Client_Core
 		class addKarma {};
 		class addMafia {};
 
+		class robStationSound {};
  		class UnLockCarSound {};
 		class LockCarSound {};
+		class cuffSound {};
 
+		class getKarma{};
+		class toggleSound{};
 		
 
 		
@@ -350,6 +360,8 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class copLicenseShown {};
+		class showArrestDialog {}; //changed
+		class arrestDialog_Arrest {}; //changed
 
 
 	

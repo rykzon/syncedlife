@@ -36,7 +36,7 @@ __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
-__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
+__CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
 __CONST__(life_revive_fee,250); //Fee for players to pay when revived.
 
 //House Limit
@@ -82,6 +82,7 @@ __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
+life_muted = false;
 
 life_vehicles = [];
 bank_robber = [];
@@ -89,17 +90,18 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 7000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_atmcash = 40000; //Starting Bank Money
+		
+		life_paycheck = 1500; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 3000; //Starting Bank Money
+		life_atmcash = 25000; //Starting Bank Money
 		life_paycheck = 350; //Paycheck Amount
 	};
 	
 	case independent: {
-		life_atmcash = 6500;
+		life_atmcash = 40000;
 		life_paycheck = 450;
 	};
 };
@@ -107,6 +109,24 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
+life_masked = [
+"H_Shemag_olive",
+"kio_skl_msk_grn",
+"kio_skl_msk_red",
+"kio_skl_msk",
+"H_RacingHelmet_1_black_F",
+"H_RacingHelmet_1_blue_F",
+"H_RacingHelmet_1_red_F",
+"H_RacingHelmet_1_orange_F",
+"H_RacingHelmet_1_green_F",
+"H_RacingHelmet_1_white_F",
+"H_RacingHelmet_1_yellow_F",
+"U_C_Driver_2",
+"U_C_Driver_1",
+"U_C_Driver_3",
+"U_C_Driver_4"
+];
+
 life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
@@ -311,7 +331,7 @@ buy_array =
 __CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
-[
+[/*
 	["arifle_sdar_F",7500],
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",1500],
@@ -351,36 +371,112 @@ life_weapon_shop_array =
 	["SMG_01_F",1500],
 	["arifle_Mk20C_F",4500],
 	["30Rnd_45ACP_Mag_SMG_01",60],
-	["30Rnd_9x21_Mag",30]
+	["30Rnd_9x21_Mag",30],
+	
+	
+	["RH_deagleg",0],
+	["srifle_mas_svd_h",5000],
+	["arifle_mas_fal_h",5000],
+	["srifle_mas_m91_l",5000],
+	["RH_deagles",0],
+	["LMG_mas_rpk_F_a",5000],
+	["arifle_mas_ak_74m_sf",3000],
+	["arifle_mas_aks_74_sf",3000],
+	["RH_vz61",1000],
+	["RH_fn57",1000],
+	["RH_tt33",1000],
+	["optic_mas_ACO_grn_camo",100],
+	["optic_mas_PSO_day",100],
+	["10Rnd_mas_762x54_mag",100],
+	["20Rnd_mas_762x51_Stanag",100],
+	["RH_7Rnd_50_AE",100],
+	["100Rnd_mas_545x39_mag",100],
+	["30Rnd_mas_545x39_mag",100],
+	["RH_8Rnd_762_tt33",100],
+	["RH_20Rnd_32cal_vz61",100],
+	["RH_20Rnd_57x28_FN",100],
+
+
+	["Trixie_CZ750_Ghillie",5000],
+	["RH_bull",2000],
+	["arifle_mas_ak74_a",5000],
+	["arifle_mas_aks74u_c",5000],
+	["RH_mateba",2000],
+	["optic_mas_ACO_grn_camo",200],
+	["RH_6Rnd_454_Mag",100],
+	["Trixie_10x762_Mag",200],
+	["30Rnd_mas_545x39_mag",200],
+	["5Rnd_mas_762x51_Stanag",200],
+	["RH_6Rnd_44_Mag",200],
+	
+
+
+
+	["RH_ttracker_g",0],
+	["hgun_mas_usp_F",500],
+	["arifle_mas_mp5",500],
+	["RH_6Rnd_45ACP_Mag",200],
+	["12Rnd_mas_45acp_Mag",200],
+	["30Rnd_mas_9x21_Stanag",200]
+		*/
+	
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
 life_garage_prices =
 [
-	["B_QuadBike_01_F",550],
-	["C_Hatchback_01_F",1500],
-	["C_Offroad_01_F", 2500],
-	["B_G_Offroad_01_F",3500],
-	["C_SUV_01_F",5250],
-	["C_Van_01_transport_F",7890],
-	["C_Hatchback_01_sport_F",2350],
-	["C_Van_01_fuel_F",4500],
-	["I_Heli_Transport_02_F",100000],
-	["C_Van_01_box_F",9000],
-	["I_Truck_02_transport_F",12000],
-	["I_Truck_02_covered_F",14500],
-	["B_Truck_01_transport_F",25650],
-	["B_Truck_01_box_F", 35000],
-	["O_MRAP_02_F",45000],
-	["B_Heli_Light_01_F",45000],
-	["O_Heli_Light_02_unarmed_F",65000],
-	["C_Rubberboat",400],
-	["C_Boat_Civil_01_F",4500],
-	["B_Boat_Transport_01_F",450],
-	["C_Boat_Civil_01_police_F",3500],
-	["B_Boat_Armed_01_minigun_F",16500],
-	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500]
+
+	/*
+	//Gebrauchtwagen
+	["dbo_CIV_ol_bike",500],
+	["RDS_Lada_Civ_01",1000],
+	["RDS_Lada_Civ_02",1000],
+	["RDS_Lada_Civ_04",1000],
+	["RDS_S1203_Civ_01",2700],
+	["RDS_S1203_Civ_02",2700],
+	["RDS_S1203_Civ_03",2700],
+	["RDS_Golf4_Civ_01",4500],
+	["RDS_Octavia_Civ_01",5500],
+	//Neuwagen
+	["dbo_CIV_new_bike",100],
+	["C_Hatchback_01_F",15000],
+	["C_Offroad_01_F",15000],
+	//Trucks
+	["I_Truck_02_transport_F",24000],
+	["I_Truck_02_covered_F",32000],
+	["O_Truck_03_transport_F",50000],
+	["O_Truck_03_covered_F",65000],
+	["B_Truck_01_transport_F",80000],
+	["C_SUV_01_F",30000],
+	//Flugzeuge
+	["GNT_C185",45000],
+	["bwi_a3_t6a",45000],
+	["bwi_a3_t6a_1",45000],
+	["bwi_a3_t6a_2",45000],
+	["bwi_a3_t6a_3",45000],
+	["bwi_a3_t6a_4",45000],
+	["bwi_a3_t6a_5",45000],
+	["bwi_a3_t6a_6",45000],
+	["bwi_a3_t6a_7",45000],
+	["bwi_a3_t6a_8",45000],
+	["bwi_a3_t6a_9",45000],
+	//Helis
+	["B_Heli_Light_01_F",30000],
+	["O_Heli_Light_02_unarmed_F",45000],
+	
+	//neg Karma
+	["B_G_Offroad_01_F",55000],
+	
+	["LandRover_ACR",43000],
+	["DAR_MK27T",90000],
+	["DAR_MK27",70000],
+	["DAR_4x4",35000],
+	
+	//pos Karma
+	["B_Truck_01_box_F",90000],
+	["O_Truck_03_device_F",120000]*/
+	
+	
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 

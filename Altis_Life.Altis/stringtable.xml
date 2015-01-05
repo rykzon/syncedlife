@@ -21,15 +21,50 @@
 <Key ID="STR_Prof_Oil">
 <Original>Oil Proficiency</Original>
 <English>Oil Proficiency</English>
-<German>Öl Können</German>
+<German>Öl Fördern</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
 </Key>
+<Key ID="STR_pInAct_RevokeLicense">
+			<Orignal>Revoke Licenses</Orignal>
+			<German>Lizenz entziehen</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Driver">
+			<Original>Your Drivers License has been REVOKED by the Police!</Original>
+			<German>Deine Fahrerlaubnis wurde entzogen!</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Truck">
+			<Original>Your Truck License has been REVOKED by the Police!</Original>
+			<German>Deine LKW Erlaubnis wurde entzogen!</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Pilot">
+			<Original>Your Pilot License has been REVOKED by the Police!</Original>
+			<German>Dein Pilotenschein wurde entzogen!</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Boating">
+			<Original>Your Boating License has been REVOKED by the Police!</Original>
+			<German>Deine Schifffahrtslizenz wurde entzogen!</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Diving">
+			<Original>Your Diving License has been REVOKED by the Police!</Original>
+			<German>Deine Tauchlizenz wurde entzogen!</German>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Taxi">
+			<Original>Your Taxi License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_AllMotor">
+			<Original>Your Motor Vehicle Licenses have been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Firearm">
+			<Original>Your Firearms License has been REVOKED by the Police!</Original>
+			<German>Dein Waffenschein wurde entzogen!</German>
+		</Key>
+
 <Key ID="STR_Prof_Sand">
 <Original>Sand Proficiency</Original>
 <English>Sand Proficiency</English>
-<German>Sand Können</German>
+<German>Sand Abbau</German>
 <French>compétence d'sable</French>
 <Italian>Proficiency sabbia</Italian>
 <Portuguese>areia de Proficiência </Portuguese>
@@ -37,7 +72,7 @@
 <Key ID="STR_Prof_Rock">
 <Original>Rock Proficiency</Original>
 <English>Rock Proficiency</English>
-<German>Stein Können</German>
+<German>Stein Abbau</German>
 <French>compétence d'rock</French>
 <Italian>Proficiency roccia</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -45,7 +80,7 @@
 <Key ID="STR_Prof_Salt">
 <Original>Salt Proficiency</Original>
 <English>Salt Proficiency</English>
-<German>Salz Können</German>
+<German>Salz Abbau</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -53,7 +88,7 @@
 <Key ID="STR_Prof_Canabis">
 <Original>Cannabis Proficiency</Original>
 <English>Cannabis Proficiency</English>
-<German>Marijuana Können</German>
+<German>Marihuana Ernten</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -61,7 +96,7 @@
 <Key ID="STR_Prof_Heroin">
 <Original>Heroin Proficiency</Original>
 <English>Heroin Proficiency</English>
-<German>Heroin Können</German>
+<German>Schlafmohn Ernten </German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -69,7 +104,7 @@
 <Key ID="STR_Prof_Cocain">
 <Original>Cocaine Proficiency</Original>
 <English>Cocaine Proficiency</English>
-<German>Kokain Können</German>
+<German>Kokain Ernten</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -77,7 +112,7 @@
 <Key ID="STR_Prof_Diamond">
 <Original>Diamond Proficiency</Original>
 <English>Diamond Proficiency</English>
-<German>Diamant Können</German>
+<German>Diamant Abbau</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -85,7 +120,7 @@
 <Key ID="STR_Prof_Iron">
 <Original>Iron Proficiency</Original>
 <English>Iron Proficiency</English>
-<German>Eisen Können</German>
+<German>Eisen Abbau</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -93,7 +128,7 @@
 <Key ID="STR_Prof_Copper">
 <Original>Copper Proficiency</Original>
 <English>Copper Proficiency</English>
-<German>Kupfer Können</German>
+<German>Kupfer Abbau</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -101,7 +136,7 @@
 <Key ID="STR_Prof_Fruit">
 <Original>Fruit Proficiency</Original>
 <English>Fruit Proficiency</English>
-<German>Frucht Können</German>
+<German>Früchte Ernten</German>
 <French>compétence d'huile</French>
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
@@ -194,7 +229,7 @@
 		<Key ID="STR_CRAFT_AR_Backpack">
 			<Original>You already have a backpack ! Put it on the ground before crafting a new.</Original>
  			<English>You already have a backpack ! Put it on the ground before crafting a new.</English>
- 			<German>Du hast bereit einen Rucksack ! Pack den alten erstmal weg.</German>
+ 			<German>Du hast bereits einen Rucksack ! Pack den alten erstmal weg.</German>
 			<French>Vous avez déjà un sac à dos ! Posez le votre avant d'en crafter un nouveau.</French>
 			<Italian>You already have a backpack ! Put it on the ground before crafting a new.</Italian>
 			<Portuguese>You already have a backpack ! Put it on the ground before crafting a new.</Portuguese>
@@ -411,7 +446,7 @@
 		<Key ID="STR_ATM_notnumeric">
 			<Original>The amount entered isn't a numeric value.</Original>
 			<English>The amount entered isn't a numeric value.</English>
-			<German>Die eingegebene Zahl ist keine richtige Zahl</German>
+			<German>Die eingegebene Zahl ist ungültig.</German>
 			<French>Vous devez entrer un nombre.</French>
 			<Italian>L'importo inserito non è numerico.</Italian>
 			<Portuguese>O valor digitado não é um número.</Portuguese>
@@ -720,7 +755,7 @@
 		<Key ID="STR_Gang_UpgradeMax">
 			<Original>Upgrade Maximum Allowed Gang Members</Original>
 			<English>Upgrade Maximum Allowed Gang Members</English>
-			<German>Maximale Anzahl an Gang Mitgliedern erhöhen</German>	
+			<German>Maximale Anzahl an Gangmitgliedern erhöhen</German>	
 			<French>Augmentation du nombre de membre acceptés</French>
 			<Italian>Aumenta numero massimo membri della Gang</Italian>
 			<Portuguese>Atualizar limite máximo de membros</Portuguese>
@@ -730,7 +765,7 @@
 		<Key ID="STR_GNOTF_CreateGang">
 			<Original>You must create a gang first before capturing it!</Original>
 			<English>You must create a gang first before capturing it!</English>
-			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>	
+			<German>Du musst erst in einer Gang sein, um einnehmen zu können!</German>	
 			<French>Vous devez créer un gang avant de le capturer!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
 			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
@@ -754,7 +789,7 @@
 		<Key ID="STR_GNOTF_AlreadyControlled">
 			<Original>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their gang area?</Original>
 			<English>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their gang area?</English>
-			<German>Das Versteck wird durch %1 kontrolliert.&lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du ihr Gang Gebiet übernehmen möchtest?</German>
+			<German>Das Versteck wird durch %1 kontrolliert.&lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du ihr Ganggebiet übernehmen möchtest?</German>
 			<French>Cette cachette est contrôlée par %1.&lt;br/&gt;&lt;br/&gt;Etes-vous sûr que vous voulez prendre en charge leur zone de gang?</French>
 			<Italian>Questo Covo è controllato da %1.&lt;br/&gt;&lt;br/&gt;Sicuro di voler prendere il controllo della loro area?</Italian>
 			<Portuguese>Esse esconderijo é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
@@ -794,7 +829,7 @@
 		<Key ID="STR_GNOTF_Over32">
 			<Original>You can't have a gang name longer then 32 characters.</Original>
 			<English>You can't have a gang name longer then 32 characters.</English>
-			<German>Dein Gang Name kann nicht länger als 32 Zeichen sein.</German>
+			<German>Dein Gangname kann nicht länger als 32 Zeichen sein.</German>
 			<French>Vous ne pouvez pas avoir un nom de gang de plus de 32 caractères.</French>
 			<Italian>%1 e la sua Gang: % 2 - hanno preso il controllo di un Covo!</Italian>
 			<Portuguese>O nome de sua gangue não pode ter mais de 32 caracteres.</Portuguese>
@@ -802,7 +837,7 @@
 		<Key ID="STR_GNOTF_IncorrectChar">
 			<Original>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</Original>
 			<English>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</English>
-			<German>Du hast ein ungültiges Zeichen in deinem Gang Namen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>	
+			<German>Du hast ein ungültiges Zeichen in deinem Gangnamen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>	
 			<French>Vous avez des caractères non valides dans le nom de votre gang. Il ne peut être constitué de chiffres amd lettres avec un trait de soulignement</French>
 			<Italian>Hai inserito caratteri non validi nel nome della Gang. Puoi inserire solo numeri e lettere con un underscore</Italian>
 			<Portuguese>O nome da sua gangue tem caracteres inválidos. O nome so pode conter caracteres e números separados por sublinhado</Portuguese>
@@ -1206,7 +1241,7 @@
 		<Key ID="STR_Keys_DropKey">
 			<Original>Drop Key</Original>
 			<English>Drop Key</English>
-			<German>Schlüssel wegwerfen</German>
+			<German>Wegwerfen</German>
 			<French>Jeter Clef</French>
 			<Italian>Abbandona Chiave</Italian>
 			<Portuguese>Remover Chave</Portuguese>
@@ -1214,7 +1249,7 @@
 		<Key ID="STR_Keys_GiveKey">
 			<Original>Give Key</Original>
 			<English>Give Key</English>
-			<German>Schlüssel geben</German>
+			<German>Geben</German>
 			<French>Donner Clef</French>
 			<Italian>Dai Chiave</Italian>
 			<Portuguese>Dar Chave</Portuguese>
@@ -1256,7 +1291,7 @@
 		<Key ID="STR_PM_MoneyStats">
 			<Original>Money Stats</Original>
 			<English>Money Stats</English>
-			<German>Geld Statistiken</German>
+			<German>Geldübersicht</German>
 			<French>Stats Monétaires</French>
 			<Italian>Statistiche Fondi</Italian>
 			<Portuguese>Dinheiro</Portuguese>
@@ -1272,7 +1307,7 @@
 		<Key ID="STR_PM_WantedList">
 			<Original>Wanted List</Original>
 			<English>Wanted List</English>
-			<German>Fahndungsliste</German>
+			<German>Fahndung</German>
 			<French>Interpol</French>
 			<Italian>Lista Ricercati</Italian>
 			<Portuguese>Lista de Foragidos</Portuguese>
@@ -1288,7 +1323,7 @@
 		<Key ID="STR_PM_KeyChain">
 			<Original>Key Chain</Original>
 			<English>Key Chain</English>
-			<German>Schlüsselbund</German>
+			<German>Schlüssel</German>
 			<French>Porte-clés</French>
 			<Italian>Portachiavi</Italian>
 			<Portuguese>Chaves</Portuguese>
@@ -1304,7 +1339,7 @@
 		<Key ID="STR_PM_SyncData">
 			<Original>Sync Data</Original>
 			<English>Sync Data</English>
-			<German>Daten speichern</German>
+			<German>Speichern</German>
 			<French>Sync Data</French>
 			<Italian>Salva Dati</Italian>
 			<Portuguese>Sincronizar Dados</Portuguese>
@@ -1488,7 +1523,7 @@
 		<Key ID="STR_Ticket_GiveTicket">
 			<Original>Give Ticket</Original>
 			<English>Give Ticket</English>
-			<German>Ticket geben</German>
+			<German>Bußgeld</German>
 			<French>Verbaliser</French>
 			<Italian>Dai Multa</Italian>
 			<Portuguese>Dar Multa</Portuguese>
@@ -1496,7 +1531,7 @@
 		<Key ID="STR_Ticket_PayTicket">
 			<Original>Pay Ticket</Original>
 			<English>Pay Ticket</English>
-			<German>Ticket bezahlen</German>
+			<German>Bezahlen</German>
 			<French>Payer l'amende</French>
 			<Italian>Paga Multa</Italian>
 			<Portuguese>Pagar Multa</Portuguese>
@@ -1504,7 +1539,7 @@
 		<Key ID="STR_Ticket_RefuseTicket">
 			<Original>Refuse Ticket</Original>
 			<English>Refuse Ticket</English>
-			<German>Ticket ablehnen</German>
+			<German>Ablehnen</German>
 			<French>Contester l'amende</French>
 			<Italian>Rifiuta Multa</Italian>
 			<Portuguese>Recusar Multa</Portuguese>
@@ -1548,7 +1583,7 @@
 		<Key ID="STR_Wanted_Title">
 			<Original>APD Wanted List</Original>
 			<English>APD Wanted List</English>
-			<German>Fahndungsliste</German>
+			<German>Fahndung</German>
 			<French>Interpol</French>
 			<Italian>Lista Ricercati</Italian>
 			<Portuguese>Lista de Procurados ADP</Portuguese>
@@ -2178,7 +2213,7 @@
  		<Key ID="STR_NOTF_EatMSG_3">
  			<Original>You are now starving to death, you will die very soon if you don't eat something</Original>
  			<English>You are now starving to death, you will die very soon if you don't eat something</English>
-			<German>Du bist am Verhungern, du wirst sterben, wenn du nichts zum Essen findest</German>
+			<German>Du bist am Verhungern, du wirst sterben, wenn du nichts zum Essen findest.</German>
 			<French>Vous êtes en train de mourir de faim, vous allez mourir très bientôt si vous ne mangez pas quelque chose</French>
 			<Italian>Stai perdendo le forze, se non mangi qualcosa in fretta morirai.</Italian>
 			<Portuguese>Você está morto de fome, coma algo ou irá morrer.</Portuguese>
@@ -2258,7 +2293,7 @@
  		<Key ID="STR_NOTF_RepairingInVehicle">
  			<Original>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Original>
  			<English>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</English>
-			<German>Du musst außerhalb des Fahrzeuges sein, um es zu reparieren. Entschuldigung, aber das soll verhindern, dass du das System missbrauchst, naja, nicht wirklich.</German>
+			<German>Du musst außerhalb des Fahrzeuges sein, um es zu reparieren.</German>
 			<French>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</French>
 			<Italian>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Italian>
 			<Portuguese>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Portuguese>
@@ -2274,14 +2309,17 @@
  		<Key ID="STR_NOTF_Gather_Success">
 			<Original>You have gathered %2 %1(s)</Original>
 			<English>You have gathered %2 %1(s)</English>
+			<German>Du hast %2 %1(s) gesammelt. </German>
 		</Key>
 		<Key ID="STR_NOTF_GatherVeh">
 			<Original>You can't gather from inside a car!</Original>
 			<English>You can't gather from inside a car!</English>
+			<German>Du kannst nicht von innerhalb des Fahrzeuges sammeln.</German>
 		</Key>
 		<Key ID="STR_NOTF_NoLootingPerson">
 			<Original>You are not allowed to loot dead bodies</Original>
 			<English>You are not allowed to loot dead bodies</English>
+			<German>Finger weg! Leichenschändung ist hier nicht erlaubt.</German>
 		</Key>
 	</Package>
 	<Package name="Jail_Strings">
@@ -2312,7 +2350,7 @@
 		<Key ID="STR_Jail_EscapeSelf">
 			<Original>You have escaped from jail, you still retain your previous crimes and now have a count of escaping jail.</Original>
 			<English>You have escaped from jail, you still retain your previous crimes and now have a count of escaping jail.</English>
-			<German>Du bist aus dem Gefängnis ausgebrochen, die Polizei sucht bereits wegen deiner früheren Verbrechen und Gefängnisausbruch nach dir.</German>
+			<German>Du bist aus dem Gefängnis ausgebrochen, die Polizei sucht bereits wegen deiner früheren Verbrechen und des Gefängnisausbruches nach dir.</German>
 			<French>Vous vous êtes échappé de prison, vous conserver toujours vos crimes précédents et ils savent maintenant que vous vous êtes échappé de prison.</French>
 			<Italian>Sei scappato di prigione, rimarrai ricercato per i crimini da te commessi in precedenza e in aggiunta per essere scappato di prigione.</Italian>
 			<Portuguese>Você escapou da prisão, agora você é procurado por esse crime e todos os outros que tinha cometido anteriormente</Portuguese>
@@ -2461,7 +2499,7 @@
 		<Key ID="STR_Cop_TicketError">
 			<Original>Couldn't open the ticketing interface</Original>
 			<English>Couldn't open the ticketing interface</English>
-			<German>Der Bußgeldkatalog konnte nicht geöffnet werden</German>
+			<German>Der Bußgeldkatalog konnte nicht geöffnet werden.</German>
 			<French>Impossible d'ouvrir l'interface d'amendement</French>
 			<Italian>Impossibile aprire l'interfaccia per le multe</Italian>
 			<Portuguese>Não foi possível abrir o bloco de multa</Portuguese>
@@ -3116,7 +3154,7 @@
 		<Key ID="STR_House_Raid_OwnerOff">
 			<Original>This person is not online there for you cannot raid their house!</Original>
 			<English>This person is not online there for you cannot raid their house!</English>
-			<German>Der Hausbesitzer ist nicht online, daher kannst du sein Haus nicht stürmen!</German>
+			<German>Der Hausbesitzer ist nicht im Land, daher kannst du sein Haus nicht stürmen!</German>
 			<French>Cette personne n'est pas en ligne, vous ne pouvez pas perquisitionner cette maison!</French>
 			<Italian>Questa persona non è online quindi non puoi perquisire la sua casa!</Italian>
 			<Portuguese>O dono da casa não está online, você não pode vasculhar a casa!</Portuguese>
@@ -3269,7 +3307,7 @@
 		<Key ID="STR_Service_Chopper_Done">
 			<Original>Your chopper is now repaired and refuelled.</Original>
 			<English>Your chopper is now repaired and refuelled.</English>
-			<German>Der Helicopter ist nun repariert und aufgetankt.</German>
+			<German>Der Helikopter ist nun repariert und aufgetankt.</German>
 			<French>Votre hélicoptère est maintenant réparé et ravitaillé</French>
 			<Italian>L'elicottero è stato riparato e rifornito di carburante.</Italian>
 			<Portuguese>Sua aeronave está reparada e com o tanque cheio!</Portuguese>
@@ -3311,7 +3349,7 @@
 		<Key ID="STR_Item_Heroin">
 			<Original>Heroin</Original>
 			<English>Heroin</English>
-			<German>Heroin</German>
+			<German>Opium</German>
 			<French>Heroïne</French>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
@@ -3369,7 +3407,7 @@
 		<Key ID="STR_Item_HeroinU">
 			<Original>Unprocessed Heroin</Original>
 			<English>Unprocessed Heroin</English>
-			<German>Unverarbeitetes Heroin</German>
+			<German>Schlafmohn</German>
 			<French>Graine de pavot</French>
 			<Italian>Eroina non processata</Italian>
 			<Portuguese>Heroína não Processada</Portuguese>
@@ -3377,7 +3415,7 @@
 		<Key ID="STR_Item_HeroinP">
 			<Original>Processed Heroin</Original>
 			<English>Processed Heroin</English>
-			<German>Verarbeitetes Heroin</German>
+			<German>Opium</German>
 			<French>Héroine</French>
 			<Italian>Eroina processata</Italian>
 			<Portuguese>Heroína Processada</Portuguese>
@@ -3715,7 +3753,7 @@
 		<Key ID="STR_Item_CocaineU">
 			<Original>Unprocessed Cocaine</Original>
 			<English>Unprocessed Cocaine</English>
-			<German>Unverarbeitetes Kokain</German>
+			<German>Coca Blätter</German>
 			<French>Feuille de Coca</French>
 			<Italian>Cocaina non processata</Italian>
 			<Portuguese>Cocaína não Refinada</Portuguese>
@@ -3723,7 +3761,7 @@
 		<Key ID="STR_Item_CocaineP">
 			<Original>Processed Cocaine</Original>
 			<English>Processed Cocaine</English>
-			<German>Verarbeitetes Kokain</German>
+			<German>Kokain</German>
 			<French>Cocaine</French>
 			<Italian>Cocaina processata</Italian>
 			<Portuguese>Cocaína Refinada</Portuguese>
@@ -3757,7 +3795,7 @@
 		<Key ID="STR_License_Heroin">
 			<Original>Heroin Training</Original>
 			<English>Heroin Training</English>
-			<German>Heroinausbildung</German>
+			<German>Opium Ausbildung</German>
 			<French>Transformation du Pavot</French>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
@@ -4055,7 +4093,7 @@
 		<Key ID="STR_ISTR_Lock_AlreadyHave">
 			<Original>This vehicle is already in your key-chain.</Original>
 			<English>This vehicle is already in your key-chain.</English>
-			<German>Du hast diesen Fahrzeugschlüssen bereits in deinem Schlüsselbund.</German>
+			<German>Du hast diesen Fahrzeugschlüssel bereits in deinem Schlüsselbund.</German>
 			<French>Ce véhicule est déjà dans votre porte-clé.</French>
 			<Italian>Possiedi già le chiavi di questo veicolo.</Italian>
 			<Portuguese>Você já tem a chave desse veículo.</Portuguese>
@@ -4183,7 +4221,7 @@
 		<Key ID="STR_ISTR_SpikesDeployment">
 			<Original>You already have a Spike Strip active in deployment</Original>
 			<English>You already have a Spike Strip active in deployment</English>
-			<German>Du stellst bereits ein Nagelband auf</German>
+			<German>Du stellst bereits ein Nagelband auf.</German>
 			<French>You already have a Spike Strip active in deployment</French>
 			<Italian>You already have a Spike Strip active in deployment</Italian>
 			<Portuguese>You already have a Spike Strip active in deployment</Portuguese>
@@ -4225,7 +4263,7 @@
 		<Key ID="STR_Process_Heroin">
 			<Original>Processing Heroin</Original>
 			<English>Processing Heroin</English>
-			<German>Heroin wird verarbeitet</German>
+			<German>Schlafmohn wird verarbeitet</German>
 			<French>Traitement d'Heroine</French>
 			<Italian>Processando Eroina</Italian>
 			<Portuguese>Processando Heroina</Portuguese>
@@ -4273,7 +4311,7 @@
 		<Key ID="STR_Process_Cocaine">
 			<Original>Processing Cocain</Original>
 			<English>Processing Cocain</English>
-			<German>Kokain wird verarbeitet</German>
+			<German>Cocablätter werden verarbeitet</German>
 			<French>Traitement de Cocaine</French>
 			<Italian>Processando Cocaina</Italian>
 			<Portuguese>Processando Cocaina</Portuguese>
@@ -4347,7 +4385,7 @@
 		<Key ID="STR_Gather_Heroin">
 			<Original>Gather Heroin</Original>
 			<English>Gather Heroin</English>
-			<German>Heroin sammeln</German>
+			<German>Schlafmohn pflücken</German>
 			<French>Récolter des graines de Pavot</French>
 			<Italian>Raccogli Eroina</Italian>
 			<Portuguese>Colher Heroina</Portuguese>
@@ -4355,7 +4393,7 @@
 		<Key ID="STR_Gather_Cannabis">
 			<Original>Gather Cannabis</Original>
 			<English>Gather Cannabis</English>
-			<German>Kannabis sammeln</German>
+			<German>Kannabis pflücken</German>
 			<French>Récolter du Cannabis</French>
 			<Italian>Raccogli Cannabis</Italian>
 			<Portuguese>Colher Erva</Portuguese>
@@ -4363,7 +4401,7 @@
 		<Key ID="STR_Gather_Cocaine">
 			<Original>Gather Cocaine</Original>
 			<English>Gather Cocaine</English>
-			<German>Kokain sammeln</German>
+			<German>Cocablätter pflücken</German>
 			<French>Récolte de la Cocaine</French>
 			<Italian>Raccogli Cocaina</Italian>
 			<Portuguese>Colher Cocaina</Portuguese>
@@ -4579,7 +4617,7 @@
 		<Key ID="STR_pInAct_SearchPlayer">
 			<Original>Search Player</Original>
 			<English>Search Player</English>
-			<German>Spieler durchsuchen</German>
+			<German>Durchsuchen</German>
 			<French>Fouiller Joueur</French>
 			<Italian>Ricerca Giocatore</Italian>
 			<Portuguese>Buscar por Jogador</Portuguese>
@@ -4587,7 +4625,7 @@
 		<Key ID="STR_pInAct_StopEscort">
 			<Original>Stop Escorting</Original>
 			<English>Stop Escorting</English>
-			<German>Eskortieren stoppen</German>
+			<German>Absetzen</German>
 			<French>Arrêter Escorte</French>
 			<Italian>Ferma Scorta</Italian>
 			<Portuguese>Parar de Escoltar</Portuguese>
@@ -4595,7 +4633,7 @@
 		<Key ID="STR_pInAct_Escort">
 			<Original>Escort Player</Original>
 			<English>Escort-Player</English>
-			<German>Spieler eskortieren</German>
+			<German>Eskortieren</German>
 			<French>Escorter Joueur</French>
 			<Italian>Scorta Giocatore</Italian>
 			<Portuguese>Escoltar Jogador</Portuguese>
@@ -4603,7 +4641,7 @@
 		<Key ID="STR_pInAct_TicketBtn">
 			<Original>Ticket Player</Original>
 			<English>Ticket-Player</English>
-			<German>Strafzettel ausstellen</German>
+			<German>Strafzettel</German>
 			<French>Amende Joueur</French>
 			<Italian>Multa Giocatore</Italian>
 			<Portuguese>Multar Jogador</Portuguese>
@@ -4765,7 +4803,7 @@
 		<Key ID="STR_vInAct_PushBoat">
 			<Original>Push Boat</Original>
 			<English>Push Boat</English>
-			<German>Boot schieben</German>
+			<German>Schieben</German>
 			<French>Pousser bateau</French>	
 			<Italian>Spingi Barca</Italian>			
 			<Portuguese>Empurar Barco</Portuguese>
@@ -4773,7 +4811,7 @@
 		<Key ID="STR_vInAct_Repair">
 			<Original>Repair Vehicle</Original>
 			<English>Repair Vehicle</English>
-			<German>Fahrzeug reparieren</German>
+			<German>Reparieren</German>
 			<French>Réparer Véhicule</French>
 			<Italian>Ripara Veicolo</Italian>
 			<Portuguese>Concertar Veículo</Portuguese>
@@ -4789,7 +4827,7 @@
 		<Key ID="STR_vInAct_SearchVehicle">
 			<Original>Search Vehicle</Original>
 			<English>Search Vehicle</English>
-			<German>Fahrzeug durchsuchen</German>
+			<German>Durchsuchen</German>
 			<French>Fouiller Véhicule</French>
 			<Italian>Cerca Veicolo</Italian>
 			<Portuguese>Vasculhar Veículo</Portuguese>
@@ -4805,7 +4843,7 @@
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
 			<English>Impound Vehicle</English>
-			<German>Fahrzeug beschlagnahmen</German>
+			<German>Beschlagnahmen</German>
 			<French>Mise en fourrière</French>
 			<Italian>Sequestra Veicolo</Italian>
 			<Portuguese>Apreender Veículo</Portuguese>
@@ -4929,7 +4967,7 @@
 		<Key ID="STR_Shop_NoVehNear">
 			<Original>There are no vehicles near to sell.</Original>
 			<English>There are no vehicles near to sell.</English>
-			<German>Es ist keine Fahrzeug zum Verkaufen in der Nähe.</German>
+			<German>Es ist kein Fahrzeug zum Verkaufen in der Nähe.</German>
 			<French>Il n'y a pas de véhicules à proximité à vendre</French>
 			<Italian>Nelle vicinanze non ci sono veicoli da vendere.</Italian>
 			<Portuguese>Não existem veiculos para serem vendidos.</Portuguese>
@@ -5161,7 +5199,7 @@
 		<Key ID="STR_Shop_Veh_UI_RetrievalP">
 			<Original>Retrieval Price:</Original>
 			<English>Retrieval Price:</English>
-			<German>Einstellpreis:</German>
+			<German>Auslöse Gebühr:</German>
 			<French>Prix de sortie:</French>
 			<Italian>Costo di ritiro:</Italian>
 			<Portuguese>Preço para Recuperar:</Portuguese>
@@ -5193,7 +5231,7 @@
 		<Key ID="STR_Shop_Virt_Nothing">
 			<Original>You need to select an item to buy.</Original>
 			<English>You need to select an item to buy.</English>
-			<German>Du musst einen Gegenstand auswählen, um ihn zu kaufen.</German>
+			<German>Du musst mir schon sagen was du kaufen willst.</German>
 			<French>Vous devez selectionner un objet pour l'acheter.</French>
 			<Italian>Seleziona un oggetto per poterlo comprare.</Italian>
 			<Portuguese>Você precisa selecionar um item para comprar.</Portuguese>
@@ -5209,7 +5247,7 @@
 		<Key ID="STR_Shop_Virt_NotEnough">
 			<Original>You don't have that many items to sell!</Original>
 			<English>You don't have that many items to sell!</English>
-			<German>Du hast nicht so viele Gegenstände zum Verkaufen!</German>
+			<German>Verarsch mich nicht, du hast garnicht so viel!</German>
 			<French>Vous n'avez pas autant d'articles à vendre!</French>
 			<Italian>Non hai tutti quegli oggetti da vendere!</Italian>
 			<Portuguese>Você não tem todos esse items para vender</Portuguese>
@@ -5329,7 +5367,7 @@
 		<Key ID="STR_Shop_Weapon_YourInv">
 			<Original>Your Inventory</Original>
 			<English>Your Inventory</English>
-			<German>Dein Inventar</German>
+			<German>Deine Gegenstände</German>
 			<French>Votre inventaire</French>
 			<Italian>Inventario Personale</Italian>
 			<Portuguese>Seu Inventário</Portuguese>

@@ -15,7 +15,7 @@ if(_who == "") exitWith {};
 
 
 
-
+[[_target],"life_fnc_knockoutSound",nil,true] spawn life_fnc_MP; 
 
 titleText[format[localize "STR_Civ_KnockedOut",_who],"PLAIN"];
 player playMoveNow "Incapacitated";

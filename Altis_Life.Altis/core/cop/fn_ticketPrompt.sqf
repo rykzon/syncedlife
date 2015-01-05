@@ -10,7 +10,7 @@ if(!isNull (findDisplay 2600)) exitwith {}; //Already at the ticket menu, block 
 _cop = _this select 0;
 if(isNull _cop) exitWith {};
 _val = _this select 1;
-
+_cop say3D "TicketPolizei";
 createDialog "life_ticket_pay";
 disableSerialization;
 waitUntil {!isnull (findDisplay 2600)};

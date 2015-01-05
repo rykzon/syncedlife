@@ -53,7 +53,7 @@ _itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 titleText[format[localize "STR_ISTR_Pick_Success",_itemName,_diff],"PLAIN"];
 if( _profName != "" ) then 
 {
-[_profName,25] call life_fnc_addExp;
+[_profName,5] call life_fnc_addExp;
 ["Karma_Prof",1,_karma] call life_fnc_addKarma;
 };
 };

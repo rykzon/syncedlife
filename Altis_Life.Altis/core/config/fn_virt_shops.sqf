@@ -11,7 +11,7 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","storagesmall","storagebig","zipties"]]};
-	case "tankstelle": {["TTankstelle",["water","apple","redgull","tbacon","fuelF"]]};
+	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
@@ -25,6 +25,7 @@ switch (_shop) do
 	case "diamond": {["Diamanten Händler",["diamond","diamondc"]]};
 	case "salt": {["Salz Händöer",["salt_r"]]};
 	case "cop": {["Donut Händler",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
+	case "mafia": {["Pasta Händler",["water","rabbit","apple","redgull","fuelF","zipties"]]};
 	case "cement": {["Zement Händler",["cement"]]};
 	case "gold": {["Goldankauf",["goldbar"]]};
 	case "coal": {["Kohle Händler",["coalp"]]};

@@ -50,9 +50,10 @@ class CfgSounds
 	class tazersound
 	{
 		name = "Tazersound";
-		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		sound[] = {"\synced_assets\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
+
 	
 	class flashbang
 	{
@@ -60,16 +61,48 @@ class CfgSounds
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	
+	class TicketPolizei {
+		name = "TicketPolizei";
+		sound[] = {"\sounds\TicketPolizei.ogg", 0.95, 0.95};
+		titles[] = {};
+	};
+	class Cuff {
+		name = "cuff";
+		sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};
+		titles[] = {};
+	};
 		class unlock
 	{
 		name = "unlock";
-		sound[] = {"\sounds\unlock.ogg", 1.0, 1};
+		sound[] = {"\sounds\unlock.ogg", 1, 1};
+		titles[] = {};
+	};
+			class yel
+	{
+		name = "yelp";
+		sound[] = {"\sounds\yelp.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class SireneTanke
+	{
+		name = "SireneTanke";
+		sound[] = {"\sounds\SireneTanke.ogg", 0.7, 1};
+		titles[] = {};
+	};
+	
+	class Schlag
+	{
+		name = "Schlag";
+		sound[] = {"\sounds\Schlag.ogg", 0.7, 1};
 		titles[] = {};
 	};
 		class car_lock
 	{
 		name = "car_lock";
-		sound[] = {"\sounds\car_lock.ogg", 1.0, 1};
+		sound[] = {"\sounds\car_lock.ogg", 0.7, 1};
 		titles[] = {};
 	};
 };

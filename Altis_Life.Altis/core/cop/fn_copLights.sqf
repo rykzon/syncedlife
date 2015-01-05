@@ -33,7 +33,7 @@ switch (typeOf _vehicle) do
 	
 	case "C_SUV_01_F":
 	{
-		_lightleft lightAttachObject [_vehicle, [-0.37,-1.2,0.42]];
+		_lightleft lightAttachObject [_vehicle, [-0.38,2.2,-0.55]];
 	};
 };
 
@@ -63,7 +63,7 @@ switch (typeOf _vehicle) do
 	
 	case "C_SUV_01_F":
 	{
-		_lightright lightAttachObject [_vehicle, [0.37,-1.2,0.42]];
+		_lightright lightAttachObject [_vehicle, [0.38,2.2,-0.55]];
 	};
 };
   

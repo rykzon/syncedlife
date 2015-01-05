@@ -55,8 +55,8 @@ switch(playerSide) do {
 case west: {
 __CONST__(life_coplevel, parseNumber(_this select 7));
 __CONST__(life_medicLevel,0);
-__CONST__(life_mafialevel,0);
 life_blacklisted = _this select 10;
+//__CONST__(life_marksmanlevel, parseNumber(_this select select 11));
 };
  
 case civilian: {
@@ -70,7 +70,7 @@ _house = nearestBuilding (call compile format["%1", _x select 0]);
 life_vehicles pushBack _house;
 } foreach life_houses;
  
-life_gangData = _This select 11;
+life_gangData = _This select 12;
 if(count life_gangData != 0) then {
 [] spawn life_fnc_initGang;
 };
@@ -86,7 +86,7 @@ __CONST__(life_coplevel,0);
 };
  
 if(count (_this select 13) > 0) then {
-{life_vehicles pushBack _x;} foreach (_this select 12);
+{life_vehicles pushBack _x;} foreach (_this select 13);
 };
  
  

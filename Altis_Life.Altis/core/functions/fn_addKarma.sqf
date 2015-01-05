@@ -23,10 +23,10 @@ _nextLevel = _nextLevel - _nextLevel2;
 _nextLevel3 = 20 * _level ;
 _nextLevel = _nextLevel + _nextLevel3 + 200 ;
  
- hint "amount:"+_amount;
+
 if(_type == "Karma_Prof") then
 {
-	hint "karma_prof";
+	
 	if(_vorzeichen == 1) then
 	{
 		hint ""+_amount;

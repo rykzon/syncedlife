@@ -334,16 +334,18 @@ class ButtonWantedAdd : life_RscButtonMenu {
 			//shortcuts[] = {0x00050000 + 2};
 			text = "Wanted +";
 			onButtonClick = "createDialog ""life_wantedadd2"";";
-			x = 0.42 + (6.25 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.805;
+		x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.805 + (1/25);
 			w = (6.25 / 40);
 			h = (1 / 25);
+
+
 		};
 		class ButtonAdminMenu2 : Life_RscButtonMenu {
 			idc = 2024;
 			text = "Admin++";
 			onButtonClick = "createDialog ""life_extended_admin_menu"";";
-			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.1;
 			y = 0.805 + (1/25);
 			w = (6.25 / 40);
 			h = (1 / 25);

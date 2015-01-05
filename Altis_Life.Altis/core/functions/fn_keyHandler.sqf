@@ -13,6 +13,7 @@ _ctrlKey = _this select 3;
 _alt = _this select 4;
 _speed = speed cursorTarget;
 _handled = false;
+_muted = false;
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
@@ -57,6 +58,56 @@ switch (_code) do
 			_handled = true;
 		};
 	};
+	case 79:
+	{	
+		if(_shift) then {_handled = true;};
+			if(vehicle player == player) then
+			{
+			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA"
+			};
+			
+		};
+	
+		
+		case 80:
+	{	
+		if(_shift) then {_handled = true;};
+			if(vehicle player == player) then
+			{
+			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup"
+			};
+			
+		};
+	
+	
+	
+	case 2:
+	{
+		switch (PlayerSide) do
+		{
+		case west: {[] call life_fnc_wantedMenu;};
+		
+		case civilian: {[] spawn life_fnc_pickAxeUse;};
+		
+		};
+	
+	};
+	case 4:
+	{
+		if(([false,"redgull",1] call life_fnc_handleInv)) then
+		{
+			life_thirst = 100;
+			player setFatigue 0;
+			[] spawn
+			{
+				life_redgull_effect = time;
+				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
+				player enableFatigue false;
+				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
+				player enableFatigue true;
+			};
+		};
+	};
 	
 	//Map Key
 	case _mapKey:
@@ -83,7 +134,10 @@ switch (_code) do
 			};
 		};
 	};
-	
+	case 97:
+	{
+		[] spawn life_fnc_toggleSound;
+	};
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -130,7 +184,7 @@ switch (_code) do
 	case 34:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false])  && !life_istazed && !(player getVariable["surrender",false])) then
 			{
