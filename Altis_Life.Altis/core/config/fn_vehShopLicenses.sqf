@@ -21,8 +21,10 @@ switch (life_veh_shop select 0) do
 	case "kart_shop": {_ret = license_civ_driver;};
 	case "med_air_hs": {_ret = license_med_air;};
 	case "civ_car": {_ret = license_civ_driver;};
+	case "civ_car1": {_ret = license_civ_driver;};
 	case "civ_ship": {_ret = license_civ_boat;};
 	case "civ_air": {_ret = license_civ_air;};
+	case "civ_air1": {_ret = license_civ_air1;};
 	case "cop_air": {_ret = license_cop_air;};
 	case "cop_airhq": {_ret = license_cop_air;};
 	case "civ_truck":	{_ret = license_civ_truck;};
@@ -30,6 +32,7 @@ switch (life_veh_shop select 0) do
 	case "cop_car": {_ret = true;};
 	case "negKarma_car": {_ret = true;};
 	case "posKarma_car": {_ret = license_civ_driver;};
+	case "mafia_car": {_ret = true;};
 	case "cop_ship": 
 	{
 		if(_veh == "B_Boat_Armed_01_minigun_F") then

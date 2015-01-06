@@ -19,6 +19,8 @@ switch (_mode) do
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
+			case "pilot1": {_var = "license_civ_air1"};
+			
 			case "gun": {_var = "license_civ_gun"}; //Firearm/gun license cost
 			case "dive": {_var = "license_civ_dive"}; //Diving license cost
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
@@ -35,6 +37,10 @@ switch (_mode) do
 			case "salt": {_var = "license_civ_salt"};
 			case "cocaine": {_var = "license_civ_coke"};
 			case "sand": {_var = "license_civ_sand"};
+			
+			case "aSchnaps": {_var = "license_civ_aSchnaps"};
+			case "pSchnaps": {_var = "license_civ_pSchnaps"};
+			
 			case "iron": {_var = "license_civ_iron"};
 			case "copper": {_var = "license_civ_copper"};
 			case "cement": {_var = "license_civ_cement"};
@@ -54,10 +60,12 @@ switch (_mode) do
 			case "license_civ_driver": {_var = "driver"}; //Drivers License cost
 			case "license_civ_boat": {_var = "boat"}; //Boating license cost
 			case "license_civ_air": {_var = "pilot"}; //Pilot/air license cost
+			case "license_civ_air1": {_var = "pilot1"};
 			case "license_civ_gun": {_var = "gun"}; //Firearm/gun license cost
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
-			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
+			case "license_cop_air": {_var = "cair"};//Cop Pilot License cost
+			
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost

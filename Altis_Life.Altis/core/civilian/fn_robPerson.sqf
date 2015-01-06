@@ -8,7 +8,7 @@
 private["_robber"];
 _robber = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _robber) exitWith {}; //No one to return it to?
-
+/*
 _masked = [
 "H_Shemag_olive",
 "kio_skl_msk_grn",
@@ -25,11 +25,11 @@ _masked = [
 "U_C_Driver_1",
 "U_C_Driver_3",
 "U_C_Driver_4"
-];
+];*/
 
 
 if(life_cash > 0) then {
-	if([_gear] in _masked == true) then
+	if([_gear] in life_masked == true) then
 	{
 		_name = "<t color='#FFFFFF'>Maskierte Person";
 	}

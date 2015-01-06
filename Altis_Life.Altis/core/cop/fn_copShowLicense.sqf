@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 File : fn_copShowLicense.sqf
 Create : Black Lagoon
@@ -22,7 +23,7 @@ if( !(_target isKindOf "Man") ) then {_target = player;};
 
 if( !(alive _target) ) then {_target = player;};
 
-_coplevel = call life_coplevel;
+_coplevel = (__GETC__(life_coplevel));
 
 switch ( _coplevel ) do
 {

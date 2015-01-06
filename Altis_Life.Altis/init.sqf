@@ -11,6 +11,7 @@ enableSaving[false,false];
 life_versionInfo = "Altis Life RPG v3.1.4.8";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+[] execVM "core\welcome.sqf";
 if(isDedicated && isNil("life_market_prices")) then
 {
 [] call life_fnc_marketconfiguration;

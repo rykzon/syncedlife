@@ -76,7 +76,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["textures\cops\police_suv.jpg","cop"]
 		];
 	};
 	
@@ -130,7 +130,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\textures\cops\police_heli.paa","cop"],
+			["textures\cops\police_heli.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -147,29 +147,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,0.8)","med"]
 		];
 	};
-	/*case "RDS_Lada_Civ_01":
-	{
-	_ret =
-		[
-	
-	
-			["\textures\car\lada_eciv1_co.paa","civ"]
-			
-			
-		];
-	};
-		/*case "DAR_TahoePPV":
-	{
-	_ret =
-		[
-	
-	
-			["textures\car\bodyslick_co.paa","cop"]
-			
-			
-		];
-	};
-	*/
+
 	case "O_Heli_Light_02_unarmed_F":
 	{
 		_ret = 

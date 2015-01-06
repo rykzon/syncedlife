@@ -22,8 +22,10 @@ if(_marketprice != -1) then
 ////Marktsystem Ende////
 
 
-if(life_shop_type == "mafiaDrogen") then
+if(life_shop_type == "mafiaDrogen" && (__GETC__(life_mafialevel)>=1)) then
 {
+
+systemChat "Mafia drogen verkauft!";
 _mafia = true;
 _price = _price - _price*0.2;
 
@@ -56,7 +58,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 if(_mafia == true) then
 {
 ["Mafia_Prof",5] call life_fnc_addMafia;
-}; 
+};
 
  
 if(life_shop_type == "heroin") then

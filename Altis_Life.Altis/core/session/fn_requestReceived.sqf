@@ -56,7 +56,7 @@ case west: {
 __CONST__(life_coplevel, parseNumber(_this select 7));
 __CONST__(life_medicLevel,0);
 life_blacklisted = _this select 10;
-//__CONST__(life_marksmanlevel, parseNumber(_this select select 11));
+
 };
  
 case civilian: {

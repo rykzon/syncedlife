@@ -32,14 +32,14 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 
 switch (__GETC__(life_coplevel)) do {
-	case 1: { life_paycheck = 1500; };
-	case 2: { life_paycheck = 2500; };
-	case 3: { life_paycheck = 3500; };
-	case 4: { life_paycheck = 4500; };
-	case 5: { life_paycheck = 5500; };
-	case 6: { life_paycheck = 8000; };
-	case 7: { life_paycheck = 10000; };
-	case 8: { life_paycheck = 13000; };
+	case 1: { life_paycheck = 1000; };
+	case 2: { life_paycheck = 1500; };
+	case 3: { life_paycheck = 2000; };
+	case 4: { life_paycheck = 2500; };
+	case 5: { life_paycheck = 3000; };
+	case 6: { life_paycheck = 3500; };
+	case 7: { life_paycheck = 4000; };
+	case 8: { life_paycheck = 5000; };
 	default { life_paycheck = 1500; };
 };
 

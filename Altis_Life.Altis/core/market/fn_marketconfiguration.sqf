@@ -137,7 +137,9 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["cocainep",1],
-			["heroinp",1]
+			["heroinp",1],
+			["aSchnaps",1],
+			["pSchnaps",1]
 		] 
 	],
 
@@ -145,7 +147,9 @@ life_market_resources = [
 		[ 
 			["turtle",1], 
 			["cocainep",1],
-			["heroinp",1]
+			["heroinp",1],
+			["aSchnaps",1],
+			["pSchnaps",1]
 		] 
 	],
 	
@@ -153,7 +157,9 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["turtle",1],
-			["heroinp",1]
+			["heroinp",1],
+			["aSchnaps",1],
+			["pSchnaps",1]
 		] 
 	],
 
@@ -161,8 +167,28 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["turtle",1],
-			["cocainep",1]
+			["cocainep",1],
+			["aSchnaps",1],
+			["pSchnaps",1]
 		] 
+	],
+	["aSchnaps", 1500, 1300, 1700, 2, 2,   
+			[ 
+				["marijuana",1], 
+				["turtle",1],
+				["heroinp",1],
+				["cocainep",1],
+				["pSchnaps",1]
+			] 
+	],
+	["pSchnaps", 1500, 1300, 1700, 2, 2,   
+			[ 
+				["marijuana",1], 
+				["turtle",1],
+				["heroinp",1],
+				["aSchnaps",1],
+				["cocainep",1]
+			] 
 	]
 ];
 publicVariable "life_market_resources";

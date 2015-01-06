@@ -47,10 +47,17 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+		class mafiaMusik
+	{
+		name = "mafiaMusik";
+		sound[] = {"\sounds\godfather.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
 	class tazersound
 	{
 		name = "Tazersound";
-		sound[] = {"\synced_assets\sounds\tazer.ogg", 0.25, 1};
+		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
 

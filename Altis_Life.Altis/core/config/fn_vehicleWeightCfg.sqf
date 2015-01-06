@@ -30,6 +30,16 @@ switch (_className) do
 	case "C_SUV_01_F": {50};
 	case "dbo_CIV_new_bike" : {0};
 	
+	case "DAR_4x4": {150};
+	case "DAR_MK27T": {330};
+	case "DAR_MK27": {270};
+	
+	case "I_Heli_Transport_02_F": {150};
+	case "B_Heli_Transport_03_unarmed_F": {150};
+	case "O_Heli_Transport_04_covered_F": {100};
+	
+	case "sab_cz_An2": {300};
+	
 	case "LandRover_TK_CIV_EP1": {60};
 	case "LandRover_ACR": {60};
 	
@@ -50,8 +60,8 @@ switch (_className) do
 	case "O_MRAP_02_F": {60};
 	case "I_MRAP_03_F": {58};
 	case "dbo_CIV_ol_bike": {0};
-	case "B_Heli_Light_01_F": {30};
-	case "O_Heli_Light_02_unarmed_F": {80};
+	case "B_Heli_Light_01_F": {20};
+	case "O_Heli_Light_02_unarmed_F": {50};
 	case "I_Heli_Transport_02_F": {375};
 	case "C_Rubberboat": {45};
 	case "O_Boat_Armed_01_hmg_F": {175};

@@ -134,9 +134,10 @@ switch (_code) do
 			};
 		};
 	};
-	case 97:
+	case 11:
 	{
 		[] spawn life_fnc_toggleSound;
+		
 	};
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:

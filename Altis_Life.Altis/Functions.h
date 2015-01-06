@@ -273,6 +273,8 @@ class Life_Client_Core
 
 		class getKarma{};
 		class toggleSound{};
+
+		class mafiaMusik{};
 		
 
 		
@@ -311,6 +313,10 @@ class Life_Client_Core
 		class civLoadout {};
 		class tie{};
 		class civInteractionMenu {};
+
+		class robShop{};
+		class robShop2{};
+		class shopState{};
 		};
 	
 	class Vehicle

@@ -370,8 +370,8 @@ switch(_shop) do
 				["APD Officer Shop",
 					[
 					
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						["arifle_mas_m4_d",nil,2000],
 						["arifle_mas_m4c",nil,2000],
 						
@@ -399,8 +399,8 @@ switch(_shop) do
 			{
 				["APD Wrt. Officer Shop",
 					[
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						["arifle_mas_hk416c",nil,30000],
 						["arifle_mas_hk416_d",nil,30000],
 						
@@ -440,8 +440,8 @@ switch(_shop) do
 				["Altis Sergeant 2nd Shop",
 					[   
 						
-						["hgun_P07_snds_F","Stun Pistol",200],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_mk16_l",nil,10000],
 						["arifle_mas_g36c",nil,10000],
@@ -492,8 +492,8 @@ switch(_shop) do
 			{
 				["APD Sergeant 1st Shop",
 					[   
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						
 						["LMG_mas_M249_F",nil,5000],
 						
@@ -532,8 +532,8 @@ switch(_shop) do
 			{
 				["APD Detective 2nd Shop",
 					[   
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_mk17",nil,6000],
 						
@@ -574,8 +574,8 @@ switch(_shop) do
 			{
 				["APD Detective 1st Shop",
 					[   
-						["hgun_P07_snds_F","Stun Pistol",200],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_g3",nil,15000],
 						
@@ -619,8 +619,8 @@ switch(_shop) do
 				["APD Lieutenant Shop",
 					[   
 					
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["16Rnd_9x21_Mag",nil,50],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
 						
 						["srifle_mas_ebr",nil,25000],
 						
@@ -663,7 +663,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
-			case (__GETC__(life_marksmanlevel) < 1 ): {"Dir fehlen noch ein paar Abzeichen!"};
+			case (!license_cop_swat): {"Du hast keine Marksmanausbildung!"};
 			default
 			{
 				["Nur auf Anweisung!",
@@ -672,7 +672,6 @@ switch(_shop) do
 						["Trixie_M14DMR_Clean_Black",nil,10000],
 						["Trixie_M40A3_Clean",nil,10000],
 						["Trixie_M24_Black_Clean",nil,10000],
-						["Trixie_LM308MWS",nil,10000],
 						["Trixie_M110_NG_Black",nil,10000],
 						
 						["Rangefinder",nil,1000],

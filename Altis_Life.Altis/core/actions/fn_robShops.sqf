@@ -47,17 +47,17 @@ if(_rip) then
 {
 while{true} do
 {
-[[_shop],"life_fnc_robStationSound",nil,true] spawn life_fnc_MP; 
+
 sleep 0.85;
 _cP = _cP + 0.01;
 _progress progressSetPosition _cP;
-_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 120),"%"];
+_pgText ctrlSetText format["Robbery in Progress, stay close (10m) (%1%2)...",round(_cP * 100),"%"];
 _Pos = position player; // by ehno: get player pos
 				                _marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
 				                "Marker200" setMarkerColor "ColorRed";
 				                "Marker200" setMarkerText "!Achtung! Überfall !Achtung!";
 				                "Marker200" setMarkerType "mil_warning";			
-if(_cP >= 1.2) exitWith {_shop say3D "";};
+if(_cP >= 1) exitWith {_shop say3D "";};
 if(_robber distance _shop > 10.5) exitWith { };
 if!(alive _robber) exitWith {};
 };
@@ -72,12 +72,13 @@ sleep 5;
 titleText["Dein Verbrechen wird nicht ohne Konsequenzen bleiben...","PLAIN",0.5];
 _rip = false;
 life_use_atm = false;
+["Karma_Prof",100,0] call life_fnc_addKarma;
 sleep (30 + random(180));
 life_use_atm = true;
 if!(alive _robber) exitWith {};
 //WANTEDEntfernt[[getPlayerUID _robber,name _robber,"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 
-["Karma_Prof",100,0] call life_fnc_addKarma;
+
 };
 sleep 300;
 _action = _shop addAction["Tankstellenüberfall",life_fnc_robShops];	

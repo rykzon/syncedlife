@@ -62,7 +62,6 @@ switch (_shop) do
 			["RDS_S1203_Civ_01",27000],
 			["RDS_S1203_Civ_02",27000],
 			["RDS_Golf4_Civ_01",45000],
-			["RDS_Octavia_Civ_01",55000],
 			["C_Van_01_transport_F",110000]
 			
 			
@@ -74,6 +73,7 @@ switch (_shop) do
 		_return = 
 		[
 			["dbo_CIV_new_bike",1000],
+			["RDS_Octavia_Civ_01",55000],
 			["C_Hatchback_01_F",150000],
 			["C_Offroad_01_F",150000],
 			["C_SUV_01_F",300000]
@@ -107,20 +107,23 @@ switch (_shop) do
 
 	
 	case "cop_car":
-	{	
+	{
 	
-	
+		_return pushBack
+		["dbo_CIV_new_bike",1000];
 		_return pushBack
 		["C_Offroad_01_F",5000];
-		
+		if(__GETC__(life_coplevel) >= 4) then
+		{
 		_return pushBack
 		["C_SUV_01_F",20000];
+		};
 		
-		if(__GETC__(life_coplevel) > 2) then
+		/*if(__GETC__(life_coplevel) > 6) then
 		{
 			_return pushBack
 			["B_MRAP_01_F",30000];
-		};
+		};*/
 	};
 	
 	case "civ_air":
@@ -128,9 +131,9 @@ switch (_shop) do
 		_return =
 		[
 		
-			["B_Heli_Light_01_F",300000],
-			["O_Heli_Light_02_unarmed_F",450000]
-			
+			["B_Heli_Light_01_F",650000],
+			["O_Heli_Light_02_unarmed_F",1250000],
+			["O_Heli_Transport_04_covered_F",1000000]
 	
 			
 		];
@@ -142,18 +145,17 @@ switch (_shop) do
 		[
 		
 			
-			["GNT_C185",450000],
-			["bwi_a3_t6a",450000],
-			["bwi_a3_t6a_1",450000],
-			["bwi_a3_t6a_2",450000],
-			["bwi_a3_t6a_3",450000],
-			["bwi_a3_t6a_4",450000],
-			["bwi_a3_t6a_5",450000],
-			["bwi_a3_t6a_6",450000],
-			["bwi_a3_t6a_7",450000],
-			["bwi_a3_t6a_8",450000],
-			["bwi_a3_t6a_9",450000]
-	
+			["GNT_C185",700000],
+			["bwi_a3_t6a",1500000],
+			["bwi_a3_t6a_1",1500000],
+			["bwi_a3_t6a_2",1500000],
+			["bwi_a3_t6a_3",1500000],
+			["bwi_a3_t6a_4",1500000],
+			["bwi_a3_t6a_6",1500000],
+			["bwi_a3_t6a_7",1500000],
+			["bwi_a3_t6a_8",1500000],
+			["bwi_a3_t6a_9",1500000]
+			
 			
 		];
 	};
@@ -201,6 +203,8 @@ switch (_shop) do
 			if(call life_fnc_getKarma <= -10000) then
 			{
 			_return pushBack
+			["B_Heli_Transport_03_unarmed_F",900000];
+			_return pushBack
 			["B_G_Offroad_01_F",55000];
 			_return pushBack
 			["B_G_Offroad_01_armed_F",500000];
@@ -239,6 +243,8 @@ switch (_shop) do
 			if(call life_fnc_getKarma >= 10000) then
 			{
 			_return pushBack
+			["I_Heli_Transport_02_F",900000];
+			_return pushBack
 			["B_Truck_01_box_F",900000];
 			
 			};
@@ -249,7 +255,7 @@ switch (_shop) do
 		{
 			
 			_return pushBack
-			["CUP_Volha_Black",nil,30000];
+			["CUP_Volha_Black",30000];
 			_return pushBack
 			["DAR_4x4",200000];
 			_return pushBack

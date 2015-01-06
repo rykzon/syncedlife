@@ -24,7 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 2; //Scaled in minutes
+life_respawn_timer = 0.3; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -198,6 +198,7 @@ life_licenses =
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
+	["license_civ_air1","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
 	["license_civ_gang","civ"],
@@ -294,7 +295,7 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000],
+	["goldbar",50000],
 	["zipties",200]
 ];
 __CONST__(sell_array,sell_array);
@@ -426,7 +427,7 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 life_garage_prices =
 [
 
-	/*
+	
 	//Gebrauchtwagen
 	["dbo_CIV_ol_bike",500],
 	["RDS_Lada_Civ_01",1000],
@@ -447,7 +448,7 @@ life_garage_prices =
 	["O_Truck_03_transport_F",50000],
 	["O_Truck_03_covered_F",65000],
 	["B_Truck_01_transport_F",80000],
-	["C_SUV_01_F",30000],
+	["C_SUV_01_F",3000],
 	//Flugzeuge
 	["GNT_C185",45000],
 	["bwi_a3_t6a",45000],
@@ -474,7 +475,9 @@ life_garage_prices =
 	
 	//pos Karma
 	["B_Truck_01_box_F",90000],
-	["O_Truck_03_device_F",120000]*/
+	["O_Heli_Transport_04_covered_F",100000],
+	["O_Truck_03_device_F",120000]
+	
 	
 	
 ];

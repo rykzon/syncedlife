@@ -20,7 +20,7 @@ if (side player == civilian) then {
 };
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
-player say3D "cuff"; 	//cuff sound
+//player say3D "cuff"; 	//cuff sound
 
 _unit setVariable["tied",true,true];
 _unit setVariable["Incapitated",false,true];

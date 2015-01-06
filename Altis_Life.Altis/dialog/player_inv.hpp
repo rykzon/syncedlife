@@ -297,7 +297,7 @@ class playerSettings {
 	y = 0.805;
 	w = (6.25 / 40);
 	h = (1 / 25);
-};
+};/*
 class ButtonCraft : Life_RscButtonMenu {
 	idc = 2025;
 	text = "$STR_PM_Craft";
@@ -306,7 +306,7 @@ class ButtonCraft : Life_RscButtonMenu {
 	y = 0.805;
 	w = (6.25 / 40);
 	h = (1 / 25);
-};
+};*/
 		
 		class ButtonSyncData : life_RscButtonMenu {
 			idc = -1;

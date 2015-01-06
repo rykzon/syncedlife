@@ -3792,6 +3792,16 @@
 			<Italian>Licenza da Pilota</Italian>
 			<Portuguese>Licença de Piloto</Portuguese>
 		</Key>
+		
+		<Key ID="STR_License_Pilot1">
+			<Original>Pilot License(Plane)</Original>
+			<English>Pilot License</English>
+			<German>Pilotenschein(Flugzeug)</German>
+			<French>License de Pilote</French>
+			<Italian>Licenza da Pilota</Italian>
+			<Portuguese>Licença de Piloto</Portuguese>
+		</Key>
+		
 		<Key ID="STR_License_Heroin">
 			<Original>Heroin Training</Original>
 			<English>Heroin Training</English>

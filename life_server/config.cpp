@@ -115,6 +115,8 @@ class CfgFunctions
 			class cleanupRequest {};
 			class setObjVar {};
 			class keyManagement {};
+			class robShop{};
+			class shopState{};
 		};
 		
 		class Housing

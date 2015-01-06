@@ -30,7 +30,7 @@ _exp = _exp + _amount;
  
 if( _exp >= _nextLevel ) then 
 {
-if( _level == 10 ) then
+if( _level == 4 ) then
 {
 if( _exp >= _nextLevel ) then 
 {
@@ -47,7 +47,7 @@ else
 {
 _exp = _nextLevel - _exp;
 missionNamespace setVariable [_type,[(_profData select 0) + 1,(_exp)]];
-if( _level == 9 ) then 
+if( _level == 4 ) then 
 {
 titleText [format["You are now level %1. Max Level!",_level],"PLAIN"]; titleFadeOut 5;
 }
