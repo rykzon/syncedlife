@@ -372,6 +372,7 @@ switch(_shop) do
 					
 						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
+						
 						["arifle_mas_m4_d",nil,2000],
 						["arifle_mas_m4c",nil,2000],
 						
@@ -401,14 +402,9 @@ switch(_shop) do
 					[
 						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
+						
 						["arifle_mas_hk416c",nil,30000],
 						["arifle_mas_hk416_d",nil,30000],
-						
-						["optic_mas_aim_c",nil,200],
-						["optic_mas_aim",nil,200],
-						
-						["30Rnd_mas_556x45_Stanag",nil,200],
-						
 						
 						
 						["arifle_mas_m4_d",nil,20000],

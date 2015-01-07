@@ -20,7 +20,7 @@ _kassa = 3000 + round(random 12000); //setting the money in the registry, anywhe
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
-if(_chance >= 85) then { hint "The cashier hit the silent alarm, police has been alerted!"; [[0,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; }; //We set a 15% chance that the silent alarm is being triggered, wich sends a 911-message to the police. 
+if(_chance >= 75) then { hint "The cashier hit the silent alarm, police has been alerted!"; [[0,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; }; //We set a 15% chance that the silent alarm is being triggered, wich sends a 911-message to the police. 
 
 //Setup our progress bar.
 disableSerialization;
@@ -48,16 +48,17 @@ if(_rip) then
 		sleep  0.85;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
-		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe! (10m) (1%2)...",round(_cP * 100),"%"];
+		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe! (10m) (1%1)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
-		if(_robber distance _shop > 10) exitWith { };
+		if(_robber distance _shop > 10) exitWith {};
 		if!(alive _robber) exitWith {};
 		
 	}; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
+	deleteMarker "Marker200"; // by ehno delete maker
 	if!(alive _robber) exitWith { _rip = false; };
-	if(_robber distance _shop > 5) exitWith { hint "You need to stay within 5m to Rob registry! - Now the registry is locked."; 5 cutText ["","PLAIN"]; _rip = false; };
+	if(_robber distance _shop > 10) exitWith { hint "Du musst im Umkreis von 10m bleiben! - Die Kasse ist jetzt verschlossen!."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
-	titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
+	titleText[format["Du hast $%1 gestohlen, mach dich vom Acker!",[_kassa] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _kassa; //I am using a moneylaundry system on my server, but if you do not change this to life_cash instead.
 	_rip = false;
 	life_use_atm = false;

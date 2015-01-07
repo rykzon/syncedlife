@@ -15,7 +15,7 @@ player addUniform "U_Rangemaster";
 player addVest "V_Rangemaster_belt";
 
 
-player addMagazine "DDOPP_X26","Stun Pistol";
+player addWeapon "DDOPP_X26","Stun Pistol";
 player addMagazine "DDOPP_1Rnd_X26";
 player addMagazine "DDOPP_1Rnd_X26";
 player addMagazine "DDOPP_1Rnd_X26";

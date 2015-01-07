@@ -73,10 +73,10 @@ switch (_shop) do
 		_return = 
 		[
 			["dbo_CIV_new_bike",1000],
-			["RDS_Octavia_Civ_01",55000],
-			["C_Hatchback_01_F",150000],
-			["C_Offroad_01_F",150000],
-			["C_SUV_01_F",300000]
+			["RDS_Octavia_Civ_01",45000],
+			["C_Hatchback_01_F",80000],
+			["C_Offroad_01_F",60000],
+			["C_SUV_01_F",100000]
 		];
 	};
 	
@@ -254,14 +254,18 @@ switch (_shop) do
 		if(__GETC__(life_mafialevel) >= 1) then
 		{
 			
-			_return pushBack
-			["CUP_Volha_Black",30000];
+			//_return pushBack
+			//["CUP_Volha_Black",30000];
 			_return pushBack
 			["DAR_4x4",200000];
 			_return pushBack
 			["DAR_MK27T",700000];
 			_return pushBack
 			["C_Offroad_01_F",50000];
+			_return pushBack
+			["C_SUV_01_F",20000];
+			
+			
 		};
 	
 	};

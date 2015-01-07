@@ -302,7 +302,7 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",65],
+	["apple",150],
 	["rabbit",75],
 	["salema",55],
 	["ornate",50],
@@ -320,7 +320,7 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",68],
+	["peach",150],
 	["spikeStrip",2500],
 	["blastingcharge",35000],
 	["boltcutter",7500],
