@@ -257,13 +257,13 @@ switch (_shop) do
 			//_return pushBack
 			//["CUP_Volha_Black",30000];
 			_return pushBack
-			["DAR_4x4",200000];
+			["DAR_4x4",80000];
 			_return pushBack
-			["DAR_MK27T",700000];
+			["DAR_MK27T",150000];
 			_return pushBack
-			["C_Offroad_01_F",50000];
+			["C_Offroad_01_F",15000];
 			_return pushBack
-			["C_SUV_01_F",20000];
+			["C_SUV_01_F",25000];
 			
 			
 		};
