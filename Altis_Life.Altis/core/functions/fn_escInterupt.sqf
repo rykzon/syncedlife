@@ -32,6 +32,7 @@ _escSync = {
 	_abortButton = (findDisplay 49) displayCtrl 104;
 	[] call SOCK_fnc_updateRequest; //call our silent sync.
 	
+	
 	if(_this) then {
 		_thread = [] spawn _syncManager;
 		waitUntil{scriptDone _thread OR isNull (findDisplay 49)};

@@ -43,7 +43,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["H_Beret_blk_POLICE",nil,100]];
 		};
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
 			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
 			_ret set[count _ret,["H_Booniehat_indp",nil,100]];
@@ -88,11 +88,11 @@ switch (_filter) do
 	{
 		_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
 		_ret set[count _ret,["V_RebreatherB",nil,1800]];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1500]];
 		};
-		if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
 	

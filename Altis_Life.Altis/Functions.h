@@ -121,13 +121,13 @@ class Life_Client_Core
 		class ticketAction {};
 		class packupSpikes {};
 		class storeVehicle {};
-		class robAction {};
+		
 		class schutzgeldAction {};
 		class captureHideout {};
 		class gather {};
 		class tieAction{};
 		class untie{};
-		class robShops {}; 
+		
 
 		class surrender {}; 
  		

@@ -16,8 +16,10 @@ _profName = ["Karma_Prof"] call life_fnc_profType;
 _data = missionNamespace getVariable (_profName);
 _karma = _data select 1;
 
-_data = missionNamespace getVariable ("Mafia_Prof");
-_mafia = _data select 0;
+
+
+_data1 = missionNamespace getVariable ("Mafia_Prof");
+_mafia = _data1 select 0;
 
 
 switch (_shop) do
@@ -25,10 +27,10 @@ switch (_shop) do
 	case "kart_shop":
 	{
 		_return = [
-			["C_Kart_01_Blu_F",15000],
-			["C_Kart_01_Fuel_F",15000],
-			["C_Kart_01_Red_F",15000],
-			["C_Kart_01_Vrana_F",15000]
+			["C_Kart_01_Blu_F",150000],
+			["C_Kart_01_Fuel_F",150000],
+			["C_Kart_01_Red_F",150000],
+			["C_Kart_01_Vrana_F",150000]
 		];
 	};
 	case "med_shop":

@@ -429,26 +429,26 @@ life_garage_prices =
 
 	
 	//Gebrauchtwagen
-	["dbo_CIV_ol_bike",500],
+	["dbo_CIV_ol_bike",100],
 	["RDS_Lada_Civ_01",1000],
 	["RDS_Lada_Civ_02",1000],
 	["RDS_Lada_Civ_04",1000],
-	["RDS_S1203_Civ_01",2700],
-	["RDS_S1203_Civ_02",2700],
-	["RDS_S1203_Civ_03",2700],
-	["RDS_Golf4_Civ_01",4500],
-	["RDS_Octavia_Civ_01",5500],
+	["RDS_S1203_Civ_01",1500],
+	["RDS_S1203_Civ_02",1500],
+	["RDS_S1203_Civ_03",1500],
+	["RDS_Golf4_Civ_01",1500],
+	["RDS_Octavia_Civ_01",2000],
 	//Neuwagen
 	["dbo_CIV_new_bike",100],
-	["C_Hatchback_01_F",15000],
-	["C_Offroad_01_F",15000],
+	["C_Hatchback_01_F",10000],
+	["C_Offroad_01_F",7000],
 	//Trucks
 	["I_Truck_02_transport_F",24000],
-	["I_Truck_02_covered_F",32000],
-	["O_Truck_03_transport_F",50000],
-	["O_Truck_03_covered_F",65000],
-	["B_Truck_01_transport_F",80000],
-	["C_SUV_01_F",3000],
+	["I_Truck_02_covered_F",26000],
+	["O_Truck_03_transport_F",30000],
+	["O_Truck_03_covered_F",34000],
+	["B_Truck_01_transport_F",50000],
+	["C_SUV_01_F",10000],
 	//Flugzeuge
 	["GNT_C185",45000],
 	["bwi_a3_t6a",45000],
@@ -469,14 +469,14 @@ life_garage_prices =
 	["B_G_Offroad_01_F",55000],
 	
 	["LandRover_ACR",43000],
-	["DAR_MK27T",90000],
-	["DAR_MK27",70000],
-	["DAR_4x4",35000],
+	["DAR_MK27T",60000],
+	["DAR_MK27",40000],
+	["DAR_4x4",25000],
 	
 	//pos Karma
-	["B_Truck_01_box_F",90000],
-	["O_Heli_Transport_04_covered_F",100000],
-	["O_Truck_03_device_F",120000]
+	["B_Truck_01_box_F",50000],
+	["O_Heli_Transport_04_covered_F",50000],
+	["O_Truck_03_device_F",60000]
 	
 	
 	

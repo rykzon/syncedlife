@@ -591,7 +591,7 @@
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
 			<English>Admin Message</English>
-			<German>Admin-Nachricht</German>
+			<German>Admin Nachricht</German>
 			<French>Admin Message</French>
 			<Italian>Admin Msg</Italian>
 			<Portuguese>Msg do Admin</Portuguese>
@@ -599,7 +599,7 @@
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
 			<English>Admin Msg All</English>
-			<German>Admin-Nachricht an alle</German>
+			<German>An Alle</German>
 			<French>Admin Msg ALL</French>
 			<Italian>Admin Msg</Italian>			
 			<Portuguese>Admin Msg ALL</Portuguese>

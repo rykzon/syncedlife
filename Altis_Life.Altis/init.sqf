@@ -20,6 +20,7 @@ diag_log "Market prices generated!";
 {
 diag_log format["Market prices updated! %1", _this select 1];
 };
+enableRadio false;
 //Start server fsm
 [] execFSM "core\fsm\server.fsm";
 diag_log "Server FSM executed";

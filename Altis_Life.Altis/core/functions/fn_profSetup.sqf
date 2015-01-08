@@ -61,11 +61,11 @@ _spacesTill = 20;
 	 
 		 
 		_nextLevel = 0;
-		_nextLevel = 4 * ( _profLevel^3 ) ;
+		_nextLevel = 8 * ( _profLevel^3 ) ;
 		_nextLevel2 =  6 * ( _profLevel^2 ) ;
 		_nextLevel = _nextLevel - _nextLevel2;
 		_nextLevel3 = 20 * _profLevel ;
-		_nextLevel = _nextLevel + _nextLevel3 + 200 ;
+		_nextLevel = _nextLevel + _nextLevel3;
 		
 		if(_profText=="mafia") then
 		{

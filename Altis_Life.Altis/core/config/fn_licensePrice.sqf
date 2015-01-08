@@ -23,7 +23,7 @@ switch (_type) do
 	case "cg": {10000}; //Coast guard license cost
 	case "heroin": {40000}; //Heroin processing license cost
 	case "marijuana": {35000}; //Marijuana processing license cost
-	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
+	case "medmarijuana": {15000}; //Medical Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost
 	case "rebel": {75000}; //Rebel license cost
 	case "truck": {25000}; //Truck license cost
