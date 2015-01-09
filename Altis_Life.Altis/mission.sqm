@@ -4128,7 +4128,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="negKarma1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Bandit 1"",life_fnc_weaponShopMenu,""negKarma1""]; this addAction[""Bandit 2"",life_fnc_weaponShopMenu,""negKarma2""]; this addAction[""Bandit 3"",life_fnc_weaponShopMenu,""negKarma3""];this addAction[""Karma Autos"",life_fnc_vehicleShopMenu,[""negKarma_car"",civilian,""karma_g_1"",""karma"",""Karma Fahrzeuge""]]; this addAction[""Kleidung"",life_fnc_clothingMenu,""karma""];addAction[""Banditen Markt"",life_fnc_virt_menu,""market""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Bandit 1"",life_fnc_weaponShopMenu,""negKarma1""]; this addAction[""Bandit 2"",life_fnc_weaponShopMenu,""negKarma2""]; this addAction[""Bandit 3"",life_fnc_weaponShopMenu,""negKarma3""];this addAction[""Karma Autos"",life_fnc_vehicleShopMenu,[""negKarma_car"",civilian,""karma_g_1"",""karma"",""Karma Fahrzeuge""]]; this addAction[""Kleidung"",life_fnc_clothingMenu,""karma""]; this addAction[""Banditen Markt"",life_fnc_virt_menu,""bandit""];";
 				};
 			};
 		};

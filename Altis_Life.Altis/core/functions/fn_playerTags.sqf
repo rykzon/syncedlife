@@ -70,20 +70,41 @@ _units = _units - [player];
 					},_x getVariable ["realname",name _x]]};
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
 				default {
+					if(headgear _x in life_masked) then {
+					
+					_name = "Maskierte Person";
+				
+					}
+					else
+					{
+					_name = _x getVariable ["realname",name _x];
+					};
+					
+					
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
-						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
-					} else {
-					//ANFANG
-						if((headgear _x) in life_masked) then
+					
+					
+					format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_name,(group _x) getVariable ["gang_name",""]];
+						
+						
+					}
+					else
+					{
+					
+					_name;
+					};
+					/*else {
+					ANFANG
+						if((headgear _x in ["kio_skl_msk","H_Shemagh_olive"])) then
 						{
-						"<t color='#FFFFFF'>Maskierte Person";
+						"Maskierte Person";
 						}
 						//ENDE
 						else
 						{
 						_x getVariable ["realname",name _x];
 						};
-					};
+					};*/
 				};
 			};
 			

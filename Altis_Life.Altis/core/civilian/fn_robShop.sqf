@@ -35,28 +35,32 @@ _cP = 0.01;
 if(_rip) then
 {
 // Marker by ehno start
+
+
+_markerName = format ["tanke%1", _shop];
 _Pos = position player; // by ehno: get player pos
-				_marker = createMarker [_shop, _Pos]; //by ehno: Place a Maker on the map
-				"Marker200" setMarkerColor "ColorRed";
-				"Marker200" setMarkerText "!Achtung! Überfall !Achtung!";
-				"Marker200" setMarkerType "mil_warning";
+				_marker = createMarker [_markerName,_Pos]; //by ehno: Place a Maker on the map
+				_marker setMarkerColor "ColorRed";
+				_marker setMarkerText "!Achtung! Überfall !Achtung!";
+				_marker setMarkerType "mil_warning";
 // Marker by ehno end	
 
 	[[_shop],"life_fnc_robStationSound",nil,true] spawn life_fnc_MP;
 	//[_shop] spawn life_fnc_robStationSound;
-	while{true} do
+	_rob = true;
+	while{_rob} do
 	{
 		
 		sleep  0.85;
 		_cP = _cP + 0.005;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe (10m) (%1%2)...",round(_cP * 100),"%"];
-		if(_cP >= 1) exitWith {};
-		if(_robber distance _shop > 10) exitWith { };
-		if!(alive _robber) exitWith {};
+		if(_cP >= 1) exitWith { _rob=false;};
+		if(_robber distance _shop > 10) exitWith { _rob = false;};
+		if!(alive _robber) exitWith { _rob = false; };
 		
 	}; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-	deleteMarker _shop; // by ehno delete maker
+	deleteMarker str _markerName; // by ehno delete maker
 	if!(alive _robber) exitWith { _rip = false; };
 	if(_robber distance _shop > 10) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
