@@ -5,7 +5,7 @@
 	Description:
 	Getting tired of adding descriptions...
 */
-private["_robber"];
+private["_robber","_name"];
 _robber = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _robber) exitWith {}; //No one to return it to?
 /*
@@ -29,18 +29,18 @@ _masked = [
 
 
 if(life_cash > 0) then {
-	if(headgear _robber in life_masked == true) then
+	if(headgear _robber in life_masked) then
 	{
-		_name = "<t color='#FFFFFF'>Maskierte Person";
+		_name = "Maskierte Person";
 	}
 	else
 	{
-		_name = _robber getVariable ["realname",name _robbber];
+		_name = _robber getVariable["realname",name _robber];
 	};
 
 	[[life_cash],"life_fnc_robReceive",_robber,false] spawn life_fnc_MP;
 	//WantedEntfernt[[getPlayerUID _robber,_robber getVariable["realname",name _robber],"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-	[[1,"STR_NOTF_Robbed",true,[_name],profileName,[life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+	[[1,"STR_NOTF_Robbed",true,[_name,profileName,[life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	life_cash = 0;
 }
 	else

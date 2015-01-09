@@ -6,7 +6,7 @@
 	Description:
 	Adds the tags above other players heads when close and have visible range.
 */
-private["_ui","_units"];
+private["_ui","_units","_name"];
 #define iconID 78000
 #define scale 0.8
 

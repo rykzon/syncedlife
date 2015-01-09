@@ -1,6 +1,6 @@
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
-
+player createDiarySubject ["synced","Synced Gaming"];
 player createDiarySubject ["changelog","Change Log"];
 player createDiarySubject ["serverrules","Serverregeln"];
 player createDiarySubject ["hotkeys","Tastenbelegungen"];

@@ -123,7 +123,7 @@ switch (_filter) do
 			["B_FieldPack_ocamo",nil,300],
 			["B_Bergen_sgg",nil,450],
 			["B_Kitbag_cbr",nil,450],
-			["FLAY_HangGlider_Bag",nil,10000],
+			//["FLAY_HangGlider_Bag",nil,10000],
 			["B_Carryall_oli",nil,500],
 			["B_Carryall_khk",nil,500]
 		];

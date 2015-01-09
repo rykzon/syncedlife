@@ -728,7 +728,7 @@ switch(_shop) do
 					
 						
 						//mp5a2["arifle_mas_mp5",nil,50000],
-						["30Rnd_mas_9x21_Stanag",nil,500],
+						//["30Rnd_mas_9x21_Stanag",nil,500],
 						
 						
 						

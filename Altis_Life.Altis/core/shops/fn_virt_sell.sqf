@@ -46,7 +46,7 @@ if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "You don't have
 _price = (_price * _amount);
 
 };
- 
+
 
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then

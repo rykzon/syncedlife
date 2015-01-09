@@ -7,7 +7,7 @@
 			Idea developed by PEpwnzya v2.0
 			
 */ 
-private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip"];
+private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_rob"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
 //_kassa = 1000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bistudio.com/wiki/addAction). Give it a try and post below ;)
@@ -17,7 +17,7 @@ if !(alive _robber) exitWith {};
 
 _rip = true;
 _kassa = 4000 + round(random 12000); //setting the money in the registry, anywhere from 3000 to 15000. 
-[[_shop,_robber,_action,-1],"STS_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
+[[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
 if(_chance >= 51) then { hint "Der Kassierer hat den stummen Alarm ausgelöst!"; [[0,format["ALARM! - Gasstation: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; }; //We set a 15% chance that the silent alarm is being triggered, wich sends a 911-message to the police. 
@@ -47,20 +47,25 @@ _Pos = position player; // by ehno: get player pos
 
 	[[_shop],"life_fnc_robStationSound",nil,true] spawn life_fnc_MP;
 	//[_shop] spawn life_fnc_robStationSound;
-	_rob = true;
-	while{_rob} do
+	
+	while{true} do
 	{
 		
 		sleep  0.85;
 		_cP = _cP + 0.005;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe (10m) (%1%2)...",round(_cP * 100),"%"];
-		if(_cP >= 1) exitWith { _rob=false;};
-		if(_robber distance _shop > 10) exitWith { _rob = false;};
-		if!(alive _robber) exitWith { _rob = false; };
+		if(_cP >= 1) exitWith {};
+		if(_robber distance _shop > 10) exitWith {};
+		if!(alive _robber) exitWith { };
 		
 	}; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-	deleteMarker str _markerName; // by ehno delete maker
+	
+	
+	deleteMarker _markerName; // by ehno delete maker
+	
+	
+	
 	if!(alive _robber) exitWith { _rip = false; };
 	if(_robber distance _shop > 10) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
