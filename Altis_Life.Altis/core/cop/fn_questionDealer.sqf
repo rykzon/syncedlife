@@ -5,13 +5,16 @@
 	Description:
 	Questions the drug dealer and sets the sellers wanted.
 */
+
+
+
 private["_sellers","_names"];
 _sellers = (_this select 0) getVariable["sellers",[]];
 if(count _sellers == 0) exitWith {hint localize "STR_Cop_DealerQuestion"}; //No data.
 life_action_inUse = true;
 _names = "";
 {
-	if(_x select 2 > 50000) then
+	if(_x select 2 > 80000) then
 	{
 		_val = round((_x select 2) / 16);
 	};

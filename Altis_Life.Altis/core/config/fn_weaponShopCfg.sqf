@@ -41,8 +41,7 @@ switch(_shop) do
 				["Mafia Shop",
 					[   
 							
-							["RH_tt33",nil,5000],
-							["RH_8Rnd_762_tt33",nil,200],
+							
 							["Binocular",nil,150],
 							["ItemGPS",nil,100],
 							["ToolKit",nil,250],
@@ -67,17 +66,27 @@ switch(_shop) do
 			default
 			{
 					
-				["Mafia Anwärter Shop",
+				["Mafia Soldat Shop",
 					[
 							
+									
+									
 									
 									["RH_vz61",nil,10000],
 									["RH_fn57",nil,10000],
 									["RH_tt33",nil,5000],
-								
+									["arifle_mas_aks_74_sf",nil,50000],
+									["optic_mas_ACO_grn_camo",nil,200],
+									/*Sturmgewehre
+									G36C
+									scar-LS
 									
 									
-								
+									
+									
+									
+									
+									*/
 									
 									
 									
@@ -103,7 +112,7 @@ switch(_shop) do
 				default
 				{
 					
-						["Mafia Soldaten Shop",
+						["Mafia Capo Shop",
 							[
 							
 									
@@ -116,7 +125,7 @@ switch(_shop) do
 									
 								
 									
-									
+									["Trixie_M110_NG",nil,80000],
 									["RH_20Rnd_57x28_FN",nil,200],
 									["30Rnd_mas_545x39_mag",nil,1000],
 									["RH_20Rnd_32cal_vz61",nil,200],
@@ -129,6 +138,8 @@ switch(_shop) do
 	
 	
 	};
+	
+	
 			case "mafia_4":
 	{
 		switch(true) do
@@ -146,6 +157,7 @@ switch(_shop) do
 								
 									["arifle_mas_ak_74m_sf",nil,70000],
 									["arifle_mas_aks_74_sf",nil,50000],
+									["Trixie_M110_NG",nil,80000],
 									["RH_vz61",nil,10000],
 									["RH_fn57",nil,10000],
 									["RH_tt33",nil,5000],
@@ -191,6 +203,7 @@ switch(_shop) do
 									["LMG_mas_rpk_F_a",nil,190000],
 									["arifle_mas_ak_74m_sf",nil,70000],
 									["arifle_mas_aks_74_sf",nil,50000],
+									["Trixie_M110_NG",nil,80000],
 									["RH_vz61",nil,10000],
 									["RH_fn57",nil,10000],
 									["RH_tt33",nil,5000],
@@ -206,6 +219,9 @@ switch(_shop) do
 									["30Rnd_mas_545x39_mag",nil,1500],
 									["RH_8Rnd_762_tt33",nil,200],
 									["RH_20Rnd_32cal_vz61",nil,200]
+									
+									
+									
 						]
 					];
 				
@@ -229,10 +245,6 @@ switch(_shop) do
 						["Mafia Unterboss Shop",
 						[
 						
-							
-								
-									
-									
 									
 									["srifle_mas_svd_l",nil,250000],
 									["arifle_mas_fal_h",nil,210000],
@@ -241,6 +253,7 @@ switch(_shop) do
 									["LMG_mas_rpk_F_a",nil,190000],
 									["arifle_mas_ak_74m_sf",nil,70000],
 									["arifle_mas_aks_74_sf",nil,50000],
+									["Trixie_M110_NG",nil,80000],
 									["RH_vz61",nil,10000],
 									["RH_fn57",nil,10000],
 									["RH_tt33",nil,5000],
@@ -279,15 +292,15 @@ switch(_shop) do
 							["Mafia Boss Shop",
 								[
 								
-									["RH_deagleg",nil,250000],
 									
 									["srifle_mas_svd_l",nil,250000],
 									["arifle_mas_fal_h",nil,210000],
 									["srifle_mas_m91_l",nil,220000],
+								
 									["RH_deagles",nil,80000],
-									["LMG_mas_rpk_F_a",nil,190000],
-									["arifle_mas_ak_74m_sf",nil,70000],
-									["arifle_mas_aks_74_sf",nil,50000],
+									
+									["Trixie_M110_NG",nil,80000],
+									
 									["RH_vz61",nil,10000],
 									["RH_fn57",nil,10000],
 									["RH_tt33",nil,5000],
@@ -298,11 +311,13 @@ switch(_shop) do
 									["RH_20Rnd_57x28_FN",nil,200],
 									["10Rnd_mas_762x54_mag",nil,2500],
 									["20Rnd_mas_762x51_Stanag",nil,500],
-									["RH_7Rnd_50_AE",nil,1300],
+									
 									["100Rnd_mas_545x39_mag",nil,2000],
 									["30Rnd_mas_545x39_mag",nil,1500],
 									["RH_8Rnd_762_tt33",nil,200],
 									["RH_20Rnd_32cal_vz61",nil,200]
+									
+									
 								]
 							];
 				};
@@ -494,7 +509,7 @@ switch(_shop) do
 			{
 				["APD Sergeant 1st Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_X26","Stun Pistol",nil,200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
 						["LMG_mas_M249_F",nil,5000],
@@ -534,7 +549,7 @@ switch(_shop) do
 			{
 				["APD Detective 2nd Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_X26","Stun Pistol",nil,200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_mk17",nil,6000],
@@ -576,7 +591,7 @@ switch(_shop) do
 			{
 				["APD Detective 1st Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_X26","Stun Pistol",nil,200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_g3",nil,15000],
@@ -621,7 +636,7 @@ switch(_shop) do
 				["APD Lieutenant Shop",
 					[   
 					
-						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_X26","Stun Pistol",nil,200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
 						["srifle_mas_ebr",nil,25000],
@@ -701,14 +716,13 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma < 2000): {"Dein Karma ist zu niedrig!"};
+			case (_karma < 500): {"Dein Karma ist zu niedrig!"};
 			default
 			{
 				["Karma Stufe 1",
-					[   
-					
-						["arifle_mas_mp5",nil,50000],
-						["30Rnd_mas_9x21_Stanag",nil,500],
+					 
+					[
+						
 						
 						["hgun_mas_usp_F",nil,30000],
 						["12Rnd_mas_45acp_Mag",nil,500]
@@ -724,20 +738,20 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma < 5000): {"Dein Karma ist zu niedrig!"};
+			case (_karma < 1500): {"Dein Karma ist zu niedrig!"};
 			default
 			{
 				["Karma Stufe 2",
 					[   
 					
-					
-						["hgun_mas_mp7_F",nil,80000],
-						["40Rnd_mas_46x30_Mag",nil,500],
+						
+						//mp5a2["arifle_mas_mp5",nil,50000],
+						["30Rnd_mas_9x21_Stanag",nil,500],
 						
 						
-						["arifle_mas_mp5",nil,50000],
-						["30Rnd_mas_9x21_Stanag",nil,500]
 						
+						["hgun_mas_usp_F",nil,30000],
+						["12Rnd_mas_45acp_Mag",nil,500]
 						
 					
 					]
@@ -751,7 +765,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma < 10000): {"Dein Karma ist zu niedrig!"};
+			case (_karma < 3000): {"Dein Karma ist zu niedrig!"};
 			default
 			{
 				["Karma Stufe 3",
@@ -759,6 +773,8 @@ switch(_shop) do
 					
 						["RH_ttracker_g",nil,150000],
 						["RH_6Rnd_45ACP_Mag",nil,500],
+						
+						//mp5a5
 						
 						["hgun_mas_usp_F",nil,80000],
 						["12Rnd_mas_45acp_Mag",nil,500],
@@ -778,7 +794,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma > -10000): {"Dein Karma ist zu hoch!"};
+			case (_karma > -3000): {"Dein Karma ist zu hoch!"};
 			default
 			{
 				["Negativ Karma 3",
@@ -787,16 +803,25 @@ switch(_shop) do
 						
 						
 						["Trixie_CZ750_Ghillie",nil,400000],
+						["RH_deagleg",nil,250000],
+						
+						
+						
 						["RH_bull",nil,50000],
+						
+						["arifle_mas_ak_74m_sf",nil,170000],
+						["arifle_mas_aks_74_sf",nil,140000],
 						["arifle_mas_ak74_a",nil,120000],
 						["arifle_mas_aks74u_c",nil,90000],
 						["RH_mateba",nil,30000],
 						
 						["RH_6Rnd_454_Mag",nil,1500],
+						
 						["optic_mas_ACO_grn_camo",nil,500],
+						
 						["Trixie_10x762_Mag",nil,5000],
 						["30Rnd_mas_545x39_mag",nil,5000],
-						
+						["RH_7Rnd_50_AE",nil,1300],
 						["5Rnd_mas_762x51_Stanag",nil,150],
 						["RH_6Rnd_44_Mag",nil,500]
 						
@@ -820,7 +845,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma > -5000): {"Dein Karma ist zu hoch!"};
+			case (_karma > -1500): {"Dein Karma ist zu hoch!"};
 			default
 			{
 				["Negativ Karma 2",
@@ -830,6 +855,9 @@ switch(_shop) do
 				
 						["arifle_mas_ak74_a",nil,120000],
 						["arifle_mas_aks74u_c",nil,90000],
+						["arifle_mas_aks_74_sf",nil,140000],
+						//Tec9
+						
 						["RH_mateba",nil,30000],
 						
 						
@@ -853,7 +881,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma > -2000): {"Dein Karma ist zu hoch!"};
+			case (_karma > -500): {"Dein Karma ist zu hoch!"};
 			default
 			{
 						["Negativ Karma 1",
@@ -861,6 +889,7 @@ switch(_shop) do
 					
 							
 						["arifle_mas_aks74u_c",nil,90000],
+						["arifle_mas_aks74u",nil,90000],
 						["RH_mateba",nil,30000],
 						
 						
@@ -873,7 +902,7 @@ switch(_shop) do
 			};
 		};
 	};
-
+	
 	
 	
 	
@@ -888,8 +917,9 @@ switch(_shop) do
 			{
 				["Waffenhändler",
 					[
-					["RH_m9",nil,15000],
 					
+					
+					["RH_m9",nil,15000],
 					["RH_15Rnd_9x19_M9",nil,500],
 					["RH_muzi",nil,20000],
 					["RH_30Rnd_9x19_UZI",nil,500],

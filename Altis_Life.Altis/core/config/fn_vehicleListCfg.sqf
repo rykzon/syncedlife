@@ -12,9 +12,22 @@ if(_shop == "") exitWith {[]};
 _return = [];
 
 
+_profName = ["karma"] call life_fnc_profType;
+ 
+if( _profName != "" ) then 
+{
+_data = missionNamespace getVariable (_profName);
+_karma = _data select 1;
+};
+
+
+/*
 _profName = ["Karma_Prof"] call life_fnc_profType;
 _data = missionNamespace getVariable (_profName);
 _karma = _data select 1;
+
+
+*/
 
 
 
@@ -87,7 +100,7 @@ switch (_shop) do
 			
 			_return pushBack 
 			["RDS_Ikarus_Civ_01",80000];
-			if(call life_fnc_getKarma >= -5000) then
+			if(call life_fnc_getKarma >= -1500) then
 			{
 			_return pushBack
 			["I_Truck_02_transport_F",240000];
@@ -167,7 +180,7 @@ switch (_shop) do
 	{
 		_return pushBack
 		["B_Heli_Light_01_F",75000];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) > 7) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",200000];
@@ -202,7 +215,7 @@ switch (_shop) do
 	{		
 			//TODO TRUCKS
 			
-			if(call life_fnc_getKarma <= -10000) then
+			if(call life_fnc_getKarma <= -3000) then
 			{
 			_return pushBack
 			["B_Heli_Transport_03_unarmed_F",900000];
@@ -211,38 +224,40 @@ switch (_shop) do
 			_return pushBack
 			["B_G_Offroad_01_armed_F",500000];
 			};
-			if(call life_fnc_getKarma <= -5000) then
-			{
-				_return pushBack
-				["LandRover_ACR",43000];
-			};
-			if(call life_fnc_getKarma <= -2000) then
+			
+			if(call life_fnc_getKarma <= -1500) then
 			{
 			_return pushBack
 			["DAR_MK27T",900000];
 			_return pushBack
 			["DAR_MK27",700000];
-			_return pushBack
-			["DAR_4x4",350000];
+			
+			if(call life_fnc_getKarma <= -500) then
+			{
+				_return pushBack
+				["LandRover_ACR",43000];
+			};
+			//_return pushBack
+			//["DAR_4x4",350000];
 			};
 	};
 	
 	case "posKarma_car":
 	{	
 			
-			if(call life_fnc_getKarma >= 2000) then
+			if(call life_fnc_getKarma >= 500) then
 			{
 			
 			_return pushBack
 			["LandRover_TK_CIV_EP1",43000];
 			
 			};
-			if(call life_fnc_getKarma >= 5000) then
+			if(call life_fnc_getKarma >= 1500) then
 			{
 			_return pushBack
 			["O_Truck_03_device_F",1200000];
 			};
-			if(call life_fnc_getKarma >= 10000) then
+			if(call life_fnc_getKarma >= 3000) then
 			{
 			_return pushBack
 			["I_Heli_Transport_02_F",900000];

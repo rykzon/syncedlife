@@ -36,19 +36,19 @@ if(_rip) then
 {
 // Marker by ehno start
 _Pos = position player; // by ehno: get player pos
-				_marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
+				_marker = createMarker [_shop, _Pos]; //by ehno: Place a Maker on the map
 				"Marker200" setMarkerColor "ColorRed";
 				"Marker200" setMarkerText "!Achtung! Überfall !Achtung!";
 				"Marker200" setMarkerType "mil_warning";
 // Marker by ehno end	
 
-
-	[_shop] spawn life_fnc_robStationSound;
+	[[_shop],"life_fnc_robStationSound",nil,true] spawn life_fnc_MP;
+	//[_shop] spawn life_fnc_robStationSound;
 	while{true} do
 	{
 		
 		sleep  0.85;
-		_cP = _cP + 0.01;
+		_cP = _cP + 0.005;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe (10m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
@@ -56,7 +56,7 @@ _Pos = position player; // by ehno: get player pos
 		if!(alive _robber) exitWith {};
 		
 	}; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-	deleteMarker "Marker200"; // by ehno delete maker
+	deleteMarker _shop; // by ehno delete maker
 	if!(alive _robber) exitWith { _rip = false; };
 	if(_robber distance _shop > 10) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
@@ -79,6 +79,6 @@ _Pos = position player; // by ehno: get player pos
 	[[0,format["911 - Tankstelle: %2 wurde von %1 Überfallen und $%3 wurden erbeutet.",name _robber, _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	};
 	[[0,format["NEWS: Tankstelle: %1 wurde gerade Überfallen und es wurden $%2 erbeutet", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
-	[[getPlayerUID _robber,name _robber,"211A"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; //Sending out broadcasts about the robbery after the fact. Also adds robber to wantedlist. In serverside wantedAdd, add a new case for 211A or just use 211 if you want. 211 is already setup as robbery.
+	//[[getPlayerUID _robber,name _robber,"211A"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; //Sending out broadcasts about the robbery after the fact. Also adds robber to wantedlist. In serverside wantedAdd, add a new case for 211A or just use 211 if you want. 211 is already setup as robbery.
 };
 [[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //We are now calling the serverside script again to tell it about the fact that robbery script is finnished clientside and the outcome.

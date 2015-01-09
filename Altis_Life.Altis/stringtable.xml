@@ -2058,15 +2058,6 @@
 			<Portuguese>%1 não tem nenhum dinheiro.</Portuguese>
 		</Key>
 		
-		<Key ID="STR_NOTF_RobFail">
-			<Original>%1 doesn't have any money.</Original>
-			<English>%1 doesn't have any money.</English>
-			<German>%1 hat kein Geld.</German>
-			<French>%1 n'a pas d'argent.</French>
-			<Italian>%1 non ha alcun soldo.</Italian>
-			<Portuguese>%1 não tem nenhum dinheiro.</Portuguese>
-		</Key>
-		
 		<Key ID="STR_NOTF_Tazed">
 			<Original>%1 was tazed by %2</Original>
 			<English>%1 was tazed by %2</English>

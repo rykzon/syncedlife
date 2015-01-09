@@ -55,7 +55,7 @@
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
 		//if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
-		if(__GETC__(life_mafialevel)>= 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		if(playerSide == civilian && __GETC__(life_mafialevel)>= 1) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 		waitUntil {backpack player != _bp};
 		if(backpack player == "") then 
 		{

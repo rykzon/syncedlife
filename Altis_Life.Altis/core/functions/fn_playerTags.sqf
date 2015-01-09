@@ -20,7 +20,7 @@ if(isNull _ui) then {
 	_ui = uiNamespace getVariable ["Life_HUD_nameTags",displayNull];
 };
 
-/*
+
 _masked = [
 "H_Shemag_olive",
 "kio_skl_msk_grn",
@@ -38,7 +38,7 @@ _masked = [
 "U_C_Driver_3",
 "U_C_Driver_4"
 ];
-*/
+
 
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
 

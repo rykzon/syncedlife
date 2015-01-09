@@ -8,12 +8,17 @@
 private["_obj","_itemInfo","_itemName","_illegal","_diff"];
 if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action keys!"};
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+
 if(isNull _obj OR isPlayer _obj) exitWith {};
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
 if(player distance _obj > 3) exitWith {};
+
+
 _itemInfo = _obj getVariable "item";
 _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _illegal = [_itemInfo select 0,life_illegal_items] call TON_fnc_index;
+
+
 if(playerSide == west && _illegal != -1) exitWith
 {
 	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];

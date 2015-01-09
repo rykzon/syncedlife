@@ -17,6 +17,7 @@ _z=_z + 1;
 _source say3D "SireneTanke";
 sleep 3;
 
-if(_z==5) exitWith {};
+if(_z==40) exitWith {};
+
 };
 

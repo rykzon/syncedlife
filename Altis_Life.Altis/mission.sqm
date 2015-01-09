@@ -115,6 +115,7 @@ class Mission
 		"a3_trees",
 		"a3_bush",
 		"rds_a2port_cman"
+
 	};
 	addOnsAuto[]=
 	{
@@ -4127,7 +4128,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="negKarma1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Bandit 1"",life_fnc_weaponShopMenu,""negKarma1""]; this addAction[""Bandit 2"",life_fnc_weaponShopMenu,""negKarma2""]; this addAction[""Bandit 3"",life_fnc_weaponShopMenu,""negKarma3""];this addAction[""Karma Autos"",life_fnc_vehicleShopMenu,[""negKarma_car"",civilian,""karma_g_1"",""karma"",""Karma Fahrzeuge""]]; this addAction[""Kleidung"",life_fnc_clothingMenu,""karma""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Bandit 1"",life_fnc_weaponShopMenu,""negKarma1""]; this addAction[""Bandit 2"",life_fnc_weaponShopMenu,""negKarma2""]; this addAction[""Bandit 3"",life_fnc_weaponShopMenu,""negKarma3""];this addAction[""Karma Autos"",life_fnc_vehicleShopMenu,[""negKarma_car"",civilian,""karma_g_1"",""karma"",""Karma Fahrzeuge""]]; this addAction[""Kleidung"",life_fnc_clothingMenu,""karma""];addAction[""Banditen Markt"",life_fnc_virt_menu,""market""];";
 				};
 			};
 		};
@@ -4226,7 +4227,7 @@ class Mission
 					vehicle="C_man_w_worker_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this setpos [3141.03, 18195.3, 1.0]; this addAction[""Mafia Fahrzeuge"",life_fnc_vehicleShopMenu,[""mafia_car"",civilian,""mafia_sp_1"",""civ"",""Mafia Fahrzeuge""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""mafia_sp_1""; life_garage_type = ""Car"";  }]; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this allowDamage false; this enableSimulation false; this setpos [3141.03, 18195.3, 1.0]; this addAction[""Mafia Fahrzeuge"",life_fnc_vehicleShopMenu,[""mafia_car"",civilian,""mafia_sp_1"",""mafia"",""Mafia Fahrzeuge""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""mafia_sp_1""; life_garage_type = ""Car"";  }]; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};

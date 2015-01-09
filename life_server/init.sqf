@@ -95,7 +95,7 @@ client_session_list = [];
 };
 
 [] spawn TON_fnc_federalUpdate;
-
+/*
 [] spawn
 {
 	while {true} do
@@ -105,7 +105,7 @@ client_session_list = [];
 			_x setVariable["sellers",[],true];
 		} foreach [Dealer_1,Dealer_2,Dealer_3];
 	};
-};
+};*/
 
 //Strip NPC's of weapons
 {
