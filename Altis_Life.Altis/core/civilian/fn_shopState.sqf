@@ -17,7 +17,7 @@ switch (_state) do
 	};
 	case 0: //we add the action to rob and we make him lower his hands.
 	{
-	_action = _shop addAction["Rob the Gas Station",life_fnc_robShops];
+	_action = _shop addAction["Tankstellen Raub",life_fnc_robShop2];
 	_shop switchMove "";
 	};
 };

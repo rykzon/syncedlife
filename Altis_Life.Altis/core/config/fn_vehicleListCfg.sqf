@@ -91,7 +91,16 @@ switch (_shop) do
 			["RDS_Octavia_Civ_01",45000],
 			["C_Hatchback_01_F",80000],
 			["C_Offroad_01_F",60000],
-			["C_SUV_01_F",100000]
+			["C_SUV_01_F",100000],
+			["DAR_M3CivGrey",150000],
+			["DAR_M3CivWhite",150000],
+			["DAR_TahoeCivRed",80000],
+			["DAR_TahoeCivBlue",80000],
+			["DAR_TahoeCivSilver",80000],
+			["SAL_AudiCivRed",150000],
+			["SAL_AudiCivSilver",150000],
+			["SAL_77TRANSAMCiv",350000],
+			["Jonzie_Viper",1000000]
 		];
 	};
 	
@@ -124,21 +133,27 @@ switch (_shop) do
 	case "cop_car":
 	{
 	
+	//	_return pushBack
+	//	["dbo_CIV_new_bike",1000];
+		//_return pushBack
+	//	["C_Offroad_01_F",5000];
 		_return pushBack
-		["dbo_CIV_new_bike",1000];
-		_return pushBack
-		["C_Offroad_01_F",5000];
+		["DAR_CVPIAux",5000];
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 		_return pushBack
-		["C_SUV_01_F",20000];
+		["DAR_ChargerPoliceState",20000];
+	//	_return pushBack
+		//["C_SUV_01_F",20000];
 		};
 		
-		/*if(__GETC__(life_coplevel) > 6) then
+		if(__GETC__(life_coplevel) > 6) then
 		{
-			_return pushBack
-			["B_MRAP_01_F",30000];
-		};*/
+		_return pushBack 
+		["DAR_ChargerPoliceStateSlick",25000];
+			//_return pushBack
+			//["B_MRAP_01_F",30000];
+		};
 	};
 	
 	case "civ_air":
@@ -178,25 +193,33 @@ switch (_shop) do
 	
 	case "cop_air":
 	{
+		if(__GETC__(life_coplevel) >= 1) then
+		{
 		_return pushBack
 		["B_Heli_Light_01_F",75000];
+		
+		};
+		
 		if(__GETC__(life_coplevel) > 7) then
 		{
-			_return pushBack
-			["B_Heli_Transport_01_F",200000];
+			//_return pushBack
+			//["B_Heli_Transport_01_F",200000];
 		};
 	};
 	
 	case "cop_airhq":
 	{
+		if(__GETC__(life_coplevel) >= 1) then
+		{
 		_return pushBack
 		["B_Heli_Light_01_F",75000];
-		if(__GETC__(life_coplevel) > 2) then
+		
+		};
+		
+		if(__GETC__(life_coplevel) > 7) then
 		{
-			_return pushBack
-			["B_Heli_Transport_01_F",200000];
-			_return pushBack
-			["B_MRAP_01_hmg_F",750000];
+			//_return pushBack
+			//["B_Heli_Transport_01_F",200000];
 		};
 	};
 	
@@ -215,18 +238,20 @@ switch (_shop) do
 	{		
 			//TODO TRUCKS
 			
-			if(call life_fnc_getKarma <= -3000) then
+			if(call life_fnc_getKarma <= -10000) then
 			{
 			_return pushBack
 			["B_Heli_Transport_03_unarmed_F",900000];
-			_return pushBack
-			["B_G_Offroad_01_F",55000];
+			
 			_return pushBack
 			["B_G_Offroad_01_armed_F",500000];
 			};
 			
 			if(call life_fnc_getKarma <= -1500) then
 			{
+			_return pushBack
+			["B_G_Offroad_01_F",55000];
+			
 			_return pushBack
 			["DAR_MK27T",900000];
 			_return pushBack
@@ -261,9 +286,11 @@ switch (_shop) do
 			{
 			_return pushBack
 			["I_Heli_Transport_02_F",900000];
+			};
+			if(call life_fnc_getKarma >=6000) then
+			{
 			_return pushBack
 			["B_Truck_01_box_F",900000];
-			
 			};
 	};
 	case "mafia_car":
@@ -281,7 +308,10 @@ switch (_shop) do
 			["C_Offroad_01_F",15000];
 			_return pushBack
 			["C_SUV_01_F",25000];
-			
+			_return pushBack
+			["DAR_TahoeCivBlack",30000];
+			_return pushBack
+			["SAL_AudiCivBlack",40000];
 			
 		};
 	

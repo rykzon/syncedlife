@@ -52,7 +52,7 @@ _Pos = position player; // by ehno: get player pos
 	{
 		
 		sleep  0.85;
-		_cP = _cP + 0.005;
+		_cP = _cP + 0.003;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe (10m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};

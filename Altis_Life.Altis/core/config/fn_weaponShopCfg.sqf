@@ -395,9 +395,7 @@ switch(_shop) do
 						["DDOPP_1Rnd_X26",nil,50],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
-						
-						["optic_mas_aim_c",nil,200],
+						["arifle_mas_m4",nil,2000],
 						["optic_mas_aim",nil,200],
 						
 						
@@ -421,17 +419,14 @@ switch(_shop) do
 			{
 				["APD Wrt. Officer Shop",
 					[
+					
+					
 						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["arifle_mas_hk416c",nil,30000],
-						["arifle_mas_hk416_d",nil,30000],
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
 						
-						
-						["arifle_mas_m4_d",nil,20000],
-						["arifle_mas_m4c",nil,20000],
-						
-						["optic_mas_aim_c",nil,200],
 						["optic_mas_aim",nil,200],
 						
 						
@@ -460,19 +455,18 @@ switch(_shop) do
 						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["arifle_mas_mk16_l",nil,10000],
-						["arifle_mas_g36c",nil,10000],
+						["arifle_mas_hk416",nil,10000],
+						["arifle_mas_hk416c",nil,10000],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
-						
-						["arifle_mas_hk416c",nil,5000],
-						["arifle_mas_hk416_d",nil,5000],
+						["arifle_mas_m4",nil,2000],
 						
 						["optic_mas_Arco_blk",nil,700],
-						["optic_mas_Arco_camo",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
+						["optic_mas_aim",nil,200],
+						
+						
 						["30Rnd_mas_556x45_Stanag",nil,200]
 					
 					]
@@ -491,28 +485,26 @@ switch(_shop) do
 			{
 				["APD Sergeant 1st Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",nil,200],
+					
+					
+					
+						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["LMG_mas_M249_F",nil,5000],
-						
-						["arifle_mas_mk16_l",nil,10000],
-						["arifle_mas_g36c",nil,10000],
+						["arifle_mas_hk416",nil,10000],
+						["arifle_mas_hk416c",nil,10000],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
+						["arifle_mas_m4",nil,2000],
 						
-						["arifle_mas_hk416c",nil,5000],
-						["arifle_mas_hk416_d",nil,5000],
 						
 						["optic_mas_Arco_blk",nil,700],
-						["optic_mas_Arco_camo",nil,700],
-						
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
-						["200Rnd_mas_556x45_Stanag",nil,500],
-						["30Rnd_mas_556x45_Stanag",nil,200]
+						["optic_mas_aim",nil,200],
 						
+						
+						["30Rnd_mas_556x45_Stanag",nil,200]
 						
 						
 						
@@ -531,30 +523,22 @@ switch(_shop) do
 			{
 				["APD Detective 2nd Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",nil,200],
+						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["arifle_mas_mk17",nil,6000],
+						
+						["srifle_mas_hk417",nil,15000],
+						["arifle_mas_hk417c",nil,15000],
 						
 						
-						["LMG_mas_M249_F",nil,5000],
-						
-						["arifle_mas_mk16_l",nil,10000],
-						["arifle_mas_g36c",nil,10000],
+						["arifle_mas_hk416",nil,10000],
+						["arifle_mas_hk416c",nil,10000],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
-						
-						["arifle_mas_hk416c",nil,5000],
-						["arifle_mas_hk416_d",nil,5000],
-						
-						["optic_mas_Arco_blk",nil,700],
+						["arifle_mas_m4",nil,2000],
+						["optic_mas_aim",nil,200],
 						
 						
-						["optic_MRCO",nil,1000],
-						["optic_Hamr",nil,1000],
-						["20Rnd_mas_762x51_Stanag",nil,300],
-						["200Rnd_mas_556x45_Stanag",nil,500],
 						["30Rnd_mas_556x45_Stanag",nil,200]
 				
 						
@@ -573,32 +557,22 @@ switch(_shop) do
 			{
 				["APD Detective 1st Shop",
 					[   
-						["DDOPP_X26","Stun Pistol",nil,200],
+						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["arifle_mas_g3",nil,15000],
 						
-						["arifle_mas_mk17",nil,15000],
+						["srifle_mas_hk417",nil,15000],
+						["arifle_mas_hk417c",nil,15000],
 						
 						
-						["LMG_mas_M249_F",nil,15000],
-						
-						["arifle_mas_mk16_l",nil,6000],
-						["arifle_mas_g36c",nil,6000],
+						["arifle_mas_hk416",nil,10000],
+						["arifle_mas_hk416c",nil,10000],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["optic_mas_aim",nil,200],
 						
-						["arifle_mas_hk416c",nil,3000],
-						["arifle_mas_hk416_d",nil,3000],
-						
-						["optic_mas_Arco_blk",nil,700],
-						
-						
-						["optic_MRCO",nil,1000],
-						["optic_Hamr",nil,1000],
-						["20Rnd_mas_762x51_Stanag",nil,300],
-						["200Rnd_mas_556x45_Stanag",nil,500],
+						["20Rnd_mas_762x51_Stanag",nil,200],
 						["30Rnd_mas_556x45_Stanag",nil,200]
 					
 						
@@ -617,38 +591,31 @@ switch(_shop) do
 			{
 				["APD Lieutenant Shop",
 					[   
+						
 					
-						["DDOPP_X26","Stun Pistol",nil,200],
+					
+						["DDOPP_X26","Stun Pistol",200],
 						["DDOPP_1Rnd_X26",nil,50],
 						
-						["srifle_mas_ebr",nil,25000],
-						
-					
-						
-						["arifle_mas_g3",nil,15000],
-						
-						["arifle_mas_mk17",nil,15000],
+						["arifle_mas_g3",nil,20000],
+						["LMG_mas_Mk200_F",nil,20000], 
 						
 						
-						["LMG_mas_M249_F",nil,15000],
+						["srifle_mas_hk417",nil,15000],
+						["arifle_mas_hk417c",nil,15000],
 						
-						["arifle_mas_mk16_l",nil,6000],
-						["arifle_mas_g36c",nil,6000],
+						
+						["arifle_mas_hk416",nil,10000],
+						["arifle_mas_hk416c",nil,10000],
 						
 						["arifle_mas_m4_d",nil,2000],
-						["arifle_mas_m4c",nil,2000],
-						
-						["arifle_mas_hk416c",nil,3000],
-						["arifle_mas_hk416_d",nil,3000],
-						
-						["optic_mas_Arco_blk",nil,700],
+						["arifle_mas_m4",nil,2000],
+						["optic_mas_aim",nil,200],
 						
 						
-						["optic_MRCO",nil,1000],
-						["optic_Hamr",nil,1000],
-						["20Rnd_mas_762x51_Stanag",nil,500],
 						["20Rnd_mas_762x51_Stanag",nil,300],
 						["200Rnd_mas_556x45_Stanag",nil,500],
+						["20Rnd_mas_762x51_Stanag",nil,200],
 						["30Rnd_mas_556x45_Stanag",nil,200]
 						
 					]
@@ -671,7 +638,7 @@ switch(_shop) do
 						["Trixie_M14DMR_Clean_Black",nil,10000],
 						["Trixie_M40A3_Clean",nil,10000],
 						["Trixie_M24_Black_Clean",nil,10000],
-						["Trixie_M110_NG_Black",nil,10000],
+						
 						
 						["Rangefinder",nil,1000],
 						
@@ -771,6 +738,114 @@ switch(_shop) do
 		};
 	};
 	
+			case "negKarma5":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma > -10000): {"Dein Karma ist zu hoch!"};
+			default
+			{
+				["Negativ Karma 5",
+					[   
+					
+						
+						//Rang5
+						["arifle_mas_mk16",nil,200000],
+						["arifle_mas_mk16_l",nil,220000],
+						//Rang4
+						["LMG_mas_rpk_F",nil,190000],
+						//Rang3
+						["Trixie_CZ550_Rail",nil,250000],
+						["srifle_mas_svd",nil,250000],
+						//RAng2
+						["arifle_mas_ak74",nil,150000],
+						["arifle_mas_aks_74_sf",nil,130000],
+						["arifle_mas_ak_74m_sf",nil,130000],
+						//Rang1
+						["arifle_mas_aks74u_c",nil,90000],
+						
+						["RH_mateba",nil,30000],
+						
+						//Rang1
+						["optic_mas_ACO_grn_camo",nil,500],
+						//Rang3
+						["Trixie_LSMARK4",nil,500],
+						//Rang5
+						["optic_MRCO",nil,1000],
+						
+						["RH_6Rnd_44_Mag",nil,500],
+						["10Rnd_mas_762x54_mag",nil,4500],
+						["30Rnd_mas_556x45_Stanag",nil,1000],
+						["Trixie_CZ550_Mag",nil,5000],
+						["100Rnd_mas_545x39_mag",nil,2000]
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
+	
+			case "negKarma4":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (_karma > -6000): {"Dein Karma ist zu hoch!"};
+			default
+			{
+				["Negativ Karma 4",
+				
+					[   
+						
+				
+						
+						//Rang4
+						["LMG_mas_rpk_F",nil,190000],
+						//Rang3
+						["Trixie_CZ550_Rail",nil,250000],
+						["srifle_mas_svd",nil,250000],
+						//RAng2
+						["arifle_mas_ak74",nil,150000],
+						["arifle_mas_aks_74_sf",nil,130000],
+						["arifle_mas_ak_74m_sf",nil,130000],
+						//Rang1
+						["arifle_mas_aks74u_c",nil,90000],
+						
+						["RH_mateba",nil,30000],
+						
+						//Rang1
+						["optic_mas_ACO_grn_camo",nil,500],
+						//Rang3
+						["Trixie_LSMARK4",nil,500],
+						//Rang5
+						
+						
+						["RH_6Rnd_44_Mag",nil,500],
+						["10Rnd_mas_762x54_mag",nil,4500],
+						
+						["Trixie_CZ550_Mag",nil,5000],
+						["100Rnd_mas_545x39_mag",nil,2000]
+						
+						
+						
+						
+						
+					]
+				];
+			};
+		};
+	};
+	
 			case "negKarma3":
 	{
 		switch(true) do
@@ -779,105 +854,33 @@ switch(_shop) do
 			case (_karma > -3000): {"Dein Karma ist zu hoch!"};
 			default
 			{
-				["Negativ Karma 3",
-					[   
-					
-						
-						
-						["Trixie_CZ750_Ghillie",nil,400000],
-						["RH_deagleg",nil,250000],
-						
-						
-						
-						["RH_bull",nil,50000],
-						
-						["arifle_mas_ak_74m_sf",nil,170000],
-						["arifle_mas_aks_74_sf",nil,140000],
-						["arifle_mas_ak74_a",nil,120000],
-						["arifle_mas_aks74u_c",nil,90000],
-						["RH_mateba",nil,30000],
-						
-						["RH_6Rnd_454_Mag",nil,1500],
-						
-						["optic_mas_ACO_grn_camo",nil,500],
-						
-						["Trixie_10x762_Mag",nil,5000],
-						["30Rnd_mas_545x39_mag",nil,5000],
-						["RH_7Rnd_50_AE",nil,1300],
-						["5Rnd_mas_762x51_Stanag",nil,150],
-						["RH_6Rnd_44_Mag",nil,500]
-						
-						
-						
-						
-						
-						
-						
-						
-						
-					]
-				];
-			};
-		};
-	};
-	
-	
-			case "negKarma2":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma > -1500): {"Dein Karma ist zu hoch!"};
-			default
-			{
-				["Negativ Karma 2",
-				
-					[   
-						
-				
-						["arifle_mas_ak74_a",nil,120000],
-						["arifle_mas_aks74u_c",nil,90000],
-						["arifle_mas_aks_74_sf",nil,140000],
-						//Tec9
-						
-						["RH_mateba",nil,30000],
-						
-						
-						["optic_mas_ACO_grn_camo",nil,500],
-						["30Rnd_mas_545x39_mag",nil,5000],
-				
-						["RH_6Rnd_44_Mag",nil,500]
-						
-						
-						
-						
-						
-					]
-				];
-			};
-		};
-	};
-	
-			case "negKarma1":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma > -500): {"Dein Karma ist zu hoch!"};
-			default
-			{
 						["Negativ Karma 1",
 						[   
-					
-							
+						
+						//Rang3
+						["Trixie_CZ550_Rail",nil,250000],
+						["srifle_mas_svd",nil,250000],
+						//RAng2
+						["arifle_mas_ak74",nil,150000],
+						["arifle_mas_aks_74_sf",nil,130000],
+						["arifle_mas_ak_74m_sf",nil,130000],
+						//Rang1
 						["arifle_mas_aks74u_c",nil,90000],
-						["arifle_mas_aks74u",nil,90000],
+						
 						["RH_mateba",nil,30000],
 						
-						
+						//Rang1
 						["optic_mas_ACO_grn_camo",nil,500],
-						["30Rnd_mas_545x39_mag",nil,5000],
-						["RH_6Rnd_44_Mag",nil,500]
+						//Rang3
+						["Trixie_LSMARK4",nil,500],
+						
+						
+						
+						["RH_6Rnd_44_Mag",nil,500],
+						["10Rnd_mas_762x54_mag",nil,4500],
+						
+						["Trixie_CZ550_Mag",nil,5000]
+						
 						
 						]
 				];

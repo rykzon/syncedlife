@@ -13,6 +13,7 @@ if((life_safeObj getVariable["safe",-1]) < 1) exitWith {hint localize "STR_Civ_V
 if((life_safeObj getVariable["inUse",false])) exitWith {hint localize "STR_Civ_VaultInUse"};
 if({side _x == west} count playableUnits < 5) exitWith {hint localize "STR_Civ_NotEnoughCops"};
 if(!createDialog "Federal_Safe") exitWith {localize "STR_MISC_DialogError"};
+
 disableSerialization;
 ctrlSetText[3501,(localize "STR_Civ_SafeInv")];
 [life_safeObj] call life_fnc_safeInventory;

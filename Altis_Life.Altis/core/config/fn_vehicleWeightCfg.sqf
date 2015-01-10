@@ -29,6 +29,23 @@ switch (_className) do
 	case "C_Hatchback_01_F": {50};
 	case "C_SUV_01_F": {50};
 	case "dbo_CIV_new_bike" : {0};
+	case "DAR_M3CivGrey" : {50};
+	case "DAR_M3CivWhite" : {50};
+	case "DAR_M3CivBlack" : {50};
+	
+	case "DAR_TahoeCivBlue" : {50};
+	case "DAR_TahoeCivRed" : {50};
+	case "DAR_TahoeCivSilver" : {50};
+	case "DAR_TahoeCivBlack" : {50};
+	
+	case "SAL_AudiCivRed" : {50};
+	case "SAL_AudiCivSilver" : {50};
+	case "SAL_AudiCivBlack" : {50};
+	
+	case "SAL_77TRANSAMCiv" : {20};
+	
+	case "Jonzie_Viper" : {20};
+	
 	
 	case "DAR_4x4": {150};
 	case "DAR_MK27T": {330};

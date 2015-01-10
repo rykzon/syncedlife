@@ -24,7 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 0.3; //Scaled in minutes
+life_respawn_timer = 1; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
@@ -429,26 +429,42 @@ life_garage_prices =
 
 	
 	//Gebrauchtwagen
+	["DAR_CVPIAux",500],
+	["DAR_ChargerPoliceState",500],
+	["DAR_ChargerPoliceStateSlick",500],
+	["DAR_M3CivBlack",5000],
+	["DAR_M3CivWhite",5000],
+	["DAR_M3CivGrey",5000],
+	["DAR_TahoeCivBlue",3000],
+	["DAR_TahoeCivRed",3000],
+	["DAR_TahoeCivSilver",3000],
+	["DAR_TahoeCivBlack",3000],
+	
+	["SAL_AudiCivRed",5000],
+	["SAL_AudiCivSilver",5000],
+	
+	["Jonzie_Viper",0],
+	
 	["dbo_CIV_ol_bike",100],
-	["RDS_Lada_Civ_01",1000],
-	["RDS_Lada_Civ_02",1000],
-	["RDS_Lada_Civ_04",1000],
-	["RDS_S1203_Civ_01",1500],
-	["RDS_S1203_Civ_02",1500],
-	["RDS_S1203_Civ_03",1500],
+	["RDS_Lada_Civ_01",500],
+	["RDS_Lada_Civ_02",500],
+	["RDS_Lada_Civ_04",500],
+	["RDS_S1203_Civ_01",1000],
+	["RDS_S1203_Civ_02",1000],
+	["RDS_S1203_Civ_03",1000],
 	["RDS_Golf4_Civ_01",1500],
 	["RDS_Octavia_Civ_01",2000],
 	//Neuwagen
 	["dbo_CIV_new_bike",100],
-	["C_Hatchback_01_F",10000],
-	["C_Offroad_01_F",7000],
+	["C_Hatchback_01_F",3000],
+	["C_Offroad_01_F",3000],
 	//Trucks
-	["I_Truck_02_transport_F",24000],
-	["I_Truck_02_covered_F",26000],
-	["O_Truck_03_transport_F",30000],
-	["O_Truck_03_covered_F",34000],
-	["B_Truck_01_transport_F",50000],
-	["C_SUV_01_F",10000],
+	["I_Truck_02_transport_F",10000],
+	["I_Truck_02_covered_F",10000],
+	["O_Truck_03_transport_F",12000],
+	["O_Truck_03_covered_F",12000],
+	["B_Truck_01_transport_F",15000],
+	["C_SUV_01_F",5000],
 	//Flugzeuge
 	["GNT_C185",45000],
 	["bwi_a3_t6a",45000],
@@ -462,21 +478,21 @@ life_garage_prices =
 	["bwi_a3_t6a_8",45000],
 	["bwi_a3_t6a_9",45000],
 	//Helis
-	["B_Heli_Light_01_F",30000],
-	["O_Heli_Light_02_unarmed_F",45000],
+	["B_Heli_Light_01_F",20000],
+	["O_Heli_Light_02_unarmed_F",35000],
 	
 	//neg Karma
-	["B_G_Offroad_01_F",55000],
+	["B_G_Offroad_01_F",3000],
 	
-	["LandRover_ACR",43000],
-	["DAR_MK27T",60000],
-	["DAR_MK27",40000],
-	["DAR_4x4",25000],
+	["LandRover_ACR",2500],
+	["DAR_MK27T",10000],
+	["DAR_MK27",15000],
+	["DAR_4x4",10000],
 	
 	//pos Karma
-	["B_Truck_01_box_F",50000],
+	["B_Truck_01_box_F",20000],
 	["O_Heli_Transport_04_covered_F",50000],
-	["O_Truck_03_device_F",60000]
+	["O_Truck_03_device_F",25000]
 	
 	
 	
