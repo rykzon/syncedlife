@@ -109,3 +109,12 @@ life_fnc_garageRefund = compileFinal
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 player enableFatigue (__GETC__(life_enableFatigue));
+enableRadio false;
+0 fadeRadio 0;
+[] spawn {
+    while {true} do {
+        sleep 600;
+        [] call SOCK_fnc_updateRequest;
+        hint "Game Autosaved.";
+    };
+};

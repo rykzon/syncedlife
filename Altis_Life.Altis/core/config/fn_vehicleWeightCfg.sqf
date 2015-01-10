@@ -78,7 +78,7 @@ switch (_className) do
 	case "I_MRAP_03_F": {58};
 	case "dbo_CIV_ol_bike": {0};
 	case "B_Heli_Light_01_F": {20};
-	case "O_Heli_Light_02_unarmed_F": {50};
+	case "O_Heli_Light_02_unarmed_F": {100};
 	case "I_Heli_Transport_02_F": {375};
 	case "C_Rubberboat": {45};
 	case "O_Boat_Armed_01_hmg_F": {175};

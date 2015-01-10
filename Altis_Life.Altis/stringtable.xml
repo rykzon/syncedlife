@@ -3809,6 +3809,25 @@
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
+		
+			<Key ID="STR_License_Steel">
+			<Original>Steel Processing</Original>
+			<English>Steel Processing</English>
+			<German>Stahlverarbeitung</German>
+			<French>Raffinage de du pétrole</French>
+			<Italian>Processo Olio</Italian>
+			<Portuguese>Refinamento de Petróleo</Portuguese>
+		</Key>
+		
+			<Key ID="STR_License_Plastic">
+			<Original>Plastic Processing</Original>
+			<English>Plastic Processing</English>
+			<German>Plastikverarbeitung</German>
+			<French>Raffinage de du pétrole</French>
+			<Italian>Processo Olio</Italian>
+			<Portuguese>Refinamento de Petróleo</Portuguese>
+		</Key>
+		
 		<Key ID="STR_License_Diving">
 			<Original>Diving License</Original>
 			<English>Diving License</English>

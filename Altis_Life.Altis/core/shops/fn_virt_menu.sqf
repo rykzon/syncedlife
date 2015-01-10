@@ -8,7 +8,7 @@
 */
 
 _data = missionNamespace getVariable ("Karma_Prof");
-_karma = _data select 0;
+_karma = [] call life_fnc_getKarma;
 
 
 private["_shop"];
@@ -18,7 +18,7 @@ life_shop_type = _shop;
 life_shop_npc = _this select 0;
 if(_shop == "cop" && playerSide != west) exitWith {hint localize "STR_NOTF_NotACop"};
 if(_shop == "mafia" && (__GETC__(life_mafialevel<1))) exitWith {hint localize "Ich kenne dich nicht!"};
-if(_shop == "bandit" && (_karma >= -2000 )) exitWith {hint localize "Ich kenne dich nicht!"};
+if(_shop == "bandit" && (_karma >= -500 )) exitWith {hint localize "Ich kenne dich nicht!"};
 if(_shop == "mafiaDrogen" && (__GETC__(life_mafialevel <= 0))) exitWith {hint localize "Ich kenne dich nicht, behalt deinen Mist!"};
 createDialog "shops_menu";
 

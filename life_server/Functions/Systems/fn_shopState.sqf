@@ -18,7 +18,7 @@ switch (_state) do
 	case 0: //the cooldown timer is set, and we clear the lock, then calls for a serverwide animation change and reinstatement of the action we removed to prevent spam.
 	{
 	_shop setVariable["rip",false,true];
-	sleep 300;
+	sleep 900;
 	[[_shop,_robber,_action,0],"life_fnc_shopState",true,true] spawn life_fnc_MP;
 	_shop setVariable["locked",false,true];
 

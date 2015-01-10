@@ -70,7 +70,7 @@ switch (_shop) do
 		[
 		
 			
-			["dbo_CIV_ol_bike",500],
+			//["dbo_CIV_ol_bike",500],
 			["RDS_Lada_Civ_01",10000],
 			["RDS_Lada_Civ_02",10000],
 			["RDS_Lada_Civ_04",10000],
@@ -87,7 +87,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["dbo_CIV_new_bike",1000],
+			//["dbo_CIV_new_bike",1000],
 			["RDS_Octavia_Civ_01",45000],
 			["C_Hatchback_01_F",80000],
 			["C_Offroad_01_F",60000],

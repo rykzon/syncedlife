@@ -8,7 +8,7 @@
 */
 private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
 disableSerialization;
-
+[] call SOCK_fnc_updateRequest; //call our silent sync.
 _escSync = {
 	private["_abortButton","_thread","_syncManager"];
 	disableSerialization;
@@ -30,7 +30,7 @@ _escSync = {
 	};
 	
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	[] call SOCK_fnc_updateRequest; //call our silent sync.
+	
 	
 	
 	if(_this) then {
