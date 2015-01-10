@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Karma Händler"];
+ctrlSetText[3103,"Karma HÃ¤ndler"];
 
 _ret = [];
 _karma = [] call life_fnc_getKarma;
@@ -61,10 +61,10 @@ if(_karma > 0) then
 				
 				if(_karma >= 1500) then
 				{
-				_ret pushBack ["rds_Villager_cap1","Mütze",200];
-				_ret pushBack ["rds_villager_cap2","Mütze",200];
-				_ret pushBack ["rds_villager_cap3","Mütze",200];
-				_ret pushBack ["rds_villager_cap4","Mütze",200];
+				_ret pushBack ["rds_Villager_cap1","MÃ¼tze",200];
+				_ret pushBack ["rds_villager_cap2","MÃ¼tze",200];
+				_ret pushBack ["rds_villager_cap3","MÃ¼tze",200];
+				_ret pushBack ["rds_villager_cap4","MÃ¼tze",200];
 				
 					if(_karma >= 3000) then
 					{
@@ -157,16 +157,25 @@ else
 				if(_karma <= -1500) then
 				{
 				
-				
-				
-				
-				_ret pushBack ["U_BG_Guerrilla_6_1",nil,500];
+				_ret pushBack ["U_BG_Guerrilla_6_1",nil,2500];
+				_ret pushBack ["U_IG_Guerilla3_1",nil,2500];
+				_ret pushBack ["U_BG_Guerilla1_1",nil,2500];
 				
 					if(_karma <= -3000) then
 					{
+					_ret pushBack ["U_B_GhillieSuit",nil,50000];
+					_ret pushBack ["U_I_GhillieSuit",nil,50000];
+					_ret pushBack ["U_O_GhillieSuit",nil,50000];
 					
-					
-					
+						if(_karma <= -6000) then
+						{
+						_ret pushBack ["U_O_CombatUniform_ocamo",nil,15000];
+						_ret pushBack ["U_BG_leader",nil,15000];
+						_ret pushBack ["U_I_OfficerUniform",nil,15000];
+						_ret pushBack ["U_MillerBody",nil,15000];
+						
+						
+						};
 					};
 				};
 			};
@@ -178,18 +187,20 @@ else
 		{
 			if(_karma <= -500) then
 			{
-				_ret pushBack ["H_Shemag_olive","Cap",200];
+				_ret pushBack ["H_Shemag_olive","Shemag",200];
 				
 				
 				if(_karma <= -1500) then
 				{
-				
-				
+				 	_ret pushBack ["kio_vfv_mask","Vendetta Maske",1000];
+				 	
+				 	
+				 	
 					if(_karma <= -3000) then
 					{
-					_ret pushBack ["kio_skl_msk_grn","Schädel Maske Grün",1500];
-					_ret pushBack ["kio_skl_msk_red","Schädel Maske Rot",1500];
-					_ret pushBack ["kio_skl_msk","Schädel Maske Weiß",1500];
+					_ret pushBack ["kio_skl_msk_grn","SchÃ¤del Maske GrÃ¼n",5000];
+					_ret pushBack ["kio_skl_msk_red","SchÃ¤del Maske Rot",5000];
+					_ret pushBack ["kio_skl_msk","SchÃ¤del Maske WeiÃŸ",5000];
 					};
 				};
 			};
