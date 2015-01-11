@@ -96,19 +96,21 @@ if(_karma > 0) then
 		//Vest
 		case 3:
 		{
-			if(_karma <= 500) then
+			if(_karma >= 500) then
 			{
 				_ret pushBack ["kae_TK_Belt_ChestHolster",nil,500];
+				_ret pushBack ["V_Chestrig_blk",nil,1000];
 				
-				
-				if(_karma <= 1500) then
+				if(_karma >= 1500) then
 				{
 					
 				
-					if(_karma <= 3000) then
+					if(_karma >= 3000) then
 					{
-					
+					_ret pushBack ["V_HarnessO_gry",nil,5000];
 					};
+					
+						
 				};
 			};
 		};
@@ -153,6 +155,7 @@ else
 				_ret pushBack ["rds_uniform_woodlander2",nil,350];
 				_ret pushBack ["rds_uniform_woodlander3",nil,350];
 				_ret pushBack ["rds_uniform_woodlander4",nil,350];
+				_ret pushBack ["V_TacVest_khk",nil,1500];
 				
 				if(_karma <= -1500) then
 				{
@@ -166,6 +169,7 @@ else
 					_ret pushBack ["U_B_GhillieSuit",nil,50000];
 					_ret pushBack ["U_I_GhillieSuit",nil,50000];
 					_ret pushBack ["U_O_GhillieSuit",nil,50000];
+					
 					
 						if(_karma <= -6000) then
 						{
@@ -239,7 +243,7 @@ else
 				
 					if(_karma <= -3000) then
 					{
-					
+					_ret pushBack ["V_HarnessOSpec_brn",nil,5000];
 					};
 				};
 			};

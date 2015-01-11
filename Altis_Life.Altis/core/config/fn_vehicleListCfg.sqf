@@ -52,6 +52,7 @@ switch (_shop) do
 			["C_Offroad_01_F",10000],
 			["I_Truck_02_medical_F",25000],
 			["O_Truck_03_medical_F",45000],
+			["C_SUV_01_F",15000],
 			["B_Truck_01_medical_F",60000]
 		];
 	};
