@@ -41,19 +41,19 @@ player createDiarySubject ["hotkeys","Tastenbelegungen"];
 	player createDiaryRecord ["hotkeys",
 		[
 				"
-					Aktion 10 : (Win Taste) Farmen und jegliche Spieler/Fahrzeug Interaktionen.
-					1 : Spitzhacke.
-					3 : Redgull.
-					0 : Lautstärke hoch/runter.
-					Numpad 1/2 : Liegestütze/Kniebeuge.
-					Z : Spielermenü
-					U : Fahrzeug auf/abschließen
-					F : Sirene(cop)
-					T : Kofferraum
-					Shift + R : Fesseln/Verhaften
-					Shift + G : Niederschlagen
-					Shift + H : Waffe holstern.
-					Strg + H : Waffe ziehen.
+					Aktion 10 : (Win Taste) Farmen und jegliche Spieler/Fahrzeug Interaktionen.<br/>
+					1 : Spitzhacke.<br/>
+					3 : Redgull.<br/>
+					0 : Lautstärke hoch/runter.<br/>
+					Numpad 1/2 : Liegestütze/Kniebeuge.<br/>
+					Z : Spielermenü<br/>
+					U : Fahrzeug auf/abschließen<br/>
+					F : Sirene(cop)<br/>
+					T : Kofferraum<br/>
+					Shift + R : Fesseln/Verhaften<br/>
+					Shift + G : Niederschlagen<br/>
+					Shift + H : Waffe holstern.<br/>
+					Strg + H : Waffe ziehen.<br/>
 				"
 		]
 	];

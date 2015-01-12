@@ -90,8 +90,8 @@ switch (_shop) do
 		[
 			//["dbo_CIV_new_bike",1000],
 			["RDS_Octavia_Civ_01",45000],
-			["C_Hatchback_01_F",80000],
-			["C_Offroad_01_F",60000],
+			//["C_Hatchback_01_F",80000],
+			//["C_Offroad_01_F",60000],
 			["C_SUV_01_F",100000],
 			["DAR_M3CivGrey",150000],
 			["DAR_M3CivWhite",150000],
@@ -244,14 +244,14 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Transport_03_unarmed_F",900000];
 			
-			_return pushBack
-			["B_G_Offroad_01_armed_F",500000];
+			//_return pushBack
+			//["B_G_Offroad_01_armed_F",500000];
 			};
 			
 			if(call life_fnc_getKarma <= -1500) then
 			{
-			_return pushBack
-			["B_G_Offroad_01_F",55000];
+		//	_return pushBack
+			//["B_G_Offroad_01_F",55000];
 			
 			_return pushBack
 			["DAR_MK27T",900000];
@@ -305,8 +305,8 @@ switch (_shop) do
 			["DAR_4x4",80000];
 			_return pushBack
 			["DAR_MK27T",150000];
-			_return pushBack
-			["C_Offroad_01_F",15000];
+		//	_return pushBack
+		//	["C_Offroad_01_F",15000];
 			_return pushBack
 			["C_SUV_01_F",25000];
 			_return pushBack

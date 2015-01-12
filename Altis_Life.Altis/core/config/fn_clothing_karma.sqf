@@ -155,7 +155,7 @@ else
 				_ret pushBack ["rds_uniform_woodlander2",nil,350];
 				_ret pushBack ["rds_uniform_woodlander3",nil,350];
 				_ret pushBack ["rds_uniform_woodlander4",nil,350];
-				_ret pushBack ["V_TacVest_khk",nil,1500];
+				
 				
 				if(_karma <= -1500) then
 				{
@@ -198,8 +198,6 @@ else
 				{
 				 	_ret pushBack ["kio_vfv_mask","Vendetta Maske",1000];
 				 	
-				 	
-				 	
 					if(_karma <= -3000) then
 					{
 					_ret pushBack ["kio_skl_msk_grn","Schädel Maske Grün",5000];
@@ -239,7 +237,7 @@ else
 				
 				if(_karma <= -1500) then
 				{
-					_ret pushBack ["kae_TK_ChestRig_T",nil,1000];
+					_ret pushBack ["V_Chestrig_rgr",nil,1000];
 				
 					if(_karma <= -3000) then
 					{

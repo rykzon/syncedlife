@@ -67,7 +67,7 @@ if(_type == "Karma_Prof") then
 			default{};
 		
 		};
-		if(_exp > 10500) then { _exp = -10500;};
+		if(_exp > 10500) then { _exp = 10500;};
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
 	

@@ -26,6 +26,7 @@ _masked = [
 "kio_skl_msk_grn",
 "kio_skl_msk_red",
 "kio_skl_msk",
+"kio_vfv_mask",
 "H_RacingHelmet_1_black_F",
 "H_RacingHelmet_1_blue_F",
 "H_RacingHelmet_1_red_F",

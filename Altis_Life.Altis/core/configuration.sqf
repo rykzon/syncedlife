@@ -123,6 +123,7 @@ life_masked = [
 "H_RacingHelmet_1_yellow_F",
 "U_C_Driver_2",
 "U_C_Driver_1",
+"kio_vfv_mask",
 "U_C_Driver_3",
 "U_C_Driver_4"
 ];
@@ -259,7 +260,7 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 */
 sell_array = 
 [
-	["apple",150],
+	["apple",50],
 	["heroinu",1850],
 	["heroinp",2650],
 	["salema",45],
@@ -280,7 +281,7 @@ sell_array =
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
-	["peach",155],
+	["peach",55],
 	["cocaine",3000],
 	["cocainep",5000],
 	["diamond",750],
@@ -302,7 +303,7 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",50],
+	["apple",65],
 	["rabbit",75],
 	["salema",55],
 	["ornate",50],
@@ -320,7 +321,7 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",50],
+	["peach",70],
 	["spikeStrip",2500],
 	["blastingcharge",35000],
 	["boltcutter",7500],

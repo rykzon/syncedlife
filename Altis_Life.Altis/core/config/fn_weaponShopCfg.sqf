@@ -77,13 +77,14 @@ switch(_shop) do
 							["arifle_mas_mk16",nil,10000],
 							["RH_vz61",nil,10000],
 							["RH_fn57",nil,10000],
-							
+							["RH_p226s",nil,10000],
 							
 							
 							
 							//Rang2
 							["optic_Aco",nil,200],
 							["optic_Hamr",nil,500],
+							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
 							["30Rnd_mas_556x45_Stanag",nil,200]
@@ -120,16 +121,18 @@ switch(_shop) do
 							//Rang1
 							["RH_vz61",nil,10000],
 							["RH_fn57",nil,10000],
-							
+							["RH_p226s",nil,10000],
 							
 							//Rang3
 							["optic_mas_zeiss",nil,500],
 							["20Rnd_mas_762x51_Stanag",nil,200],
 							["optic_mas_Arco_blk",nil,200],
 							//Rang2
+							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
-							["30Rnd_mas_556x45_Stanag",nil,200]
+							["30Rnd_mas_556x45_Stanag",nil,200],
+							["30Rnd_mas_762x39_mag",nil,200]
 							//Rang1
 							]
 						];
@@ -183,7 +186,7 @@ switch(_shop) do
 	
 	};*/
 	
-			case "mafia_5":
+			case "mafia_4":
 	{
 		switch(true) do
 		{
@@ -213,7 +216,8 @@ switch(_shop) do
 							//Rang1
 							["RH_vz61",nil,10000],
 							["RH_fn57",nil,10000],
-							
+							["RH_p226s",nil,10000],
+							["RH_uspm",nil,10000],
 							//Rang5
 							
 							//Rang4
@@ -222,11 +226,14 @@ switch(_shop) do
 							["optic_mas_zeiss",nil,500],
 							["20Rnd_mas_762x51_Stanag",nil,200],
 							["optic_mas_Arco_blk",nil,200],
+							["RH_matchsd",nil,200],
 							//Rang2
+							["RH_16Rnd_40cal_usp",nil,500],
+							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
-							["30Rnd_mas_556x45_Stanag",nil,200]
-									
+							["30Rnd_mas_556x45_Stanag",nil,200],
+							["30Rnd_mas_762x39_mag",nil,200]		
 									
 									
 						]
@@ -754,7 +761,7 @@ switch(_shop) do
 						
 						//Rang3
 						["RH_7Rnd_50_AE",nil,500],
-						
+						["Trixie_Enfield_Mag",nil,1000],
 					
 						//Rang2
 						["optic_Aco",nil,500],
