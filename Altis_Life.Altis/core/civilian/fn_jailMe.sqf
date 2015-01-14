@@ -77,11 +77,11 @@ while {true} do
 _karma = [] call life_fnc_getKarma;
 if(_karma > 0) then
 {
-["Karma_Prof",200,0] call life_fnc_addKarma;
+["Karma_Prof",100,0] call life_fnc_addKarma;
 }
 else
 {
-["Karma_Prof",200,1] call life_fnc_addKarma;
+["Karma_Prof",100,1] call life_fnc_addKarma;
 };
 switch (true) do
 {

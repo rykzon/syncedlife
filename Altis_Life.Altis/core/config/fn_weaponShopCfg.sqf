@@ -902,6 +902,7 @@ switch(_shop) do
 						["optic_mas_ACO_grn_camo",nil,500],
 						//Rang3
 						["Trixie_LSMARK4",nil,500],
+						["optic_mas_PSO_c",nil,500],
 						//Rang5
 						["optic_MRCO",nil,1000],
 						
@@ -958,6 +959,7 @@ switch(_shop) do
 						["optic_mas_ACO_grn_camo",nil,500],
 						//Rang3
 						["Trixie_LSMARK4",nil,500],
+						["optic_mas_PSO_c",nil,500],
 						//Rang5
 						
 						
@@ -1005,6 +1007,7 @@ switch(_shop) do
 						["optic_mas_ACO_grn_camo",nil,500],
 						//Rang3
 						["Trixie_LSMARK4",nil,500],
+						["optic_mas_PSO_c",nil,500],
 						
 						
 						

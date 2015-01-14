@@ -29,7 +29,7 @@ if(_type == "Karma_Prof") then
 	
 	if(_vorzeichen == 1) then
 	{
-		hint ""+_amount;
+		
 		switch(true) do
 		{
 			case ( _exp >= 0 ):{ _exp = _exp + _amount; };
@@ -51,7 +51,7 @@ if(_type == "Karma_Prof") then
 	
 	if(_vorzeichen == 0) then
 	{
-	hint ""+_amount;
+	
 	switch (true) do
 		{
 		

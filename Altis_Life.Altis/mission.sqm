@@ -35038,7 +35038,7 @@ class Mission
 		};
 		class Item170
 		{
-			position[]={14664.1,17.91,16745.1};
+			position[]={8326.5664,83.917168,25048.84};
 			name="respawn_west_1";
 			type="Empty";
 			angle=145.32474;

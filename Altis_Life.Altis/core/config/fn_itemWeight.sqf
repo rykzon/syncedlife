@@ -11,8 +11,8 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
-	case "oilu": {6};
-	case "oilp": {5};
+	case "oilu": {5};
+	case "oilp": {4};
 	case "heroinu": {6};
 	case "heroinp": {4};
 	case "cannabis": {4};
@@ -52,8 +52,8 @@ switch (_item) do
 	case "cocaine": {6};
 	case "cocainep": {4};
 	case "spikeStrip": {8};
-	case "rock": {6};
-	case "cement": {5};
+	case "rock": {5};
+	case "cement": {4};
 	case "goldbar": {10};
 	case "blastingcharge": {8};
 	case "boltcutter": {3};

@@ -10,7 +10,7 @@ publicVariable "life_server_isReady";
 //I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
 
 _extDB = false;
-
+SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","Jonzie_Viper"];
 //Only need to setup extDB once.
 if(isNil {uiNamespace getVariable "life_sql_id"}) then {
 	life_sql_id = round(random(9999));

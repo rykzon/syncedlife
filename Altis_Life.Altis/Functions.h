@@ -128,6 +128,7 @@ class Life_Client_Core
 		class tieAction{};
 		class untie{};
 		
+		class showLicenseAction{};
 
 		class surrender {}; 
  		
@@ -317,6 +318,7 @@ class Life_Client_Core
 		class robShop{};
 		class robShop2{};
 		class shopState{};
+		class showLicense{};
 		};
 	
 	class Vehicle

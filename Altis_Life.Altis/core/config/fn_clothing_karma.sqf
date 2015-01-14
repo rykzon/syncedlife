@@ -98,16 +98,17 @@ if(_karma > 0) then
 		{
 			if(_karma >= 500) then
 			{
-				_ret pushBack ["kae_TK_Belt_ChestHolster",nil,500];
-				_ret pushBack ["V_Chestrig_blk",nil,1000];
+				_ret pushBack ["kae_TK_Belt_ChestHolster",nil,5000];
+				_ret pushBack ["V_Chestrig_blk",nil,10000];
 				
 				if(_karma >= 1500) then
 				{
-					
+					_ret pushBack ["V_HarnessO_gry",nil,25000];
 				
 					if(_karma >= 3000) then
 					{
-					_ret pushBack ["V_HarnessO_gry",nil,5000];
+					_ret pushBack ["V_TacVest_brn",nil,50000];
+					_ret pushBack ["V_TacVest_oli",nil,50000];
 					};
 					
 						
@@ -232,16 +233,17 @@ else
 		{
 			if(_karma <= -500) then
 			{
-				_ret pushBack ["kae_TK_Belt_ChestHolster",nil,500];
-				
+				_ret pushBack ["kae_TK_Belt_ChestHolster",nil,5000];
+				_ret pushBack ["V_Chestrig_rgr",nil,10000];
 				
 				if(_karma <= -1500) then
 				{
-					_ret pushBack ["V_Chestrig_rgr",nil,1000];
+					_ret pushBack ["V_HarnessOSpec_brn",nil,25000];
 				
 					if(_karma <= -3000) then
 					{
-					_ret pushBack ["V_HarnessOSpec_brn",nil,5000];
+					_ret pushBack ["V_TacVest_camo",nil,50000];
+					_ret pushBack ["V_TacVest_khk",nil,50000];
 					};
 				};
 			};

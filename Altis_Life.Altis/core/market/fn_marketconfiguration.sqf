@@ -40,7 +40,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["oilp", 1250, 1000, 1500, 4, 2,
+	["oilp", 1290, 930, 1650, 4, 2,
 		[
 			["diamondc",1],
 			["iron_r",1],
@@ -54,7 +54,7 @@ life_market_resources = [
 	],
 	
 	
-	["iron_r", 2650, 2000, 3300, 2, 2,  
+	["iron_r", 2000, 1700, 2300, 2, 2,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -67,7 +67,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 4200, 3800, 4600, 4, 2, 
+	["diamondc", 2975, 2450, 3500, 4, 2, 
 		[ 
 			["oilp",1],
 			["coalp",1],
@@ -93,7 +93,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_r", 1125, 1000, 1250, 2, 2,
+	["salt_r", 1215, 1000, 1430, 2, 2,
 		[ 
 			["diamondc",1], 
 			["coalp",1],
@@ -106,7 +106,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["glass", 720, 600, 840, 1, 1,
+	["glass", 1300, 1050, 1550, 1, 1,
 		[ 
 			["diamondc",1], 
 			["coalp",1],
@@ -119,7 +119,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 1900, 950, 2850, 1, 1,
+	["cement", 1550, 1200, 1900, 1, 1,
 		[ 
 			["diamondc",1], 
 			["coalp",1],
@@ -133,7 +133,7 @@ life_market_resources = [
 	],
 /////////////////////////
 	
-	["turtle", 3000, 1500,4500, 4, 4,  
+	["turtle", 3000, 1500, 4500, 4, 4,  
 		[ 
 			["marijuana",1], 
 			["cocainep",1],
@@ -143,7 +143,7 @@ life_market_resources = [
 		] 
 	],
 
-	["marijuana", 1700, 1400, 2000, 4, 4,   
+	["marijuana", 1950, 1700, 2200, 4, 4,   
 		[ 
 			["turtle",1], 
 			["cocainep",1],
@@ -153,7 +153,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cocainep", 1750, 1350, 2100, 4, 4,   
+	["cocainep", 2650, 2200, 3100, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
@@ -163,7 +163,7 @@ life_market_resources = [
 		] 
 	],
 
-	["heroinp", 3650, 3000, 4200, 4, 4,   
+	["heroinp", 2800, 2400, 3200, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
