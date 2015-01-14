@@ -370,6 +370,7 @@ class Life_Client_Core
 		class copLicenseShown {};
 		class showArrestDialog {}; //changed
 		class arrestDialog_Arrest {}; //changed
+		class copOpener {};
 
 
 	

@@ -60,23 +60,31 @@ switch (_code) do
 	};
 	case 79:
 	{	
-		if(_shift) then {_handled = true;};
+		if(_ctrl) then {
 			if(vehicle player == player) then
 			{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA"
 			};
-			
+			_handled = true;
+			};
 		};
-	
+	// O, police gate opener
+        case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
 		
 		case 80:
 	{	
-		if(_shift) then {_handled = true;};
+		if(_ctrl) then {
 			if(vehicle player == player) then
 			{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup"
 			};
-			
+			_handled = true;
+			};
 		};
 	
 	
@@ -87,7 +95,11 @@ switch (_code) do
 		{
 		case west: {[] call life_fnc_wantedMenu;};
 		
-		case civilian: {[] spawn life_fnc_pickAxeUse;};
+		case civilian: {_handle = [] spawn life_fnc_pickAxeUse;
+						waitUntil {scriptDone _handle};
+			life_action_gathering = false;
+		
+		};
 		
 		};
 	
