@@ -95,12 +95,7 @@ switch (_code) do
 		{
 		case west: {[] call life_fnc_wantedMenu;};
 		
-		case civilian: {_handle = [] spawn life_fnc_pickAxeUse;
-						waitUntil {scriptDone _handle};
-			life_action_gathering = false;
-		
-		};
-		
+		case civilian: {[] spawn life_fnc_pickAxeUse;};
 		};
 	
 	};

@@ -34,7 +34,7 @@ case "copperore": { _profName = "Copper_Prof"; };
 case "ironore": { _profName = "Iron_Prof";};
 case "oilu": { _profName = "Oil_Prof";};
 case "rock": { _profName = "Rock_Prof";};
-case "coalu": { _profName = "Rock_Prof";};
+case "coalu": { _profName = "Coal_Prof";};
 
  
 //license to text

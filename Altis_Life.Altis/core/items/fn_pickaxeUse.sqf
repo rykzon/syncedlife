@@ -5,13 +5,11 @@
 	Description:
 	Main functionality for pickaxe in mining.
 */
-if(isNil "life_action_gathering") then {life_action_gathering = false;};
+
 closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 
 
-if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
-life_action_gathering = true;
 
 switch (true) do
 {

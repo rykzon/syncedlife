@@ -257,7 +257,7 @@ switch (_shop) do
 			["DAR_MK27T",900000];
 			_return pushBack
 			["DAR_MK27",700000];
-			
+			};
 			if(call life_fnc_getKarma <= -500) then
 			{
 				_return pushBack
@@ -265,7 +265,7 @@ switch (_shop) do
 			};
 			//_return pushBack
 			//["DAR_4x4",350000];
-			};
+			
 	};
 	
 	case "posKarma_car":
