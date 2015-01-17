@@ -33,13 +33,13 @@ if(life_action_inUse) exitWith {
 //Hotfix for Interaction key not being able to be bound on some operation systems.
 if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	if(!life_action_inUse) then {
+	if(!life_action_gathering) then {
 		[] spawn 
 		{
 			private["_handle"];
 			_handle = [] spawn life_fnc_actionKeyHandler;
 			waitUntil {scriptDone _handle};
-			life_action_inUse = false;
+			life_action_gathering = false;
 		};
 	};
 	true;
@@ -60,14 +60,14 @@ switch (_code) do
 	};
 	case 79:
 	{	
-		if(_ctrl) then {
+		if(_ctrlKey) then {
 			if(vehicle player == player) then
 			{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA"
 			};
 			_handled = true;
 			};
-		};
+	};
 	// O, police gate opener
         case 24:
 	{
@@ -78,7 +78,7 @@ switch (_code) do
 		
 		case 80:
 	{	
-		if(_ctrl) then {
+		if(_ctrlKey) then {
 			if(vehicle player == player) then
 			{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup"
@@ -95,7 +95,26 @@ switch (_code) do
 		{
 		case west: {[] call life_fnc_wantedMenu;};
 		
-		case civilian: {[] spawn life_fnc_pickAxeUse;};
+		case civilian: {
+		
+		if((!life_action_gathering) && (vehicle player == player) ) then
+		{
+			{
+			_str = [_x] call life_fnc_varToStr;
+			_val = missionNameSpace getVariable _x;
+			if(_val > 0 ) then
+				{
+				if( _str == "Spitzhacke" || _str == "pickaxe" ) then
+					{
+					[] spawn life_fnc_pickAxeUse;
+					};
+				};
+				
+			} foreach life_inv_items;
+		}
+		
+		
+		};
 		};
 	
 	};
@@ -264,14 +283,14 @@ switch (_code) do
 	//Y Player Menu
 	case 21:
 	{
-		if(!_alt && !_ctrlKey && !dialog) then
+		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
 		{
 			[] call life_fnc_p_openMenu;
 		};
 	};
 		case 41:
 	{
-		if(!_alt && !_ctrlKey && !dialog) then
+		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
 		{
 			[] call life_fnc_p_openMenu;
 		};
@@ -280,7 +299,7 @@ switch (_code) do
 	//F Key
 	case 33:
 	{
-		if(playerSide in [independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		if(playerSide == independent && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
@@ -303,7 +322,7 @@ switch (_code) do
 					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
 				} else {
 					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
-					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
+					[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
 				};
 			};
 		};

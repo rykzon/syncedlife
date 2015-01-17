@@ -10,6 +10,7 @@
 private["_curTarget","_isWater"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
+if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 if(isNull _curTarget) exitWith {
@@ -34,6 +35,10 @@ if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((neare
 
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
 if(vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
+
+
+//Temp fail safe.
+
 life_action_inUse = true;
 
 //Temp fail safe.

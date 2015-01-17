@@ -281,7 +281,7 @@ switch(_shop) do
 	
 	case "med_basic":
 	{
-		switch (true) do 
+		switch (true) do
 		{
 			case (playerSide != independent): {"You are not an EMS Medic"};
 			default {
@@ -291,9 +291,10 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,500],
-						["NVGoggles",nil,1200],
-						["B_FieldPack_ocamo",nil,3000]
+						["Medikit",nil,250],
+						["NVGoggles",nil,500],
+						["H_MilCap_gry",nil,100],
+						["B_Bergen_blk",nil,1000]
 					]
 				];
 			};

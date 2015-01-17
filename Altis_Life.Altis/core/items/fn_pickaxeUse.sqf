@@ -31,7 +31,7 @@ if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
-life_action_inUse = true;
+life_action_gathering = true;
 
 _karma = 1;//pickaxe hat nur pos karma
 
@@ -62,4 +62,4 @@ if( _profName != "" ) then
 };
 };
  
-life_action_inUse = false;
+life_action_gathering = false;

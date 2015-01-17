@@ -68,4 +68,4 @@ if( _profName != "" ) then
 };
 };
  
-life_action_inUse = false;
+life_action_gathering = false;

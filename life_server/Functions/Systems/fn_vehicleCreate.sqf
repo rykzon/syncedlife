@@ -10,7 +10,7 @@ _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[west]] call BIS_fnc_param;
 _vehicle = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
 _color = [_this,3,-1,[0]] call BIS_fnc_param;
-
+SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper"];
 //Error checks
 if(_uid == "" OR _side == sideUnknown OR isNull _vehicle) exitWith {};
 if(!alive _vehicle) exitWith {};

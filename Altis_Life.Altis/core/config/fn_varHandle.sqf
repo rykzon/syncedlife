@@ -45,6 +45,7 @@ switch (_mode) do
 			case "iron_r": {"life_inv_ironr"};
 			case "copper_r": {"life_inv_copperr"};
 			case "salt": {"life_inv_salt"};
+			case "plastic": {"life_inv_plastic"};
 			case "salt_r": {"life_inv_saltr"};
 			case "sand": {"life_inv_sand"};
 			case "coalu": {"life_inv_coalu"};
@@ -90,6 +91,7 @@ switch (_mode) do
 			case "life_inv_rabbit": {"rabbit"};
 			case "life_inv_salema": {"salema"};
 			case "life_inv_ornate": {"ornate"};
+			case "life_inv_plastic": {"plastic"};
 			case "life_inv_mackerel": {"mackerel"};
 			case "life_inv_tuna": {"tuna"};
 			case "life_inv_mullet": {"mullet"};
