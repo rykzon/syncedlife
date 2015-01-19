@@ -66,6 +66,26 @@
 
 [] spawn
 {
+	private["_vp","_load","_cfg"];
+	while{true} do
+	{
+		waitUntil {vest player != ""};
+		_vp = vest player;
+		_cfg = getNumber(configFile >> "CfgVehicles" >> (vest player) >> "maximumload");
+		_load = round(_cfg / 8);
+		life_maxWeight = life_maxWeightT + _load;
+		//if(playerSide == west) then {(unitVest player) setObjectTextureGlobal [0,""];};
+		if(playerSide == civilian && __GETC__(life_mafialevel)>= 1) then {(unitVest player) setObjectTextureGlobal [0,""];};
+		waitUntil {vest player != _vp};
+		if(vest player == "") then 
+		{
+			life_maxWeight = life_maxWeightT;
+		};
+	};
+}
+
+[] spawn
+{
 	while {true} do
 	{
 		sleep 1.5;
