@@ -502,29 +502,70 @@ __CONST__(life_garage_prices,life_garage_prices);
 
 life_garage_sell =
 [
-	["B_Quadbike_01_F",950],
-	["C_Hatchback_01_F",4500],
-	["C_Offroad_01_F", 6500],
-	["B_G_Offroad_01_F",3500],
-	["C_SUV_01_F",15000],
-	["C_Van_01_transport_F",25000],
-	["C_Hatchback_01_sport_F",7500],
-	["C_Van_01_fuel_F",3850],
-	["I_Heli_Transport_02_F",125000],
-	["C_Van_01_box_F",35000],
-	["I_Truck_02_transport_F",49800],
-	["I_Truck_02_covered_F",62000],
-	["B_Truck_01_transport_F",135000],
-	["B_Truck_01_box_F", 150000],
-	["O_MRAP_02_F",65000],
-	["B_Heli_Light_01_F",57000],
-	["O_Heli_Light_02_unarmed_F",72500],
-	["C_Rubberboat",950],
-	["C_Boat_Civil_01_F",6800],
-	["B_Boat_Transport_01_F",850],
-	["C_Boat_Civil_01_police_F",4950],
-	["B_Boat_Armed_01_minigun_F",21000],
-	["B_SDV_01_F",45000],
-	["B_MRAP_01_F",10000]
+	//Gebrauchtwagen
+	["DAR_CVPIAux",0],
+	["DAR_ChargerPoliceState",0],
+	["DAR_ChargerPoliceStateSlick",0],
+	["DAR_M3CivBlack",0],
+	["DAR_M3CivWhite",0],
+	["DAR_M3CivGrey",0],
+	["DAR_TahoeCivBlue",0],
+	["DAR_TahoeCivRed",0],
+	["DAR_TahoeCivSilver",0],
+	["DAR_TahoeCivBlack",0],
+	
+	["SAL_AudiCivRed",0],
+	["SAL_AudiCivSilver",0],
+	
+	["Jonzie_Viper",0],
+	
+	["dbo_CIV_ol_bike",0],
+	["RDS_Lada_Civ_01",0],
+	["RDS_Lada_Civ_02",0],
+	["RDS_Lada_Civ_04",0],
+	["RDS_S1203_Civ_01",0],
+	["RDS_S1203_Civ_02",0],
+	["RDS_S1203_Civ_03",0],
+	["RDS_Golf4_Civ_01",0],
+	["RDS_Octavia_Civ_01",0],
+	//Neuwagen
+	["dbo_CIV_new_bike",0],
+	["C_Hatchback_01_F",0],
+	["C_Offroad_01_F",0],
+	//Trucks
+	["I_Truck_02_transport_F",0],
+	["I_Truck_02_covered_F",0],
+	["O_Truck_03_transport_F",0],
+	["O_Truck_03_covered_F",0],
+	["B_Truck_01_transport_F",0],
+	["C_SUV_01_F",0],
+	//Flugzeuge
+	["GNT_C185",0],
+	["bwi_a3_t6a",0],
+	["bwi_a3_t6a_1",0],
+	["bwi_a3_t6a_2",0],
+	["bwi_a3_t6a_3",0],
+	["bwi_a3_t6a_4",0],
+	["bwi_a3_t6a_5",0],
+	["bwi_a3_t6a_6",0],
+	["bwi_a3_t6a_7",0],
+	["bwi_a3_t6a_8",0],
+	["bwi_a3_t6a_9",0],
+	//Helis
+	["B_Heli_Light_01_F",0],
+	["O_Heli_Light_02_unarmed_F",0],
+	
+	//neg Karma
+	["B_G_Offroad_01_F",0],
+	
+	["LandRover_ACR",0],
+	["DAR_MK27T",0],
+	["DAR_MK27",0],
+	["DAR_4x4",0],
+	
+	//pos Karma
+	["B_Truck_01_box_F",0],
+	["O_Heli_Transport_04_covered_F",0],
+	["O_Truck_03_device_F",0]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
