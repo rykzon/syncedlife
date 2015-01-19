@@ -16,12 +16,12 @@ if(life_blacklisted) exitWith
 	sleep 30;
 };
 
-if(!(str(player) in ["cop_1","cop_2","cop_3","cop_4"])) then {
+
 	if((__GETC__(life_coplevel) < 1) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
-};
+
 
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
@@ -32,6 +32,8 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 
 switch (__GETC__(life_coplevel)) do {
+
+
 	case 1: { life_paycheck = 1000; };
 	case 2: { life_paycheck = 1500; };
 	case 3: { life_paycheck = 2000; };
@@ -41,6 +43,8 @@ switch (__GETC__(life_coplevel)) do {
 	case 7: { life_paycheck = 4000; };
 	case 8: { life_paycheck = 5000; };
 	default { life_paycheck = 1500; };
+	
+	
 };
 
 

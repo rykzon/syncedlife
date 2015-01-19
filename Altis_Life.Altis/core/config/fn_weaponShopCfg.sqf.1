@@ -71,9 +71,9 @@ switch(_shop) do
 							
 									
 									
-							//Rang2
+								//Rang2
 							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
+							["arifle_mas_m16_a",nil,10000],
 							["arifle_mas_mk16",nil,10000],
 							["RH_vz61",nil,10000],
 							["RH_fn57",nil,10000],
@@ -111,12 +111,12 @@ switch(_shop) do
 						["Mafia Capo Shop",
 							[
 							
-							//Rang3
+									//Rang3
 							["arifle_mas_akm",nil,15000],
 							["srifle_mas_m110",nil,20000],
 							//Rang2
 							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
+							["arifle_mas_m16_a",nil,10000],
 							["arifle_mas_mk16",nil,10000],
 							//Rang1
 							["RH_vz61",nil,10000],
@@ -144,7 +144,47 @@ switch(_shop) do
 	};
 	
 	
+	/*		case "mafia_4":
+	{
+		switch(true) do
+		{
+		
+			case (__GETC__(life_mafialevel) < 3): {"Dich kenne ich nicht, verzieh dich!"};
+			//case (_mafia < 4): {"Du musst dir noch einen Namen machen Frischling!"};
+				default
+				{
+					
+						["Mafia Capo Shop",
+							[
+						
+									
+								 	["RH_m9",nil,15000],
+									["arifle_mas_ak_74m_sf",nil,70000],
+									["arifle_mas_aks_74_sf",nil,50000],
+									["Trixie_M110_NG",nil,80000],
+									["RH_vz61",nil,10000],
+									["RH_fn57",nil,10000],
+									["RH_tt33",nil,5000],
+								
+									["optic_mas_ACO_grn_camo",nil,200],
+								
+								
+									["RH_15Rnd_9x19_M9",nil,500],
+									["RH_20Rnd_57x28_FN",nil,200],
+									
+									
+									
+									["30Rnd_mas_545x39_mag",nil,1500],
+									["RH_8Rnd_762_tt33",nil,200],
+									["RH_20Rnd_32cal_vz61",nil,200]
+							]
+						];
+				};
+		};
 	
+	
+	
+	};*/
 	
 			case "mafia_4":
 	{
@@ -171,7 +211,7 @@ switch(_shop) do
 							["srifle_mas_m110",nil,20000],
 							//Rang2
 							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
+							["arifle_mas_m16_a",nil,10000],
 							["arifle_mas_mk16",nil,10000],
 							//Rang1
 							["RH_vz61",nil,10000],
@@ -218,10 +258,11 @@ switch(_shop) do
 			default
 			{
 				["APD Shop",
-					[
+					[	
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+					
 						
-						["RH_g19",nil,1000],
-						["RH_17Rnd_9x19_g17",nil,100],
 						
 						["Rangefinder",nil,1000],
 						["ItemGPS",nil,100],
@@ -253,8 +294,7 @@ switch(_shop) do
 						["Medikit",nil,250],
 						["NVGoggles",nil,500],
 						["H_MilCap_gry",nil,100],
-						["B_Bergen_blk",nil,1000],
-						["V_TacVestIR_blk",nil,500]
+						["B_Bergen_blk",nil,1000]
 					]
 				];
 			};
@@ -274,17 +314,22 @@ switch(_shop) do
 				["APD Officer Shop",
 					[
 					
-						["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
 						//["hlc_rifle_honeybase",nil,2500],
 						
-						["optic_Aco",nil,500],
+						["optic_mas_Arco_blk",nil,700],
+						["optic_MRCO",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_mas_aim",nil,200],
 						
-						["RH_17Rnd_9x19_g17",nil,100],
-						["30Rnd_mas_9x21_Stanag",nil,500]
 						
-						
-						
+						["30Rnd_mas_556x45_Stanag",nil,200],
+						["hlc_30rnd_556x45_EPR",nil,300]
 						
 						
 						
@@ -305,8 +350,13 @@ switch(_shop) do
 				["APD Wrt. Officer Shop",
 					[
 					
-					    ["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+					
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
 						//["hlc_rifle_honeybase",nil,2500],
 						["arifle_mas_hk416",nil,10000],
 						["arifle_mas_hk416c",nil,10000],
@@ -319,8 +369,7 @@ switch(_shop) do
 						["optic_mas_aim",nil,200],
 						
 						["30Rnd_mas_556x45_Stanag",nil,200],
-						["30Rnd_mas_9x21_Stanag",nil,500],
-						["RH_17Rnd_9x19_g17",nil,100],
+						
 						["hlc_30rnd_556x45_EPR",nil,300]
 						
 						
@@ -342,12 +391,23 @@ switch(_shop) do
 			{
 				["Altis Sergeant 2nd Shop",
 					[   
-						["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+						
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
+					    
+						
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
-						
+						["hlc_rifle_bcmjack",nil,3000],
 						["arifle_mas_hk416",nil,10000],
+						
+						
+						
+						
 						
 						["arifle_mas_hk416c",nil,10000],
 						
@@ -360,9 +420,8 @@ switch(_shop) do
 						
 						
 						["30Rnd_mas_556x45_Stanag",nil,200],
-						["RH_17Rnd_9x19_g17",nil,100],
+						
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_25Rnd_556x45_FAMAS",nil,1500]
 					
 					]
@@ -383,8 +442,15 @@ switch(_shop) do
 					[   
 					
 					
-					    ["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+					
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
+						
+						
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
@@ -393,7 +459,7 @@ switch(_shop) do
 						
 						["R3F_Famas_F1_HG",nil,15000],
 						
-						["hlc_rifle_SAMR",nil,25000],
+						["R3F_HK417M",nil,20000],
 						
 						["optic_mas_Arco_blk",nil,700],
 						["optic_MRCO",nil,1000],
@@ -402,11 +468,10 @@ switch(_shop) do
 						
 						
 						["30Rnd_mas_556x45_Stanag",nil,200],
-						["RH_17Rnd_9x19_g17",nil,100],
+						
 						["hlc_30rnd_556x45_EPR",nil,300],
 						["R3F_25Rnd_556x45_FAMAS",nil,1500],
-						["30Rnd_mas_9x21_Stanag",nil,500]
-						
+						["R3F_20Rnd_762x51_HK417",nil,2000]
 						
 						
 						
@@ -425,10 +490,14 @@ switch(_shop) do
 			{
 				["APD Detective 2nd Shop",
 					[   
-					
-					    ["RH_g19",nil,1000],
-						["RH_usp",nil,2000],
-						["arifle_mas_mp5",nil,2000],
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
+					    
+						
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
@@ -436,22 +505,21 @@ switch(_shop) do
 						["arifle_mas_hk416c",nil,10000],
 						
 						["R3F_Famas_F1_HG",nil,15000],
-						["hlc_rifle_SAMR",nil,25000],
+						
 						["R3F_HK417M",nil,20000],
 						
-						
+						["hlc_rifle_SAMR",nil,25000],
 						
 						["optic_mas_Arco_blk",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
 						
-						["RH_12Rnd_45cal_usp",nil,200],
+						
 						["30Rnd_mas_556x45_Stanag",nil,200],
-						["RH_17Rnd_9x19_g17",nil,100],
+						
 						["hlc_30rnd_556x45_EPR",nil,300],
 						["R3F_25Rnd_556x45_FAMAS",nil,1500],
-						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_20Rnd_762x51_HK417",nil,2000]
 						
 						
@@ -470,9 +538,15 @@ switch(_shop) do
 			{
 				["APD Detective 1st Shop",
 					[   
-						["RH_usp",nil,2000],
-						["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+						
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
+						
+						
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
@@ -492,13 +566,12 @@ switch(_shop) do
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
 						
-						["RH_12Rnd_45cal_usp",nil,200],
+						
 						["30Rnd_mas_556x45_Stanag",nil,200],
-						["RH_17Rnd_9x19_g17",nil,100],
+						
 						["hlc_30rnd_556x45_EPR",nil,300],
 						["R3F_25Rnd_556x45_FAMAS",nil,1500],
 						["R3F_20Rnd_762x51_HK417",nil,2000],
-						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_100Rnd_762x51_Minimi",nil,3000]
 					
 						
@@ -517,42 +590,32 @@ switch(_shop) do
 			{
 				["APD Lieutenant Shop",
 					[   
+						
 					
-					    ["RH_mk2",nil,3000],
-						["RH_sw659",nil,2500],
-					    ["RH_usp",nil,2000],
-					    ["RH_g19",nil,1000],
-						["arifle_mas_mp5",nil,2000],
+					
+						["DDOPP_X26","Stun Pistol",200],
+						["DDOPP_1Rnd_X26",nil,50],
+						
 						["arifle_mas_g3",nil,20000],
 						["LMG_mas_Mk200_F",nil,20000], 
+						
+						
+						["srifle_mas_hk417",nil,15000],
+						["arifle_mas_hk417c",nil,15000],
+						
+						
 						["arifle_mas_hk416",nil,10000],
 						["arifle_mas_hk416c",nil,10000],
-						["hlc_rifle_bcmjack",nil,3000],
-						["hlc_rifle_cqbr",nil,3000],
 						
-						
-						["R3F_Famas_F1_HG",nil,15000],
-						
-						["R3F_HK417M",nil,20000],
-						
-						["hlc_rifle_SAMR",nil,25000],
-						
-						["R3F_Minimi_762_HG",nil,30000],
-						
-						["optic_mas_Arco_blk",nil,700],
-						["optic_MRCO",nil,1000],
-						["optic_Hamr",nil,1000],
+						["arifle_mas_m4_d",nil,2000],
+						["arifle_mas_m4",nil,2000],
+						["hlc_rifle_RU5562",nil,2000],
 						["optic_mas_aim",nil,200],
 						
-						["RH_10Rnd_22LR_mk2",nil,200],
-						["RH_14Rnd_9x19_sw",nil,200],
-						["RH_12Rnd_45cal_usp",nil,200],
-						["RH_17Rnd_9x19_g17",nil,100],
-						["hlc_30rnd_556x45_EPR",nil,300],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500],
-						["R3F_20Rnd_762x51_HK417",nil,2000],
-						["30Rnd_mas_9x21_Stanag",nil,500],
-						["R3F_100Rnd_762x51_Minimi",nil,3000],
+						
+						["20Rnd_mas_762x51_Stanag",nil,300],
+						["200Rnd_mas_556x45_Stanag",nil,500],
+						["20Rnd_mas_762x51_Stanag",nil,200],
 						["30Rnd_mas_556x45_Stanag",nil,200]
 						
 					]
@@ -644,9 +707,7 @@ switch(_shop) do
 						
 						
 						//Rang2
-						["arifle_mas_mp5_v",nil,90000],
-						
-						
+						["arifle_mas_mp5",nil,90000],
 						
 						
 						//Rang1
@@ -662,7 +723,6 @@ switch(_shop) do
 						//Rang2
 						["optic_Aco",nil,500],
 						["30Rnd_mas_9x21_Stanag",nil,500],
-						
 						//Rang1
 						["RH_33Rnd_9x19_g18",nil,200],
 						["RH_12Rnd_45cal_usp",nil,200]
@@ -689,10 +749,8 @@ switch(_shop) do
 						["Trixie_Enfield",nil,50000],
 						//Rang3
 						["RH_deaglem",nil,40000],
-					
 						//Rang2
-						["arifle_mas_mp5_v",nil,90000],
-						
+						["arifle_mas_mp5",nil,90000],
 						
 						
 						//Rang1
@@ -724,7 +782,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (_karma < 6000): {"Dein Karma ist zu niedrig!"};
+			case (_karma < 60000): {"Dein Karma ist zu niedrig!"};
 			default
 			{
 				["Bürger 4",
@@ -736,9 +794,7 @@ switch(_shop) do
 						//Rang3
 						["RH_deaglem",nil,40000],
 						//Rang2
-						//Rang2
-						["arifle_mas_mp5_v",nil,90000],
-						
+						["arifle_mas_mp5",nil,90000],
 						
 						
 						//Rang1
@@ -782,10 +838,8 @@ switch(_shop) do
 						["Trixie_Enfield",nil,50000],
 						//Rang3
 						["RH_deaglem",nil,40000],
-						
 						//Rang2
-						["arifle_mas_mp5_v",nil,90000],
-						
+						["arifle_mas_mp5",nil,90000],
 						
 						
 						//Rang1
@@ -907,7 +961,6 @@ switch(_shop) do
 						//Rang3
 						["Trixie_LSMARK4",nil,500],
 						["optic_mas_PSO_c",nil,500],
-						["optic_MRCO",nil,1000],
 						//Rang5
 						
 						
@@ -1127,8 +1180,6 @@ switch(_shop) do
 	{
 		["Synced Gemischtwaren",
 			[
-				["arifle_SDAR_F",nil,5000],
-				["20Rnd_556x45_UW_mag",nil,1000],
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["ToolKit",nil,250],

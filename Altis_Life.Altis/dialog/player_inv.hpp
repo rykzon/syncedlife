@@ -282,7 +282,7 @@ class playerSettings {
 		class ButtonCell : Life_RscButtonMenu {
 			idc = 2014;
 			text = "$STR_PM_CellPhone";
-			onButtonClick = "createDialog ""Life_cell_phone"";";
+			onButtonClick = "createDialog ""Life_my_smartphone"";";
 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
@@ -297,8 +297,8 @@ class playerSettings {
 	y = 0.805;
 	w = (6.25 / 40);
 	h = (1 / 25);
-};/*
-class ButtonCraft : Life_RscButtonMenu {
+};
+/*class Button : Life_RscButtonMenu {
 	idc = 2025;
 	text = "$STR_PM_Craft";
 	onButtonClick = "createDialog ""Life_craft"";";

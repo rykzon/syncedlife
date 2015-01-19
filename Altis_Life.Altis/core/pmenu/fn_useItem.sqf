@@ -26,6 +26,39 @@ switch (true) do
 		closeDialog 0;
 	};
 	
+	case (_item == "marijuana"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [] spawn life_fnc_weed;
+    };
+};
+		case (_item == "heroinp"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [] spawn life_fnc_heroin;
+    };
+};
+	case (_item == "cocainep"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [] spawn life_fnc_cocaine;
+		
+		player setFatigue 0;
+			[] spawn
+			{
+				life_redgull_effect = time;
+				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
+				player enableFatigue false;
+				waitUntil {!alive player OR ((time - life_redgull_effect) > (6 * 60))};
+				player enableFatigue true;
+			};
+    };
+};
+	
+	
 	case (_item == "blastingcharge"): {
 		player reveal fed_bank;
 		(group player) reveal fed_bank;

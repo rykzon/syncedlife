@@ -16,6 +16,8 @@ _error = false; // used below check the comment there ;)
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ...",processing 2Items?, (only for processing with 2) second Item.
 _itemInfo = switch (_type) do
 {
+
+
   case "oil": {["oilu","oilp",1000,(localize "STR_Process_Oil"),false];}; //added param (true or false) true if processing with 2 Items.
   case "diamond": {["diamond","diamondc",1000,(localize "STR_Process_Diamond"),false]};
   case "heroin": {["heroinu","heroinp",1000,(localize "STR_Process_Heroin"),false]};
@@ -29,7 +31,7 @@ _itemInfo = switch (_type) do
   case "marijuana": {["cannabis","marijuana",800,(localize "STR_Process_Marijuana"),false]};
   case "cement": {["rock","cement",650,(localize "STR_Process_Cement"),false]};
   case "coal": {["coalu","coalp",650,(localize "STR_Process_Coal"),false]};
-  case "steel": {["ironp","steel",650,(localize "STR_Process_Steel"),true,"coalp"]};
+  case "steel": {["iron_r","steel",650,(localize "STR_Process_Steel"),true,"coalp"]};
   case "plastic": {["oilp","plastic",650,(localize "STR_Process_Plastic"),true,"coalp"]};
   
 

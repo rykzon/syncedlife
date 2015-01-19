@@ -65,6 +65,8 @@ switch (_var) do
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	case "life_inv_zipties": {(localize "STR_Item_zipties")};
+	case "life_inv_plastic": {(localize "STR_Item_plastic")};
+	case "life_inv_simplewaffenteile": {(localize "STR_Item_sWaffenteile")};
 	
 	
 	
@@ -112,4 +114,5 @@ switch (_var) do
 	case "license_civ_coal": {(localize "STR_License_Coal")};
 	case "license_civ_steel": {(localize "STR_License_Steel")};
 	case "license_civ_plastic": {(localize "STR_License_Plastic")};
+	case "license_civ_Waffenschmied": {(localize "STR_License_Waffenschmied")};
 };

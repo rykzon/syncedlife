@@ -71,14 +71,14 @@ switch (_shop) do
 		[
 		
 			
-			//["dbo_CIV_ol_bike",500],
+			
 			["RDS_Lada_Civ_01",10000],
 			["RDS_Lada_Civ_02",10000],
 			["RDS_Lada_Civ_04",10000],
 			["RDS_S1203_Civ_01",27000],
 			["RDS_S1203_Civ_02",27000],
 			["RDS_Golf4_Civ_01",45000],
-			["C_Van_01_transport_F",110000]
+			["C_Van_01_transport_F",15000]
 			
 			
 		];

@@ -17,6 +17,7 @@ _unit = player;
 if (life_action_inUse) exitWith{};
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 life_action_inUse = true;
+sleep 5;
 _price = [_vehicle,__GETC__(life_garage_sell)] call TON_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
 

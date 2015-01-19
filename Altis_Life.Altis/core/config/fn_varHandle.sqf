@@ -70,6 +70,7 @@ switch (_mode) do
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
 			case "zipties": {"life_inv_zipties"};
+			case "swaffenteile": {"life_inv_simplewaffenteile"};
 		};
 	};
 	
@@ -131,6 +132,7 @@ switch (_mode) do
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_zipties": {"zipties"};
+			case "life_inv_simplewaffenteile": {"swaffenteile"};
 		};
 	};
 };

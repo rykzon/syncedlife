@@ -3572,6 +3572,15 @@
 			<Italian>Minerale di Ferro</Italian>
 			<Portuguese>Pepita de Ferro</Portuguese>
 		</Key>
+		<Key ID="STR_Item_Plastic">
+			<Original>Plastic</Original>
+			<English>Plastic</English>
+			<German>Plastik</German>
+			<French>Minerai de Fer</French>
+			<Italian>Minerale di Ferro</Italian>
+			<Portuguese>Pepita de Ferro</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Item_IronIngot">
 			<Original>Iron Ingot</Original>
 			<English>Iron Ingot</English>
@@ -4272,6 +4281,16 @@
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
+		
+			<Key ID="STR_Process_Steel">
+			<Original>Processing Steel</Original>
+			<English>Processing Steel</English>
+			<German>Stahl wird verarbeitet</German>
+			<French>Raffinage de Pétrole</French>
+			<Italian>Processando l'Olio</Italian>
+			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>
 			<English>Cutting Diamonds</English>
@@ -4312,6 +4331,16 @@
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
 		</Key>
+		
+		<Key ID="STR_Process_Plastic">
+			<Original>Processing Plastic</Original>
+			<English>Processing Plastic</English>
+			<German>Plastik wird verarbeitet</German>
+			<French>Fonte de fer</French>
+			<Italian>Processando Ferro</Italian>
+			<Portuguese>Processando Ferro</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Process_Sand">
 			<Original>Processing Sand</Original>
 			<English>Processing Sand</English>
@@ -5419,6 +5448,45 @@
 			<Portuguese>Você recebeu seu pagamento de R$%1</Portuguese>
 		</Key>
 	</Package>
+	
+	
+	<Package name="Smartphone">
+		<Key ID="STR_PM_Smartphone">
+			<Original>Smartphone</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_TITLE">
+			<Original>Smartphone Menu</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
+			<Original>Playerlist</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
+			<Original>Nachrichten  | VON | WANN</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
+			<Original>Nachricht zum lesen auswählen</Original>
+		</Key>
+		<Key ID="STR_Global_Close">
+			<Original>Close</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_SCHREIBEN">
+			<Original>Schreiben</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NOTRUF">
+			<Original>Notruf</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Absenden">
+			<Original>Absenden</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
+			<Original>Nachricht an:</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Notruftitle">
+			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
+		</Key>
+	</Package>
+	
+	
 	<Package name="Player_Actions">
 		<Key ID="STR_pAct_DropFishingNet">
 			<Original>Drop Fishing Net</Original>

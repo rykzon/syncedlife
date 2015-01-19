@@ -288,7 +288,7 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-		case 41:
+	case 41:
 	{
 		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
 		{

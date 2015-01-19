@@ -35,7 +35,7 @@ if(life_cash < life_ticket_val) exitWith
 };
 
 life_cash = life_cash - life_ticket_val;
-_karma = [] call life_fnc_getKarma;
+/*_karma = [] call life_fnc_getKarma;
 if(_karma > 0) then
 {
 ["Karma_Prof",50,0] call life_fnc_addKarma;
@@ -43,7 +43,7 @@ if(_karma > 0) then
 else
 {
 ["Karma_Prof",50,1] call life_fnc_addKarma;
-};
+};*/
 life_ticket_paid = true;
 
 [[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;

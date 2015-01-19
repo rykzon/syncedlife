@@ -30,6 +30,7 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
+life_smartphoneTarget = ObjNull;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -128,7 +129,7 @@ life_masked = [
 "U_C_Driver_4"
 ];
 
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -185,6 +186,7 @@ life_inv_items =
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
+	"life_inv_simplewaffenteile",
 	"life_inv_zipties"
 ];
 
@@ -220,6 +222,7 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_steel","civ"],
 	["license_civ_coal","civ"],
+	["license_civ_Waffenschmied","civ"],
 	["license_civ_plastic","civ"]
 ];
 

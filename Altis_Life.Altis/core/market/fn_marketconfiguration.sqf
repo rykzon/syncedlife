@@ -27,7 +27,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["steel", 3500, 2500, 4500, 4, 2,  
+	["steel", 5600, 4800, 6500, 4, 2,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -49,6 +49,19 @@ life_market_resources = [
 			["cement",1],
 			["glass",1],
 			["steel",1],
+			["coalp",1]
+		]
+	],
+		["plastic", 5600, 4800, 6500, 4, 2,
+		[
+			["diamondc",1],
+			["iron_r",1],
+			["copper_r",1],
+			["salt_r",1],
+			["cement",1],
+			["glass",1],
+			["steel",1],
+			["oilp",1],
 			["coalp",1]
 		]
 	],

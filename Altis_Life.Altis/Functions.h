@@ -127,6 +127,7 @@ class Life_Client_Core
 		class gather {};
 		class tieAction{};
 		class untie{};
+		class casino{};
 		
 		class showLicenseAction{};
 
@@ -215,6 +216,10 @@ class Life_Client_Core
 		class settingsMenu {};
 		class settingsInit {};
 		class revokeLicense {};
+
+		class smartphone {};
+		class newMsg {};
+		class showMsg {};
 		
 	};
 	
@@ -429,6 +434,9 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class weed {};
+		class cocaine{};
+		class heroin{};
 	};
 	
 	class Dialog_Controls
