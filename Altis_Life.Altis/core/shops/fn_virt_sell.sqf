@@ -45,8 +45,12 @@ if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "You don't have
 	
 _price = (_price * _amount);
 
-};
-
+};/*
+if(_type == "life_inv_goldbar") then
+{
+_karma = _amount * 10;
+["Karma_Prof",_karma,0] call life_fnc_addKarma;
+};*/
 
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then

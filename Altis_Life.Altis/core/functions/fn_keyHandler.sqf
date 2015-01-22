@@ -118,6 +118,9 @@ switch (_code) do
 		};
 	
 	};
+	
+	//TODO SPIKESTRIP
+	
 	case 4:
 	{
 		if(([false,"redgull",1] call life_fnc_handleInv)) then

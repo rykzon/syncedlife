@@ -40,10 +40,10 @@ switch (_shop) do
 	case "kart_shop":
 	{
 		_return = [
-			["C_Kart_01_Blu_F",150000],
-			["C_Kart_01_Fuel_F",150000],
-			["C_Kart_01_Red_F",150000],
-			["C_Kart_01_Vrana_F",150000]
+			["C_Kart_01_Blu_F",80000],
+			["C_Kart_01_Fuel_F",80000],
+			["C_Kart_01_Red_F",80000],
+			["C_Kart_01_Vrana_F",80000]
 		];
 	};
 	case "med_shop":
@@ -72,13 +72,13 @@ switch (_shop) do
 		
 			
 			
-			["RDS_Lada_Civ_01",10000],
-			["RDS_Lada_Civ_02",10000],
-			["RDS_Lada_Civ_04",10000],
-			["RDS_S1203_Civ_01",27000],
-			["RDS_S1203_Civ_02",27000],
-			["RDS_Golf4_Civ_01",45000],
-			["C_Van_01_transport_F",15000]
+			["RDS_Lada_Civ_01",8000],
+			["RDS_Lada_Civ_02",8000],
+			["RDS_Lada_Civ_04",8000],
+			["RDS_S1203_Civ_01",20000],
+			["RDS_S1203_Civ_02",20000],
+			["RDS_Golf4_Civ_01",33000],
+			["C_Van_01_transport_F",30000]
 			
 			
 		];
@@ -89,19 +89,19 @@ switch (_shop) do
 		_return = 
 		[
 			//["dbo_CIV_new_bike",1000],
-			["RDS_Octavia_Civ_01",45000],
+			["RDS_Octavia_Civ_01",40000],
 			//["C_Hatchback_01_F",80000],
 			//["C_Offroad_01_F",60000],
 			["C_SUV_01_F",100000],
-			["DAR_M3CivGrey",150000],
-			["DAR_M3CivWhite",150000],
-			["DAR_TahoeCivRed",80000],
-			["DAR_TahoeCivBlue",80000],
-			["DAR_TahoeCivSilver",80000],
-			["SAL_AudiCivRed",150000],
-			["SAL_AudiCivSilver",150000],
-			["SAL_77TRANSAMCiv",350000],
-			["Jonzie_Viper",1000000]
+			["DAR_M3CivGrey",100000],
+			["DAR_M3CivWhite",100000],
+			["DAR_TahoeCivRed",40000],
+			["DAR_TahoeCivBlue",40000],
+			["DAR_TahoeCivSilver",40000],
+			["SAL_AudiCivRed",110000],
+			["SAL_AudiCivSilver",110000],
+			["SAL_77TRANSAMCiv",300000],
+			["Jonzie_Viper",670000]
 		];
 	};
 	
@@ -109,19 +109,19 @@ switch (_shop) do
 	{
 			
 			_return pushBack 
-			["RDS_Ikarus_Civ_01",80000];
+			["RDS_Ikarus_Civ_01",60000];
 			if(call life_fnc_getKarma >= -1500) then
 			{
 			_return pushBack
-			["I_Truck_02_transport_F",240000];
+			["I_Truck_02_transport_F",120000];
 			_return pushBack
-			["I_Truck_02_covered_F",320000];
+			["I_Truck_02_covered_F",180000];
 			_return pushBack
-			["O_Truck_03_transport_F",500000];
+			["O_Truck_03_transport_F",400000];
 			_return pushBack
-			["O_Truck_03_covered_F",650000];
+			["O_Truck_03_covered_F",500000];
 			_return pushBack
-			["B_Truck_01_transport_F",800000];
+			["B_Truck_01_transport_F",750000];
 			
 			
 			};
@@ -162,8 +162,8 @@ switch (_shop) do
 		_return =
 		[
 		
-			["B_Heli_Light_01_F",650000],
-			["O_Heli_Light_02_unarmed_F",1250000],
+			["B_Heli_Light_01_F",500000],
+			["O_Heli_Light_02_unarmed_F",1000000],
 			["O_Heli_Transport_04_covered_F",1000000]
 	
 			
@@ -176,16 +176,16 @@ switch (_shop) do
 		[
 		
 			
-			["GNT_C185",700000],
-			["bwi_a3_t6a",1500000],
-			["bwi_a3_t6a_1",1500000],
-			["bwi_a3_t6a_2",1500000],
-			["bwi_a3_t6a_3",1500000],
-			["bwi_a3_t6a_4",1500000],
-			["bwi_a3_t6a_6",1500000],
-			["bwi_a3_t6a_7",1500000],
-			["bwi_a3_t6a_8",1500000],
-			["bwi_a3_t6a_9",1500000]
+			["GNT_C185",332500],
+			["bwi_a3_t6a",850000],
+			["bwi_a3_t6a_1",850000],
+			["bwi_a3_t6a_2",850000],
+			["bwi_a3_t6a_3",850000],
+			["bwi_a3_t6a_4",850000],
+			["bwi_a3_t6a_6",850000],
+			["bwi_a3_t6a_7",850000],
+			["bwi_a3_t6a_8",850000],
+			["bwi_a3_t6a_9",850000]
 			
 			
 		];
@@ -197,14 +197,16 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 1) then
 		{
 		_return pushBack
-		["B_Heli_Light_01_F",75000];
+		["B_Heli_Light_01_F",20000];
 		
 		};
 		
-		if(__GETC__(life_coplevel) > 7) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
-			//_return pushBack
-			//["B_Heli_Transport_01_F",200000];
+			_return pushBack
+			["B_Heli_Transport_01_F",40000];
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",40000];
 		};
 	};
 	
@@ -217,10 +219,12 @@ switch (_shop) do
 		
 		};
 		
-		if(__GETC__(life_coplevel) > 7) then
+			if(__GETC__(life_coplevel) > 5) then
 		{
-			//_return pushBack
-			//["B_Heli_Transport_01_F",200000];
+			_return pushBack
+			["B_Heli_Transport_01_F",40000];
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",40000];
 		};
 	};
 	
@@ -239,19 +243,19 @@ switch (_shop) do
 	{		
 			//TODO TRUCKS
 			
-			if(call life_fnc_getKarma <= -10000) then
+			if(call life_fnc_getKarma <= -3000) then
 			{
 			_return pushBack
-			["B_Heli_Transport_03_unarmed_F",900000];
+			["B_Heli_Transport_03_unarmed_F",1100000];
 			
-			//_return pushBack
-			//["B_G_Offroad_01_armed_F",500000];
+			_return pushBack
+			["B_G_Offroad_01_armed_F",500000];
 			};
 			
 			if(call life_fnc_getKarma <= -1500) then
 			{
-		//	_return pushBack
-			//["B_G_Offroad_01_F",55000];
+			_return pushBack
+			["B_G_Offroad_01_F",55000];
 			
 			_return pushBack
 			["DAR_MK27T",900000];
@@ -261,10 +265,9 @@ switch (_shop) do
 			if(call life_fnc_getKarma <= -500) then
 			{
 				_return pushBack
-				["LandRover_ACR",43000];
+				["LandRover_ACR",40000];
 			};
-			//_return pushBack
-			//["DAR_4x4",350000];
+			
 			
 	};
 	
@@ -275,7 +278,7 @@ switch (_shop) do
 			{
 			
 			_return pushBack
-			["LandRover_TK_CIV_EP1",43000];
+			["LandRover_TK_CIV_EP1",40000];
 			
 			};
 			if(call life_fnc_getKarma >= 1500) then
@@ -291,7 +294,7 @@ switch (_shop) do
 			if(call life_fnc_getKarma >=6000) then
 			{
 			_return pushBack
-			["B_Truck_01_box_F",900000];
+			["B_Truck_01_box_F",1100000];
 			};
 	};
 	case "mafia_car":
@@ -299,14 +302,14 @@ switch (_shop) do
 		if(__GETC__(life_mafialevel) >= 1) then
 		{
 			
-			//_return pushBack
-			//["CUP_Volha_Black",30000];
+			_return pushBack
+			["CUP_Volha_Black",30000];
 			_return pushBack
 			["DAR_4x4",80000];
 			_return pushBack
 			["DAR_MK27T",150000];
-		//	_return pushBack
-		//	["C_Offroad_01_F",15000];
+			_return pushBack
+			["C_Offroad_01_F",15000];
 			_return pushBack
 			["C_SUV_01_F",25000];
 			_return pushBack

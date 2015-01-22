@@ -20,10 +20,12 @@ diag_log "Market prices generated!";
 {
 diag_log format["Market prices updated! %1", _this select 1];
 };
-SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper"];
+SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper","C_Hatchback_01_F"];
 //Start server fsm
 [] execFSM "core\fsm\server.fsm";
 diag_log "Server FSM executed";
 };
 
 StartProgress = true;
+
+

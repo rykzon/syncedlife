@@ -84,6 +84,7 @@ switch(_shop) do
 							//Rang2
 							["optic_Aco",nil,200],
 							["optic_Hamr",nil,500],
+							["optic_Arco",nil,500],
 							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
@@ -126,7 +127,8 @@ switch(_shop) do
 							//Rang3
 							["optic_mas_zeiss",nil,500],
 							["20Rnd_mas_762x51_Stanag",nil,200],
-							["optic_mas_Arco_blk",nil,200],
+							["optic_Arco",nil,200],
+							["optic_Hamr",nil,500],
 							//Rang2
 							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
@@ -185,7 +187,8 @@ switch(_shop) do
 							//Rang3
 							["optic_mas_zeiss",nil,500],
 							["20Rnd_mas_762x51_Stanag",nil,200],
-							["optic_mas_Arco_blk",nil,200],
+							["optic_Hamr",nil,500],
+							["optic_Arco",nil,200],
 							["RH_matchsd",nil,200],
 							//Rang2
 							["RH_16Rnd_40cal_usp",nil,500],
@@ -313,7 +316,7 @@ switch(_shop) do
 						
 						["hlc_rifle_cqbr",nil,3000],
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
@@ -353,7 +356,7 @@ switch(_shop) do
 						
 						["R3F_Famas_F1_HG",nil,15000],
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
@@ -395,7 +398,7 @@ switch(_shop) do
 						
 						["hlc_rifle_SAMR",nil,25000],
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
@@ -441,7 +444,7 @@ switch(_shop) do
 						
 						
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
@@ -487,7 +490,7 @@ switch(_shop) do
 						
 						["R3F_Minimi_762_HG",nil,30000],
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
@@ -539,7 +542,7 @@ switch(_shop) do
 						
 						["R3F_Minimi_762_HG",nil,30000],
 						
-						["optic_mas_Arco_blk",nil,700],
+						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],

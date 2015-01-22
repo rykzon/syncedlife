@@ -66,9 +66,9 @@ switch (_className) do
 	case "C_Hatchback_01_sport_F": {45};
 	case "C_SUV_01_F": {40};
 	
-	case "C_Van_01_transport_F": {100};
+	case "C_Van_01_transport_F": {90};
 	case "C_Van_01_box_F": {150};
-	case "C_Boat_Civil_01_F": {85};
+	case "C_Boat_Civil_01_F": {330};
 	case "C_Boat_Civil_01_police_F": {85};
 	case "C_Boat_Civil_01_rescue_F": {85};
 	case "B_Truck_01_box_F": {450};
@@ -80,7 +80,7 @@ switch (_className) do
 	case "B_Heli_Light_01_F": {20};
 	case "O_Heli_Light_02_unarmed_F": {100};
 	case "I_Heli_Transport_02_F": {375};
-	case "C_Rubberboat": {45};
+	case "C_Rubberboat": {150};
 	case "O_Boat_Armed_01_hmg_F": {175};
 	case "B_Boat_Armed_01_minigun_F": {175};
 	case "I_Boat_Armed_01_minigun_F": {175};

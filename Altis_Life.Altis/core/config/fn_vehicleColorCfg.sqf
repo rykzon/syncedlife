@@ -9,7 +9,7 @@ private["_vehicle","_ret","_path"];
 _vehicle = [_this,0,"",[""]] call BIS_fnc_param;
 if(_vehicle == "") exitWith {[]};
 _ret = [];
-SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper"];
+SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper","C_Hatchback_01_F"];
 switch (_vehicle) do
 {
 	case "I_Heli_Transport_02_F":

@@ -52,7 +52,7 @@ _Pos = position player; // by ehno: get player pos
 	{
 		
 		sleep  0.85;
-		_cP = _cP + 0.003;
+		_cP = _cP + 0.006;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Überfall im Gange, bleib in der Nähe (5m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
@@ -73,7 +73,7 @@ _Pos = position player; // by ehno: get player pos
 	life_cash = life_cash + _kassa; //I am using a moneylaundry system on my server, but if you do not change this to life_cash instead.
 	_rip = false;
 	life_use_atm = false;
-	["Karma_Prof",100,0] call life_fnc_addKarma;
+	["Karma_Prof",150,0] call life_fnc_addKarma;
 	sleep (30 + random(180)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	

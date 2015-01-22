@@ -63,7 +63,7 @@ titleText[format[localize "STR_NOTF_Gather_Success",_itemName,_diff],"PLAIN"];
 if( _profName != "" ) then 
 {
 [_profName,5] call life_fnc_addExp;
-["Karma_Prof",1,_karma] call life_fnc_addKarma;
+["Karma_Prof",2,_karma] call life_fnc_addKarma;
 
 };
 };

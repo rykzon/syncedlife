@@ -38,7 +38,7 @@ if(_type == "Karma_Prof") then
 			
 			case ( _exp >= -5000): { _exp = _exp + _amount*5; };
 			
-			case ( _exp >= -10500): { _exp = _exp + _amount*20; };
+			case ( _exp >= -10500): { _exp = _exp + _amount*10; };
 			
 			
 			
@@ -61,7 +61,7 @@ if(_type == "Karma_Prof") then
 			
 			case ( _exp <= 5000): { _exp = _exp - _amount*5;};
 		
-			case ( _exp <= 10500): { _exp = _exp - _amount*20;};
+			case ( _exp <= 10500): { _exp = _exp - _amount*10;};
 			
 			
 			default{};

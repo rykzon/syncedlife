@@ -36,10 +36,11 @@ if!(alive _robber) exitWith { _rip = false; };
 	if(_robber distance _shop > 5) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
 	hint format["Du hast das Kasino um $%1 erleichtert.", _kassa];
+	[[2,"KASINORAUB ERFOLGREICH!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	life_cash = life_cash + _kassa; //I am using a moneylaundry system on my server, but if you do not change this to life_cash instead.
 	_rip = false;
 	life_use_atm = false;
-	//["Karma_Prof",100,0] call life_fnc_addKarma;
+	["Karma_Prof",250,0] call life_fnc_addKarma;
 	sleep (30 + random(180)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	
@@ -47,10 +48,7 @@ if!(alive _robber) exitWith { _rip = false; };
 if(!_rip) then
 {
 [[2,"KASINORAUB FEHLGESCHLAGEN!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-}
-else
-{
-[[2,"KASINORAUB ERFOLGREICH!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 };
+
 
 [[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP;
