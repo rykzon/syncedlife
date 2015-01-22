@@ -16,6 +16,7 @@ _return = [];
 	_pos = call compile format["%1",_x select 1];
 	_house = nearestBuilding _pos;
 	_house allowDamage false;
+	_house addEventHandler ["handleDamage", { false }];
 	_containers = [];
 	_house setVariable["slots",[],true];
 	if(!isNil {(_house getVariable "containers")}) then {
