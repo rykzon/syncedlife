@@ -11,6 +11,24 @@ if(isNull _shop OR isNull _robber) exitWith {}; //checks that the info sent is a
 if(!alive _robber) exitWith {};
 _robber2 = owner _robber; //we are setting the owner of the request so we know who to return things to.
 
+
+
+if(_shop == casino_1) then
+{
+if((_shop getVariable["rip",false])) exitWith
+{
+	[[1,"Es überfällt bereits jemand!"],"life_fnc_broadcast",_robber2,false] spawn life_fnc_MP;
+}; // if the variable is already set for this shop, it means someone else is robbing it right now and we give the person trying a message about that and end the script. 
+if((_shop getVariable["locked",false])) exitWith
+{
+	[[1,"Ich wurde gerade ausgeraubt, es ist nichts mehr da!"],"life_fnc_broadcast",_robber2,false] spawn life_fnc_MP;
+}; // We are checking if the cooldown-timer is still in effect. If it is, we tell the caller about it and ends the script. 
+if(_robber2 < 1) exitWith {}; //If there is no owner of the call, we end it here.
+_shop setVariable["rip",true,true];
+[[_shop,_robber,_action],"life_fnc_casino",_robber2,false] spawn life_fnc_MP; //we have now done all the checks and it is time to start the robbery script locally for the robber.
+}
+else
+{
 if((_shop getVariable["rip",false])) exitWith
 {
 	[[1,"This station is already being robbed by someone else."],"life_fnc_broadcast",_robber2,false] spawn life_fnc_MP;
@@ -22,3 +40,4 @@ if((_shop getVariable["locked",false])) exitWith
 if(_robber2 < 1) exitWith {}; //If there is no owner of the call, we end it here.
 _shop setVariable["rip",true,true];
 [[_shop,_robber,_action],"life_fnc_robShop",_robber2,false] spawn life_fnc_MP; //we have now done all the checks and it is time to start the robbery script locally for the robber.
+};

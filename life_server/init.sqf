@@ -10,7 +10,7 @@ publicVariable "life_server_isReady";
 //I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
 
 _extDB = false;
-SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper"];
+SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper","C_Hatchback_01_F"];
 //Only need to setup extDB once.
 if(isNil {uiNamespace getVariable "life_sql_id"}) then {
 	life_sql_id = round(random(9999));
@@ -131,5 +131,11 @@ for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,t
 _rsb setVariable["bis_disabled_Door_1",1,true];
 _rsb allowDamage false;
 _dome allowDamage false;
+_rsb addEventHandler ["handleDamage", { false }];
+_dome addEventHandler ["handleDamage", { false }];
 life_server_isReady = true;
 publicVariable "life_server_isReady";
+
+
+
+
