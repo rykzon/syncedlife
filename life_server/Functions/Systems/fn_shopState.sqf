@@ -8,28 +8,6 @@ _action = [_this,2] call BIS_fnc_param;
 _state = [_this,3,-1,[0]] call BIS_fnc_param;
 if(isNull _shop) exitWith {};
 
-
-if(_shop == casino_1) then
-{
-switch (_state) do
-{
-	case -1: //here we set the cooldown variable for the shop, then we fire up a script for all clients that takes care of animations and removal of actions.
-	{
-		_shop setVariable["locked",true,true];
-		[[_shop,_robber,_action,-1],"life_fnc_shopState",true,true] spawn life_fnc_MP;
-	};
-	case 0: //the cooldown timer is set, and we clear the lock, then calls for a serverwide animation change and reinstatement of the action we removed to prevent spam.
-	{
-	_shop setVariable["rip",false,true];
-	sleep 1800;
-	[[_shop,_robber,_action,0],"life_fnc_shopState",true,true] spawn life_fnc_MP;
-	_shop setVariable["locked",false,true];
-
-	};
-};
-}
-else
-{
 switch (_state) do
 {
 	case -1: //here we set the cooldown variable for the shop, then we fire up a script for all clients that takes care of animations and removal of actions.
@@ -45,5 +23,4 @@ switch (_state) do
 	_shop setVariable["locked",false,true];
 
 	};
-};
 };

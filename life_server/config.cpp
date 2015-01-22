@@ -118,7 +118,6 @@ class CfgFunctions
 			class robShop{};
 			class shopState{};
 		};
-	
 		
 		class Housing
 		{
@@ -140,21 +139,8 @@ class CfgFunctions
 			class removeGang {};
 			class updateGang {};
 		};
-
-
-		class Smartphone
-		{
-			file = "\life_server\Functions\Smartphone";
-			class handleMessages {};
-			class msgRequest {};
-		};	
-
 	};
-	
-	};
-
-
-	
+};
 
 class CfgVehicles
 {
