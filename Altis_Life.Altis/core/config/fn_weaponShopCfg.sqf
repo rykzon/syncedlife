@@ -223,8 +223,8 @@ switch(_shop) do
 				["APD Shop",
 					[
 						
-						["RH_g19",nil,1000],
-						["RH_17Rnd_9x19_g17",nil,100],
+						["hgun_P07_F",nil,1000],
+						["16Rnd_9x21_Mag",nil,100],
 						
 						["Rangefinder",nil,1000],
 						["ItemGPS",nil,100],
@@ -279,10 +279,18 @@ switch(_shop) do
 					
 						["RH_g19",nil,1000],
 						["arifle_mas_mp5",nil,2000],
+						
+						["arifle_mas_m4",nil,3000],
+						["arifle_mas_m4c",nil,3000],
 						//["hlc_rifle_honeybase",nil,2500],
 						
 						["optic_Aco",nil,500],
+						["optic_Arco",nil,700],
+						["optic_MRCO",nil,1000],
+						["optic_Hamr",nil,1000],
+						["optic_mas_aim",nil,200],
 						
+						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["30Rnd_mas_9x21_Stanag",nil,500]
 						
@@ -311,11 +319,14 @@ switch(_shop) do
 					    ["RH_g19",nil,1000],
 						["arifle_mas_mp5",nil,2000],
 						//["hlc_rifle_honeybase",nil,2500],
-						["arifle_mas_hk416",nil,10000],
-						["arifle_mas_hk416c",nil,10000],
+						["arifle_mas_m4",nil,3000],
+						["arifle_mas_m4c",nil,3000],
 						
+						
+						["hlc_rifle_Colt727",nil,3500],
 						["hlc_rifle_cqbr",nil,3000],
 						
+						["optic_Aco",nil,500],
 						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
@@ -350,12 +361,9 @@ switch(_shop) do
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
-						["arifle_mas_hk416",nil,10000],
 						
-						["arifle_mas_hk416c",nil,10000],
 						
-						["R3F_Famas_F1_HG",nil,15000],
-						
+						["optic_Aco",nil,500],
 						["optic_Arco",nil,700],
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
@@ -365,8 +373,8 @@ switch(_shop) do
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["30Rnd_mas_9x21_Stanag",nil,500],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500]
+						["30Rnd_mas_9x21_Stanag",nil,500]
+						
 					
 					]
 				];
@@ -394,7 +402,7 @@ switch(_shop) do
 						["arifle_mas_hk416",nil,10000],
 						["arifle_mas_hk416c",nil,10000],
 						
-						["R3F_Famas_F1_HG",nil,15000],
+					
 						
 						["hlc_rifle_SAMR",nil,25000],
 						
@@ -407,7 +415,7 @@ switch(_shop) do
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500],
+					
 						["30Rnd_mas_9x21_Stanag",nil,500]
 						
 						
@@ -435,10 +443,9 @@ switch(_shop) do
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
-						["arifle_mas_hk416",nil,10000],
-						["arifle_mas_hk416c",nil,10000],
+					
 						
-						["R3F_Famas_F1_HG",nil,15000],
+						
 						["hlc_rifle_SAMR",nil,25000],
 						["R3F_HK417M",nil,20000],
 						
@@ -453,7 +460,7 @@ switch(_shop) do
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500],
+						
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_20Rnd_762x51_HK417",nil,2000]
 						
@@ -479,10 +486,9 @@ switch(_shop) do
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
-						["arifle_mas_hk416",nil,10000],
-						["arifle_mas_hk416c",nil,10000],
+					
 						
-						["R3F_Famas_F1_HG",nil,15000],
+					
 						
 						["R3F_HK417M",nil,20000],
 						
@@ -499,7 +505,7 @@ switch(_shop) do
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500],
+						
 						["R3F_20Rnd_762x51_HK417",nil,2000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_100Rnd_762x51_Minimi",nil,3000]
@@ -528,8 +534,7 @@ switch(_shop) do
 						["arifle_mas_mp5",nil,2000],
 						["arifle_mas_g3",nil,20000],
 						["LMG_mas_Mk200_F",nil,20000], 
-						["arifle_mas_hk416",nil,10000],
-						["arifle_mas_hk416c",nil,10000],
+						
 						["hlc_rifle_bcmjack",nil,3000],
 						["hlc_rifle_cqbr",nil,3000],
 						
@@ -552,7 +557,7 @@ switch(_shop) do
 						["RH_12Rnd_45cal_usp",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
 						["hlc_30rnd_556x45_EPR",nil,300],
-						["R3F_25Rnd_556x45_FAMAS",nil,1500],
+					
 						["R3F_20Rnd_762x51_HK417",nil,2000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						["R3F_100Rnd_762x51_Minimi",nil,3000],
@@ -689,7 +694,7 @@ switch(_shop) do
 					[   
 					
 					
-						["Trixie_Enfield",nil,50000],
+						
 						//Rang3
 						["RH_deaglem",nil,40000],
 					
@@ -706,11 +711,12 @@ switch(_shop) do
 						
 						
 						//Rang3
+						["optic_mas_aim",nil,4000],
 						["RH_7Rnd_50_AE",nil,500],
 						["Trixie_Enfield_Mag",nil,1000],
 					
 						//Rang2
-						["optic_Aco",nil,500],
+						["optic_Aco",nil,5000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						//Rang1
 						["RH_33Rnd_9x19_g18",nil,200],
@@ -735,7 +741,9 @@ switch(_shop) do
 					
 						
 						//Rang4
-						["Trixie_Enfield",nil,50000],
+						["arifle_mas_hk416",nil,120000],
+						["arifle_mas_hk416_v",nil,120000],
+						["arifle_mas_hk416_d",nil,120000],
 						//Rang3
 						["RH_deaglem",nil,40000],
 						//Rang2
@@ -751,13 +759,17 @@ switch(_shop) do
 						
 						
 						//Rang4
-						["Trixie_Enfield_Mag",nil,1000],
+						["optic_Arco",nil,10000],
+						["optic_MRCO",nil,10000],
+						["optic_Hamr",nil,10000],
+						["optic_mas_aim",nil,4000],
+						["30Rnd_mas_556x45_Stanag",nil,1000],
 						//Rang3
 						["RH_7Rnd_50_AE",nil,500],
 						
 					
 						//Rang2
-						["optic_Aco",nil,500],
+						["optic_Aco",nil,5000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						//Rang1
 						["RH_33Rnd_9x19_g18",nil,200],
@@ -782,7 +794,9 @@ switch(_shop) do
 						["Trixie_M14",nil,230000],
 						["RH_ttracker_g",nil,150000],
 						//Rang4
-						["Trixie_Enfield",nil,50000],
+						["arifle_mas_hk416",nil,120000],
+						["arifle_mas_hk416_v",nil,120000],
+						["arifle_mas_hk416_d",nil,120000],
 						//Rang3
 						["RH_deaglem",nil,40000],
 						
@@ -797,16 +811,21 @@ switch(_shop) do
 						
 						
 						//Rang5
+						["optic_Arco",nil,10000],
+						["optic_MRCO",nil,10000],
+						["optic_Hamr",nil,10000],
+						["optic_LRPS",nil,50000],
+						["optic_mas_aim",nil,4000],
 						["Trixie_20x762_Mag",nil,1000],
 						["RH_6Rnd_45ACP_Mag",nil,500],
 						//Rang4
-						["Trixie_Enfield_Mag",nil,1000],
+						["30Rnd_mas_556x45_Stanag",nil,1000],
 						//Rang3
 						["RH_7Rnd_50_AE",nil,500],
 						
 					
 						//Rang2
-						["optic_Aco",nil,500],
+						["optic_Aco",nil,5000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
 						//Rang1
 						["RH_33Rnd_9x19_g18",nil,200],
@@ -832,30 +851,45 @@ switch(_shop) do
 					
 						
 						//Rang5
-						["arifle_mas_mk16",nil,200000],
-						["arifle_mas_mk16_l",nil,220000],
+						
 						//Rang4
-						["LMG_mas_rpk_F",nil,190000],
+						["arifle_mas_mk16",nil,150000],
+						["arifle_mas_mk16_l",nil,175000],
+						["LMG_mas_rpk_F",nil,150000],
+						["LMG_mas_M249_F",nil,170000],
+						["arifle_mas_fal",nil,200000],
 						//Rang3
-						["Trixie_CZ550_Rail",nil,250000],
-						["srifle_mas_svd",nil,250000],
+						["Trixie_CZ550_Rail",nil,200000],
+						["srifle_mas_m91",nil,220000],
+						
+						["R3F_Famas_F1_DES",nil,120000],
+						["R3F_Famas_G2_HG_DES",nil,140000],
+						
 						//RAng2
-						["arifle_mas_ak74",nil,150000],
-						["arifle_mas_aks_74_sf",nil,130000],
-						["arifle_mas_ak_74m_sf",nil,130000],
+						["arifle_mas_ak74",nil,130000],
+						["arifle_mas_aks_74_sf",nil,110000],
+						["arifle_mas_ak_74m_sf",nil,110000],
 						//Rang1
 						["arifle_mas_aks74u_c",nil,90000],
 						
 						["RH_mateba",nil,30000],
-						
+						["RH_deagleg",nil,50000],
 						//Rang1
-						["optic_mas_ACO_grn_camo",nil,500],
+						["optic_mas_ACO_grn_camo",nil,5000],
 						//Rang3
-						["Trixie_LSMARK4",nil,500],
-						["optic_mas_PSO_c",nil,500],
-						//Rang5
-						["optic_MRCO",nil,1000],
 						
+						["optic_mas_PSO_c",nil,40000],
+						//Rang5
+						["optic_Arco",nil,20000],
+						["optic_MRCO",nil,20000],
+						["optic_Hamr",nil,20000],
+						["optic_LRPS",nil,50000],
+						
+						["200Rnd_mas_556x45_Stanag",nil,1500],
+						["20Rnd_mas_762x51_Stanag",nil,1000],
+						["RH_7Rnd_50_AE",nil,500],
+						["R3F_30Rnd_556x45_FAMAS",nil,500],
+						["R3F_25Rnd_556x45_FAMAS",nil,500],
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["30Rnd_mas_556x45_Stanag",nil,1000],
@@ -888,32 +922,40 @@ switch(_shop) do
 				["Bandit 4",
 				
 					[   
-						
-				
-						
-						//Rang4
-						["LMG_mas_rpk_F",nil,190000],
+						["arifle_mas_mk16",nil,150000],
+						["arifle_mas_mk16_l",nil,175000],
+						["LMG_mas_rpk_F",nil,150000],
+						["LMG_mas_M249_F",nil,170000],
 						//Rang3
-						["Trixie_CZ550_Rail",nil,250000],
-						["srifle_mas_svd",nil,250000],
+						["Trixie_CZ550_Rail",nil,200000],
+						
+						
+						
 						//RAng2
-						["arifle_mas_ak74",nil,150000],
-						["arifle_mas_aks_74_sf",nil,130000],
-						["arifle_mas_ak_74m_sf",nil,130000],
+						["R3F_Famas_F1_DES",nil,120000],
+						["R3F_Famas_G2_HG_DES",nil,140000],
+						["srifle_mas_m91",nil,250000],
+						
+						["arifle_mas_ak74",nil,130000],
+						["arifle_mas_aks_74_sf",nil,110000],
+						["arifle_mas_ak_74m_sf",nil,110000],
 						//Rang1
 						["arifle_mas_aks74u_c",nil,90000],
-						
 						["RH_mateba",nil,30000],
-						
 						//Rang1
-						["optic_mas_ACO_grn_camo",nil,500],
+						["optic_mas_ACO_grn_camo",nil,5000],
 						//Rang3
-						["Trixie_LSMARK4",nil,500],
-						["optic_mas_PSO_c",nil,500],
-						["optic_MRCO",nil,1000],
+						["optic_LRPS",nil,50000],
+						
+						["optic_mas_PSO_c",nil,40000],
+						["optic_Arco",nil,20000],
+						["optic_MRCO",nil,20000],
+						["optic_Hamr",nil,20000],
 						//Rang5
-						
-						
+						["200Rnd_mas_556x45_Stanag",nil,1500],
+						["R3F_30Rnd_556x45_FAMAS",nil,500],
+						["30Rnd_mas_556x45_Stanag",nil,1000],
+						["R3F_25Rnd_556x45_FAMAS",nil,500],
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["100Rnd_mas_545x39_mag",nil,2000],
@@ -943,25 +985,31 @@ switch(_shop) do
 						[   
 						
 						//Rang3
-						["Trixie_CZ550_Rail",nil,250000],
-						["srifle_mas_svd",nil,250000],
+						["Trixie_CZ550_Rail",nil,200000],
+						["srifle_mas_m91",nil,220000],
+						
 						//RAng2
-						["arifle_mas_ak74",nil,150000],
-						["arifle_mas_aks_74_sf",nil,130000],
-						["arifle_mas_ak_74m_sf",nil,130000],
+						["arifle_mas_ak74",nil,130000],
+						["arifle_mas_aks_74_sf",nil,110000],
+						["arifle_mas_ak_74m_sf",nil,110000],
 						//Rang1
+						["R3F_Famas_F1_DES",nil,120000],
+						["R3F_Famas_G2_HG_DES",nil,140000],
 						["arifle_mas_aks74u_c",nil,90000],
 						
 						["RH_mateba",nil,30000],
 						
 						//Rang1
-						["optic_mas_ACO_grn_camo",nil,500],
-						//Rang3
-						["Trixie_LSMARK4",nil,500],
-						["optic_mas_PSO_c",nil,500],
+						["optic_LRPS",nil,50000],
 						
+						["optic_mas_PSO_c",nil,40000],
+						["optic_Arco",nil,20000],
+						["optic_MRCO",nil,20000],
+						["optic_Hamr",nil,20000],
+						["optic_mas_ACO_grn_camo",nil,5000],
 						
-						
+						["R3F_30Rnd_556x45_FAMAS",nil,500],
+						["R3F_25Rnd_556x45_FAMAS",nil,500],
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["100Rnd_mas_545x39_mag",nil,2000],
@@ -988,17 +1036,17 @@ switch(_shop) do
 						
 						
 						//RAng2
-						["RH_tec9",nil,50000],
-						["arifle_mas_ak74",nil,150000],
-						["arifle_mas_aks_74_sf",nil,130000],
-						["arifle_mas_ak_74m_sf",nil,130000],
+						["RH_tec9",nil,30000],
+						["arifle_mas_ak74",nil,130000],
+						["arifle_mas_aks_74_sf",nil,110000],
+						["arifle_mas_ak_74m_sf",nil,110000],
 						//Rang1
 						["arifle_mas_aks74u_c",nil,90000],
 						
 						["RH_mateba",nil,30000],
 						
 						//Rang1
-						["optic_mas_ACO_grn_camo",nil,500],
+						["optic_mas_ACO_grn_camo",nil,5000],
 						
 						
 						
@@ -1031,19 +1079,20 @@ switch(_shop) do
 						
 						
 						//Rang1
+						["RH_tec9",nil,30000],
 						["arifle_mas_aks74u_c",nil,90000],
 						
 						["RH_mateba",nil,30000],
 						
 						//Rang1
-						["optic_mas_ACO_grn_camo",nil,500],
+						["optic_mas_ACO_grn_camo",nil,5000],
 						
 						
 						
 						
 						
 						["RH_6Rnd_44_Mag",nil,500],
-						
+						["RH_32Rnd_9x19_tec",nil,400],
 						["100Rnd_mas_545x39_mag",nil,2000],
 						["30Rnd_mas_545x39_mag",nil,800]
 						
@@ -1086,8 +1135,8 @@ switch(_shop) do
 			};
 		};
 	};
-	/*
-	case "gang":
+	
+	/*case "gang":
 	{
 		switch(true) do
 		{
@@ -1096,16 +1145,12 @@ switch(_shop) do
 			{
 				["Hideout Armament",
 					[
-						["hgun_Rook40_F",nil,1500],
-						["hgun_Pistol_heavy_02_F",nil,2500],
-						["hgun_ACPC2_F",nil,4500],
-						["hgun_PDW2000_F",nil,9500],
-						["optic_ACO_grn_smg",nil,950],
-						["V_Rangemaster_belt",nil,1900],
-						["16Rnd_9x21_Mag",nil,25],
-						["9Rnd_45ACP_Mag",nil,45],
-						["6Rnd_45ACP_Cylinder",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["RH_tec9",nil,70000],
+						
+						
+						
+					
+						["RH_32Rnd_9x19_tec",nil,400]
 					]
 				];
 			};

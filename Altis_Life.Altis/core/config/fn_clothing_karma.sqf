@@ -59,7 +59,7 @@ if(_karma > 0) then
 				_ret pushBack ["rds_Profiteer_cap3","Cap",200];
 				_ret pushBack ["rds_Profiteer_cap4","Cap",200];
 				
-				if(_karma >= 1500) then
+				if(_karma >= 3000) then
 				{
 				_ret pushBack ["rds_Villager_cap1","Mütze",200];
 				_ret pushBack ["rds_villager_cap2","Mütze",200];
@@ -85,7 +85,7 @@ if(_karma > 0) then
 				{
 				
 				
-					if(_karma >= 3000) then
+					if(_karma >= 10000) then
 					{
 					_return pushBack ["NVGoggles_mas_h",nil,1000];
 					};
@@ -119,20 +119,19 @@ if(_karma > 0) then
 		//Backpacks
 		case 4:
 		{
-			if(_karma <= 500) then
-			{
+			
 				
 				
-				if(_karma <= 1500) then
-				{
-				
-				
-					if(_karma <= 3000) then
-					{
-					
-					};
-				};
-			};
+			_ret pushBack ["B_AssaultPack_cbr",nil,250],
+			_ret pushBack ["B_Kitbag_mcamo",nil,450],
+			_ret pushBack ["B_TacticalPack_oli",nil,350],
+			_ret pushBack ["B_FieldPack_ocamo",nil,300],
+			_ret pushBack ["B_Bergen_sgg",nil,450],
+			_ret pushBack ["B_Kitbag_cbr",nil,450],
+				//["FLAY_HangGlider_Bag",nil,10000],
+			_ret pushBack ["B_Carryall_oli",nil,500],
+			_ret pushBack ["B_Carryall_khk",nil,500]
+			
 		};
 	};
 
@@ -195,11 +194,11 @@ else
 				_ret pushBack ["H_Shemag_olive","Shemag",200];
 				
 				
-				if(_karma <= -1500) then
+				if(_karma <= -3000) then
 				{
 				 	_ret pushBack ["kio_vfv_mask","Vendetta Maske",1000];
 				 	
-					if(_karma <= -3000) then
+					if(_karma <= -10000) then
 					{
 					_ret pushBack ["kio_skl_msk_grn","Schädel Maske Grün",5000];
 					_ret pushBack ["kio_skl_msk_red","Schädel Maske Rot",5000];
@@ -240,7 +239,7 @@ else
 				{
 					_ret pushBack ["V_HarnessOSpec_brn",nil,25000];
 				
-					if(_karma <= -3000) then
+					if(_karma <= -6000) then
 					{
 					_ret pushBack ["V_TacVest_camo",nil,50000];
 					_ret pushBack ["V_TacVest_khk",nil,50000];
@@ -252,23 +251,17 @@ else
 		//Backpacks
 		case 4:
 		{
-			if(_karma <= -500) then
-			{
-				
-				
-				if(_karma <= -1500) then
-				{
-				
-				
-					if(_karma <= -3000) then
-					{
-					
-					};
-				};
-			};
-		};
+			_ret pushBack ["B_AssaultPack_cbr",nil,250],
+			_ret pushBack ["B_Kitbag_mcamo",nil,450],
+			_ret pushBack ["B_TacticalPack_oli",nil,350],
+			_ret pushBack ["B_FieldPack_ocamo",nil,300],
+			_ret pushBack ["B_Bergen_sgg",nil,450],
+			_ret pushBack ["B_Kitbag_cbr",nil,450],
+			//["FLAY_HangGlider_Bag",nil,10000],
+			_ret pushBack ["B_Carryall_oli",nil,500],
+			_ret pushBack ["B_Carryall_khk",nil,500]
 	};
-
+};
 
 
 

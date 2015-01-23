@@ -16,6 +16,7 @@ switch (_var) do
 	case "life_inv_oilu": {(localize "STR_Item_OilU")};
 	case "life_inv_oilp": {(localize "STR_Item_OilP")};
 	case "life_inv_steel": {(localize "STR_Item_Steel")};
+	case "life_inv_plastic": {(localize "STR_Item_Plastic")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
 	case "life_inv_heroinp": {(localize "STR_Item_HeroinP")};
 	case "life_inv_cannabis": {(localize "STR_Item_Cannabis")};
@@ -43,6 +44,7 @@ switch (_var) do
 	case "life_inv_copperr": {(localize "STR_Item_CopperIngot")};
 	case "life_inv_sand": {(localize "STR_Item_Sand")};
 	case "life_inv_salt": {(localize "STR_Item_Salt")};
+	case "life_inv_bluesyn": {(localize "STR_Item_Bluesyn")};
 	case "life_inv_coalu": {(localize "STR_Item_CoalOre")};
 	case "life_inv_coalp": {(localize "STR_Item_Coal")};
 	case "life_inv_saltr": {(localize "STR_Item_SaltR")};
@@ -65,8 +67,6 @@ switch (_var) do
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	case "life_inv_zipties": {(localize "STR_Item_zipties")};
-	case "life_inv_plastic": {(localize "STR_Item_plastic")};
-	case "life_inv_simplewaffenteile": {(localize "STR_Item_sWaffenteile")};
 	
 	
 	
@@ -89,6 +89,7 @@ switch (_var) do
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
+	case "license_civ_bluesyn": {(localize "STR_License_BlueSyn")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
 	case "license_civ_heroin": {(localize "STR_License_Heroin")};
 	case "license_civ_oil": {(localize "STR_License_Oil")};
@@ -101,6 +102,8 @@ switch (_var) do
 	case "license_cop_cg": {(localize "STR_License_CG")};
 	case "license_civ_rebel": {(localize "STR_License_Rebel")};
 	case "license_civ_truck": {(localize "STR_License_Truck")};
+	case "license_civ_plastic": {(localize "STR_License_Plastic")};
+	case "license_civ_steel": {(localize "STR_License_Steel")};
 	case "license_civ_diamond": {(localize "STR_License_Diamond")};
 	case "license_civ_copper": {(localize "STR_License_Copper")};
 	case "license_civ_iron": {(localize "STR_License_Iron")};
@@ -112,7 +115,4 @@ switch (_var) do
 	case "license_med_air": {(localize "STR_License_Pilot")};
 	case "license_civ_home": {(localize "STR_License_Home")};
 	case "license_civ_coal": {(localize "STR_License_Coal")};
-	case "license_civ_steel": {(localize "STR_License_Steel")};
-	case "license_civ_plastic": {(localize "STR_License_Plastic")};
-	case "license_civ_Waffenschmied": {(localize "STR_License_Waffenschmied")};
 };

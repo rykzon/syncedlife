@@ -28,6 +28,7 @@ switch (_type) do
 	case "rebel": {75000}; //Rebel license cost
 	case "truck": {25000}; //Truck license cost
 	case "diamond": {50000};
+	case "bluesyn": {40000};
 	case "salt": {12000};
 	case "cocaine": {35000};
 	case "sand": {25000};

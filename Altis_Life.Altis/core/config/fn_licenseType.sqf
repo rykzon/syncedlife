@@ -37,6 +37,7 @@ switch (_mode) do
 			case "salt": {_var = "license_civ_salt"};
 			case "cocaine": {_var = "license_civ_coke"};
 			case "sand": {_var = "license_civ_sand"};
+			case "bluesyn": {_var = "license_civ_bluesyn"};
 			
 			case "aSchnaps": {_var = "license_civ_aSchnaps"};
 			case "pSchnaps": {_var = "license_civ_pSchnaps"};
@@ -76,6 +77,7 @@ switch (_mode) do
 			case "license_civ_truck":{_var = "truck"}; //Truck License
 			case "license_civ_diamond": {_var = "diamond"};
 			case "license_civ_salt": {_var = "salt"};
+			case "license_civ_bluesyn": {_var = "bluesyn"};
 			case "license_civ_coke": {_var = "cocaine"};
 			case "license_civ_sand": {_var = "sand"};
 			case "license_civ_iron": {_var = "iron"};

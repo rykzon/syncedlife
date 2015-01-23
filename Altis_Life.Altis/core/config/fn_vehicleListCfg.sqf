@@ -91,7 +91,7 @@ switch (_shop) do
 			//["dbo_CIV_new_bike",1000],
 			["RDS_Octavia_Civ_01",40000],
 			//["C_Hatchback_01_F",80000],
-			//["C_Offroad_01_F",60000],
+			["C_Offroad_01_F",35000],
 			["C_SUV_01_F",100000],
 			["DAR_M3CivGrey",100000],
 			["DAR_M3CivWhite",100000],

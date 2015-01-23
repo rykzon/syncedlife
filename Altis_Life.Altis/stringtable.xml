@@ -3387,6 +3387,15 @@
 			<Portuguese>Petróleo Refinado</Portuguese>
 		</Key>
 		
+			<Key ID="STR_Item_Bluesyn">
+			<Original>Bluesyn</Original>
+			<English>Bluesyn</English>
+			<German>Bluesyn</German>
+			<French>Pétrole raffiné</French>
+			<Italian>Olio processato</Italian>
+			<Portuguese>Petróleo Refinado</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Item_OilP">
 			<Original>Processed Oil</Original>
 			<English>Processed Oil</English>
@@ -3819,10 +3828,19 @@
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
 		
-			<Key ID="STR_License_Steel">
+				<Key ID="STR_License_Steel">
 			<Original>Steel Processing</Original>
 			<English>Steel Processing</English>
-			<German>Stahlverarbeitung</German>
+			<German>Steelverarbeitung</German>
+			<French>Raffinage de du pétrole</French>
+			<Italian>Processo Olio</Italian>
+			<Portuguese>Refinamento de Petróleo</Portuguese>
+		</Key>
+		
+			<Key ID="STR_License_BlueSyn">
+			<Original>BlueSyn Processing</Original>
+			<English>BlueSyn Processing</English>
+			<German>Bluesynverarbeitung</German>
 			<French>Raffinage de du pétrole</French>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
@@ -4290,6 +4308,15 @@
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
+			<Key ID="STR_Process_Bluesyn">
+			<Original>Processing Bluesyn</Original>
+			<English>Processing Bluesyn</English>
+			<German>Bluesyn wird verarbeitet</German>
+			<French>Raffinage de Pétrole</French>
+			<Italian>Processando l'Olio</Italian>
+			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		
 		
 		<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>

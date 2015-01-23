@@ -160,38 +160,53 @@ life_market_resources = [
 			["marijuana",1], 
 			["cocainep",1],
 			["heroinp",1],
-			["aSchnaps",1],
-			["pSchnaps",1]
+			//["aSchnaps",1],
+			//["pSchnaps",1],
+			["bluesyn",1]
 		] 
 	],
 
-	["marijuana", 1950, 1700, 2200, 4, 4,   
+	["marijuana", 2250, 1900, 2600, 4, 4,   
 		[ 
 			["turtle",1], 
 			["cocainep",1],
 			["heroinp",1],
-			["aSchnaps",1],
-			["pSchnaps",1]
+			//["aSchnaps",1],
+			//["pSchnaps",1],
+			["bluesyn",1]
 		] 
 	],
 	
-	["cocainep", 2650, 2200, 3100, 4, 4,   
+	["cocainep", 3050, 3500, 3950, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
 			["heroinp",1],
-			["aSchnaps",1],
-			["pSchnaps",1]
+			//["aSchnaps",1],
+			//["pSchnaps",1],
+			["bluesyn",1]
 		] 
 	],
 
-	["heroinp", 2800, 2400, 3200, 4, 4,   
+	["heroinp", 3450, 3850, 4250, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],
 			["cocainep",1],
-			["aSchnaps",1],
-			["pSchnaps",1]
+			//["aSchnaps",1],
+			//["pSchnaps",1],
+			["bluesyn",1]
+		] 
+	],
+	
+	["bluesyn", 5600, 4800, 6500, 4, 4,   
+		[ 
+			["marijuana",1], 
+			["turtle",1],
+			["cocainep",1],
+			["heroinp",1]
+			//["aSchnaps",1],
+			//["pSchnaps",1]
 		] 
 	]
 	

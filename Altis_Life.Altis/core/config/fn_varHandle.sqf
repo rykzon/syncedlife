@@ -45,7 +45,7 @@ switch (_mode) do
 			case "iron_r": {"life_inv_ironr"};
 			case "copper_r": {"life_inv_copperr"};
 			case "salt": {"life_inv_salt"};
-			case "plastic": {"life_inv_plastic"};
+			case "bluesyn": {"life_inv_bluesyn"};
 			case "salt_r": {"life_inv_saltr"};
 			case "sand": {"life_inv_sand"};
 			case "coalu": {"life_inv_coalu"};
@@ -55,6 +55,7 @@ switch (_mode) do
 			case "tbacon": {"life_inv_tbacon"};
 			case "lockpick": {"life_inv_lockpick"};
 			case "redgull": {"life_inv_redgull"};
+			case "plastic": {"life_inv_plastic"};
 			case "peach": {"life_inv_peach"};
 			case "diamond": {"life_inv_diamond"};
 			case "diamondc": {"life_inv_diamondr"};
@@ -70,7 +71,6 @@ switch (_mode) do
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
 			case "zipties": {"life_inv_zipties"};
-			case "swaffenteile": {"life_inv_simplewaffenteile"};
 		};
 	};
 	
@@ -92,7 +92,6 @@ switch (_mode) do
 			case "life_inv_rabbit": {"rabbit"};
 			case "life_inv_salema": {"salema"};
 			case "life_inv_ornate": {"ornate"};
-			case "life_inv_plastic": {"plastic"};
 			case "life_inv_mackerel": {"mackerel"};
 			case "life_inv_tuna": {"tuna"};
 			case "life_inv_mullet": {"mullet"};
@@ -102,6 +101,7 @@ switch (_mode) do
 			case "life_inv_coffee": {"coffee"};
 			case "life_inv_turtlesoup": {"turtlesoup"};
 			case "life_inv_donuts": {"donuts"};
+			case "life_inv_plastic": {"plastic"};
 			case "life_inv_fuelE": {"fuelE"};
 			case "life_inv_fuelF": {"fuelF"};
 			case "life_cash": {"money"};
@@ -112,6 +112,7 @@ switch (_mode) do
 			case "life_inv_copperr": {"copper_r"};
 			case "life_inv_sand": {"sand"};
 			case "life_inv_salt": {"salt"};
+			case "life_inv_bluesyn": {"bluesyn"};
 			case "life_inv_glass": {"glass"};
 			case "life_inv_redgull": {"redgull"};
 			case "life_inv_lockpick": {"lockpick"};
@@ -132,7 +133,6 @@ switch (_mode) do
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
 			case "life_inv_zipties": {"zipties"};
-			case "life_inv_simplewaffenteile": {"swaffenteile"};
 		};
 	};
 };

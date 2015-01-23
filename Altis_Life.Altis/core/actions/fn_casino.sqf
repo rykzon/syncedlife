@@ -49,6 +49,4 @@ if(!_rip) then
 {
 [[2,"KASINORAUB FEHLGESCHLAGEN!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 };
-
-
 [[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP;

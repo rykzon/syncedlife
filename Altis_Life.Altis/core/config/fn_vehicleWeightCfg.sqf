@@ -51,9 +51,9 @@ switch (_className) do
 	case "DAR_MK27T": {330};
 	case "DAR_MK27": {270};
 	
-	case "I_Heli_Transport_02_F": {150};
-	case "B_Heli_Transport_03_unarmed_F": {150};
-	case "O_Heli_Transport_04_covered_F": {100};
+	case "I_Heli_Transport_02_F": {60};
+	case "B_Heli_Transport_03_unarmed_F": {50};
+	case "O_Heli_Transport_04_covered_F": {50};
 	
 	case "sab_cz_An2": {300};
 	
@@ -78,8 +78,7 @@ switch (_className) do
 	case "I_MRAP_03_F": {58};
 	case "dbo_CIV_ol_bike": {0};
 	case "B_Heli_Light_01_F": {20};
-	case "O_Heli_Light_02_unarmed_F": {100};
-	case "I_Heli_Transport_02_F": {375};
+	case "O_Heli_Light_02_unarmed_F": {60};
 	case "C_Rubberboat": {150};
 	case "O_Boat_Armed_01_hmg_F": {175};
 	case "B_Boat_Armed_01_minigun_F": {175};

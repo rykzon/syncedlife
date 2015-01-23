@@ -15,11 +15,11 @@ player addUniform "U_Rangemaster";
 player addVest "V_Rangemaster_belt";
 
 
-player addWeapon "RH_g19";
-player addMagazine "RH_17Rnd_9x19_g17";
-player addMagazine "RH_17Rnd_9x19_g17";
-player addMagazine "RH_17Rnd_9x19_g17";
-player addMagazine "RH_17Rnd_9x19_g17";
+player addWeapon "hgun_P07_F";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
 
 
 				
