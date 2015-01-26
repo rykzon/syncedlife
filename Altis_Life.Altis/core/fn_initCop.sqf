@@ -17,6 +17,9 @@ if(life_blacklisted) exitWith
 };
 
 
+0 setFog [0, 0.01, 0];
+
+
 	if((__GETC__(life_coplevel) < 1) && (__GETC__(life_adminlevel) == 0)) then {
 		["NotWhitelisted",false,true] call BIS_fnc_endMission;
 		sleep 35;

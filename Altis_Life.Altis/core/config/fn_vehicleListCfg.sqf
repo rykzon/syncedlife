@@ -78,7 +78,19 @@ switch (_shop) do
 			["RDS_S1203_Civ_01",20000],
 			["RDS_S1203_Civ_02",20000],
 			["RDS_Golf4_Civ_01",33000],
-			["C_Van_01_transport_F",30000]
+			["C_Van_01_transport_F",30000],
+			["cl3_civic_vti_black",25000],
+			["cl3_civic_vti_cardinal",25000],
+			["cl3_civic_vti_dark_green",25000],
+			["cl3_civic_vti_grey",25000],
+			["cl3_civic_vti_light_blue",25000],
+			["cl3_golf_mk2_babyblue",22000],
+			["cl3_golf_mk2_babypink",22000],
+			["cl3_golf_mk2_black",22000],
+			["cl3_golf_mk2_red",22000],
+			["cl3_golf_mk2_green",22000],
+			["cl3_golf_mk2_silver",22000]
+		
 			
 			
 		];
@@ -93,6 +105,26 @@ switch (_shop) do
 			//["C_Hatchback_01_F",80000],
 			["C_Offroad_01_F",35000],
 			["C_SUV_01_F",100000],
+			["cl3_insignia_black",45000],
+			["cl3_insignia_cardinal",45000],
+			["cl3_insignia_grey",45000],
+			["cl3_insignia_marina_blue",45000],
+			["cl3_polo_gti_black",55000],
+			["cl3_polo_gti_blue",55000],
+			["cl3_polo_gti_burgundy",55000],
+			["cl3_polo_gti_navy_blue",55000],
+			["cl3_polo_gti_orange",55000],
+			["cl3_polo_gti_white",55000],
+			["cl3_e60_m5_black",120000],
+			["cl3_e60_m5_burgundy",120000],
+			["cl3_e60_m5_navy_blue",120000],
+			["cl3_e60_m5_gold",120000],
+			["cl3_e60_m5_silver",120000],
+			["cl3_z4_2008_black",90000],
+			["cl3_z4_2008_cardinal",90000],
+			["cl3_z4_2008_navy_blue",90000],
+			["cl3_z4_2008_orange",90000],
+			["cl3_z4_2008_silver",90000],
 			["DAR_M3CivGrey",100000],
 			["DAR_M3CivWhite",100000],
 			["DAR_TahoeCivRed",40000],
@@ -100,7 +132,27 @@ switch (_shop) do
 			["DAR_TahoeCivSilver",40000],
 			["SAL_AudiCivRed",110000],
 			["SAL_AudiCivSilver",110000],
-			["SAL_77TRANSAMCiv",300000],
+			["SAL_77TRANSAMCiv",300000]
+			
+		];
+	};
+	
+		case "civ_car2":
+	{
+		_return = 
+		[
+			["cl3_458_red",700000],
+			["cl3_458_yellow",700000],
+			["cl3_458_navy_blue",700000],
+			
+			["cl3_e63_amg_burgundy",400000],
+			["cl3_e63_amg_silver",400000],
+			["cl3_dbs_volante_orange",600000],
+			["cl3_dbs_volante_red",600000],
+			["cl3_dbs_volante_silver",600000],
+			["cl3_dbs_volante_burgundy",600000],
+			["cl3_dbs_volante_black",600000],
+			
 			["Jonzie_Viper",670000]
 		];
 	};
@@ -143,6 +195,8 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 		_return pushBack
+		["cl3_reventon_clpd",25000];
+		_return pushBack
 		["DAR_ChargerPoliceState",20000];
 	//	_return pushBack
 		//["C_SUV_01_F",20000];
@@ -175,7 +229,7 @@ switch (_shop) do
 		_return =
 		[
 		
-			
+			["ivory_yak42d_1",2000000],
 			["GNT_C185",332500],
 			["bwi_a3_t6a",850000],
 			["bwi_a3_t6a_1",850000],
@@ -196,17 +250,20 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) >= 1) then
 		{
-		_return pushBack
-		["B_Heli_Light_01_F",20000];
+			_return pushBack
+			["B_Heli_Light_01_F",20000];
 		
 		};
-		
+		if(__GETC__(life_coplevel) >= 2) then
+		{
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",40000];
+		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",40000];
-			_return pushBack
-			["O_Heli_Transport_04_bench_F",40000];
+			
 		};
 	};
 	
@@ -214,17 +271,20 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) >= 1) then
 		{
-		_return pushBack
-		["B_Heli_Light_01_F",75000];
+			_return pushBack
+			["B_Heli_Light_01_F",20000];
 		
 		};
-		
-			if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) >= 2) then
+		{
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",40000];
+		};
+		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",40000];
-			_return pushBack
-			["O_Heli_Transport_04_bench_F",40000];
+			
 		};
 	};
 	
@@ -301,7 +361,8 @@ switch (_shop) do
 	{	
 		if(__GETC__(life_mafialevel) >= 1) then
 		{
-			
+			_return pushBack
+			["cl3_458_black",100000];
 			_return pushBack
 			["CUP_Volha_Black",30000];
 			_return pushBack
@@ -316,6 +377,8 @@ switch (_shop) do
 			["DAR_TahoeCivBlack",30000];
 			_return pushBack
 			["SAL_AudiCivBlack",40000];
+			_return pushBack
+			["cl3_e63_amg_black",40000];
 			
 		};
 	

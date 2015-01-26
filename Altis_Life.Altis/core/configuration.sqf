@@ -30,14 +30,15 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 life_action_gathering = false;
+life_smartphoneTarget = ObjNull;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
-__CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,250); //Fee for players to pay when revived.
+__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
+__CONST__(life_revive_fee,5000); //Fee for players to pay when revived.
 
 //House Limit
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
@@ -102,7 +103,7 @@ switch (playerSide) do
 	
 	case independent: {
 		life_atmcash = 40000;
-		life_paycheck = 450;
+		life_paycheck = 2500;
 	};
 };
 
@@ -111,6 +112,7 @@ switch (playerSide) do
 */
 life_masked = [
 "H_Shemag_olive",
+"kio_vfv_mask",
 "kio_skl_msk_grn",
 "kio_skl_msk_red",
 "kio_skl_msk",
@@ -229,6 +231,7 @@ life_licenses =
 
 life_prof =
 [
+
 ["Mafia_Prof","civ"],
 ["Karma_Prof","civ"],
 ["Oil_Prof","civ"],
@@ -290,6 +293,7 @@ sell_array =
 	["iron_r",3200],
 	["coalp",3200],
 	["steel",3200],
+	["bluesyn",6000],
 	["plastic",3200],
 	["copper_r",1500],
 	["salt_r",1650],

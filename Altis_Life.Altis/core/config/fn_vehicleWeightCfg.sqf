@@ -17,6 +17,63 @@ switch (_className) do
 	case "RDS_Lada_Civ_03": {40};
 	case "RDS_Lada_Civ_04": {40};
 	
+	case "cl3_civic_vti_black": {40};
+	case "cl3_civic_vti_cardinal": {40};
+	case "cl3_civic_vti_dark_green": {40};
+	case "cl3_civic_vti_grey": {40};
+	case "cl3_civic_vti_light_blue": {40};
+	
+	case "cl3_golf_mk2_babyblue": {40};
+	case "cl3_golf_mk2_babypink": {40};
+	case "cl3_golf_mk2_black": {40};
+	case "cl3_golf_mk2_red": {40};
+	case "cl3_golf_mk2_green": {40};
+	case "cl3_golf_mk2_silver": {40};
+	
+	case "cl3_polo_gti_black": {40};
+	case "cl3_polo_gti_blue": {40};
+	case "cl3_polo_gti_burgundy": {40};
+	case "cl3_polo_gti_navy_blue": {40};
+	case "cl3_polo_gti_orange": {40};
+	case "cl3_polo_gti_white": {40};
+	
+	
+	case "cl3_insignia_black": {40};
+	case "cl3_insignia_cardinal": {40};
+	case "cl3_insignia_grey": {40};
+	case "cl3_insignia_marina_blue": {40};
+	
+	case "cl3_reventon_clpd": {40};
+	
+	case "cl3_e60_m5_black": {40};
+	case "cl3_e60_m5_burgundy": {40};
+	case "cl3_e60_m5_navy_blue": {40};
+	case "cl3_e60_m5_gold": {40};
+	case "cl3_e60_m5_silver": {40};
+	
+	case "cl3_z4_2008_black": {40};
+	case "cl3_z4_2008_cardinal": {40};
+	case "cl3_z4_2008_navy_blue": {40};
+	case "cl3_z4_2008_orange": {40};
+	case "cl3_z4_2008_silver": {40};
+	
+	case "cl3_458_red": {40};
+	case "cl3_458_yellow": {40};
+	case "cl3_458_navy_blue": {40};
+	
+	case "cl3_e63_amg_black": {40};
+	case "cl3_e63_amg_burgundy": {40};
+	case "cl3_e63_amg_silver": {40};
+	
+	case "cl3_dbs_volante_orange": {40};
+	case "cl3_dbs_volante_red": {40};
+	case "cl3_dbs_volante_silver": {40};
+	case "cl3_dbs_volante_burgundy": {40};
+	case "cl3_dbs_volante_black": {40};
+	
+	
+	
+	
 	case "RDS_S1203_Civ_01": {70};
 	case "RDS_S1203_Civ_02": {70};
 	case "RDS_S1203_Civ_03": {70};
