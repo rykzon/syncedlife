@@ -24,7 +24,7 @@ The other part is well the SQL statement.
 */
 _query = switch(_side) do {
 case west: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, cop_prof, blacklist FROM players WHERE playerid='%1'",_uid];};
-case civilian: {_returnCount = 11; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof, mafialevel FROM players WHERE playerid='%1'",_uid];};
+case civilian: {_returnCount = 13; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, civ_prof, mafialevel, civPosition, alive FROM players WHERE playerid='%1'",_uid];};
 case independent: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, med_prof FROM players WHERE playerid='%1'",_uid];};
 };
  
@@ -107,10 +107,18 @@ _queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]
 _gangData = _uid spawn TON_fnc_queryPlayerGang;
 waitUntil{scriptDone _gangData};
 _queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
+
+
+_new = [(_queryResult select 11)] call DB_fnc_mresToArray;
+		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
+		_queryResult set[11,_new];
+		
+_queryResult set[12,([_queryResult select 12,1] call DB_fnc_bool)];
+
 };
 };
  
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult set[13,_keyArr];
+_queryResult set[15,_keyArr];
  
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
