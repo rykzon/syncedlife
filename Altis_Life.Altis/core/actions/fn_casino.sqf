@@ -1,9 +1,9 @@
-private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_rob"];
+private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_rob","_fail"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
 //_kassa = 1000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bistudio.com/wiki/addAction). Give it a try and post below ;)
 _action = [_this,2] call BIS_fnc_param;//Action name
-
+_fail = false;
 if !(alive _robber) exitWith {};
 
 _rip = true;
@@ -32,8 +32,9 @@ while {true} do
 	if(life_istazed) exitWith {hint "You were tazed, the robbery has failed!";};
 };
 
-if!(alive _robber) exitWith { _rip = false; };
-	if(_robber distance _shop > 5) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _rip = false; };
+if!(alive _robber) exitWith { _fail = true; };
+	if(_robber distance _shop > 5) exitWith { hint "Du musst in der Nähe der Kasse bleiben, der Kassierer hat die Kasse verschlossen."; 5 cutText ["","PLAIN"]; _fail = true; };
+	if(life_istazed) exitWith {_fail=true};
 	5 cutText ["","PLAIN"];
 	hint format["Du hast das Kasino um $%1 erleichtert.", _kassa];
 	[[2,"KASINORAUB ERFOLGREICH!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
@@ -45,7 +46,7 @@ if!(alive _robber) exitWith { _rip = false; };
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	
 };
-if(!_rip) then
+if(_fail) then
 {
 [[2,"KASINORAUB FEHLGESCHLAGEN!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 };

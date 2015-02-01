@@ -17,11 +17,11 @@ _profData = missionNamespace getVariable (_type);
 _level = (_profData select 0);
 _exp = (_profData select 1);
 _nextLevel = 0;
-_nextLevel = 4 * ( _level^3 ) ;
-_nextLevel2 =  6 * ( _level^2 ) ;
+_nextLevel = 4 * ( _level^3 );
+_nextLevel2 =  6 * ( _level^2 );
 _nextLevel = _nextLevel - _nextLevel2;
-_nextLevel3 = 20 * _level ;
-_nextLevel = _nextLevel + _nextLevel3 + 200 ;
+_nextLevel3 = 20 * _level;
+_nextLevel = _nextLevel + _nextLevel3 + 200;
  
 
 if(_type == "Karma_Prof") then
@@ -44,7 +44,9 @@ if(_type == "Karma_Prof") then
 			
 			default{};
 		};
+		
 		if( _exp < -10500 ) then { _exp = -10500;};
+		if( _exp > 10500 ) then { _exp = 10500;};
 		
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
@@ -67,12 +69,15 @@ if(_type == "Karma_Prof") then
 			default{};
 		
 		};
+		
 		if(_exp > 10500) then { _exp = 10500;};
+		if(_exp < -10500) then { _exp = -10500;};
+		
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
 	
 	
 
 
-}
+};
 

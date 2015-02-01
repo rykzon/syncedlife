@@ -51,7 +51,7 @@ while {player getVariable "restrained"} do
 	
 	if(!alive _cop) exitWith {
 		player setVariable ["Escorting",false,true];
-		detach player;
+		//detach player;
 	};
 	
 	if(vehicle player != player) then

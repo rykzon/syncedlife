@@ -18,7 +18,7 @@ switch (playerSide) do
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget =="Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 		//Eintreiben
 		life_actions = life_actions + [player addAction[localize "STR_pAct_SchutzgeldEintreiben",life_fnc_schutzgeldAction,"",0,false,false,"",'
-		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "AmovPercMstpSnonWnonDnon_Ease" && (__GETC__(life_mafialevel) >= 1)']];
+		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && (animationState cursorTarget == "AmovPercMstpSnonWnonDnon_Ease" || cursorTarget getVariable["surrender",FALSE]) && (__GETC__(life_mafialevel) >= 1)']];
 		
 		life_actions = life_actions + [player addAction["Brieftasche zeigen",life_fnc_showLicenseAction,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget']];

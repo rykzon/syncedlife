@@ -60,7 +60,8 @@ switch (_shop) do
 	case "med_air_hs": {
 		_return = [
 			
-			["O_Heli_Light_02_unarmed_F",20000]
+			["O_Heli_Light_02_unarmed_F",20000],
+			["O_Heli_Transport_04_medevac_F",30000]
 		];
 	};
 	
@@ -231,15 +232,16 @@ switch (_shop) do
 		
 			["ivory_yak42d_1",2000000],
 			["GNT_C185",332500],
-			["bwi_a3_t6a",850000],
-			["bwi_a3_t6a_1",850000],
-			["bwi_a3_t6a_2",850000],
-			["bwi_a3_t6a_3",850000],
-			["bwi_a3_t6a_4",850000],
-			["bwi_a3_t6a_6",850000],
-			["bwi_a3_t6a_7",850000],
-			["bwi_a3_t6a_8",850000],
-			["bwi_a3_t6a_9",850000]
+			["GNT_C185F",350000],
+			["bwi_a3_t6a",650000],
+			["bwi_a3_t6a_1",650000],
+			["bwi_a3_t6a_2",650000],
+			["bwi_a3_t6a_3",650000],
+			["bwi_a3_t6a_4",650000],
+			["bwi_a3_t6a_6",650000],
+			["bwi_a3_t6a_7",650000],
+			["bwi_a3_t6a_8",650000],
+			["bwi_a3_t6a_9",650000]
 			
 			
 		];
@@ -294,8 +296,8 @@ switch (_shop) do
 		[
 			["C_Rubberboat",25000],
 			
-			//["GNT_C185F",450000],
-			["C_Boat_Civil_01_F",22000]
+			
+			["C_Boat_Civil_01_F",35000]
 		];
 	};
 	

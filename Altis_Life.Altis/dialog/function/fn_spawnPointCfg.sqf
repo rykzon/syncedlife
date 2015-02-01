@@ -30,22 +30,22 @@ switch (_side) do
 	{
 			if(__GETC__(life_mafialevel) > 0) then {
 			_return = [
-				["mafia_spawn_1","Mafia","\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"],
+				/*["mafia_spawn_1","Mafia","\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"],
 				["civ_spawn_5","Agios","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],*/
+				["civ_spawn_2","Coast Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","West City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 				];
 			}
 			else
 			{
 			_return =[
-				["civ_spawn_5","Agios","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				/*["civ_spawn_5","Agios","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],*/
+				["civ_spawn_2","Coast Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","West City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 				];
 			};
 			

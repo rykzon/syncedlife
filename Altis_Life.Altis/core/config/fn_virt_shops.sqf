@@ -14,7 +14,7 @@ switch (_shop) do
 
 	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
-	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter"]]};
+	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
@@ -22,9 +22,10 @@ switch (_shop) do
 	case "heroin": {["Drogen Dealer",["cocainep","heroinp","marijuana","bluesyn"]]};
 	case "mafiaDrogen": {["Mafia Dealer",["cocainep","heroinp","marijuana"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
-	case "fishmarket": {["Fischmarkt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
+	case "lebensmittel": {["Lebensmittelhandel",["salema","ornate","mackerel","mullet","tuna","catshark","apple","grape","applejuice","grapejuice"]]};
 	case "glass": {["Glass Händler",["glass"]]};
-	case "iron": {["Metallhändler",["iron_r","copper_r"]]};
+	case "metall": {["Metallhändler",["ironp","copperp"]]};
+	case "natural": {["Naturalienhändler",["woodp","sand"]]};
 	case "diamond": {["Diamanten Händler",["diamond","diamondc"]]};
 	case "salt": {["Salz Händöer",["salt_r"]]};
 	case "cop": {["Donut Händler",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
