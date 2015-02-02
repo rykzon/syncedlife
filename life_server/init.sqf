@@ -94,7 +94,7 @@ client_session_list = [];
 	};
 };
 
-//[] spawn TON_fnc_federalUpdate;
+[] spawn TON_fnc_federalUpdate;
 /*
 [] spawn
 {

@@ -69,14 +69,6 @@
 <Italian>Proficiency sabbia</Italian>
 <Portuguese>areia de Proficiência </Portuguese>
 </Key>
-<Key ID="STR_Prof_Wood">
-<Original>Wood Proficiency</Original>
-<English>Sand Proficiency</English>
-<German>Holz Abbau</German>
-<French>compétence d'sable</French>
-<Italian>Proficiency sabbia</Italian>
-<Portuguese>areia de Proficiência </Portuguese>
-</Key>
 <Key ID="STR_Prof_Rock">
 <Original>Rock Proficiency</Original>
 <English>Rock Proficiency</English>
@@ -133,15 +125,6 @@
 <Italian>Proficiency olio</Italian>
 <Portuguese>Proficiência Oil</Portuguese>
 </Key>
-<Key ID="STR_Prof_Wood">
-<Original>Iron Proficiency</Original>
-<English>Iron Proficiency</English>
-<German>Eisen Abbau</German>
-<French>compétence d'huile</French>
-<Italian>Proficiency olio</Italian>
-<Portuguese>Proficiência Oil</Portuguese>
-</Key>
-
 <Key ID="STR_Prof_Copper">
 <Original>Copper Proficiency</Original>
 <English>Copper Proficiency</English>
@@ -3370,10 +3353,10 @@
 			<Italian>Olio</Italian>
 			<Portuguese>Petróleo</Portuguese>
 		</Key>
-		<Key ID="STR_Item_Grape">
-			<Original>Grape</Original>
-			<English>Grape</English>
-			<German>Traube</German>
+		<Key ID="STR_Item_Peach">
+			<Original>Peach</Original>
+			<English>Peach</English>
+			<German>Pfirsich</German>
 			<French>Pêche</French>
 			<Italian>Pesca</Italian>
 			<Portuguese>Pêssego</Portuguese>
@@ -3594,14 +3577,6 @@
 			<Original>Iron Ore</Original>
 			<English>Iron Ore</English>
 			<German>Eisenerz</German>
-			<French>Minerai de Fer</French>
-			<Italian>Minerale di Ferro</Italian>
-			<Portuguese>Pepita de Ferro</Portuguese>
-		</Key>
-			<Key ID="STR_Item_Wood">
-			<Original>Wood</Original>
-			<English>Wood</English>
-			<German>Holz</German>
 			<French>Minerai de Fer</French>
 			<Italian>Minerale di Ferro</Italian>
 			<Portuguese>Pepita de Ferro</Portuguese>

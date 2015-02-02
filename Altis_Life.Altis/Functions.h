@@ -281,8 +281,6 @@ class Life_Client_Core
 		class toggleSound{};
 
 		class mafiaMusik{};
-
-		class comDis{};
 		
 
 		

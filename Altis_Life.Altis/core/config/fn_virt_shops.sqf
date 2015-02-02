@@ -22,10 +22,9 @@ switch (_shop) do
 	case "heroin": {["Drogen Dealer",["cocainep","heroinp","marijuana","bluesyn"]]};
 	case "mafiaDrogen": {["Mafia Dealer",["cocainep","heroinp","marijuana"]]};
 	case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
-	case "lebensmittel": {["Lebensmittelhandel",["salema","ornate","mackerel","mullet","tuna","catshark","apple","grape","applejuice","grapejuice"]]};
+	case "fishmarket": {["Fischmarkt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "glass": {["Glass Händler",["glass"]]};
-	case "metall": {["Metallhändler",["ironp","copperp"]]};
-	case "natural": {["Naturalienhändler",["woodp","sand"]]};
+	case "iron": {["Metallhändler",["iron_r","copper_r"]]};
 	case "diamond": {["Diamanten Händler",["diamond","diamondc"]]};
 	case "salt": {["Salz Händöer",["salt_r"]]};
 	case "cop": {["Donut Händler",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};

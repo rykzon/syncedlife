@@ -62,10 +62,8 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	{ 
 		[_type, _amount] spawn
 		{
-		
 			sleep 120;
 			[_this select 0,_this select 1] call life_fnc_marketSell;
-			
 		};
 	////Marktsystem Ende////
 	};

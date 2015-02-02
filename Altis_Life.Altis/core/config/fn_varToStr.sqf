@@ -19,8 +19,8 @@ switch (_var) do
 	case "life_inv_plastic": {(localize "STR_Item_Plastic")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
 	case "life_inv_heroinp": {(localize "STR_Item_HeroinP")};
-	case "life_inv_marijuanau": {(localize "STR_Item_Cannabis")};
-	case "life_inv_marijuanap": {(localize "STR_Item_Marijuana")};
+	case "life_inv_cannabis": {(localize "STR_Item_Cannabis")};
+	case "life_inv_marijuana": {(localize "STR_Item_Marijuana")};
 	case "life_inv_apple": {(localize "STR_Item_Apple")};
 	case "life_inv_rabbit": {(localize "STR_Item_RabbitMeat")};
 	case "life_inv_salema": {(localize "STR_Item_SalemaMeat")};
@@ -38,10 +38,10 @@ switch (_var) do
 	case "life_inv_fuelE": {(localize "STR_Item_FuelE")};
 	case "life_inv_fuelF": {(localize "STR_Item_FuelF")};
 	case "life_inv_pickaxe": {(localize "STR_Item_Pickaxe")};
-	case "life_inv_copperu": {(localize "STR_Item_CopperOre")};
-	case "life_inv_ironu": {(localize "STR_Item_IronOre")};
-	case "life_inv_ironp": {(localize "STR_Item_IronIngot")};
-	case "life_inv_copperp": {(localize "STR_Item_CopperIngot")};
+	case "life_inv_copperore": {(localize "STR_Item_CopperOre")};
+	case "life_inv_ironore": {(localize "STR_Item_IronOre")};
+	case "life_inv_ironr": {(localize "STR_Item_IronIngot")};
+	case "life_inv_copperr": {(localize "STR_Item_CopperIngot")};
 	case "life_inv_sand": {(localize "STR_Item_Sand")};
 	case "life_inv_salt": {(localize "STR_Item_Salt")};
 	case "life_inv_bluesyn": {(localize "STR_Item_Bluesyn")};
@@ -54,10 +54,7 @@ switch (_var) do
 	case "life_inv_tbacon": {(localize "STR_Item_TBacon")};
 	case "life_inv_redgull": {(localize "STR_Item_RedGull")};
 	case "life_inv_lockpick": {(localize "STR_Item_Lockpick")};
-	case "life_inv_grape": {(localize "STR_Item_Grape")};
-	case "life_inv_wood": {(localize "STR_Item_Wood")};
-	case "life_inv_woodp": {(localize "STR_Item_Woodp")};
-	case "life_inv_stone": {(localize "STR_Item_Rock")};
+	case "life_inv_peach": {(localize "STR_Item_Peach")};
 	case "life_inv_coke": {(localize "STR_Item_CocaineU")};
 	case "life_inv_cokep": {(localize "STR_Item_CocaineP")};
 	case "life_inv_spikeStrip": {(localize "STR_Item_SpikeStrip")};
@@ -78,7 +75,6 @@ switch (_var) do
 	case "Mafia_Prof": {(localize "STR_Prof_mafia")};
 	case "Oil_Prof": {(localize "STR_Prof_Oil")};
 	case "Iron_Prof": {(localize "STR_Prof_Iron")};
-	case "Wood_Prof": {(localize "STR_Prof_Wood")};
 	case "Copper_Prof": {(localize "STR_Prof_Copper")};
 	case "Rock_Prof": {(localize "STR_Prof_Rock")};
 	case "Fruit_Prof": {(localize "STR_Prof_Fruit")};
@@ -97,11 +93,6 @@ switch (_var) do
 	case "license_civ_air": {(localize "STR_License_Pilot")};
 	case "license_civ_heroin": {(localize "STR_License_Heroin")};
 	case "license_civ_oil": {(localize "STR_License_Oil")};
-	case "license_civ_applejuice": {(localize "STR_License_applejuice")};
-	case "license_civ_grapejuice": {(localize "STR_License_grapejuice")};
-	case "license_civ_wood": {(localize "STR_License_wood")};
-	case "license_civ_woodp": {(localize "STR_License_woodp")};
-	case "license_civ_stone": {(localize "STR_License_stone")};
 	case "license_civ_air1": {(localize "STR_License_pilot1")};
 	case "license_civ_dive": {(localize "STR_License_Diving")};
 	case "license_civ_boat": {(localize "STR_License_Boat")};
