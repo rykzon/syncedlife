@@ -281,6 +281,8 @@ class Life_Client_Core
 		class toggleSound{};
 
 		class mafiaMusik{};
+
+		class comDis{};
 		
 
 		
@@ -396,6 +398,9 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+
+		class keyGiveGang{};
+		class keyTakeGang{};
 	};
 	
 	class Shops

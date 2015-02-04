@@ -803,12 +803,9 @@ switch(_shop) do
 						//Rang2
 						["arifle_mas_mp5_v",nil,90000],
 						
-						
-						
 						//Rang1
 						["RH_g18",nil,25000],
 						["RH_usp",nil,15000],
-						
 						
 						//Rang5
 						["optic_Arco",nil,10000],
@@ -1136,7 +1133,7 @@ switch(_shop) do
 		};
 	};
 	
-	/*case "gang":
+	case "gang":
 	{
 		switch(true) do
 		{
@@ -1145,17 +1142,21 @@ switch(_shop) do
 			{
 				["Hideout Armament",
 					[
-						["RH_tec9",nil,70000],
+						["RH_tec9",nil,45000],
 						
+						["arifle_mas_l119",nil,170000],
+						["optic_Arco",nil,30000],
+						["optic_MRCO",nil,30000],
+						["optic_Hamr",nil,30000],
+						["optic_mas_ACO_grn_camo",nil,10000],
 						
-						
-					
+						["30Rnd_556x45_Stanag",nil,500],
 						["RH_32Rnd_9x19_tec",nil,400]
 					]
 				];
 			};
 		};
-	};*/
+	};
 	/*case "gasstation":
 	{
 	

@@ -199,7 +199,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["bluesyn", 7000, 5500, 8500, 4, 4,   
+	["bluesyn", 9000, 7500, 10500, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],

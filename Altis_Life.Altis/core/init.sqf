@@ -111,6 +111,7 @@ __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 player enableFatigue (__GETC__(life_enableFatigue));
 enableRadio false;
 0 fadeRadio 0;
+[] execVM "core\functions\fn_ComDis.sqf";
 [] spawn {
     while {true} do {
         sleep 600;

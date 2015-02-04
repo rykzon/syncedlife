@@ -88,19 +88,23 @@ class FSM
        "	}" \n
        "		else" \n
        "	{" \n
-       "		life_atmcash = life_atmcash + (call life_paycheck);" \n
-       "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
+       "		_hideout1 = (nearestObjects[getMarkerPos ""gang_area_1"",[""FlagPole_F""],25]) select 0;" \n
+	   "		_hideout2 = (nearestObjects[getMarkerPos ""gang_area_2"",[""FlagPole_F""],25]) select 0;" \n
+	   "		_hideout3 = (nearestObjects[getMarkerPos ""gang_area_3"",[""FlagPole_F""],25]) select 0;" \n
+	   "		_hideoutOwner1 = _hideout1 getVariable [""gangOwner"",grpNull];" \n
+	   "		_hideoutOwner2 = _hideout2 getVariable [""gangOwner"",grpNull];" \n
+	   "		_hideoutOwner3 = _hideout3 getVariable [""gangOwner"",grpNull];" \n
+	   "		switch(true)do{" \n
+	   "		case((group player == _hideoutOwner1) && (group player == _hideoutOwner2) && (group player == _hideoutOwner3) && ({side _x == civilian} count playableUnits >= 6)):	{systemChat format[localize ""STR_FSM_ReceivedPay"",[((call life_paycheck) + 4000)] call life_fnc_numberText]; life_atmcash = life_atmcash + (call life_paycheck) + 20000;};" \n
+	   "		case((group player == _hideoutOwner1) && (group player == _hideoutOwner2) && ({side _x == civilian} count playableUnits >= 6)):										{systemChat format[localize ""STR_FSM_ReceivedPay"",[((call life_paycheck) + 2000)] call life_fnc_numberText]; life_atmcash = life_atmcash + (call life_paycheck) + 10000;};" \n
+	   "		case((group player == _hideoutOwner2) && (group player == _hideoutOwner3)&& ({side _x == civilian} count playableUnits >= 6) ):										{systemChat format[localize ""STR_FSM_ReceivedPay"",[((call life_paycheck) + 2000)] call life_fnc_numberText]; life_atmcash = life_atmcash + (call life_paycheck) + 10000;};" \n
+	   "		case((group player == _hideoutOwner1) && (group player == _hideoutOwner3) && ({side _x == civilian} count playableUnits >= 6) ):										{systemChat format[localize ""STR_FSM_ReceivedPay"",[((call life_paycheck) + 2000)] call life_fnc_numberText]; life_atmcash = life_atmcash + (call life_paycheck) + 10000;};" \n
+	   "		default{systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText]; life_atmcash = life_atmcash + (call life_paycheck)};" \n
+	 "		};" \n
        "	};" \n
        "};" \n
-       "" \n
-       "_lastcheck = time;" \n
-       "" \n
-       "//Group clean (Local)" \n
-       "{" \n
-       "	if(local _x && {(count units _x == 0)}) then {" \n
-       "		deleteGroup _x;" \n
-       "	};" \n
-       "} foreach allGroups;"/*%FSM</STATEINIT""">*/;
+	   "" \n
+       "_lastcheck = time;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

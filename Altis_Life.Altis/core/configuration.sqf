@@ -85,6 +85,8 @@ life_istazed = false;
 life_my_gang = ObjNull;
 life_muted = false;
 
+life_bekanntschaften = [];
+
 life_vehicles = [];
 bank_robber = [];
 switch (playerSide) do
@@ -275,7 +277,6 @@ sell_array =
 	["catshark",300],
 	["rabbit",65],
 	["oilp",3200],
-	["turtle",3000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
