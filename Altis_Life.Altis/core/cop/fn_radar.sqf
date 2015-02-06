@@ -12,6 +12,8 @@ _owners = _vehicle getVariable "vehicle_info_owners";
 _distance = player distance _vehicle;
 _speed = round speed _vehicle;
 
+if(_distance >= 300) exitWith{};
+
 if((_vehicle isKindOf "Car") && (currentWeapon player) in ["hgun_P07_snds_F","Binocular","Rangefinder"]) then
 {
 	switch (true) do

@@ -41,6 +41,9 @@ switch (_item) do
 	case "coalu": {2};
 	case "coalp": {1};
 	case "steel": {4};
+	case "strahler": {2};
+	case "barrier": {2};
+	case "barricade": {2};
 	case "plastic": {4};
 	case "copper_r": {3};
 	case "iron_r": {4};

@@ -47,6 +47,8 @@ _pItems = [_itemArray,14,[],[[]]] call BIS_fnc_param;
 _hItems = [_itemArray,15,[],[[]]] call BIS_fnc_param;
 _yItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
 
+if(_headgear == "H_HelmetB_light_desert") exitWith{[] call life_fnc_copLoadout;};
+
 if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};

@@ -14,11 +14,12 @@ _loops = 0;
 while {true} do {
 	if(_loops >= 25) exitWith {};
 	if(!alive _client) exitWith {
-		_containers = nearestObjects[_client,["WeaponHolderSimulated"],5];
+		_containers = nearestObjects[_client,["WeaponHolderSimulated"],7];
 		if(count _containers > 0) then {
 			{deleteVehicle _x;} foreach _containers; //Delete the containers.
 		};
 		deleteVehicle _client; //Get rid of the corpse.
+		diag_log format ["CleanupRequest (Life_Server) ausgeführt - _client = %1", _client];
 	};
 	
 	_loops = _loops + 1;

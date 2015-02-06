@@ -30,6 +30,9 @@ switch (_mode) do
 			case "mackerel": {"life_inv_mackerel"};
 			case "tuna": {"life_inv_tuna"};
 			case "mullet": {"life_inv_mullet"};
+			case "barrier": {"life_inv_barrier"};
+			case "barricade": {"life_inv_barricade"};
+			case "strahler": {"life_inv_strahler"};
 			case "catshark": {"life_inv_catshark"};
 			case "turtle": {"life_inv_turtle"};
 			case "fishing": {"life_inv_fishingpoles"};
@@ -89,6 +92,9 @@ switch (_mode) do
 			case "life_inv_marijuana": {"marijuana"};
 			case "life_inv_apple": {"apple"};
 			case "life_inv_water": {"water"};
+			case "life_inv_barrier": {"barrier"};
+			case "life_inv_barricade": {"barricade"};
+			case "life_inv_strahler": {"strahler"};
 			case "life_inv_rabbit": {"rabbit"};
 			case "life_inv_salema": {"salema"};
 			case "life_inv_ornate": {"ornate"};

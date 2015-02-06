@@ -74,6 +74,7 @@ fed_bank setVariable["safe",(count playableUnits),true];
 
 //General cleanup for clients disconnecting.
 addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
+//_onDisconnect = ["SERV_onClientDisconnect","onPlayerDisconnected",{[_uid,_id,_name] call TON_fnc_clientDisconnect}] call BIS_fnc_addStackedEventHandler;
 
 [] spawn TON_fnc_cleanup;
 life_gang_list = [];

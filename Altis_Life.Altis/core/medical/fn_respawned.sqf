@@ -22,6 +22,8 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 
+life_bekanntschaften = [];
+
 //Load gear for a 'new life'
 switch(playerSide) do
 {
@@ -43,7 +45,7 @@ if(!isNull life_corpse) then {
 	life_corpse setVariable["Revive",TRUE,TRUE];
 	_containers = nearestObjects[life_corpse,["WeaponHolderSimulated"],5];
 	{deleteVehicle _x;} foreach _containers; //Delete the containers.
-	hideBody life_corpse;
+	deleteVehicle life_corpse;
 };
 
 //Destroy our camera...

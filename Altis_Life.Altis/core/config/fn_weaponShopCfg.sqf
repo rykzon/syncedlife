@@ -368,7 +368,7 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
-						
+						["HandGrenade_Stone","Flashbang",1700],
 						
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
@@ -410,7 +410,7 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
-						
+						["HandGrenade_Stone","Flashbang",1700],
 						
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["RH_17Rnd_9x19_g17",nil,100],
@@ -455,6 +455,7 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
+						["HandGrenade_Stone","Flashbang",1700],
 						
 						["RH_12Rnd_45cal_usp",nil,200],
 						["30Rnd_mas_556x45_Stanag",nil,200],
@@ -500,6 +501,7 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
+						["HandGrenade_Stone","Flashbang",1700],
 						
 						["RH_12Rnd_45cal_usp",nil,200],
 						["30Rnd_mas_556x45_Stanag",nil,200],
@@ -551,7 +553,10 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Hamr",nil,1000],
 						["optic_mas_aim",nil,200],
+						["HandGrenade_Stone","Flashbang",1700],
 						
+						
+						["20Rnd_mas_762x51_Stanag",nil,500],
 						["RH_10Rnd_22LR_mk2",nil,200],
 						["RH_14Rnd_9x19_sw",nil,200],
 						["RH_12Rnd_45cal_usp",nil,200],
@@ -590,7 +595,8 @@ switch(_shop) do
 						["Trixie_Ghillie_Uniform_01",nil,1000],
 						["Trixie_Ghillie_Uniform_02",nil,1000],
 						["Trixie_Ghillie_Uniform_03",nil,1000],
-
+						["h_booniehat_mcamo",nil,500],
+						["g_mas_wpn_bala_b",nil,500],
 						
 						["Trixie_LSMARK4",nil,500],
 						["Trixie_LSMARK4_Delta",nil,500],
@@ -739,11 +745,9 @@ switch(_shop) do
 				["Bürger 4",
 					[   
 					
-						
+						["RH_ttracker_g",nil,150000],
 						//Rang4
-						["arifle_mas_hk416",nil,120000],
-						["arifle_mas_hk416_v",nil,120000],
-						["arifle_mas_hk416_d",nil,120000],
+						
 						//Rang3
 						["RH_deaglem",nil,40000],
 						//Rang2
@@ -763,11 +767,11 @@ switch(_shop) do
 						["optic_MRCO",nil,10000],
 						["optic_Hamr",nil,10000],
 						["optic_mas_aim",nil,4000],
-						["30Rnd_mas_556x45_Stanag",nil,1000],
+						
 						//Rang3
 						["RH_7Rnd_50_AE",nil,500],
 						
-					
+						["RH_6Rnd_45ACP_Mag",nil,500],
 						//Rang2
 						["optic_Aco",nil,5000],
 						["30Rnd_mas_9x21_Stanag",nil,500],
@@ -791,12 +795,12 @@ switch(_shop) do
 				["Bürger 5",
 					[   
 						//Rang5
-						["Trixie_M14",nil,230000],
-						["RH_ttracker_g",nil,150000],
+						
+						
 						//Rang4
-						["arifle_mas_hk416",nil,120000],
-						["arifle_mas_hk416_v",nil,120000],
-						["arifle_mas_hk416_d",nil,120000],
+						["arifle_mas_hk416",nil,160000],
+						["arifle_mas_hk416_v",nil,160000],
+						["arifle_mas_hk416_d",nil,160000],
 						//Rang3
 						["RH_deaglem",nil,40000],
 						
@@ -813,8 +817,8 @@ switch(_shop) do
 						["optic_Hamr",nil,10000],
 						["optic_LRPS",nil,50000],
 						["optic_mas_aim",nil,4000],
-						["Trixie_20x762_Mag",nil,1000],
-						["RH_6Rnd_45ACP_Mag",nil,500],
+						
+						
 						//Rang4
 						["30Rnd_mas_556x45_Stanag",nil,1000],
 						//Rang3

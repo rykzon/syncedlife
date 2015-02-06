@@ -14,6 +14,7 @@ _name = _player getVariable ["realname",name _player] ;
 
 if(!(_name in life_bekanntschaften)) then
 {
+hint parseText format["hinzugefügt: %1",_name];
 life_bekanntschaften set [count life_bekanntschaften,_name];
 };
 

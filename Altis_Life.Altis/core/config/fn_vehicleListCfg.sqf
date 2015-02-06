@@ -79,7 +79,7 @@ switch (_shop) do
 			["RDS_S1203_Civ_01",20000],
 			["RDS_S1203_Civ_02",20000],
 			["RDS_Golf4_Civ_01",33000],
-			["C_Van_01_transport_F",30000],
+			["C_Van_01_transport_F",10000],
 			["cl3_civic_vti_black",25000],
 			["cl3_civic_vti_cardinal",25000],
 			["cl3_civic_vti_dark_green",25000],
@@ -166,11 +166,11 @@ switch (_shop) do
 			if(call life_fnc_getKarma >= -1500) then
 			{
 			_return pushBack
-			["I_Truck_02_transport_F",120000];
+			["I_Truck_02_transport_F",90000];
 			_return pushBack
-			["I_Truck_02_covered_F",180000];
+			["I_Truck_02_covered_F",120000];
 			_return pushBack
-			["O_Truck_03_transport_F",400000];
+			["O_Truck_03_transport_F",300000];
 			_return pushBack
 			["O_Truck_03_covered_F",500000];
 			_return pushBack
@@ -195,8 +195,8 @@ switch (_shop) do
 		["DAR_CVPIAux",5000];
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-		_return pushBack
-		["cl3_reventon_clpd",25000];
+		//_return pushBack
+		//["cl3_reventon_clpd",25000];
 		_return pushBack
 		["DAR_ChargerPoliceState",20000];
 	//	_return pushBack
@@ -206,7 +206,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 		_return pushBack 
-		["DAR_ChargerPoliceStateSlick",25000];
+		["DAR_ImpalaPoliceDet",25000];
 			//_return pushBack
 			//["B_MRAP_01_F",30000];
 		};

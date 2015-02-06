@@ -132,6 +132,10 @@ class Life_Client_Core
 		class showLicenseAction{};
 
 		class surrender {}; 
+
+		class packUpBarrier{};
+		class packUpBarricade{};
+		class packUpStrahler{};
  		
         	};
 	
@@ -442,6 +446,11 @@ class Life_Client_Core
 		class weed {};
 		class cocaine{};
 		class heroin{};
+
+
+		class barrier{};
+		class barricade{};
+		class strahler{};
 	};
 	
 	class Dialog_Controls

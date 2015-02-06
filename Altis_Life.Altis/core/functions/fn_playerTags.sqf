@@ -74,14 +74,20 @@ _units = _units - [player];
 				
 					if(headgear _x in life_masked) then {
 					
-					//_name = "Maskierte Person";
+					"Maskierte Person";
 				
 					}
 					else
 					{
 					
 					if(_x getVariable ["realname",name _x] in life_bekanntschaften) then {
+					//hint parseText format["abgefragt: %1"),_x getVariable ["realname",name _x]];
 					_name = _x getVariable ["realname",name _x];
+					_name;
+					}
+					else
+					{
+					"";
 					};
 					
 					

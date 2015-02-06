@@ -27,7 +27,7 @@ switch (_shop) do
 	case "iron": {["Metallhändler",["iron_r","copper_r","steel"]]};
 	case "diamond": {["Diamanten Händler",["diamond","diamondc"]]};
 	case "salt": {["Salz Händöer",["salt_r"]]};
-	case "cop": {["Donut Händler",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
+	case "cop": {["Donut Händler",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","strahler","barrier","barricade"]]};
 	case "mafia": {["Pasta Händler",["water","rabbit","apple","redgull","fuelF","zipties"]]};
 	case "cement": {["Zement Händler",["cement"]]};
 	case "gold": {["Goldankauf",["goldbar"]]};
