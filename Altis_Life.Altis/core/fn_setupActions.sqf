@@ -33,6 +33,17 @@ switch (playerSide) do
 	
 	life_actions = life_actions + [player addAction["<t color='#00FF00'>Polizeimarke zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5 && isPlayer cursorTarget']];
 	
+	
+	life_actions = life_actions + [player addAction["<t color='#FF0000'>Absperrband einpacken</t>",life_fnc_packUpBarrier,"",0,false,false,"",'
+		_barrier = nearestObjects[getPos player, ["TapeSign_F"],3] select 0; !isNil "_barrier" && !isNil {(_barrier getVariable "item")}']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Strahler einpacken</t>",life_fnc_packUpStrahler,"",0,false,false,"",'
+		_strahler = nearestObjects[getPos player, ["Land_PortableLight_double_F"],3] select 0; !isNil "_strahler" && !isNil {(_strahler getVariable "item")}']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Barriere einpacken</t>",life_fnc_packUpBarricade,"",0,false,false,"",'
+		_barricade = nearestObjects[getPos player, ["RoadBarrier_small_F"],5] select 0; !isNil "_barricade" && !isNil {(_barricade getVariable "item")}']];
+		life_actions = life_actions + [player addAction["<t color='#FF0000'>Spikes einpacken</t>",life_fnc_packupSpikes,"",0,false,false,"",'
+		_spikes = nearestObjects[getPos player, ["Land_Razorwire_F"],5] select 0; !isNil "_spikes" && !isNil {(_spikes getVariable "item")}']];
+	
+	
 };
 	
 };

@@ -19,6 +19,6 @@ if(!isNil "life_action_barricadeDeploy") then {player removeAction life_action_b
 if(isNull _barricade) exitWith {life_barricade = ObjNull;};
 _barricade setPos [(getPos _barricade select 0),(getPos _barricade select 1),0];
 _barricade allowDamage false;
-life_action_barricadePickup = player addAction["Barrikade aufheben",life_fnc_packUpBarricade,"",0,false,false,"",
-' _barricade = nearestObjects[getPos player,["RoadBarrier_small_F"],8] select 0; !isNil "_barricade" && !isNil {(_barricade getVariable "item")}'];
+//life_action_barricadePickup = player addAction["Barrikade aufheben",life_fnc_packUpBarricade,"",0,false,false,"",
+//' _barricade = nearestObjects[getPos player,["RoadBarrier_small_F"],8] select 0; !isNil "_barricade" && !isNil {(_barricade getVariable "item")}'];
 [[_barricade],"TON_fnc_barricade",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.

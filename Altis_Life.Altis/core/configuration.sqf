@@ -72,6 +72,7 @@ life_siren_active = false;
 life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
+D41_Tankt = false;	
 life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
@@ -86,6 +87,7 @@ life_my_gang = ObjNull;
 life_muted = false;
 
 life_bekanntschaften = [];
+
 
 life_vehicles = [];
 bank_robber = [];
@@ -131,7 +133,7 @@ life_masked = [
 "U_C_Driver_4"
 ];
 
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -289,9 +291,10 @@ sell_array =
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
-	["peach",155],
+	["peach",150],
 	["cocaine",3000],
 	["cocainep",5000],
+	["turtle",4000],
 	["diamond",750],
 	["diamondc",2000],
 	["iron_r",3200],
@@ -315,8 +318,10 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",50],
+	["apple",160],
 	["rabbit",75],
+	
+	
 	["salema",55],
 	["ornate",50],
 	["mackerel",200],
@@ -324,7 +329,7 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
-	["turtle",4000],
+	
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],
@@ -333,7 +338,7 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",50],
+	["peach",160],
 	["spikeStrip",2500],
 	["barrier",2500],
 	["barricade",2500],

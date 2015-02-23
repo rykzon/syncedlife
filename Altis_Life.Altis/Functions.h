@@ -136,6 +136,8 @@ class Life_Client_Core
 		class packUpBarrier{};
 		class packUpBarricade{};
 		class packUpStrahler{};
+
+		class robFederal{};
  		
         	};
 	
@@ -287,7 +289,8 @@ class Life_Client_Core
 		class mafiaMusik{};
 
 		class comDis{};
-		
+		class emptyFuel{};
+		class Tanke{};
 
 		
 	};
@@ -330,6 +333,8 @@ class Life_Client_Core
 		class robShop2{};
 		class shopState{};
 		class showLicense{};
+		
+		class robReserve{};
 		};
 	
 	class Vehicle

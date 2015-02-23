@@ -117,6 +117,9 @@ class CfgFunctions
 			class keyManagement {};
 			class robShop{};
 			class shopState{};
+
+			class robberyState{};
+			class robReserve{};
 		};
 	
 		

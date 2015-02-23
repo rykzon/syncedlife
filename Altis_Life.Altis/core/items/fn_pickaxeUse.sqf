@@ -10,6 +10,8 @@ closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 
 
+if(life_action_gathering) exitWith{};
+
 
 switch (true) do
 {
@@ -31,7 +33,7 @@ if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
-life_action_gathering = true;
+
 
 _karma = 1;//pickaxe hat nur pos karma
 
@@ -42,7 +44,7 @@ if( _profName != "" ) then
 _data = missionNamespace getVariable (_profName);
 _time = ( 3 - (0.25 * (_data select 0)));
 };
- 
+life_action_gathering = true;
 for "_i" from 0 to 2 do
 {
 player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
@@ -57,6 +59,7 @@ _itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 titleText[format[localize "STR_ISTR_Pick_Success",_itemName,_diff],"PLAIN"];
 if( _profName != "" ) then 
 {
+[[format ["4|%1 Rohstoff aufgehoben: %2,3%x",player getVariable["realname",name player],_mine,_diff]],"Arma3Log",false,false] call life_fnc_MP;
 [_profName,5] call life_fnc_addExp;
 ["Karma_Prof",2,_karma] call life_fnc_addKarma;
 };

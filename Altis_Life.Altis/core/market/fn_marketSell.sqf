@@ -11,6 +11,8 @@ _amount = _this select 1;
 _israw = [_this, 2, false] call BIS_fnc_param;
 _send = [_this, 3, true] call BIS_fnc_param;
 
+
+
 //Get all necessary arrays
 _arr_resource = [_shortname] call life_fnc_marketGetRow;
 _arr_price = [_shortname] call life_fnc_marketGetPriceRow;
@@ -25,7 +27,8 @@ _price = _price - _modifier;
 _globalprice = _globalprice - _modifier;
 
 //Check borders
-if(_price < 0) then {_price = 0;};
+_min = _arr_resource select 2;
+if(_price < _min) then {_price = _min;};
 
 _max = _arr_resource select 3;
 

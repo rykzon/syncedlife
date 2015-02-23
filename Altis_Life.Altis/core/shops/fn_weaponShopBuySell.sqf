@@ -31,6 +31,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	[_item,false] call life_fnc_handleItem;
 	hint parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
+	[[format ["4|%1 Item verkauft: %2, Gewinn: %3, Bargeld: %4",player getVariable["realname",name player],_iteminfo select 1,_price,life_cash]],"Arma3Log",false,false] call life_fnc_MP;
 }
 	else
 {
@@ -50,6 +51,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			hint parseText format[localize "STR_Shop_Weapon_BoughtGang",_itemInfo select 1,[_price] call life_fnc_numberText];
 			_funds = grpPlayer getVariable "gang_bank";
 			_funds = _funds - _price;
+			[[format ["4|%1 Waffe gekauft: %2",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[_item,true] spawn life_fnc_handleItem;
 			[[1,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;
@@ -64,6 +66,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 		life_cash = life_cash - _price;
 		[_item,true] spawn life_fnc_handleItem;
+		[[format ["4|%1 Waffe gekauft: %2",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
 	};
 };
 [] call life_fnc_saveGear;

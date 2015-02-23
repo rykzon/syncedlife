@@ -8,6 +8,9 @@ publicVariable "life_server_isReady";
 [] execVM "\life_server\eventhandlers.sqf";
 
 //I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
+fed_bank1 setVariable["fed_rob_ip",false,true];
+fed_bank1 setVariable["fed_locked",false,true];
+
 
 _extDB = false;
 SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper","C_Hatchback_01_F"];

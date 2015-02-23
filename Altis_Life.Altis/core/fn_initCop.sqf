@@ -50,7 +50,7 @@ switch (__GETC__(life_coplevel)) do {
 	
 };
 
-
+[[format ["0|%1 logged something. His position is %2.",player getVariable["realname",name player],getPosATL player]],"Arma3Log",false,false] call life_fnc_MP;
 
 [] spawn    //basic cop
 {

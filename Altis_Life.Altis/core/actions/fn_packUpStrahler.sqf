@@ -10,14 +10,11 @@ private["_strahler"];
 _strahler = nearestObjects[getPos player,["Land_PortableLight_double_F"],3] select 0;
 if(isNil "_strahler") exitWith {};
 
-if(player canAdd "D41_Strahler") then
+
+if(([true,"strahler",1] call life_fnc_handleInv)) then
 {
-	player addMagazine "D41_Strahler";
-    titleText["Du hast den Mobilen Strahler abgebaut und eingesammelt.","PLAIN"];
-    life_action_strahlerPickup = nil;
+    titleText["Du hast den Strahler aufgehoben.","PLAIN"];
+    
+    life_action_barricadePickup = nil;
     deleteVehicle _strahler;
-}
-else
-{
-	hint "Zu schwer! Also... DU, näh?! Leg vorher etwas ab!\n\nInventar voll.";
 };
