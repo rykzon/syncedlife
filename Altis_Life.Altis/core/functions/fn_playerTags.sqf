@@ -6,7 +6,7 @@
 	Description:
 	Adds the tags above other players heads when close and have visible range.
 */
-private["_ui","_units","_name"];
+private["_ui","_units"];
 #define iconID 78000
 #define scale 0.8
 
@@ -19,27 +19,6 @@ if(isNull _ui) then {
 	500 cutRsc["Life_HUD_nameTags","PLAIN"];
 	_ui = uiNamespace getVariable ["Life_HUD_nameTags",displayNull];
 };
-
-
-_masked = [
-"H_Shemag_olive",
-"kio_skl_msk_grn",
-"kio_skl_msk_red",
-"kio_skl_msk",
-"kio_vfv_mask",
-"H_RacingHelmet_1_black_F",
-"H_RacingHelmet_1_blue_F",
-"H_RacingHelmet_1_red_F",
-"H_RacingHelmet_1_orange_F",
-"H_RacingHelmet_1_green_F",
-"H_RacingHelmet_1_white_F",
-"H_RacingHelmet_1_yellow_F",
-"U_C_Driver_2",
-"U_C_Driver_1",
-"U_C_Driver_3",
-"U_C_Driver_4"
-];
-
 
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
 
@@ -71,41 +50,26 @@ _units = _units - [player];
 					},_x getVariable ["realname",name _x]]};
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
 				default {
-					if(headgear _x in life_masked) then {
-					
-					_name = "Maskierte Person";
 				
-					}
-					else
-					{
-					_name = _x getVariable ["realname",name _x];
-					};
-					
-					
-					if(!isNil {(group _x) getVariable "gang_name"}) then {
-					
-					
-					format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_name,(group _x) getVariable ["gang_name",""]];
-						
-						
-					}
-					else
-					{
-					
-					_name;
-					};
-					/*else {
-					ANFANG
-						if((headgear _x in ["kio_skl_msk","H_Shemagh_olive"])) then
+						if(headgear _x in life_masked) then
 						{
-						"Maskierte Person";
+							"Maskierte Person";
 						}
-						//ENDE
 						else
 						{
+						
+						if(_x getVariable ["realname",name _x] in life_bekanntschaften) then
+						{
 						_x getVariable ["realname",name _x];
+						}
+						else
+						{
+						"";
 						};
-					};*/
+						};
+					
+						
+					
 				};
 			};
 			

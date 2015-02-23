@@ -117,6 +117,9 @@ class CfgFunctions
 			class keyManagement {};
 			class robShop{};
 			class shopState{};
+
+			class robberyState{};
+			class robReserve{};
 		};
 	
 		
@@ -139,6 +142,8 @@ class CfgFunctions
 			class queryPlayerGang {};
 			class removeGang {};
 			class updateGang {};
+
+			class insertHouseGangKey {};
 		};
 
 

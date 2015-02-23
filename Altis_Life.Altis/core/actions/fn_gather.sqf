@@ -11,6 +11,7 @@ _resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2
 _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
+
 life_action_gathering = true;
 //Find out what zone we're near
 {
@@ -62,6 +63,7 @@ _itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 titleText[format[localize "STR_NOTF_Gather_Success",_itemName,_diff],"PLAIN"];
 if( _profName != "" ) then 
 {
+[[format ["4|%1 Rohstoff aufgehoben: %2,%3x",player getVariable["realname",name player],_gather,_diff]],"Arma3Log",false,false] call life_fnc_MP;
 [_profName,5] call life_fnc_addExp;
 ["Karma_Prof",2,_karma] call life_fnc_addKarma;
 

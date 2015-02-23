@@ -22,6 +22,9 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 
+life_bekanntschaften = [];
+
+[[format ["2|%1 ist gerespawned",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 //Load gear for a 'new life'
 switch(playerSide) do
 {

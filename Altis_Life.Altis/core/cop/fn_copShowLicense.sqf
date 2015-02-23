@@ -34,7 +34,7 @@ switch ( _coplevel ) do
 	case 5: { _rang = "APD"; };
 	case 6: { _rang = "APD"; };
 	case 7: { _rang = "APD"; };
-	default {_rank =  "APD";};
+	default {_rang =  "APD";};
 };
 
 _message = format["<img size='10' color='#FFFFFF' image='textures\marke.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>synced-gaming.de</t>", name player, _rang];

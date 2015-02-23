@@ -79,7 +79,7 @@ switch (_shop) do
 			["RDS_S1203_Civ_01",20000],
 			["RDS_S1203_Civ_02",20000],
 			["RDS_Golf4_Civ_01",33000],
-			["C_Van_01_transport_F",30000],
+			["C_Van_01_transport_F",10000],
 			["cl3_civic_vti_black",25000],
 			["cl3_civic_vti_cardinal",25000],
 			["cl3_civic_vti_dark_green",25000],
@@ -166,11 +166,11 @@ switch (_shop) do
 			if(call life_fnc_getKarma >= -1500) then
 			{
 			_return pushBack
-			["I_Truck_02_transport_F",120000];
+			["I_Truck_02_transport_F",90000];
 			_return pushBack
-			["I_Truck_02_covered_F",180000];
+			["I_Truck_02_covered_F",120000];
 			_return pushBack
-			["O_Truck_03_transport_F",400000];
+			["O_Truck_03_transport_F",300000];
 			_return pushBack
 			["O_Truck_03_covered_F",500000];
 			_return pushBack
@@ -196,7 +196,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 		_return pushBack
-		["cl3_reventon_clpd",25000];
+		["DAR_TahoePoliceDet",20000];
 		_return pushBack
 		["DAR_ChargerPoliceState",20000];
 	//	_return pushBack
@@ -206,9 +206,16 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 		_return pushBack 
-		["DAR_ChargerPoliceStateSlick",25000];
-			//_return pushBack
-			//["B_MRAP_01_F",30000];
+		["DAR_ImpalaPoliceDet",25000];
+			
+		};
+		
+		if(license_cop_swat) then
+		{
+		
+		_return pushBack
+		["cl3_e60_m5_black",25000];
+		
 		};
 	};
 	
@@ -395,6 +402,59 @@ switch (_shop) do
 			
 			
 			
+		};
+	
+	};
+	
+			case "donator_car":
+	{
+		if(__GETC__(life_donator) >= 1) then
+		{
+			
+			_return pushBack
+			["cl3_r8_spyder_2tone1",500000];
+			_return pushBack
+			["cl3_r8_spyder_2tone2",500000];
+			_return pushBack
+			["cl3_r8_spyder_2tone3",500000];
+			_return pushBack
+			["cl3_r8_spyder_2tone4",500000];
+			_return pushBack
+			["cl3_r8_spyder_2tone5",500000];
+			_return pushBack
+			["cl3_r8_spyder_flame",500000];
+			_return pushBack
+			["cl3_r8_spyder_flame1",500000];
+			_return pushBack
+			["cl3_r8_spyder_flame2",500000];
+			_return pushBack
+			["cl3_458_2tone1",500000];
+			_return pushBack
+			["cl3_458_2tone2",500000];
+			_return pushBack
+			["cl3_458_2tone3",500000];
+			_return pushBack
+			["cl3_458_2tone4",500000];
+			_return pushBack
+			["cl3_458_2tone5",500000];
+			_return pushBack
+			["cl3_458_flame",500000];
+			_return pushBack
+			["cl3_458_flame1",500000];
+			_return pushBack
+			["cl3_458_flame2",500000];
+			_return pushBack
+			["cl3_e60_m5_lime",100000];
+			_return pushBack
+			["cl3_e63_amg_orange",350000];
+			_return pushBack
+			["cl3_e60_m5_camo",100000];
+			_return pushBack
+			["cl3_dbs_volante_camo_urban",500000];
+			_return pushBack
+			["cl3_taurus_camo",40000];
+			_return pushBack
+			["cl3_458_babypink",500000];
 		};
 	
 	};

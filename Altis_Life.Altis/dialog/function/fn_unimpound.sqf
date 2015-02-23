@@ -6,7 +6,7 @@
 	Description:
 	Yeah... Gets the vehicle from the garage.
 */
-private["_vehicle","_vid","_pid","_unit","_price"];
+private["_vehicle","_vid","_pid","_unit","_price","_vehicleInfo"];
 disableSerialization;
 if(lbCurSel 2802 == -1) exitWith {hint localize "STR_Global_NoSelection"};
 _vehicle = lbData[2802,(lbCurSel 2802)];
@@ -14,7 +14,7 @@ _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;
-
+_vehicleInfo = [_vehicle] call life_fnc_fetchCfgDetails;
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call TON_fnc_index;
@@ -32,5 +32,5 @@ if(typeName life_garage_sp == "ARRAY") then {
 };
 
 hint localize "STR_Garage_SpawningVeh";
-
+[[format ["0|%1 Fahrzeug aus Garage: %2",player getVariable["realname",name player],_vehicleInfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
 life_atmcash = life_atmcash - _price;

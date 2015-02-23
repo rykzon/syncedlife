@@ -16,7 +16,7 @@ _role1names = ["synced-gaming.de"];
 _role2 = "Eure Admins";
 _role2names = ["MacBain","Moerti","Guevara"];
 _role3 = "Community Manager";
-_role3names = ["Largo","Phil","Charly","Lukas"];
+_role3names = ["Largo","Phil","Charly","Lukas","Joe","Bommel"];
 
 /*_role4 = "Event Manager";
 _role4names = ["Warrior"];*/

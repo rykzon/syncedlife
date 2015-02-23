@@ -35,6 +35,9 @@ switch (_var) do
 	case "life_inv_coffee": {(localize "STR_Item_Coffee")};
 	case "life_inv_turtlesoup": {(localize "STR_Item_TurtleSoup")};
 	case "life_inv_donuts": {(localize "STR_Item_Donuts")};
+	case "life_inv_barrier": {(localize "STR_Item_Barrier")};
+	case "life_inv_barricade": {(localize "STR_Item_Barricade")};
+	case "life_inv_strahler": {(localize "STR_Item_Strahler")};
 	case "life_inv_fuelE": {(localize "STR_Item_FuelE")};
 	case "life_inv_fuelF": {(localize "STR_Item_FuelF")};
 	case "life_inv_pickaxe": {(localize "STR_Item_Pickaxe")};

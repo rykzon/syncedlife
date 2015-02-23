@@ -35,6 +35,7 @@ if(_action) then {
 	_house setVariable["containers",[],true];
 	_house setVariable["uid",round(random 99999),true];
 	life_atmcash = life_atmcash - (_houseCfg select 0);
+	[[format ["4|%1 Haus gekauft Preis:%2, Bargeld:%3",player getVariable["realname",name player],(_houseCfg select 0),life_cash]],"Arma3Log",false,false] call life_fnc_MP;
 	life_vehicles pushBack _house;
 	life_houses pushBack [str(getPosATL _house),[]];
 	_marker = createMarkerLocal [format["house_%1",(_house getVariable "uid")],getPosATL _house];

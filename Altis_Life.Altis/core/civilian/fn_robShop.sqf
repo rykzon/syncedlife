@@ -74,7 +74,7 @@ _Pos = position player; // by ehno: get player pos
 	_rip = false;
 	life_use_atm = false;
 	["Karma_Prof",150,0] call life_fnc_addKarma;
-	sleep (30 + random(180)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
+	sleep (300); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	
 	if!(alive _robber) exitWith {};

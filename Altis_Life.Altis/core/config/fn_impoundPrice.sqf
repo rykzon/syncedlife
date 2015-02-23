@@ -68,6 +68,7 @@ switch (true) do
 			default { _price = _price + 5;};
 		};
 	};
+	default{_price =25};
 };
 
 _price;

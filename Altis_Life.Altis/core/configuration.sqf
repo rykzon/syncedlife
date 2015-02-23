@@ -72,6 +72,7 @@ life_siren_active = false;
 life_bank_fail = false;
 life_use_atm = true;
 life_is_arrested = false;
+D41_Tankt = false;	
 life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
@@ -84,6 +85,9 @@ __CONST__(life_impound_air,850);
 life_istazed = false;
 life_my_gang = ObjNull;
 life_muted = false;
+
+life_bekanntschaften = [];
+
 
 life_vehicles = [];
 bank_robber = [];
@@ -129,7 +133,7 @@ life_masked = [
 "U_C_Driver_4"
 ];
 
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -146,6 +150,9 @@ life_inv_items =
 	"life_inv_marijuana",
 	"life_inv_apple",
 	"life_inv_rabbit",
+	"life_inv_barrier",
+	"life_inv_barricade",
+	"life_inv_strahler",
 	"life_inv_salema",
 	"life_inv_ornate",
 	"life_inv_mackerel",
@@ -275,7 +282,6 @@ sell_array =
 	["catshark",300],
 	["rabbit",65],
 	["oilp",3200],
-	["turtle",3000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
@@ -285,9 +291,10 @@ sell_array =
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
-	["peach",155],
+	["peach",150],
 	["cocaine",3000],
 	["cocainep",5000],
+	["turtle",4000],
 	["diamond",750],
 	["diamondc",2000],
 	["iron_r",3200],
@@ -300,6 +307,9 @@ sell_array =
 	["glass",1450],
 	["fuelF",500],
 	["spikeStrip",1200],
+	["barrier",1200],
+	["barricade",1200],
+	["strahler",1200],
 	["cement",1950],
 	["goldbar",50000],
 	["zipties",200]
@@ -308,8 +318,10 @@ __CONST__(sell_array,sell_array);
 
 buy_array = 
 [
-	["apple",50],
+	["apple",160],
 	["rabbit",75],
+	
+	
 	["salema",55],
 	["ornate",50],
 	["mackerel",200],
@@ -317,7 +329,7 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
-	["turtle",4000],
+	
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],
@@ -326,8 +338,11 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",50],
+	["peach",160],
 	["spikeStrip",2500],
+	["barrier",2500],
+	["barricade",2500],
+	["strahler",2500],
 	["blastingcharge",35000],
 	["boltcutter",7500],
 	["defusekit",2500],

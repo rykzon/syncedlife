@@ -21,6 +21,7 @@ switch (life_veh_shop select 0) do
 	case "kart_shop": {_ret = license_civ_driver;};
 	case "med_air_hs": {_ret = license_med_air;};
 	case "civ_car": {_ret = license_civ_driver;};
+	case "donator_car": {_ret = license_civ_driver;};
 	case "civ_car1": {_ret = license_civ_driver;};
 	case "civ_car2": {_ret = license_civ_driver;};
 	case "civ_ship": {_ret = license_civ_boat;};

@@ -46,21 +46,22 @@ switch(true) do
 		}
 		foreach life_market_prices;
 	};
-	case (_rand <= 36): //6% Drogenpreis erhöhen
+	case (_rand <= 42): //6% Drogenpreis erhöhen
 	{
 		[[0,"News: Interpol hat eine internationale Drogenbande ausgehoben!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		//Erhöhe Marktpreis mit marketSell
-		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["cocaine", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["cocainep", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["heroinp", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["froglsd", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["marijuana", [15,50] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		//["cocaine", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["cocainep", [15,50] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		//["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["heroinp", [15,50] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+		["bluesyn", [15,50] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		//["froglsd", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event drugp";
 	};
-	case (_rand <= 44): //8% Ölpreis erhöhen
+	case (_rand <= 52): //8% Ölpreis erhöhen
 	{
 		[[0,"News: Öltanker gesunken!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
@@ -68,17 +69,18 @@ switch(true) do
 		
 		diag_log "+Market+ Event oilp";
 	};
-	case (_rand <= 54): //10% Eisenpreis + zementpreis + glaspreis erhöhen
+	case (_rand <= 65): //10% Eisenpreis + zementpreis + glaspreis erhöhen
 	{
 		[[0,"News: China baut World-China-Center!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
-		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["glass", [25,35] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["cement", [20,60] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["iron_r", [20,50] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+		["steel", [20,50] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["glass", [25,65] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event wcc";
 	};
-	case (_rand <= 60): //4% Goldpreis sinkt
+	/*case (_rand <= 60): //4% Goldpreis sinkt
 	{
 		[[0,"News: Anleger verlieren Vertrauen in Gold!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
@@ -86,8 +88,8 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
 		diag_log "+Market+ Event goldm";
-	};
-	case (_rand <= 68): //8% Kupfer/Silber erhöht sich
+	};*/
+	/*case (_rand <= 68): //8% Kupfer/Silber erhöht sich
 	{
 		[[0,"News: Elektronikindustrie benötigt Edelmetalle!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
@@ -96,8 +98,8 @@ switch(true) do
 		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		diag_log "+Market+ Event copperp";
-	};
-	case (_rand <= 74): //6% Goldpreis erhöht sich
+	};*/
+	/*case (_rand <= 74): //6% Goldpreis erhöht sich
 	{
 		[[0,"News: Anleger verlieren Vertrauen in Dollar!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
@@ -105,18 +107,17 @@ switch(true) do
 		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
-	};
+	};*/
 	case (_rand <= 80): //6% Drogenpreis niedriger
 	{
 		[[0,"News: Neue synthetische Droge überschwemmt Drogenmarkt!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		//Erhöhe Marktpreis mit marketSell
-		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["cocaine", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["cocainep", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["heroinp", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["froglsd", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["marijuana", [15,50] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["bluesyn", [15,50] call life_fnc_randomRound, true] call life_fnc_marketSell;
+		["cocainep", [15,50] call life_fnc_randomRound, true] call life_fnc_marketSell;
+		["heroinp", [15,50] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		
 		
 		diag_log "+Market+ Event drugm";
 	};
@@ -125,7 +126,7 @@ switch(true) do
 		[[0,"News: China entdeckt Schildkröten als neue Medizin! Tierschützer sind besorgt!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		//Erhöhe Marktpreis mit marketSell
-		["turtle", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
+		["turtle", [8,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
 		
 		diag_log "+Market+ Event turtlep";
 	};

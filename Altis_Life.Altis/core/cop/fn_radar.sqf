@@ -6,22 +6,28 @@
 	Looks like weird but radar?
 */
 if(playerSide != west) exitWith {};
-private ["_speed","_vehicle"];
+private ["_speed","_vehicle","_owners"];
 _vehicle = cursorTarget;
+_owners = _vehicle getVariable "vehicle_info_owners";
+_distance = player distance _vehicle;
 _speed = round speed _vehicle;
 
-if((_vehicle isKindOf "Car") && (currentWeapon player) == "Rangefinder") then
+if(_distance >= 300) exitWith{};
+
+if((_vehicle isKindOf "Car") && (currentWeapon player) in ["hgun_P07_snds_F","Binocular","Rangefinder"]) then
 {
-	switch (true) do 
+	switch (true) do
 	{
-		case ((_speed > 33 && _speed <= 80)) : 
+		case ((_speed > 33 && _speed <= 51)) : 
 		{	
-			hint parseText format ["<t color='#ffffff'><t size='2'><t align='center'>" +(localize "STR_Cop_Radar")+ "<br/><t color='#33CC33'><t align='center'><t size='1'>" +(localize "STR_Cop_VehSpeed"),round  _speed];
+			_owners = [_owners] call life_fnc_vehicleOwners; //get vehicle owner from vehicle information.
+            hint parseText format ["<t color='#ffffff'><t size='2'><t align='center'>Radar<br/><t color='#33CC33'><t align='center'><t size='1'>Geschwindigkeit: %1 km/h<br/><t color='#33CC33'><t align='center'><t size='1'>Entfernung: %2 m<br/><t color='#FFD700'><t size='1.5'>Fahrzeughalter</t></t><br/> %3", round _speed, round _distance, _owners];
 		};
 		
-		case ((_speed > 80)) : 
+		case ((_speed > 51)) : 
 		{	
-			hint parseText format ["<t color='#ffffff'><t size='2'><t align='center'>" +(localize "STR_Cop_Radar")+ "<br/><t color='#FF0000'><t align='center'><t size='1'>" +(localize "STR_Cop_VehSpeed"),round  _speed];
+			_owners = [_owners] call life_fnc_vehicleOwners; //get vehicle owner from vehicle information.
+            hint parseText format ["<t color='#ffffff'><t size='2'><t align='center'>Radar<br/><t color='#FF0000'><t align='center'><t size='1'>Geschwindigkeit: %1 km/h<br/><t color='#33CC33'><t align='center'><t size='1'>Entfernung: %2 m<br/><t color='#FFD700'><t size='1.5'>Fahrzeughalter</t></t><br/> %3", round _speed, round _distance, _owners];
 		};
 	};
 };

@@ -33,30 +33,40 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		_ret set[count _ret,["H_MilCap_gry",nil,75]];
+		_ret set[count _ret,["h_cap_police",nil,75]];
 		
-		if(__GETC__(life_coplevel) > 1) then
-		{
-			_ret set[count _ret,["H_Cap_blk",nil,120]];
-		};
+		
 
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
-			_ret set[count _ret,["H_Booniehat_indp",nil,100]];
-			_ret set[count _ret,["H_Booniehat_khk",nil,100]];
-			
-			
 			_ret set[count _ret,["H_Beret_blk_POLICE",nil,100]];
-			
-			_ret set[count _ret,["H_Watchcap_camo",nil,100]];
-			
-			_ret set[count _ret,["H_Cap_blk_Raven",nil,100]];
-			
-			_ret set[count _ret,["H_Watchcap_sgg",nil,100]];
-			
-			
 		};
+		
+		if(__GETC__(life_coplevel) >= 6) then
+		{
+			_ret set[count _ret,["H_Watchcap_camo",nil,100]];
+			_ret set[count _ret,["H_Watchcap_sgg",nil,100]];
+		};
+		
+			if(__GETC__(life_coplevel) >= 8) then
+		{
+			_ret set[count _ret,["H_beret_02",nil,100]];
+			_ret set[count _ret,["h_beret_colonel",nil,100]];
+			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
+			_ret set[count _ret,["H_Booniehat_khk",nil,100]];
+			_ret set[count _ret,["g_mas_wpn_bala_b",nil,100]];
+		};
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
 	};
 	
 	//Glasses
@@ -87,7 +97,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1500]];
 		};
-		if(__GETC__(life_coplevel) >= 4) then
+		if(__GETC__(life_coplevel) >= 6) then
 		{
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
 	

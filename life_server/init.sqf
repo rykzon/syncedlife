@@ -8,6 +8,9 @@ publicVariable "life_server_isReady";
 [] execVM "\life_server\eventhandlers.sqf";
 
 //I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
+fed_bank1 setVariable["fed_rob_ip",false,true];
+fed_bank1 setVariable["fed_locked",false,true];
+
 
 _extDB = false;
 SLX_XEH_EXCL_CLASSES=["C_Offroad_01_F","DAR_TahoeCivRed","DAR_TahoeCivBlue","DAR_TahoeCivSilver","DAR_TahoeCivBlack","C_SUV_01_F","U_I_HeliPilotCoveralls","Jonzie_Viper","C_Hatchback_01_F"];
@@ -51,6 +54,7 @@ if (!_extDB) exitWith {
 ["CALL deleteDeadVehicles",1] spawn DB_fnc_asyncCall;
 ["CALL deleteOldHouses",1] spawn DB_fnc_asyncCall;
 ["CALL deleteOldGangs",1] spawn DB_fnc_asyncCall; //Maybe delete old gangs
+["CALL deleteOldMessages",1] spawn DB_fnc_asyncCall;
 
 life_adminlevel = 0;
 life_medicLevel = 0;
@@ -73,6 +77,7 @@ fed_bank setVariable["safe",(count playableUnits),true];
 
 //General cleanup for clients disconnecting.
 addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
+//_onDisconnect = ["SERV_onClientDisconnect","onPlayerDisconnected",{[_uid,_id,_name] call TON_fnc_clientDisconnect}] call BIS_fnc_addStackedEventHandler;
 
 [] spawn TON_fnc_cleanup;
 life_gang_list = [];

@@ -196,6 +196,14 @@ switch (_vehicle) do
 		];
 	};
 	
+	/*case "B_MRAP_01_F":
+	{
+		_ret = 
+		[
+			["textures\cops\Hunter_Front.paa","cop", "textures\cops\Hunter_Hinten.paa"]
+		];
+	};*/
+	
 	case "O_Heli_Attack_02_black_F":
 	{
 		_ret = 

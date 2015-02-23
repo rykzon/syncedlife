@@ -22,6 +22,7 @@ lbClear _cars;
 
 for "_i" from 0 to (count life_vehicles)-1 do
 {
+	
 	_veh = life_vehicles select _i;
 	if(_veh distance impound_obj < 50) then
 	{

@@ -3321,6 +3321,32 @@
 			<Italian>Mela</Italian>
 			<Portuguese>Maçã</Portuguese>
 		</Key>
+		
+		
+			<Key ID="STR_Item_Barrier">
+			<Original>Barrier</Original>
+			<English>Barrier</English>
+			<German>Absperrband</German>
+			<French>Pomme</French>
+			<Italian>Mela</Italian>
+			<Portuguese>Maçã</Portuguese>
+		</Key>	<Key ID="STR_Item_Barricade">
+			<Original>Barricade</Original>
+			<English>Barricade</English>
+			<German>Barrikade</German>
+			<French>Pomme</French>
+			<Italian>Mela</Italian>
+			<Portuguese>Maçã</Portuguese>
+		</Key>	<Key ID="STR_Item_Strahler">
+			<Original>Strahler</Original>
+			<English>Strahler</English>
+			<German>Strahler</German>
+			<French>Pomme</French>
+			<Italian>Mela</Italian>
+			<Portuguese>Maçã</Portuguese>
+		</Key>
+		
+		
 		<Key ID="STR_Item_Apples">
 			<Original>Apples</Original>
 			<English>Apples</English>

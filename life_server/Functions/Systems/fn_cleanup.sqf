@@ -6,6 +6,9 @@
 	Server-side cleanup script on vehicles.
 	Sort of a lame way but whatever.
 */
+[] spawn
+
+{
 private["_deleted"];
 _deleted = false;
 while {true} do
@@ -54,7 +57,15 @@ while {true} do
 			};
 		};
 	} foreach vehicles;
-	
+	};
+};
+
+[] spawn
+{
+while{true} do 
+{
+
+
 	sleep (3 * 60); //3 minute cool-down before next cycle. 
 	{
 		if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F"]) then
@@ -62,9 +73,18 @@ while {true} do
 			deleteVehicle _x;
 		};
 	} foreach (allMissionObjects "Thing");
+	};
+};
 	
-	sleep (2 * 60);
+[] spawn
+{	
+while{true} do 
+{
+
+	sleep (5 * 60);
 	{
 		deleteVehicle _x;
 	} foreach (allMissionObjects "GroundWeaponHolder");
+	diag_log "Cleanup #2 ausgeführt";
+	};
 };

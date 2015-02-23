@@ -60,11 +60,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.5],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.1],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.5);
+			_vehicle setFuel ((Fuel _vehicle) + 0.1);
 		};
 	};
 	
@@ -72,11 +72,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.2],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.05],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.2);
+			_vehicle setFuel ((Fuel _vehicle) + 0.05);
 		};
 	};
 	
@@ -84,11 +84,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.35],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.05],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.35);
+			_vehicle setFuel ((Fuel _vehicle) + 0.05);
 		};
 	};
 };

@@ -87,5 +87,27 @@ class Life_key_management {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+
+	class GiveGangKey : Life_RscButtonMenu {
+			idc = 2703;
+			text = "Gangschlüssel geben";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call life_fnc_keyGiveGang";
+			x = 0.10;
+			y = 0.69;
+			w = (8.25 / 40);
+			h = (1 / 25);
+		};
+		
+		class TakeGangKey : Life_RscButtonMenu {
+			idc = 2703;
+			text = "Gangschlüssel entziehen";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call life_fnc_keyTakeGang";
+			x = 0.48;
+			y = 0.69;
+			w = (8.25 / 40);
+			h = (1 / 25);
+		};
 	};
 };

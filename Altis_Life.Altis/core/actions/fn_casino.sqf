@@ -15,7 +15,7 @@ _kassa = 200000 + round(random 250000); //setting the money in the registry, any
 
 sleep 2;
 
-_timer = time + (7*60);
+_timer = time + (10*60);
 _toFar = false;
 if(_rip) then
 {
@@ -42,7 +42,7 @@ if!(alive _robber) exitWith { _fail = true; };
 	_rip = false;
 	life_use_atm = false;
 	["Karma_Prof",250,0] call life_fnc_addKarma;
-	sleep (30 + random(180)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
+	sleep (600); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	
 };

@@ -5,7 +5,7 @@
 	Description:
 
 */
-_clear = nearestObjects [player,["weaponholder"],3];
+_clear = nearestObjects [player,["CamoNet_OPFOR_F","TapeSign_F","Land_Razorwire_F","Land_PortableLight_double_F","RoadBarrier_small_F","WeaponHolderSimulated","weaponholder","GroundWeaponHolder","Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F"],3];
 _destroyed = 0;
 for "_i" from 0 to count _clear - 1 
 do

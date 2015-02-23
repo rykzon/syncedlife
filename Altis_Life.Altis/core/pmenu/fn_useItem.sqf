@@ -33,6 +33,40 @@ switch (true) do
         [] spawn life_fnc_weed;
     };
 };
+
+
+
+
+	case (_item == "barricade"):
+	{
+		if(!isNull life_barricade) exitWith {hint "Du stellst schon eine Barrikade!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_barricade;
+		};
+	};
+	
+	
+	case (_item == "barrier"):
+	{
+		if(!isNull life_barrier) exitWith {hint "Du stellst schon eine Barriere!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+	{
+		[] spawn life_fnc_barrier;
+	};
+	};
+
+			case (_item == "strahler"):
+	{
+		if(!isNull life_barrier) exitWith {hint "Du stellst schon einen Strahler!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+	{
+		[] spawn life_fnc_strahler;
+	};
+	};
+
+
+
 		case (_item == "heroinp"):
 {
     if(([false,_item,1] call life_fnc_handleInv)) then

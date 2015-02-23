@@ -17,6 +17,9 @@ switch (_className) do
 	case "RDS_Lada_Civ_03": {40};
 	case "RDS_Lada_Civ_04": {40};
 	
+	case "DAR_ChargerPoliceState": {60};
+	case "DAR_CVPIAux": {60};
+	
 	case "cl3_civic_vti_black": {40};
 	case "cl3_civic_vti_cardinal": {40};
 	case "cl3_civic_vti_dark_green": {40};

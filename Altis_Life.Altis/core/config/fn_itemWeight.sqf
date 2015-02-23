@@ -11,8 +11,8 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
-	case "oilu": {6};
-	case "oilp": {5};
+	case "oilu": {5};
+	case "oilp": {4};
 	case "heroinu": {6};
 	case "heroinp": {4};
 	case "cannabis": {4};
@@ -32,7 +32,7 @@ switch (_item) do
 	case "donuts": {1};
 	case "coffee": {1};
 	case "fuelE": {2};
-	case "fuelF": {5};
+	case "fuelF": {4};
 	case "money": {0};
 	case "bluesyn": {3};
 	case "pickaxe": {2};
@@ -41,6 +41,9 @@ switch (_item) do
 	case "coalu": {2};
 	case "coalp": {1};
 	case "steel": {4};
+	case "strahler": {2};
+	case "barrier": {2};
+	case "barricade": {2};
 	case "plastic": {4};
 	case "copper_r": {3};
 	case "iron_r": {4};
@@ -48,13 +51,13 @@ switch (_item) do
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {1};
-	case "diamond": {7};
-	case "diamondc": {5};
+	case "diamond": {5};
+	case "diamondc": {4};
 	case "cocaine": {6};
 	case "cocainep": {4};
 	case "spikeStrip": {8};
-	case "rock": {6};
-	case "cement": {5};
+	case "rock": {5};
+	case "cement": {4};
 	case "goldbar": {10};
 	case "blastingcharge": {8};
 	case "boltcutter": {3};

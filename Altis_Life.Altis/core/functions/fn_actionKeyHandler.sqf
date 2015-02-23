@@ -10,7 +10,8 @@
 private["_curTarget","_isWater"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
-if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
+if(life_action_gathering) exitWith{};
+//if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 if(isNull _curTarget) exitWith {
@@ -28,6 +29,9 @@ if(isNull _curTarget) exitWith {
 		};
 	};
 };
+
+_FSAbfrage = nearestObjects [player,["Land_FuelStation_Feed_F","Land_fs_feed_F"], 6];
+if((count _FSAbfrage) > 0) exitWith {[] spawn life_fnc_Tanke;};
 
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
 	[_curTarget] call life_fnc_houseMenu;
@@ -57,8 +61,9 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 
 
 //If target is a player then check if we can use the cop menu.
+//(_curTarget getVariable["restrained",false]) && 
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == west) then {
+	if(!dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 	if(!dialog && (playerSide == civilian) &&(_curTarget getVariable["tied",false]) ) then {

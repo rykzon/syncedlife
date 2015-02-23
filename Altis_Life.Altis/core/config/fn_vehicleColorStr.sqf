@@ -37,7 +37,7 @@ switch (_vehicle) do
 		};
 	};
 
-	case "DAR_TahoePPV":
+	case "B_MRAP_01_F":
 	{
 		switch(_index) do
 		{

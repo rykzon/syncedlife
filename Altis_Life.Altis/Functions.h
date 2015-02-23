@@ -132,6 +132,12 @@ class Life_Client_Core
 		class showLicenseAction{};
 
 		class surrender {}; 
+
+		class packUpBarrier{};
+		class packUpBarricade{};
+		class packUpStrahler{};
+
+		class robFederal{};
  		
         	};
 	
@@ -281,7 +287,10 @@ class Life_Client_Core
 		class toggleSound{};
 
 		class mafiaMusik{};
-		
+
+		class comDis{};
+		class emptyFuel{};
+		class Tanke{};
 
 		
 	};
@@ -324,6 +333,8 @@ class Life_Client_Core
 		class robShop2{};
 		class shopState{};
 		class showLicense{};
+		
+		class robReserve{};
 		};
 	
 	class Vehicle
@@ -396,6 +407,9 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+
+		class keyGiveGang{};
+		class keyTakeGang{};
 	};
 	
 	class Shops
@@ -437,6 +451,11 @@ class Life_Client_Core
 		class weed {};
 		class cocaine{};
 		class heroin{};
+
+
+		class barrier{};
+		class barricade{};
+		class strahler{};
 	};
 	
 	class Dialog_Controls
