@@ -30,7 +30,7 @@
 #include "craft.hpp"
 #include "wantedadd2.hpp"
 #include "extended_admin_menu.hpp"
-
+#include "give_money.hpp"
 #include "prof.hpp"
 #include "schutzgeld.hpp"
 

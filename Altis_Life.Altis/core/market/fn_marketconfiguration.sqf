@@ -188,7 +188,7 @@ life_market_resources = [
 		] 
 	],
 
-	["heroinp", 3750, 385, 4350, 4, 4,   
+	["heroinp", 3750, 400, 4350, 4, 4,   
 		[ 
 			["marijuana",1], 
 			["turtle",1],

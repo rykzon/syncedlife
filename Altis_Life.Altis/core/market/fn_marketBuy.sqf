@@ -40,16 +40,17 @@ if( _price > _max)then {_price = _max;};
 if(!_israw) then
 {
 	{
-		_relamount = ceil (_amount * (_x select 1));
-		if(_relamount < 0) then //INVERTED!
-		{
-			_relamount = -(_relamount);
-			[_x select 0, _relamount, true, false] call life_fnc_marketBuy; //Make prices higher, no broadcast!
-		}
-		else
-		{
-			[_x select 0, _relamount, true, false] call life_fnc_marketSell; //Make prices higher, no broadcast!
-		};
+		
+			_relamount = ceil (_amount * (_x select 1));
+			if(_relamount < 0) then //INVERTED!
+			{
+				_relamount = -(_relamount);
+				[_x select 0, _relamount, true, false] call life_fnc_marketBuy; //Make prices higher, no broadcast!
+			}
+			else
+			{
+				[_x select 0, _relamount, true, false] call life_fnc_marketSell; //Make prices higher, no broadcast!
+			};
 	}
 	foreach (_arr_resource select 6); //in change array
 };

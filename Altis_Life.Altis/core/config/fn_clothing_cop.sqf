@@ -54,7 +54,7 @@ switch (_filter) do
 			_ret set[count _ret,["h_beret_colonel",nil,100]];
 			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
 			_ret set[count _ret,["H_Booniehat_khk",nil,100]];
-			_ret set[count _ret,["g_mas_wpn_bala_b",nil,100]];
+			_ret set[count _ret,["G_Balaclava_blk",nil,100]];
 		};
 			
 			

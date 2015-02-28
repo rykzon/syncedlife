@@ -14,7 +14,7 @@ if(count (_Karre) > 0) then
 	_vehicle = _Karre select 0;
 	_name = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 	_action = [
-	format["%1 betanken?<br/>Benzinpreis: %2€/Durchlauf", _name, 125],"Tanken","Ja","Nein"
+	format["%1 betanken?<br/>Benzinpreis: %2€/Durchlauf", _name, 100],"Tanken","Ja","Nein"
 	] call BIS_fnc_guiMessage;
 
 	D41_Tankt = true;
@@ -24,9 +24,9 @@ if(count (_Karre) > 0) then
 	_fuel = getNumber(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "fuelCapacity");
 	if(_vehicle isKindOf "Car") then {_fuelMod = ((1/(_fuel / 100))/100);};
 	if(_vehicle isKindOf "Air") then {_fuelMod = ((1/(_fuel / 100))/5);};
-	if(_fuelmod < 0.01) then
+	if(_fuelmod < 0.015) then
 	{
-	_fuelmod = 0.01;
+	_fuelmod = 0.015;
 	};
 	
 	disableSerialization;
@@ -41,7 +41,7 @@ if(count (_Karre) > 0) then
 		while{true}do
 		{
 			if((life_atmcash - 125) < 0) exitWith {D41_Tankt = false; titleText[format["Nicht genügend Geld auf der Bank. Kontostand: %1",life_atmcash],"PLAIN"]; 5 cutText ["","PLAIN"];};
-			life_atmcash = life_atmcash - 125;
+			life_atmcash = life_atmcash - 100;
 			_Tankstand = Fuel _vehicle;
 			_vehicle setFuel (_Tankstand + _fuelMod);
 			_progress progressSetPosition _Tankstand;

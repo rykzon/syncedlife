@@ -37,6 +37,8 @@ _units = _units - [player];
 		_distance = _pos distance player;
 		if(count _sPos > 1 && {_distance < 15}) then {
 			_text = switch (true) do {
+				case(headgear _x in life_masked): {"Maskierte Person";};
+				case(_x getVariable ["realname",name _x] in life_bekanntschaften): {_x getVariable ["realname",name _x];};
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
 					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"}; 
@@ -51,26 +53,14 @@ _units = _units - [player];
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
 				default {
 				
-						if(headgear _x in life_masked) then
-						{
-							"Maskierte Person";
-						}
-						else
-						{
 						
-						if(_x getVariable ["realname",name _x] in life_bekanntschaften) then
-						{
-						_x getVariable ["realname",name _x];
-						}
-						else
-						{
 						"";
 						};
-						};
+						
 					
 						
 					
-				};
+				
 			};
 			
 			_idc ctrlSetStructuredText parseText _text;

@@ -87,7 +87,7 @@ class playerSettings {
 			x = 0.11; y = 0.26;
 			w = 0.219; h = 0.04;
 		};
-	
+
 		class itemList : life_RscListBox 
 		{
 			idc = item_list;
@@ -96,36 +96,8 @@ class playerSettings {
 			x = 0.62; y = 0.30;
 			w = 0.275; h = 0.3;
 		};
-		
-		class moneyEdit : Life_RscEdit 
-		{
-			idc = 2018;
-			
-			text = "1";
-			sizeEx = 0.030;
-			x = 0.12; y = 0.42;
-			w = 0.18; h = 0.03;
-		};
-		
-		class NearPlayers : Life_RscCombo 
-		{
-			idc = 2022;
-		
-			x = 0.12; y = 0.46;
-			w = 0.18; h = 0.03;
-		};
-		
-		class moneyDrop : Life_RscButtonMenu
-		{
-			idc = 2001;
-			text = "$STR_Global_Give";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call life_fnc_giveMoney";
-			sizeEx = 0.025;
-			x = 0.135; y = 0.50;
-			w = 0.13; h = 0.036;
-		};
-		
+	
+				
 		class itemEdit : Life_RscEdit {
 		
 		idc = item_edit;

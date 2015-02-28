@@ -13,14 +13,10 @@ if((_unit getVariable "restrained")) exitWith {};
 if((_unit getVariable "tied")) exitWith {};
 //if(side _unit == west) exitWith {};
 if(player == _unit) exitWith {};
-if (side player == civilian) then {
-	if(life_inv_zipties < 1) exitWith { hint "You have no zipties."; };
-	life_inv_zipties = life_inv_zipties - 1;
-	hint "You have ziptied the citizen";
-};
+
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
-//player say3D "cuff"; 	//cuff sound
+player say3D "cuff"; 	//cuff sound
 
 _unit setVariable["tied",true,true];
 _unit setVariable["Incapitated",false,true];

@@ -39,7 +39,7 @@ while {player getVariable "tied"} do
 	};
 	
 	_state = vehicle player;
-	waitUntil {animationState player != "AmovPercMstpSnonWnonDnon_Ease" || !(player getvariable "restrained") || vehicle player != _state};
+	waitUntil {animationState player != "AmovPercMstpSnonWnonDnon_Ease" || !(player getvariable "tied") || vehicle player != _state};
 			
 	if(!alive player) exitWith
 	{

@@ -109,42 +109,42 @@ class life_extended_admin_menu {
 	    class tool_b_money_add100: Life_RscButtonMenu
 	    {
 	    	idc = 2401;
-	    	text = "+ $100"; //--- ToDo: Localize;
+	    	text = "+ $1000"; //--- ToDo: Localize;
 	    	x = 2.5 * GUI_GRID_W + GUI_GRID_X;
 	    	y = 3 * GUI_GRID_H + GUI_GRID_Y;
 	    	w = 6.5 * GUI_GRID_W;
 	    	h = 1 * GUI_GRID_H;
-			onButtonClick = "[100] spawn life_fnc_adminAddMoney;";
+			onButtonClick = "[1000] spawn life_fnc_adminAddMoney;";
 	    };
 	    class tool_b_money_add1000: Life_RscButtonMenu
 	    {
 	    	idc = 2402;
-	    	text = "+ $1000"; //--- ToDo: Localize;
+	    	text = "+ $10000"; //--- ToDo: Localize;
 	    	x = 2.5 * GUI_GRID_W + GUI_GRID_X;
 	    	y = 4 * GUI_GRID_H + GUI_GRID_Y;
 	    	w = 6.5 * GUI_GRID_W;
 	    	h = 1 * GUI_GRID_H;
-			onButtonClick = "[1000] spawn life_fnc_adminAddMoney;";
+			onButtonClick = "[10000] spawn life_fnc_adminAddMoney;";
 	    };
 	    class tool_b_money_add10000: Life_RscButtonMenu
 	    {
 	    	idc = 2403;
-	    	text = "+ $10000"; //--- ToDo: Localize;
+	    	text = "+ $100000"; //--- ToDo: Localize;
 	    	x = 2.5 * GUI_GRID_W + GUI_GRID_X;
 	    	y = 5 * GUI_GRID_H + GUI_GRID_Y;
 	    	w = 6.5 * GUI_GRID_W;
 	    	h = 1 * GUI_GRID_H;
-			onButtonClick = "[10000] spawn life_fnc_adminAddMoney;";
+			onButtonClick = "[100000] spawn life_fnc_adminAddMoney;";
 	    };
 	    class tool_b_money_add100000: Life_RscButtonMenu
 	    {
 	    	idc = 2404;
-	    	text = "+ $100000"; //--- ToDo: Localize;
+	    	text = "+ $1000000"; //--- ToDo: Localize;
 	    	x = 2.5 * GUI_GRID_W + GUI_GRID_X;
 	    	y = 6 * GUI_GRID_H + GUI_GRID_Y;
 	    	w = 6.5 * GUI_GRID_W;
 	    	h = 1 * GUI_GRID_H;
-			onButtonClick = "[100000] spawn life_fnc_adminAddMoney;";
+			onButtonClick = "[1000000] spawn life_fnc_adminAddMoney;";
 	    };
 	    class player_b_Kick: Life_RscButtonMenu
 		{

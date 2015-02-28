@@ -584,7 +584,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Finger weg, du bist kein Cop!"};
-			case (!license_cop_swat): {"Du hast keine Marksmanausbildung!"};
+			case (!license_cop_swat): {"Du hast keine SWAT Ausbildung!"};
 			default
 			{
 				["Nur auf Anweisung!",
@@ -605,7 +605,7 @@ switch(_shop) do
 						["B_UAV_01_backpack_F",nil,1000],
 						["B_UavTerminal",nil,500],
 						["h_booniehat_mcamo",nil,500],
-						["g_mas_wpn_bala_b",nil,500],
+						["G_Balaclava_blk",nil,500],
 						["H_CrewHelmetHeli_B",nil,500],
 						
 						["Trixie_LSMARK4",nil,500],

@@ -5,10 +5,13 @@
 	Description:
 	Buys the house?
 */
-private["_house","_uid","_action","_houseCfg"];
+private["_house","_uid","_action","_houseCfg","_zone"];
 _house = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _uid = getPlayerUID player;
+_zone = getMarkerPos "gangzone";
 
+
+if(_zone distance player < 3000) exitWith{hint "Dieses Haus kann nicht gekauft werden!"};
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
 if((_house getVariable["house_owned",false])) exitWith {hint "This house is already owned even though you shouldn't be seeing this hint..."};

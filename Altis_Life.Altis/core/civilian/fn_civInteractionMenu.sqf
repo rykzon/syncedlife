@@ -27,11 +27,14 @@ _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
+
 life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
+if(_curTarget getVariable["tied",false]) then {
 _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
 _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_untie; closeDialog 0;";
+};
 /*
 //Set Check Licenses Button
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
@@ -47,6 +50,8 @@ _Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_schutzgeldAction; 
 */
 
 //Set Escort Button
+if(_curTarget getVariable["tied",false]) then
+{
 if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 ctrlSetText localize "STR_pInAct_StopEscort";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
@@ -54,18 +59,22 @@ if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 ctrlSetText localize "STR_pInAct_Escort";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
+};
 
-/*
+
 //Set Ticket Button
-_Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_schutzgeldAction;";
-
+_Btn5 ctrlSetText "Geld geben";
+_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_giveMoneyAction;";
+/*
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
 _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 */
+if(_curTarget getVariable["tied",false]) then {
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
+
+};
 /*
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

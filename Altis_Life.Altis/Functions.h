@@ -132,7 +132,8 @@ class Life_Client_Core
 		class showLicenseAction{};
 
 		class surrender {}; 
-
+		
+		class giveMoneyAction{};
 		class packUpBarrier{};
 		class packUpBarricade{};
 		class packUpStrahler{};
