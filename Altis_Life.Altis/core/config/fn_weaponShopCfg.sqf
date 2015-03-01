@@ -1051,6 +1051,7 @@ switch(_shop) do
 						["optic_MRCO",nil,20000],
 						["optic_Hamr",nil,20000],
 						["optic_mas_ACO_grn_camo",nil,5000],
+						["Rangefinder",nil,50000],
 						
 						["R3F_30Rnd_556x45_FAMAS",nil,500],
 						["R3F_25Rnd_556x45_FAMAS",nil,500],

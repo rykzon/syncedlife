@@ -32,6 +32,14 @@ life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
 
 
+[] spawn
+{
+
+sleep 10;
+[] call SOCK_fnc_updateRequest;
+
+};
+
 if(!isNull _killer) then 
 {
 [[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;

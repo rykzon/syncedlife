@@ -15,16 +15,7 @@ class Life_money_give
 			h = (1 / 25);
 		};
 
-		class Title : Life_RscTitle {
-			colorBackground[] = {0, 0, 0, 0};
-			idc = 2629;
-			text = "Geld geben";
-			x = 0.1;
-			y = 0.2;
-			w = 0.6;
-			h = (1 / 25);
-		};
-
+		
 		
 		class MainBackground:Life_RscText {
 			colorBackground[] = {0, 0, 0, 0.7};
@@ -41,7 +32,7 @@ class Life_money_give
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 2651;
-			text = "";
+			text = "Geld geben";
 			x = 0.3;
 			y = 0.2;
 			w = 0.6;

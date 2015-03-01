@@ -1,4 +1,4 @@
-#include macro.h
+#include <macro.h>
 #define Btn1 37450
 #define Btn2 37451
 #define Btn3 37452
@@ -34,7 +34,7 @@ _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
 
-
+		_Btn5 ctrlShow false;
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
@@ -80,8 +80,8 @@ _Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_giveMoneyAction;";
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
 _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 */
-if(_curTarget getVariable["tied",false]) then {
-
+if(_curTarget getVariable["restrained",false]) then {
+_Btn5 ctrlShow true;
 _Btn5 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 

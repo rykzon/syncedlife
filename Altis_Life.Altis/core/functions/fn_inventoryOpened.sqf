@@ -18,9 +18,11 @@ if(_isPack == 1 && (playerSide == civilian || playerSide == independent)) then {
 	};
 };
 
-if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
+if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith 
+{
 	_house = nearestBuilding (getPosATL player);
-	if(!(_house in life_vehicles) && (playerSide != west) &&{(_house getVariable ["locked",false])}) then {
+	if(!(_house in life_vehicles) && (playerSide != west) &&{(_house getVariable ["locked",false])}) then 
+	{
 		hint localize "STR_House_ContainerDeny";
 		[] spawn {
 			waitUntil {!isNull (findDisplay 602)};
