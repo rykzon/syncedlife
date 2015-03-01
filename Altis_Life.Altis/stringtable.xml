@@ -18,6 +18,18 @@
 <Italian>Mafia</Italian>
 <Portuguese>Mafia</Portuguese>
 </Key>
+
+
+<Key ID="$STR_pInAct_Title">
+<Original>Interaktionsmenü</Original>
+<English>Interaction menu</English>
+<German>Interaktionsmenü</German>
+<French>Mafia</French>
+<Italian>Mafia</Italian>
+<Portuguese>Mafia</Portuguese>
+</Key>
+
+
 <Key ID="STR_Prof_Oil">
 <Original>Oil Proficiency</Original>
 <English>Oil Proficiency</English>

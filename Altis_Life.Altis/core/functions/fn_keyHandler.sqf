@@ -153,6 +153,7 @@ switch (_code) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}}
 		};
 	};
 	
@@ -204,11 +205,11 @@ switch (_code) do
 			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 			{
 		
-			    hint "tie befehl erkannt";
+			   
 				if([false,"zipties",1] call life_fnc_handleInv) then
 				{
-					[] call life_fnc_tieAction;
-					hint "Person wurde gefesselt.";
+					[] call life_fnc_restrainAction;
+					
 				}
 				else
 				{

@@ -39,6 +39,19 @@ _player = player;
 					};
 				};
 				
+				if (side player == west) then
+				{
+					if(!([civilian,getPos player,20] call life_fnc_nearUnits) && (player getVariable["restrained",FALSE]) && vehicle player == player) exitWith
+					{
+						player setVariable["restrained",FALSE,TRUE];
+						player setVariable["Escorting",FALSE,TRUE];
+						player setVariable["transporting",false,true];
+						detach player;
+						life_HC_Timer = 0;
+						titleText["Du wurdest Automatisch befreit, da Du die maximale Zeit erreicht hast, ohne das direkte Interaktion mit Dir betrieben wurde.","PLAIN"];
+					};
+				};
+				
 		
 				life_HC_Timer = 0;
 			};

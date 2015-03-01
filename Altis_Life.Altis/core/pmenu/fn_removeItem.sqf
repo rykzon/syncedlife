@@ -9,7 +9,7 @@
 private["_data","_value","_obj","_pos","_ind"];
 disableSerialization;
 _data = lbData[2005,(lbCurSel 2005)];
-_value = ctrlText 2010;
+_value = "1";
 if(_data == "") exitWith {hint "You didn't select anything to remove.";};
 if(!([_value] call TON_fnc_isnumber)) exitWith {hint "You didn't enter an actual number format."};
 if(parseNumber(_value) <= 0) exitWith {hint "You need to enter an actual amount you want to remove."};

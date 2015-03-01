@@ -17,6 +17,7 @@
 #define Btn7 37456
 #define Btn8 37457
 #define Btn9 37458
+#define Btn10 37458
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
@@ -38,6 +39,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
 		_Btn8 = _display displayCtrl Btn8;
+		_Btn9 = _display displayCtrl Btn9;
 		
 		life_pInact_curTarget = _curTarget;
 		
@@ -57,7 +59,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 	};
 };
 		
-if(!isPlayer _curTarget && side _curTarget == civilian) exitWith {closeDialog 0;}; //Bad side check?
+if(!isPlayer _curTarget) exitWith {closeDialog 0;}; //Bad side check?
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
@@ -67,6 +69,8 @@ _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
+_Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
 life_pInact_curTarget = _curTarget;
 
 if(_curTarget getVariable["restrained",false]) then {
@@ -98,6 +102,8 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 
 };
+
+if(side _curTarget == civilian) then {
 //Set Check Licenses Button
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
 _Btn2 buttonSetAction "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP";
@@ -118,9 +124,21 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 _Btn8 ctrlSetText localize "STR_pInAct_RevokeLicense";
 _Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";// neu eingefügt
+};
+_Btn1 ctrlEnable false;
+_Btn2 ctrlEnable false;
+_Btn3 ctrlEnable false;
+_Btn4 ctrlEnable false;
+_Btn5 ctrlEnable false;
+_Btn6 ctrlEnable false;
+_Btn7 ctrlEnable false;
+_Btn8 ctrlEnable false;
 
 _Btn9 ctrlSetText "Geld geben";
 _Btn9 buttonSetAction "[life_pInact_curTarget] call life_fnc_giveMoneyAction;";
+
+_Btn10 ctrlSetText "Items Geben";
+_Btn10 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveItemAction; closeDialog 0;";
 
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_2") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

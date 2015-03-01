@@ -10,11 +10,12 @@
 private["_unit","_val"];
 _val = ctrlText 2010;
 ctrlShow[2002,false];
-if((lbCurSel 2023) == -1) exitWith {hint "No one was selected!";ctrlShow[2002,true];};
-_unit = lbData [2023,lbCurSel 2023];
-_unit = call compile format["%1",_unit];
-if((lbCurSel 2005) == -1) exitWith {hint "You didn't select an item you wanted to give.";ctrlShow[2002,true];};
-_item = lbData [2005,(lbCurSel 2005)];
+//if((lbCurSel 2023) == -1) exitWith {hint "No one was selected!";ctrlShow[2002,true];};
+if(isNil life_pInact_curTarget) exitWith{hint "Da ist etwas schiefgelaufen...";};
+_unit = life_pInact_curTarget;
+//_unit = call compile format["%1",_unit];
+if((lbCurSel 3005) == -1) exitWith {hint "You didn't select an item you wanted to give.";ctrlShow[2002,true];};
+_item = lbData [3005,(lbCurSel 3005)];
 if(isNil "_unit") exitWith {ctrlShow[2002,true];};
 if(_unit == player) exitWith {ctrlShow[2002,true];};
 if(isNull _unit) exitWith {ctrlShow[2002,true];};
@@ -28,6 +29,6 @@ if(!([false,_item,(parseNumber _val)] call life_fnc_handleInv)) exitWith {hint "
 _type = [_item,0] call life_fnc_varHandle;
 _type = [_type] call life_fnc_varToStr;
 hint format["You gave %1 %2 %3",_unit getVariable["realname",name _unit],_val,_type];
-[] call life_fnc_p_updateMenu;
+[] call life_fnc_p_updateInv;
 
 ctrlShow[2002,true];

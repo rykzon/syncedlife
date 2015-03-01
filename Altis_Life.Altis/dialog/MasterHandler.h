@@ -33,6 +33,7 @@
 #include "give_money.hpp"
 #include "prof.hpp"
 #include "schutzgeld.hpp"
+#include "giveItem.hpp"
 
 #include "jail_time.hpp"
 #include "revoke_license.h"

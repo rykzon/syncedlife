@@ -128,7 +128,7 @@ class Life_Client_Core
 		class tieAction{};
 		class untie{};
 		class casino{};
-		
+		class giveItemAction{};
 		class showLicenseAction{};
 
 		class surrender {}; 
@@ -202,6 +202,7 @@ class Life_Client_Core
 		class wantedadd2 {};
 		class wanted2 {};
 		class craft {};
+		class p_updateInv {};
 		class craft_update {};
 		class craft_updateFilter {};
 		class wantedList {};
@@ -408,7 +409,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
-
+		class gangMarkers{};
 		class keyGiveGang{};
 		class keyTakeGang{};
 	};

@@ -98,23 +98,7 @@ class playerSettings {
 		};
 	
 				
-		class itemEdit : Life_RscEdit {
 		
-		idc = item_edit;
-		
-		text = "1";
-		sizeEx = 0.030;
-		x = 0.62; y = 0.61;
-		w = 0.275; h = 0.03;
-		
-		};
-		class iNearPlayers : Life_RscCombo
-		{
-			idc = 2023;
-			
-			x = 0.62; y = 0.65;
-			w = 0.275; h = 0.03;
-		};
 		/*
 		Disabled till it can be redone
 		class moneyInput: life_RscCombo {
@@ -126,20 +110,7 @@ class playerSettings {
 		};
 		*/
 		
-		class DropButton : life_RscButtonMenu {
 			
-			idc = 2002;
-			text = "$STR_Global_Give";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call life_fnc_giveItem;";
-			
-			x = 0.765;
-			y = 0.70;
-			w = (5.25 / 40);
-			h = (1 / 25);
-			
-		};
-		
 		class UseButton : life_RscButtonMenu {
 			
 			text = "$STR_Global_Use";
