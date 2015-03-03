@@ -59,7 +59,7 @@ _itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 titleText[format[localize "STR_ISTR_Pick_Success",_itemName,_diff],"PLAIN"];
 if( _profName != "" ) then 
 {
-[[format ["4|%1 Rohstoff aufgehoben: %2,3%x",player getVariable["realname",name player],_mine,_diff]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["4|%1 Rohstoff aufgehoben: %2,3%x",player getVariable["realname",name player],_mine,_diff]],"Arma3Log",false,false] call life_fnc_MP;
 [_profName,5] call life_fnc_addExp;
 ["Karma_Prof",2,_karma] call life_fnc_addKarma;
 };

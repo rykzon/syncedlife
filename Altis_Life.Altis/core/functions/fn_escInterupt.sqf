@@ -30,7 +30,7 @@ _escSync = {
 	};
 	
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	[[format ["0|%1 will disconnecten",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
+	//[[format ["0|%1 will disconnecten",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 	
 	
 	

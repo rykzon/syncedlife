@@ -25,4 +25,4 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 } foreach ["hospital_2","hospital_3"];
 
 [8,true,12] execFSM "core\fsm\timeModule.fsm";
-[] call compile PreprocessFileLineNumbers "\@Arma3Log\init.sqf";
+//[] call compile PreprocessFileLineNumbers "\@Arma3Log\init.sqf";

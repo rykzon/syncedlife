@@ -15,7 +15,7 @@ _name = _this select 3;
 _containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
 {deleteVehicle _x;} foreach _containers;
 deleteVehicle _unit;
-[format ["0|%1 ist disconnected", _name]] call Arma3Log;
+//[format ["0|%1 ist disconnected", _name]] call Arma3Log;
 
 {
 	_pid = _x getVariable["steam64ID",""];

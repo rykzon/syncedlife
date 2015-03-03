@@ -191,7 +191,7 @@ switch (_code) do
 	};
 	case 11:
 	{
-		[] spawn life_fnc_toggleSound;
+		[] call life_fnc_toggleSound;
 		_handled = true;
 		
 	};

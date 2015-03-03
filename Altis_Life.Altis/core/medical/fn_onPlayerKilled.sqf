@@ -42,11 +42,11 @@ sleep 10;
 
 if(!isNull _killer) then 
 {
-[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 }
 else
 {
-[[format ["2|%1 wurde getötet",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["2|%1 wurde getötet",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 };
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
@@ -85,7 +85,7 @@ _unit spawn
 //Make the killer wanted
 if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
 
-	[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
+	//[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 	if(vehicle _killer isKindOf "LandVehicle") then {
 		//[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187V"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		//Get rid of this if you don't want automatic vehicle license removal.
@@ -106,10 +106,10 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 //Killed by cop stuff...
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
-	[[format ["2|%1 wurde von Cop %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
+	//[[format ["2|%1 wurde von Cop %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 	//Did I rob the federal reserve?
 	if(!life_use_atm && {life_cash > 0}) then {
-		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] call life_fnc_MP;
 		life_cash = 0;
 	};
 };
@@ -119,7 +119,7 @@ if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
 };
 
-_handle = [_unit] spawn life_fnc_dropItems;
+_handle = [_unit] call life_fnc_dropItems;
 waitUntil {scriptDone _handle};
 
 life_hunger = 100;
@@ -128,7 +128,7 @@ life_carryWeight = 0;
 life_cash = 0;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
-[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
