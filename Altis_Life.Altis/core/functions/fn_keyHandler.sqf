@@ -119,15 +119,18 @@ switch (_code) do
 				};
 				
 			} foreach life_inv_items;
+		
 		}
 		
 		
 		};
 		};
-	
+		_handled = true;
 	};
 	
 	//TODO SPIKESTRIP
+	case 3:
+	{_handled = true};
 	
 	case 4:
 	{
@@ -142,9 +145,23 @@ switch (_code) do
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
+				
 			};
 		};
+		_handled = true;
 	};
+	case 5:
+	{_handled = true};
+	case 6:
+	{_handled = true};
+	case 7:
+	{_handled = true};
+	case 8:
+	{_handled = true};
+	case 9:
+	{_handled = true};
+	case 10:
+	{_handled = true};
 	
 	//Map Key
 	case _mapKey:
@@ -175,6 +192,7 @@ switch (_code) do
 	case 11:
 	{
 		[] spawn life_fnc_toggleSound;
+		_handled = true;
 		
 	};
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
@@ -305,8 +323,60 @@ switch (_code) do
 		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
 		{
 			[] call life_fnc_p_openMenu;
+			_handled = true;
 		};
 	};
+	case 59:
+	{
+			_handled = true;
+	};
+		case 60:
+	{
+			_handled = true;
+	};
+		case 61:
+	{
+			_handled = true;
+	};
+		case 62:
+	{
+			_handled = true;
+	};
+		case 63:
+	{
+			_handled = true;
+	};
+		case 63:
+	{
+			_handled = true;
+	};
+		case 64:
+	{
+			_handled = true;
+	};	case 65:
+	{
+			_handled = true;
+	};
+	case 66:
+	{
+			_handled = true;
+	};
+	case 67:
+	{
+			_handled = true;
+	};
+	case 68:
+	{
+			_handled = true;
+	};
+	case 87:
+	{
+			_handled = true;
+	};case 88:
+	{
+			_handled = true;
+	};
+	
 	
 	//F Key
 	case 33:

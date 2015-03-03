@@ -133,7 +133,19 @@ _patchList =
 "JSRS2_Hunter","JSRS2_Ifrit","JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad","JSRS2_Po30_Orca",
 "JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk","JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris","kae_SZ_infantry","PansyLandRovers","SAL_77TRANSAM_A",
 "SAL_Audi_A","Trixie_Ghillie","CBS_K9N_WaterShadow730","cba_xeh_a3","A3_Air_F_EPC_Plane_Fighter_03","A3_Armor_F_AMV","A3_Armor_F_Marid","A3_Armor_F_EPC_MBT_01","A3_Armor_F_APC_Wheeled_03","A3_CargoPoses_F","A3_CargoPoses_F_Heli"
-,"A3_Soft_F_Crusher_UGV","A3_Soft_F_Bootcamp_Offroad_01","A3_Soft_F_Bootcamp_Quadbike","A3_Soft_F_Bootcamp_Truck","A3_Soft_F_Heli_Crusher_UGV","rds_A2_Civilians"];
+,"A3_Soft_F_Crusher_UGV","A3_Soft_F_Bootcamp_Offroad_01","A3_Soft_F_Bootcamp_Quadbike","A3_Soft_F_Bootcamp_Truck","A3_Soft_F_Heli_Crusher_UGV","rds_A2_Civilians","DragonFyre_Bullethits","DragonFyre_Explosions", "DragonFyre_Sonic_Cracks", "DragonFyre_230mm_Titan", "DragonFyre_Air_Weapons",
+"DragonFyre_35mm_Autocannon", "DragonFyre_120mm_Cannon", "DragonFyre_Autocannon", "DragonFyre_DAGR", "DragonFyre_DAR", "DragonFyre_Minigun", "DragonFyre_30mm_Cannon",
+"DragonFyre_Gau8", "DragonFyre_155mm_AMOS", "DragonFyre_M134", "DragonFyre_LMGRCWS", "DragonFyre_GMG20", "DragonFyre_GMG40", "DragonFyre_127", "DragonFyre_Skalpel_ATGM",
+"DragonFyre_Skyfire", "DragonFyre_Veh_Titan", "DragonFyre_4Five45", "DragonFyre_ACPC", "DragonFyre_MX", "DragonFyre_M6", "DragonFyre_Khaybar", "DragonFyre_M320R",
+"DragonFyre_EBR", "DragonFyre_FS2000", "DragonFyre_M200", "DragonFyre_P07", "DragonFyre_NLAW", "DragonFyre_PDW", "DragonFyre_Rahim", "DragonFyre_Rook40", "DragonFyre_RPG32",
+"DragonFyre_Scorpian", "DragonFyre_TRG20", "DragonFyre_UGL", "DragonFyre_SDAR", "DragonFyre_Vector", "DragonFyre_Zafir", "DragonFyre_Zubr45", "DragonFyre_Movement",
+"DragonFyre_Distance", "DragonFyre_FighterPlane3", "DragonFyre_CAS_Plane1", "DragonFyre_AH99_Blackfoot", "DragonFyre_AH9_Pawnee", "DragonFyre_UAV_1",
+"DragonFyre_CH67_Huron", "DragonFyre_CH49_Mohawk", "DragonFyre_Mi290_Taru", "DragonFyre_Mi48_Kajman", "DragonFyre_UAV_2", "DragonFyre_Po30_Orca", "DragonFyre_CAS_Plane2",
+"DragonFyre_UH80_GhostHawk", "DragonFyre_WY55_Hellcat", "DragonFyre_Boat_Armed_1", "DragonFyre_2S9_Sorcher", "DragonFyre_AFV4_Gorgon", "DragonFyre_AMV7_Marshal",
+"DragonFyre_BTRK_Kamysh", "DragonFyre_FV720_Mora", "DragonFyre_IFV6a_Cheetah", "DragonFyre_IFV6c_Panther", "DragonFyre_M2A1_Slammer", "DragonFyre_M4_Scorcher",
+"DragonFyre_M5_Sandstorm", "DragonFyre_MBT52_Kuma", "DragonFyre_MSE3_Marid", "DragonFyre_T100_Varsuk", "DragonFyre_ZSU39_Tigris", "DragonFyre_Hatchback",
+"DragonFyre_truck1", "DragonFyre_Hunter", "DragonFyre_Ifrit", "DragonFyre_Offroad", "DragonFyre_Quadbike", "DragonFyre_Strider", "DragonFyre_SUV", "DragonFyre_truck2",
+"DragonFyre_Van", "DragonFyre_Truck3", "DragonFyre_Titan"];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
 uiNamespace setVariable["RscDisplayMultiplayer",displayNull];

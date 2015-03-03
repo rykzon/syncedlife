@@ -8,9 +8,11 @@ private["_container","_unit"];
 if(count _this == 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
+_Sourrounding = nearestObjects [player,["B_supplyCrate_F","Box_IND_Grenades_F"], 4];
+
 
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-if(_isPack == 1 && (playerSide == civilian || playerSide == independent)) then {
+if(_isPack == 1 && playerSide != west) then {
 	hint localize "STR_MISC_Backpack";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
@@ -18,25 +20,46 @@ if(_isPack == 1 && (playerSide == civilian || playerSide == independent)) then {
 	};
 };
 
-if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith 
+if(count(_Sourrounding) > 0)exitWith
 {
 	_house = nearestBuilding (getPosATL player);
-	if(!(_house in life_vehicles) && (playerSide != west) &&{(_house getVariable ["locked",false])}) then 
+	if(!(_house in life_vehicles) && {(_house getVariable ["locked",false])}) then
 	{
 		hint localize "STR_House_ContainerDeny";
-		[] spawn {
+		[] spawn
+		{
 			waitUntil {!isNull (findDisplay 602)};
 			closeDialog 0;
 		};
 	};
 };
 
-if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container isKindOf "Air") exitWith {
-	if(!(_container in life_vehicles) && {(locked _container) == 2}) exitWith {
-		hint localize "STR_MISC_VehInventory";
-		[] spawn {
+if((typeOf _container) in ["B_supplyCrate_F","Box_IND_Grenades_F"]) exitWith
+{
+	_house = nearestBuilding (getPosATL player);
+	if(!(_house in life_vehicles) && {(_house getVariable ["locked",false])}) then
+	{
+		hint localize "STR_House_ContainerDeny";
+		[] spawn
+		{
 			waitUntil {!isNull (findDisplay 602)};
 			closeDialog 0;
+		};
+	};
+};
+
+if(playerSide != west) then
+{
+	if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container isKindOf "Air") exitWith
+	{
+		if(!(_container in life_vehicles) && {(locked _container) == 2}) exitWith
+		{
+			hint localize "STR_MISC_VehInventory";
+			[] spawn
+			{
+				waitUntil {!isNull (findDisplay 602)};
+				closeDialog 0;
+			};
 		};
 	};
 };
@@ -49,13 +72,3 @@ if(_container isKindOf "LandVehicle" OR _container isKindOf "Ship" OR _container
 		closeDialog 0;
 	};
 };*/
-
-if(_container isKindOf "Car" || _container isKindOf "Ship" || _container isKindOf "Air") exitWith {
-	if(!(_container in life_vehicles) && {(locked _container) == 2}) exitWith {
-	hint "You're not allowed to open the vehicles inventory while it's locked.";
-	[] spawn {
-	waitUntil {!isNull (findDisplay 602)};
-	closeDialog 0;
-	};
-};
-};

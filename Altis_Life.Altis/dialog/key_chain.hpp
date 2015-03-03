@@ -58,15 +58,7 @@ class Life_key_management {
 			h = (1 / 25);
 		};
 		
-		class NearPlayers : Life_RscCombo {
-		
-		idc = 2702;
-		
-		x = 0.26; y = 0.645;
-		w = 0.275; h = 0.03;
-		
-		};
-		
+			
 		class DropKey : life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Keys_DropKey";

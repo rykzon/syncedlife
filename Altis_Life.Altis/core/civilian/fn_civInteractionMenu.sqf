@@ -35,7 +35,7 @@ _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
 
 		_Btn5 ctrlShow false;
-		_Btn6 ctrlShow false;
+		
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
 		_Btn9 ctrlShow false;
@@ -85,7 +85,11 @@ _Btn5 ctrlShow true;
 _Btn5 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
+
+
 };
+_Btn6 ctrlSetText "Schlüssel Geben";
+_Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveKeyAction;";
 /*
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

@@ -37,7 +37,7 @@
 		[
 			"KeyDown","if
 				(
-					((_this select 1) in actionKeys 'Command')
+					((_this select 1) in actionKeys 'SwitchCommand')
 				)
 				then
 				{

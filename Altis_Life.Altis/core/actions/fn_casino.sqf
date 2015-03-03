@@ -9,7 +9,7 @@ if !(alive _robber) exitWith {};
 _rip = true;
 _kassa = 200000 + round(random 250000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
-[[2,"DAS KASINO WIRD AUSGERAUBT!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+[[2,"DAS KASINO WIRD AUSGERAUBT!!"],"life_fnc_broadcast",nil,false] call life_fnc_MP;
 
 
 
@@ -37,7 +37,7 @@ if!(alive _robber) exitWith { _fail = true; };
 	if(life_istazed) exitWith {_fail=true};
 	5 cutText ["","PLAIN"];
 	hint format["Du hast das Kasino um $%1 erleichtert.", _kassa];
-	[[2,"KASINORAUB ERFOLGREICH!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+	[[2,"KASINORAUB ERFOLGREICH!!"],"life_fnc_broadcast",nil,false] call life_fnc_MP;
 	life_cash = life_cash + _kassa; //I am using a moneylaundry system on my server, but if you do not change this to life_cash instead.
 	_rip = false;
 	life_use_atm = false;
@@ -48,6 +48,6 @@ if!(alive _robber) exitWith { _fail = true; };
 };
 if(_fail) then
 {
-[[2,"KASINORAUB FEHLGESCHLAGEN!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+[[2,"KASINORAUB FEHLGESCHLAGEN!!"],"life_fnc_broadcast",nil,false] call life_fnc_MP;
 };
 [[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP;

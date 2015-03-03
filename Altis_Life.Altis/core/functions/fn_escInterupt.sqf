@@ -31,12 +31,13 @@ _escSync = {
 	
 	_abortButton = (findDisplay 49) displayCtrl 104;
 	[[format ["0|%1 will disconnecten",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
-	[] call SOCK_fnc_updateRequest; //call our silent sync.
+	
 	
 	
 	if(_this) then {
 		_thread = [] spawn _syncManager;
 		waitUntil{scriptDone _thread OR isNull (findDisplay 49)};
+		[] call SOCK_fnc_updateRequest;
 		_abortButton ctrlEnable true;
 	};
 };

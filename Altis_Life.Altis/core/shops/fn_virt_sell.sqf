@@ -67,7 +67,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 		};
 	////Marktsystem Ende////
 	};
-	[] call life_fnc_virt_update;	
+	[] call life_fnc_virt_update;
 };
 
  

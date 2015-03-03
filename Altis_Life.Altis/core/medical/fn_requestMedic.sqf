@@ -15,7 +15,7 @@ if(_medicsOnline) then {
 	//No medics were online, send it to the police.
 	[[life_corpse,profileName],"life_fnc_copMedicRequest",west,FALSE] spawn life_fnc_MP;
 };
-
+Life_request_timer = true;
 //Create a thread to monitor duration since last request (prevent spammage).
 [] spawn 
 {
