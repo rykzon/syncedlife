@@ -134,6 +134,15 @@ class CfgFunctions
 			class updateHouseTrunk {};
 			class houseCleanup {};
 		};
+		class Markt
+		{
+			file = "\life_server\Functions\Markt";
+			class insertStockSys {};
+			class queryStockSys {};
+			class updateStock {};
+		
+
+		};
 		
 		class Gangs
 		{

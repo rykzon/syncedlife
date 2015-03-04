@@ -24,5 +24,6 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 	detach _var;
 } foreach ["hospital_2","hospital_3"];
 
+[] execVM "\life_server\Functions\Markt\fn_updateStock.sqf";
 [8,true,12] execFSM "core\fsm\timeModule.fsm";
 //[] call compile PreprocessFileLineNumbers "\@Arma3Log\init.sqf";

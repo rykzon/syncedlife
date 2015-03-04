@@ -12,13 +12,7 @@ _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
 
-////Marktsystem Anfang////
-_marketprice = [_type] call life_fnc_marketGetBuyPrice;
-if(_marketprice != -1) then
-{
-_price = _marketprice;
-};
-////Marktsystem Ende////
+
 
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
@@ -29,6 +23,38 @@ _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barr
 if((_price * _amount) > life_cash && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 
 _name = [([_type,0] call life_fnc_varHandle)] call life_fnc_varToStr;
+
+D41_BuyAble = 1;
+
+
+_StockListe = [
+		"apple",
+		"peach",
+		"heroinp",
+		"marijuana",
+		"oilp",
+		"cocainep",
+		"turtle",
+		"diamondc",
+		"iron_r",
+		"coalp",
+		"steel",
+		"bluesyn",
+		"plastic",
+		"copper_r",
+		"salt_r",
+		"glass",
+		"cement"
+		];
+if(_type in _StockListe)then
+	{
+		hint format ["Lagerabfrage für %1 läuft",_name];
+		[[_type, [_amount] call life_fnc_numberText, player],"TON_fnc_queryStockSys",false,false] call life_fnc_MP;
+		sleep 1;
+		player getVariable "D41_BuyAble";
+	};
+//::::::::::::::::
+if (D41_BuyAble == 0) exitWith {D41_IsBuying = 0; hint format ["Nicht genügend %1 auf Lager",_name];};
 
 if(([true,_type,_amount] call life_fnc_handleInv)) then
 {
@@ -44,6 +70,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		] call BIS_fnc_guiMessage;
 		if(_action) then {
 			hint format[localize "STR_Shop_Virt_BoughtGang",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
+			if(_type in _StockListe)then{[[_type, [_amount] call life_fnc_numberText,"1",getPlayerUID player],"TON_fnc_insertStockSys",false,false] call life_fnc_MP;};
 			_funds = grpPlayer getVariable "gang_bank";
 			_funds = _funds - (_price * _amount);
 			grpPlayer setVariable["gang_bank",_funds,true];
@@ -51,26 +78,20 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		} else {
 			if((_price * _amount) > life_cash) exitWith {[false,_type,_amount] call life_fnc_handleInv; hint localize "STR_NOTF_NotEnoughMoney";};
 			hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
+			if(_type in _StockListe)then{[[_type, [_amount] call life_fnc_numberText,"1",getPlayerUID player],"TON_fnc_insertStockSys",false,false] call life_fnc_MP;};
 			__SUB__(life_cash,_price * _amount);
 		};
 	} else {
 		if((_price * _amount) > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"; [false,_type,_amount] call life_fnc_handleInv;};
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
+		if(_type in _StockListe)then{[[_type, [_amount] call life_fnc_numberText,"1",getPlayerUID player],"TON_fnc_insertStockSys",false,false] call life_fnc_MP;};
 		__SUB__(life_cash,(_price * _amount));
-		
-		if(_marketprice != -1) then
-{
-        //##94
-        [_type, _amount] spawn
-        {
-        sleep 120;
-        [_this select 0,_this select 1] call life_fnc_marketBuy;
-    };
-};
+		D41_IsBuying = 0;
+	
 		
 	};
 	[] call life_fnc_virt_update;
 };
-
+D41_IsBuying = 0;
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;

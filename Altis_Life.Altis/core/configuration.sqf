@@ -30,6 +30,7 @@ life_respawn_timer = 2; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
+D41_IsBuying = 0;
 life_removeWanted = false;
 life_action_gathering = false;
 life_smartphoneTarget = ObjNull;
@@ -272,10 +273,10 @@ life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocai
 	Sell / buy arrays
 */
 sell_array = 
-[
-	["apple",150],
+{[
+	["apple",life_VPreisApple],
 	["heroinu",1850],
-	["heroinp",2650],
+	["heroinp",life_VPreisAHeroinp],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
@@ -283,44 +284,44 @@ sell_array =
 	["mullet",250],
 	["catshark",300],
 	["rabbit",65],
-	["oilp",3200],
+	["oilp",life_VPreisOilp],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",2350],
+	["marijuana",life_VPreisMarijuana],
 	["tbacon",25],
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
 	["peach",150],
 	["cocaine",3000],
-	["cocainep",5000],
-	["turtle",4000],
+	["cocainep",life_VPreisCocainep],
+	["turtle",life_VPreisTurtle],
 	["diamond",750],
-	["diamondc",2000],
-	["iron_r",3200],
-	["coalp",3200],
-	["steel",3200],
-	["bluesyn",6000],
-	["plastic",3200],
-	["copper_r",1500],
-	["salt_r",1650],
-	["glass",1450],
+	["diamondc",life_VPreisDiamondc],
+	["iron_r",life_VPreisIron_r],
+	["coalp",life_VPreisCoal],
+	["steel",life_VPreisSteel],
+	["bluesyn",life_VPreisBluesyn],
+	["plastic",life_VPreisPlastic],
+	["copper_r",life_VPreisCopper_r],
+	["salt_r",life_VPreisSalt_r],
+	["glass",life_VPreisGlass],
 	["fuelF",500],
 	["spikeStrip",1200],
 	["barrier",1200],
 	["barricade",1200],
 	["strahler",1200],
-	["cement",1950],
+	["cement",life_VPreisCement],
 	["goldbar",50000],
 	["zipties",200]
-];
-__CONST__(sell_array,sell_array);
+];};
+//__CONST__(sell_array,sell_array);
 
 buy_array = 
-[
-	["apple",160],
+{[
+	["apple",life_KPreisApple],
 	["rabbit",75],
 	
 	
@@ -340,7 +341,7 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",160],
+	["peach",life_KPreisPeach],
 	["spikeStrip",2500],
 	["barrier",2500],
 	["barricade",2500],
@@ -351,8 +352,8 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000],
 	["zipties",2000]
-];
-__CONST__(buy_array,buy_array);
+];};
+//__CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
 [/*
