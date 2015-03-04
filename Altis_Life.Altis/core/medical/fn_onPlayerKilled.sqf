@@ -119,8 +119,9 @@ if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
 };
 
-_handle = [_unit] call life_fnc_dropItems;
-waitUntil {scriptDone _handle};
+
+[_unit] call life_fnc_dropItems;
+
 
 life_hunger = 100;
 life_thirst = 100;
