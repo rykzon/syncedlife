@@ -17,7 +17,7 @@ hint format[localize "STR_Medic_RevivePay",_medic,[(call life_revive_fee)] call 
 closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
-
+Life_request_timer = false;
 //Take fee for services.
 if(life_atmcash > (call life_revive_fee)) then {
 	life_atmcash = life_atmcash - (call life_revive_fee);

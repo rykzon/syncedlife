@@ -13,11 +13,7 @@ waitUntil {!isNull (findDisplay 2700)};
 _display = findDisplay 2700;
 _vehicles = _display displayCtrl 2701;
 lbClear _vehicles;
-_plist = _display displayCtrl 2702;
-lbClear _plist;
-_near_units = [];
 
-{ if(player distance _x < 20) then {_near_units pushBack _x};} foreach playableUnits;
 
 for "_i" from 0 to (count life_vehicles)-1 do
 {
@@ -41,13 +37,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	};
 };
 
-{
-	if(!isNull _x && alive _x && player distance _x < 20 && _x != player) then
-	{
-		_plist lbAdd format["%1 - %2",_x getVariable["realname",name _x], side _x];
-		_plist lbSetData [(lbSize _plist)-1,str(_x)];
-	};
-} foreach _near_units;
+
 
 if(((lbSize _vehicles)-1) == -1) then
 {

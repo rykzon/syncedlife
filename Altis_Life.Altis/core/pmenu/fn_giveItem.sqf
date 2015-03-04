@@ -11,7 +11,7 @@ private["_unit","_val"];
 _val = ctrlText 2010;
 ctrlShow[2002,false];
 //if((lbCurSel 2023) == -1) exitWith {hint "No one was selected!";ctrlShow[2002,true];};
-if(isNil life_pInact_curTarget) exitWith{hint "Da ist etwas schiefgelaufen...";};
+if(isNull life_pInact_curTarget) exitWith{hint "Da ist etwas schiefgelaufen...";};
 _unit = life_pInact_curTarget;
 //_unit = call compile format["%1",_unit];
 if((lbCurSel 3005) == -1) exitWith {hint "You didn't select an item you wanted to give.";ctrlShow[2002,true];};

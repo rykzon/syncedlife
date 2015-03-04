@@ -44,5 +44,5 @@ hint parseText format["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='#
 
 if(_robber) then
 {
-	[[0,"STR_Cop_Robber",true,[(_civ getVariable["realname",name _civ])]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,"STR_Cop_Robber",true,[(_civ getVariable["realname",name _civ])]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 };

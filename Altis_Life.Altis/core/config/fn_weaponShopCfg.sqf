@@ -928,6 +928,7 @@ switch(_shop) do
 						["optic_MRCO",nil,20000],
 						["optic_Hamr",nil,20000],
 						["optic_LRPS",nil,50000],
+						["Rangefinder",nil,50000],
 						
 						["200Rnd_mas_556x45_Stanag",nil,1500],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
@@ -995,6 +996,7 @@ switch(_shop) do
 						["optic_Arco",nil,20000],
 						["optic_MRCO",nil,20000],
 						["optic_Hamr",nil,20000],
+						["Rangefinder",nil,50000],
 						//Rang5
 						["200Rnd_mas_556x45_Stanag",nil,1500],
 						["R3F_30Rnd_556x45_FAMAS",nil,500],
@@ -1051,6 +1053,7 @@ switch(_shop) do
 						["optic_MRCO",nil,20000],
 						["optic_Hamr",nil,20000],
 						["optic_mas_ACO_grn_camo",nil,5000],
+						["Rangefinder",nil,50000],
 						
 						["R3F_30Rnd_556x45_FAMAS",nil,500],
 						["R3F_25Rnd_556x45_FAMAS",nil,500],

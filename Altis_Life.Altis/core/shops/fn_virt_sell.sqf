@@ -67,7 +67,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 		};
 	////Marktsystem Ende////
 	};
-	[] call life_fnc_virt_update;	
+	[] call life_fnc_virt_update;
 };
 
  
@@ -89,6 +89,6 @@ if(life_shop_type == "heroin") then
 		life_shop_npc setVariable["sellers",_array,true];
 	};
 };
-[[format ["4|%1 Ware verkauft: %2,%3x, Gewinn:%4, Bargeld: %5",player getVariable["realname",name player],_name,_amount,_price,life_cash]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["4|%1 Ware verkauft: %2,%3x, Gewinn:%4, Bargeld: %5",player getVariable["realname",name player],_name,_amount,_price,life_cash]],"Arma3Log",false,false] call life_fnc_MP;
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;

@@ -22,14 +22,14 @@ if(count life_spawn_point == 0) then
 			_spawnPos = (call compile format["%1", _sp select 0]) call BIS_fnc_selectRandom;
 			_spawnPos = _spawnPos buildingPos 0;
 			player setPos _spawnPos;
-			[[format ["0|%1 ist in %2 gespawned",player getVariable["realname",name player],_sp]],"Arma3Log",false,false] call life_fnc_MP;
+			//[[format ["0|%1 ist in %2 gespawned",player getVariable["realname",name player],_sp]],"Arma3Log",false,false] call life_fnc_MP;
 			
 		};
 	}
 		else
 	{
 		player setPos (getMarkerPos (_sp select 0));
-		[[format ["0|%1 ist in %2 gespawned",player getVariable["realname",name player],_sp]],"Arma3Log",false,false] call life_fnc_MP;
+		//[[format ["0|%1 ist in %2 gespawned",player getVariable["realname",name player],_sp]],"Arma3Log",false,false] call life_fnc_MP;
 	};
 	titleText[format["%2 %1",_sp select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
 }

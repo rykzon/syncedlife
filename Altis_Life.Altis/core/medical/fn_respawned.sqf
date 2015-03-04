@@ -13,6 +13,7 @@ life_thirst = 100;
 life_carryWeight = 0;
 life_cash = 0; //Make sure we don't get our cash back.
 life_respawned = false;
+Life_request_timer = false;
 player playMove "amovpercmstpsnonwnondnon";
 
 life_corpse setVariable["Revive",nil,TRUE];
@@ -24,7 +25,7 @@ player setVariable["Reviving",nil,TRUE];
 
 life_bekanntschaften = [];
 
-[[format ["2|%1 ist gerespawned",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["2|%1 ist gerespawned",player getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 //Load gear for a 'new life'
 switch(playerSide) do
 {

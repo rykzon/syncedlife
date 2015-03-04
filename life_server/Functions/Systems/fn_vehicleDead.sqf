@@ -17,7 +17,7 @@ _plate = _dbInfo select 1;
 _query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
 
 _vehicleInfo = [_vehicle] call life_fnc_fetchCfgDetails;
-[format ["0|Fahrzeug gestorben %1", _vehicleInfo select 1]] call Arma3Log;
+//[format ["0|Fahrzeug gestorben %1", _vehicleInfo select 1]] call Arma3Log;
 
 waitUntil {!DB_Async_Active};
 _thread = [_query,1] call DB_fnc_asyncCall;

@@ -48,7 +48,7 @@ if(count (_Karre) > 0) then
 			_pgText ctrlSetText format["%3 %4 (%1%2)...",round(_Tankstand * 100),"%","Betanke", _name];
 			D41_TankeVebraucht = D41_TankeVebraucht + 1;
 			if(_Tankstand > 0.9999) exitWith {D41_Tankt = false; titleText[format["Du hast deinen %1 vollständig betankt",_name],"PLAIN"]; 5 cutText ["","PLAIN"];};
-			if((vehicle player) distance _vehicle > 5) exitWith {D41_Tankt = false; titleText["Halt doch bitte den Zapfhahn fest...","PLAIN"]; 5 cutText ["","PLAIN"];};
+			if((vehicle player) distance _vehicle > 8) exitWith {D41_Tankt = false; titleText["Halt doch bitte den Zapfhahn fest...","PLAIN"]; 5 cutText ["","PLAIN"];};
 			if(!alive player) exitWith {D41_Tankt = false; hint "RIP"; 5 cutText ["","PLAIN"];};
 			if(vehicle player != player) exitWith {D41_Tankt = false;hint "Steig doch bitte aus Junge..."; 5 cutText ["","PLAIN"];};
 			sleep 1

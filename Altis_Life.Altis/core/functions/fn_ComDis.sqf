@@ -27,6 +27,27 @@
 		"];
 	};
 };
+
+[]spawn
+{
+	if (local player) then
+	{
+		waitUntil {not(isNull (findDisplay 46))};
+		(findDisplay 46) displayAddEventHandler
+		[
+			"KeyDown","if
+				(
+					((_this select 1) in actionKeys 'SwitchCommand')
+				)
+				then
+				{
+					true;
+					
+					systemchat 'Hier wird nicht gefingert';
+				};
+		"];
+	};
+};
 					//herauskopierter Block von then{}
 					//if(player getVariable 'restrained') exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					//if(player getVariable 'D41_geknueppelt') exitWith {hint 'Du hast Deine Hände nicht frei!'};

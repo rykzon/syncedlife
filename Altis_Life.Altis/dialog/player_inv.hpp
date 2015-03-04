@@ -212,16 +212,7 @@ class playerSettings {
 			h = (1 / 25);
 		};
 	
-		class ButtonKeys : Life_RscButtonMenu {
-			idc = 2013;
-			text = "$STR_PM_KeyChain";
-			onButtonClick = "createDialog ""Life_key_management"";";
-			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-		
+				
 		class ButtonCell : Life_RscButtonMenu {
 			idc = 2014;
 			text = "$STR_PM_CellPhone";

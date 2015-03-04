@@ -134,6 +134,7 @@ class Life_Client_Core
 		class surrender {}; 
 		
 		class giveMoneyAction{};
+		class giveKeyAction{};
 		class packUpBarrier{};
 		class packUpBarricade{};
 		class packUpStrahler{};

@@ -34,7 +34,7 @@ if(isNil "_unit") exitWith {closeDialog 0; hint "The selected player is not with
 hint format["Du hast $%1 gegeben",[(parseNumber(_amount))] call life_fnc_numberText];
 life_cash = life_cash - (parseNumber(_amount));
 closeDialog 0;
-[[format ["1|%1 Geld gegeben an %3: %2.",player getVariable["realname",name player],_amount, _unit getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["1|%1 Geld gegeben an %3: %2.",player getVariable["realname",name player],_amount, _unit getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;

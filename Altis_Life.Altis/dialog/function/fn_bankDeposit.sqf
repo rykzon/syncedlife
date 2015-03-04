@@ -16,7 +16,7 @@ if(_value > life_cash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
 life_cash = life_cash - _value;
 life_atmcash = life_atmcash + _value;
-[[format ["1|%1 Geld eingezahlt %2.",player getVariable["realname",name player],_value]],"Arma3Log",false,false] call life_fnc_MP;
+//[[format ["1|%1 Geld eingezahlt %2.",player getVariable["realname",name player],_value]],"Arma3Log",false,false] call life_fnc_MP;
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;

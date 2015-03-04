@@ -18,8 +18,8 @@ _vehicle = _list lbData _sel;
 _vehicle = life_vehicles select parseNumber(_vehicle);
 
 _sel = lbCurSel _plist;
-_unit = _plist lbData _sel;
-_unit = call compile format["%1", _unit];
+_unit = life_pInact_curTarget;
+//_unit = call compile format["%1", _unit];
 if(isNull _unit OR isNil "_unit") exitWith {}; 
 
 _uid = getPlayerUID _unit;

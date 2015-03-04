@@ -16,7 +16,7 @@ _gangMembers = units grpPlayer;
 {if("ItemGPS" in assignedItems _x) then {_gangMembersGps pushBack _x;}} foreach _gangMembers;
 {
 _marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-_marker setMarkerColorLocal "ColorBlue";
+_marker setMarkerColorLocal "ColorWhite";
 _marker setMarkerTypeLocal "Mil_dot";
 _marker setMarkerTextLocal format["%1", name _x];
 
