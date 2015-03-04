@@ -12,23 +12,21 @@
 <t color='#9bbc57'><t size='1'>Kohle:</t></t> $%11 || $%12<br/>
 <t color='#9bbc57'><t size='1'>Stahl:</t></t> $%13 || $%14br/>
 <t color='#9bbc57'><t size='1'>Plastik:</t></t> $%15 || $%16<br/>
-<t color='#9bbc57'><t size='1'>Kupfer:</t></t> $%16 || $%17<br/>
-<t color='#9bbc57'><t size='1'>Salz:</t></t> $%18 || $%19<br/>
-<t color='#9bbc57'><t size='1'>Glass:</t></t> $%20 || $%21<br/>
-<t color='#9bbc57'><t size='1'>Zement:</t></t> $%22 || $%23<br/>
+<t color='#9bbc57'><t size='1'>Kupfer:</t></t> $%17 || $%18<br/>
+<t color='#9bbc57'><t size='1'>Salz:</t></t> $%18 || $%20<br/>
+<t color='#9bbc57'><t size='1'>Glass:</t></t> $%21 || $%22<br/>
+<t color='#9bbc57'><t size='1'>Zement:</t></t> $%23 || $%24<br/>
 <t color='#ff0000'><t size='1.5'>Drogen</t></t><br/>
-<t color='#ff0000'><t size='1'>Marijuhana:</t></t> $%24 || $%25<br/>
-<t color='#ff0000'><t size='1'>Kokain:</t></t> $%26 || $%27<br/>
-<t color='#ff0000'><t size='1'>Heroin:</t></t> $%28 || $%29<br/>
-<t color='#ff0000'><t size='1'>Bluesyn:</t></t> $%30 || $%31<br/>
-<t color='#ff0000'><t size='1'>Schildkröten:</t></t> $%32 || $%33<br/>
+<t color='#ff0000'><t size='1'>Marijuhana:</t></t> $%25 || $%26<br/>
+<t color='#ff0000'><t size='1'>Kokain:</t></t> $%27 || $%28<br/>
+<t color='#ff0000'><t size='1'>Heroin:</t></t> $%29 || $%30<br/>
+<t color='#ff0000'><t size='1'>Bluesyn:</t></t> $%31 || $%32<br/>
+<t color='#ff0000'><t size='1'>Schildkröten:</t></t> $%33 || $%34<br/>
 ",
 	life_KPreisApple,
 	life_VPreisApple,
 	life_KPreisPeach, 
 	life_VPreisPeach,
-	
-	
 	life_KPreisOilp, 
 	life_VPreisOilp,
 	life_KPreisDiamondc,
@@ -49,8 +47,6 @@
 	life_VPreisGlass, 
 	life_KPreisClement, 
 	life_VPreisCement,
-	
-	
 	life_KPreisMarijuana,
 	life_VPreisMarijuana,
     life_KPreisCocainep,

@@ -25,8 +25,8 @@ switch (_item) do
 	case "mackerel": {4};
 	case "tuna": {6};
 	case "mullet": {4};
-	case "catshark": {6};
-	case "turtle": {6};
+	case "catshark": {3};
+	case "turtle": {3};
 	case "fishing": {2};
 	case "turtlesoup": {2};
 	case "donuts": {1};

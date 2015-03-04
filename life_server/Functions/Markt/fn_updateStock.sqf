@@ -65,21 +65,21 @@
 		//------------------------------ Stock berechnen
 		life_StockApple = life_StockApple - (_playercount * 6);						if(life_StockApple < 0)then {life_StockApple = 0;};		
 		life_StockPeach = life_StockPeach - (_playercount * 6);					if(life_StockPeach < 0)then {life_StockPeach = 0;};
-		life_StockHeroinp = life_StockHeroinp - (_playercount * 3);			if(life_StockHeroinp < 0)then {life_StockHeroinp = 0;};
-		life_StockMarijuana = life_StockMarijuana - (_playercount * 3);	if(life_StockMarijuana < 0)then {life_StockMarijuana = 0;};
+		life_StockHeroinp = life_StockHeroinp - (_playercount * 1);			if(life_StockHeroinp < 0)then {life_StockHeroinp = 0;};
+		life_StockMarijuana = life_StockMarijuana - (_playercount * 1);	if(life_StockMarijuana < 0)then {life_StockMarijuana = 0;};
 		life_StockOilp = life_StockOilp - (round (_playercount * 1));		if(life_StockOilp < 0)then {life_StockOilp = 0;};
-		life_StockCocainep = life_StockCocainep - (round (_playercount * 0.3));				if(life_StockCocainep < 0)then {life_StockCocainep = 0;};
+		life_StockCocainep = life_StockCocainep - (round (_playercount * 1));				if(life_StockCocainep < 0)then {life_StockCocainep = 0;};
 		life_StockTurtle = life_StockTurtle - (round (_playercount * 1));	if(life_StockTurtle < 0)then {life_StockTurtle = 0;};
-		life_StockDiamondc = life_StockDiamondc - (_playercount * 3);						if(life_StockDiamondc < 0)then {life_StockDiamondc = 0;};
-		life_StockIron_r = life_StockIron_r - (round (_playercount * 1));		if(life_StockIron_r < 0)then {life_StockIron_r = 0;};
+		life_StockDiamondc = life_StockDiamondc - (_playercount * 0.25);						if(life_StockDiamondc < 0)then {life_StockDiamondc = 0;};
+		life_StockIron_r = life_StockIron_r - (round (_playercount * 0.5));		if(life_StockIron_r < 0)then {life_StockIron_r = 0;};
 		life_StockCoal = life_StockCoal - (round (_playercount * 0.25));		if(life_StockCoal < 0)then {life_StockCoal = 0;};
 		life_StockSteel = life_StockSteel - (round (_playercount * 0.30));			if(life_StockSteel < 0)then {life_StockSteel = 0;};
-		life_StockBluesyn = life_StockBluesyn - (round (_playercount * 0.30));		if(life_StockBluesyn < 0)then {life_StockBluesyn = 0;};
-		life_StockPlastic = life_StockPlastic - (_playercount * 2);						if(life_StockPlastic < 0)then {life_StockPlastic = 0;};
-		life_StockCopper_r = life_StockCopper_r - (round (_playercount * 1));					if(life_StockCopper_r < 0)then {life_StockCopper_r = 0;};
-		life_StockSalt_r = life_StockSalt_r - (round (_playercount * 0.25));			if(life_StockSalt_r < 0)then {life_StockSalt_r = 0;};
-		life_StockGlass = life_StockGlass - (_playercount * 2);				if(life_StockGlass < 0)then {life_StockGlass = 0;};
-		life_StockCement = life_StockCement - (_playercount * 2);			if(life_StockCement < 0)then {life_StockCement = 0;};
+		life_StockBluesyn = life_StockBluesyn - (round (_playercount * 1));		if(life_StockBluesyn < 0)then {life_StockBluesyn = 0;};
+		life_StockPlastic = life_StockPlastic - (_playercount * 0.3);						if(life_StockPlastic < 0)then {life_StockPlastic = 0;};
+		life_StockCopper_r = life_StockCopper_r - (round (_playercount * 0.5));					if(life_StockCopper_r < 0)then {life_StockCopper_r = 0;};
+		life_StockSalt_r = life_StockSalt_r - (round (_playercount * 2));			if(life_StockSalt_r < 0)then {life_StockSalt_r = 0;};
+		life_StockGlass = life_StockGlass - (_playercount * 0.4);				if(life_StockGlass < 0)then {life_StockGlass = 0;};
+		life_StockCement = life_StockCement - (_playercount * 0.4);			if(life_StockCement < 0)then {life_StockCement = 0;};
 		
 
 		//------------------------------ neuen Stock eintragen
@@ -212,39 +212,39 @@
 		
 		//Items
 		//apple
-		_Num = 0; _Type = life_StockApple; _VKPreis = (40/100); _EKPreis = (5/100);_mid = 3000; [] call _life_PreisAnpassung;		
+		_Num = 0; _Type = life_StockApple; _VKPreis = (150/100); _EKPreis = (45/100);_mid = 3000; [] call _life_PreisAnpassung;		
 		//peach
-		_Num = 1; _Type = life_StockPeach; _VKPreis = (50/100); _EKPreis = (25/100); _mid = 3000; [] call _life_PreisAnpassung;
+		_Num = 1; _Type = life_StockPeach; _VKPreis = (180/100); _EKPreis = (55/100); _mid = 3000; [] call _life_PreisAnpassung;
 		//Heroinp
-		_Num = 2;  _Type = life_StockHeroinp; _VKPreis = (200/100); _EKPreis = (165/100); _mid = 2000; [] call _life_PreisAnpassung;
+		_Num = 2;  _Type = life_StockHeroinp; _VKPreis = (4100/100); _EKPreis = (3700/100); _mid = 1500; [] call _life_PreisAnpassung;
 		//Marijuana
-		_Num = 3; _Type = life_StockMarijuana; _VKPreis = (260/100); _EKPreis = (210/100); _mid = 2000; [] call _life_PreisAnpassung;
+		_Num = 3; _Type = life_StockMarijuana; _VKPreis = (3000/100); _EKPreis = (2500/100); _mid = 2000; [] call _life_PreisAnpassung;
 		//heroinp
-		_Num = 4; _Type = life_StockOilp; _VKPreis = (1050/100); _EKPreis = (850/100); _mid = 1500; [] call _life_PreisAnpassung;
+		_Num = 4; _Type = life_StockOilp; _VKPreis = (3000/100); _EKPreis = (2600/100); _mid = 800; [] call _life_PreisAnpassung;
 		//oilp
-		_Num = 5; _Type = life_StockCocainep; _VKPreis = (1700/100); _EKPreis = (1300/100); _mid = 400; [] call _life_PreisAnpassung;
+		_Num = 5; _Type = life_StockCocainep; _VKPreis = (3800/100); _EKPreis = (3300/100); _mid = 1500; [] call _life_PreisAnpassung;
 		//marijuana
-		_Num = 6; _Type = life_StockTurtle; _VKPreis = (425/100); _EKPreis = (350/100); _mid = 2000; [] call _life_PreisAnpassung;
+		_Num = 6; _Type = life_StockTurtle; _VKPreis = (3400/100); _EKPreis = (3000/100); _mid = 1500; [] call _life_PreisAnpassung;
 		//bjerky
-		_Num = 7; _Type = life_StockDiamondc; _VKPreis = (100/100); _EKPreis = (25/100); _mid = 3000; [] call _life_PreisAnpassung;
+		_Num = 7; _Type = life_StockDiamondc; _VKPreis = (4000/100); _EKPreis = (3400/100); _mid = 400; [] call _life_PreisAnpassung;
 		//cocainep
-		_Num = 8; _Type = life_StockIron_r; _VKPreis = (790/100); _EKPreis = (650/100); _mid = 1500; [] call _life_PreisAnpassung;
+		_Num = 8; _Type = life_StockIron_r; _VKPreis = (2300/100); _EKPreis = (2000/100); _mid = 500; [] call _life_PreisAnpassung;
 		//diamondc
-		_Num = 9; _Type = life_StockCoal; _VKPreis = (2000/100); _EKPreis = (1600/100); _mid = 300; [] call _life_PreisAnpassung;
+		_Num = 9; _Type = life_StockCoal; _VKPreis = (900/100); _EKPreis = (600/100); _mid = 1000; [] call _life_PreisAnpassung;
 		//iron_r
-		_Num = 10; _Type = life_StockSteel; _VKPreis = (900/100); _EKPreis = (700/100); _mid = 500; [] call _life_PreisAnpassung;
+		_Num = 10; _Type = life_StockSteel; _VKPreis = (7000/100); _EKPreis = (6500/100); _mid = 500; [] call _life_PreisAnpassung;
 		//copper_r
-		_Num = 11; _Type = life_StockBluesyn; _VKPreis = (375/100); _EKPreis = (300/100); _mid = 500; [] call _life_PreisAnpassung;
+		_Num = 11; _Type = life_StockBluesyn; _VKPreis = (11000/100); _EKPreis = (9000/100); _mid = 500; [] call _life_PreisAnpassung;
 		//salt_r
-		_Num = 12; _Type = life_StockPlastic; _VKPreis = (115/100); _EKPreis = (95/100); _mid = 1600; [] call _life_PreisAnpassung;
+		_Num = 12; _Type = life_StockPlastic; _VKPreis = (9000/100); _EKPreis = (7000/100); _mid = 800; [] call _life_PreisAnpassung;
 		//coal
-		_Num = 13; _Type = life_StockCopper_r; _VKPreis = (380/100); _EKPreis = (300/100); _mid = 700; [] call _life_PreisAnpassung;
+		_Num = 13; _Type = life_StockCopper_r; _VKPreis = (2800/100); _EKPreis = (2450/100); _mid = 700; [] call _life_PreisAnpassung;
 		//glass
-		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (275/100); _EKPreis = (225/100); _mid = 750; [] call _life_PreisAnpassung;
+		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (2800/100); _EKPreis = (2400/100); _mid = 900; [] call _life_PreisAnpassung;
 		//Applesaft
-		_Num = 15; _Type = life_StockGlass; _VKPreis = (135/100); _EKPreis = (110/100); _mid = 1000; [] call _life_PreisAnpassung;
+		_Num = 15; _Type = life_StockGlass; _VKPreis = (1600/100); _EKPreis = (1300/100); _mid = 1000; [] call _life_PreisAnpassung;
 		//Peachsaft
-		_Num = 16; _Type = life_StockCement; _VKPreis = (190/100); _EKPreis = (150/100); _mid = 1000; [] call _life_PreisAnpassung;
+		_Num = 16; _Type = life_StockCement; _VKPreis = (1900/100); _EKPreis = (1550/100); _mid = 1000; [] call _life_PreisAnpassung;
 		
 		
 
@@ -257,6 +257,6 @@
 		publicVariable "life_VPreisliste";
 		
 		//System Nachricht an alle Spieler
-		[[0,"Lagerbestand aller Waren aktualisiert"],"life_fnc_broadcast",true,false] call life_fnc_MP;
-		sleep 1200;
+		//[[0,"Lagerbestand aller Waren aktualisiert"],"life_fnc_broadcast",true,false] call life_fnc_MP;
+		sleep 600;
 	};
