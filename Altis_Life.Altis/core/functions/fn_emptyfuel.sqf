@@ -99,7 +99,7 @@ while{true} do
 			case "I_Truck_02_covered_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0002;};
 			case "O_Truck_03_transport_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0003;}; 
 			case "O_Truck_03_covered_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0003;}; 
-			case "B_Truck_01_transport_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0004;};
+			case "B_Truck_01_transport_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0001;};
 			
 			//Cops
 			case "DAR_CVPIAux":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0003;}; 

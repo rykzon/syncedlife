@@ -81,6 +81,8 @@ class FSM
        "}" \n
        "	else" \n
        "{" \n
+	   "	if(playerSide == civilian) then {[] call setPaycheck;}; \n
+	   "
        "	if(player distance (getMarkerPos ""fed_reserve"") < 120 && playerSide == west) then" \n
        "	{" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 1500] call life_fnc_numberText];" \n

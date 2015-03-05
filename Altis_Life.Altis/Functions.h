@@ -48,28 +48,13 @@ class Life_Client_Core
 	class Admin
 	{
 		file = "core\admin";
-			class admininfo {};
-		class admininfo_Extended {};
+		class admininfo {};
+		
 		class adminid {};
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
-		class adminSpectate {};
-		class adminKick {};
-		class adminBan {};	
-		class adminMenu_Extended {};
-		class adminQuery_Extended {};
-		class adminAddMoney {};	
-		class adminSpawnVehicle {};
-		class adminInstaHealth {};
-		class admintp {};
-		class admintpmap {};
-		class admintptome {};	
-		class adminRestrain {};
-		class adminUnrestrain {};		
-		class adminAuthentificate {};
-		class adminCheckAuth {};
-
+	
 	};
 	
 	class Medical_System
@@ -275,7 +260,7 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
-
+		class setPaycheck {};
 		
 
 		class profSetUp {};

@@ -1,27 +1,23 @@
 ﻿hint parseText format
 ["
-<t color='#00ff00'><t size='2'>Preisliste</t></t><br/>
-<t color='#00ff00'><t size='1.5'>Kauf || Verkauf</t></t><br/><br/>
-<t color='#EC891D'><t size='1.5'>Nahrungsmittel:</t></t><br/>
-<t color='#EC891D'><t size='1'>Apfel:</t></t> $%1 || $%2<br/>
-<t color='#EC891D'><t size='1'>Pfirsich:</t></t> $%3 || $%4<br/>
-<t color='#9bbc57'><t size='1.5'>Materialien</t></t><br/>
-<t color='#9bbc57'><t size='1'>Öl:</t></t> $%5 || $%6<br/>
-<t color='#9bbc57'><t size='1'>Diamant:</t></t> $%7 || $%8<br/>
-<t color='#9bbc57'><t size='1'>Eisen:</t></t> $%9 || $%10<br/>
-<t color='#9bbc57'><t size='1'>Kohle:</t></t> $%11 || $%12<br/>
-<t color='#9bbc57'><t size='1'>Stahl:</t></t> $%13 || $%14br/>
-<t color='#9bbc57'><t size='1'>Plastik:</t></t> $%15 || $%16<br/>
-<t color='#9bbc57'><t size='1'>Kupfer:</t></t> $%17 || $%18<br/>
-<t color='#9bbc57'><t size='1'>Salz:</t></t> $%18 || $%20<br/>
-<t color='#9bbc57'><t size='1'>Glass:</t></t> $%21 || $%22<br/>
-<t color='#9bbc57'><t size='1'>Zement:</t></t> $%23 || $%24<br/>
-<t color='#ff0000'><t size='1.5'>Drogen</t></t><br/>
-<t color='#ff0000'><t size='1'>Marijuhana:</t></t> $%25 || $%26<br/>
-<t color='#ff0000'><t size='1'>Kokain:</t></t> $%27 || $%28<br/>
-<t color='#ff0000'><t size='1'>Heroin:</t></t> $%29 || $%30<br/>
-<t color='#ff0000'><t size='1'>Bluesyn:</t></t> $%31 || $%32<br/>
-<t color='#ff0000'><t size='1'>Schildkröten:</t></t> $%33 || $%34<br/>
+<t color='#ffffff'><t size='2'>Marktpreise</t></t><br/>
+<t color='#9bbc57'><t size='1'>Apfel:</t></t> $%2<br/>
+<t color='#9bbc57'><t size='1'>Pfirsich:</t></t> $%4<br/>
+<t color='#9bbc57'><t size='1'>Öl:</t></t> $%6<br/>
+<t color='#9bbc57'><t size='1'>Diamant:</t></t> $%8<br/>
+<t color='#9bbc57'><t size='1'>Eisen:</t></t> $%10<br/>
+<t color='#9bbc57'><t size='1'>Kohle:</t></t> $%12<br/>
+<t color='#9bbc57'><t size='1'>Stahl:</t></t> $%14<br/>
+<t color='#9bbc57'><t size='1'>Plastik:</t></t> $%16<br/>
+<t color='#9bbc57'><t size='1'>Kupfer:</t></t> $%18<br/>
+<t color='#9bbc57'><t size='1'>Salz:</t></t> $%20<br/>
+<t color='#9bbc57'><t size='1'>Glass:</t></t> $%22<br/>
+<t color='#9bbc57'><t size='1'>Zement:</t></t> $%24<br/>
+<t color='#ff0000'><t size='1'>Marijuhana:</t></t> $%26<br/>
+<t color='#ff0000'><t size='1'>Kokain:</t></t> $%28<br/>
+<t color='#ff0000'><t size='1'>Heroin:</t></t> $%30<br/>
+<t color='#ff0000'><t size='1'>Bluesyn:</t></t> $%32<br/>
+<t color='#ff0000'><t size='1'>Schildkröten:</t></t> $%34<br/>
 ",
 	life_KPreisApple,
 	life_VPreisApple,

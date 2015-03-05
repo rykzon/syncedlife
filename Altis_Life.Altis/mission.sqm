@@ -34720,7 +34720,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.6];this setObjectTexture [0, ""textures\lotterie.paa""];";
+			init="this enableSimulation false; this allowDamage false; this setPos [(getPos this) select 0, (getPos this) select 1, 0.6];this setObjectTexture [0, ""textures\lotterie.paa""];";
 		};
 	};
 	class Markers

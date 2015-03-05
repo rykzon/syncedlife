@@ -67,17 +67,17 @@
 		life_StockPeach = life_StockPeach - (_playercount * 6);					if(life_StockPeach < 0)then {life_StockPeach = 0;};
 		life_StockHeroinp = life_StockHeroinp - (_playercount * 1);			if(life_StockHeroinp < 0)then {life_StockHeroinp = 0;};
 		life_StockMarijuana = life_StockMarijuana - (_playercount * 1);	if(life_StockMarijuana < 0)then {life_StockMarijuana = 0;};
-		life_StockOilp = life_StockOilp - (round (_playercount * 1));		if(life_StockOilp < 0)then {life_StockOilp = 0;};
+		life_StockOilp = life_StockOilp - (round (_playercount * 0.7));		if(life_StockOilp < 0)then {life_StockOilp = 0;};
 		life_StockCocainep = life_StockCocainep - (round (_playercount * 1));				if(life_StockCocainep < 0)then {life_StockCocainep = 0;};
 		life_StockTurtle = life_StockTurtle - (round (_playercount * 1));	if(life_StockTurtle < 0)then {life_StockTurtle = 0;};
 		life_StockDiamondc = life_StockDiamondc - (_playercount * 0.25);						if(life_StockDiamondc < 0)then {life_StockDiamondc = 0;};
 		life_StockIron_r = life_StockIron_r - (round (_playercount * 0.5));		if(life_StockIron_r < 0)then {life_StockIron_r = 0;};
 		life_StockCoal = life_StockCoal - (round (_playercount * 0.25));		if(life_StockCoal < 0)then {life_StockCoal = 0;};
 		life_StockSteel = life_StockSteel - (round (_playercount * 0.30));			if(life_StockSteel < 0)then {life_StockSteel = 0;};
-		life_StockBluesyn = life_StockBluesyn - (round (_playercount * 1));		if(life_StockBluesyn < 0)then {life_StockBluesyn = 0;};
+		life_StockBluesyn = life_StockBluesyn - (round (_playercount * 0.7));		if(life_StockBluesyn < 0)then {life_StockBluesyn = 0;};
 		life_StockPlastic = life_StockPlastic - (_playercount * 0.3);						if(life_StockPlastic < 0)then {life_StockPlastic = 0;};
 		life_StockCopper_r = life_StockCopper_r - (round (_playercount * 0.5));					if(life_StockCopper_r < 0)then {life_StockCopper_r = 0;};
-		life_StockSalt_r = life_StockSalt_r - (round (_playercount * 2));			if(life_StockSalt_r < 0)then {life_StockSalt_r = 0;};
+		life_StockSalt_r = life_StockSalt_r - (round (_pla=yercount * 2));			if(life_StockSalt_r < 0)then {life_StockSalt_r = 0;};
 		life_StockGlass = life_StockGlass - (_playercount * 0.4);				if(life_StockGlass < 0)then {life_StockGlass = 0;};
 		life_StockCement = life_StockCement - (_playercount * 0.4);			if(life_StockCement < 0)then {life_StockCement = 0;};
 		
@@ -240,7 +240,7 @@
 		//coal
 		_Num = 13; _Type = life_StockCopper_r; _VKPreis = (2800/100); _EKPreis = (2450/100); _mid = 700; [] call _life_PreisAnpassung;
 		//glass
-		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (2800/100); _EKPreis = (2400/100); _mid = 900; [] call _life_PreisAnpassung;
+		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (1700/100); _EKPreis = (1400/100); _mid = 900; [] call _life_PreisAnpassung;
 		//Applesaft
 		_Num = 15; _Type = life_StockGlass; _VKPreis = (1600/100); _EKPreis = (1300/100); _mid = 1000; [] call _life_PreisAnpassung;
 		//Peachsaft
