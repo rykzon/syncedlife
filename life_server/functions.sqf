@@ -1,7 +1,7 @@
 life_fnc_sidechat =
 compileFinal "
 	if(life_sidechat) then {life_sidechat = false;} else {life_sidechat = true;};
-	[[player,life_sidechat,playerSide],""TON_fnc_managesc"",false,false] spawn life_fnc_MP;
+	[[player,life_sidechat,playerSide],""TON_fnc_managesc"",false,false] call life_fnc_MP;
 	[] call life_fnc_settingsMenu;
 ";
 
@@ -30,7 +30,7 @@ compileFinal "
 	if(isNull _ret) exitWith {};
 	if(isNil ""_ret"") exitWith {};
 	
-	[[life_atmcash,life_cash,owner player,player],""life_fnc_admininfo"",_ret,false] spawn life_fnc_MP;
+	[[life_atmcash,life_cash,owner player,player],""life_fnc_admininfo"",_ret,false] call life_fnc_MP;
 ";
 publicVariable "TON_fnc_player_query";
 

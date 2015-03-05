@@ -48,28 +48,13 @@ class Life_Client_Core
 	class Admin
 	{
 		file = "core\admin";
-			class admininfo {};
-		class admininfo_Extended {};
+		class admininfo {};
+		
 		class adminid {};
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
-		class adminSpectate {};
-		class adminKick {};
-		class adminBan {};	
-		class adminMenu_Extended {};
-		class adminQuery_Extended {};
-		class adminAddMoney {};	
-		class adminSpawnVehicle {};
-		class adminInstaHealth {};
-		class admintp {};
-		class admintpmap {};
-		class admintptome {};	
-		class adminRestrain {};
-		class adminUnrestrain {};		
-		class adminAuthentificate {};
-		class adminCheckAuth {};
-
+	
 	};
 	
 	class Medical_System
@@ -275,6 +260,8 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		class setPaycheck {};
+		
 
 		class profSetUp {};
 		class addExp {};
@@ -489,19 +476,7 @@ class Life_Client_Core
 class Market
 	{
 		file = "core\market";
-		
-		class openMarketView;
-		class refreshMarketView;
-		class marketShortView;
-		class marketBuy;
-		class marketSell;
-		class marketGetBuyPrice;
-		class marketGetSellPrice;
-		class marketconfiguration;
-		class marketReset;
-		class marketChange;
-		class marketGetRow;
-		class marketGetPriceRow;
-		class marketSetPriceRow;
+		class MarktPreisabfrage {};
+		class sysM {};
 	};
 };

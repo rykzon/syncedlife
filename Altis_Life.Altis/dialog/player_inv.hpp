@@ -256,13 +256,15 @@ class playerSettings {
 class ButtonMarket : Life_RscButtonMenu {
             idc = -1;
             text = "Markt";
-            onButtonClick = "[] spawn life_fnc_openMarketView;";
+            onButtonClick = "[] spawn life_fnc_MarktPreisabfrage;";
             //x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-            x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-            y = 0.805;
-            w = (6.25 / 40);
-            h = (1 / 25);
-        };
+			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.8 - (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+          };
+		  
+		  
 class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
 			//shortcuts[] = {0x00050000 + 2};
@@ -275,15 +277,7 @@ class ButtonWantedAdd : life_RscButtonMenu {
 
 
 		};
-		class ButtonAdminMenu2 : Life_RscButtonMenu {
-			idc = 2024;
-			text = "Admin++";
-			onButtonClick = "createDialog ""life_extended_admin_menu"";";
-			x = 0.1;
-			y = 0.805 + (1/25);
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
+
 class ProfButton : life_RscButtonMenu {
  
 text = "Stufen";
