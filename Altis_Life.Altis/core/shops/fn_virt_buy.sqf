@@ -46,13 +46,13 @@ _StockListe = [
 		"glass",
 		"cement"
 		];
-if(_type in _StockListe)then
+/*if(_type in _StockListe)then
 	{
 		hint format ["Lagerabfrage für %1 läuft",_name];
 		[[_type, [_amount] call life_fnc_numberText, player],"TON_fnc_queryStockSys",false,false] call life_fnc_MP;
 		sleep 1;
 		player getVariable "D41_BuyAble";
-	};
+	};*/
 //::::::::::::::::
 if (D41_BuyAble == 0) exitWith {D41_IsBuying = 0; hint format ["Nicht genügend %1 auf Lager",_name];};
 
