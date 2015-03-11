@@ -50,6 +50,15 @@ switch (__GETC__(life_coplevel)) do {
 	
 };
 
+
+switch (__GETC__(life_donator)) do {
+
+
+	case 1: {life_paycheck = life_paycheck + 1500;};
+
+	
+};
+
 //[[format ["0|%1 logged something. His position is %2.",player getVariable["realname",name player],getPosATL player]],"Arma3Log",false,false] call life_fnc_MP;
 
 [] spawn    //basic cop

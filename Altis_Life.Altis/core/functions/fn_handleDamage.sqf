@@ -21,6 +21,7 @@ if(!isNil "TON_Debug") then {
 if(!isNull _source) then {
 	if(_source != _unit) then {
 		_curWep = currentWeapon _source;
+		
 		if(_curWep == "hgun_P07_F") then {
 			if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
@@ -46,6 +47,14 @@ if(!isNull _source) then {
 				_damage = false;
 			};
 		};
+		
+		if(_curWep == "arifle_SDAR_F") then {
+		
+		_damage = false,
+		
+		
+		};
+		
 	};
 };
 

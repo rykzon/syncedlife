@@ -441,7 +441,7 @@ class Life_Client_Core
 		class weed {};
 		class cocaine{};
 		class heroin{};
-
+		class alkohol{};
 
 		class barrier{};
 		class barricade{};

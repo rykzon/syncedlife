@@ -13,6 +13,7 @@ switch (_shop) do
 
 
 	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
+	case "buerger": {["Bürger Markt",["coffee","donuts","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
 	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
@@ -32,7 +33,8 @@ switch (_shop) do
 	case "cement": {["Zement Händler",["cement"]]};
 	case "gold": {["Goldankauf",["goldbar"]]};
 	case "coal": {["Kohle Händler",["coalp"]]};
-	//case "steel": {["Stahlhandel",["steel"]]};
+	case "mike": {["M1kes Bierstube",["bier","schnaps"]]};
+	
 	case "plastic": {["Plastik Händler",["plastic"]]};
 	
 	

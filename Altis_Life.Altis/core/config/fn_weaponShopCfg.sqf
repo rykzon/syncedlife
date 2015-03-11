@@ -45,8 +45,8 @@ switch(_shop) do
 							["Binocular",nil,150],
 							["ItemGPS",nil,100],
 							["ToolKit",nil,250],
-							["FirstAidKit",nil,150]
-						
+							["FirstAidKit",nil,150],
+							["NVGoggles_mas_h",nil,2000]
 						
 					]
 				];
@@ -72,19 +72,23 @@ switch(_shop) do
 									
 									
 							//Rang2
-							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
-							["arifle_mas_mk16",nil,10000],
-							["RH_vz61",nil,10000],
-							["RH_fn57",nil,10000],
-							["RH_p226s",nil,10000],
+							["arifle_mas_g36c",nil,100000],
+							["arifle_mas_m16",nil,100000],
+							["arifle_mas_mk16",nil,100000],
+							["RH_vz61",nil,20000],
+							["RH_fn57",nil,20000],
+							["RH_p226s",nil,20000],
+							["arifle_mas_hk416",nil,140000],
+							["arifle_mas_hk416_v",nil,140000],
+							["arifle_mas_hk416_d",nil,140000],
 							
-							
+								
 							
 							//Rang2
 							["optic_Aco",nil,200],
 							["optic_Hamr",nil,500],
 							["optic_Arco",nil,500],
+							["30Rnd_mas_556x45_Stanag",nil,1000],
 							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
@@ -113,16 +117,20 @@ switch(_shop) do
 							[
 							
 							//Rang3
-							["arifle_mas_akm",nil,15000],
-							["srifle_mas_m110",nil,20000],
+							["arifle_mas_akm",nil,150000],
+							["srifle_mas_m110",nil,200000],
 							//Rang2
-							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
-							["arifle_mas_mk16",nil,10000],
+							["arifle_mas_g36c",nil,100000],
+							["arifle_mas_m16",nil,100000],
+							["arifle_mas_mk16",nil,100000],
+							["arifle_mas_hk416",nil,140000],
+							["arifle_mas_hk416_v",nil,140000],
+							["arifle_mas_hk416_d",nil,140000],
+							["LMG_mas_M249_F",nil,140000],
 							//Rang1
-							["RH_vz61",nil,10000],
-							["RH_fn57",nil,10000],
-							["RH_p226s",nil,10000],
+							["RH_vz61",nil,20000],
+							["RH_fn57",nil,20000],
+							["RH_p226s",nil,20000],
 							
 							//Rang3
 							["optic_mas_zeiss",nil,500],
@@ -134,7 +142,8 @@ switch(_shop) do
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
 							["30Rnd_mas_556x45_Stanag",nil,200],
-							["30Rnd_mas_762x39_mag",nil,200]
+							["30Rnd_mas_762x39_mag",nil,200],
+							["200Rnd_mas_556x45_Stanag",nil,1500]
 							//Rang1
 							]
 						];
@@ -169,17 +178,22 @@ switch(_shop) do
 									//Rang4
 							["RH_deagles",nil,10000],
 							//Rang3
-							["arifle_mas_akm",nil,15000],
-							["srifle_mas_m110",nil,20000],
+							["arifle_mas_akm",nil,150000],
+							["srifle_mas_m110",nil,200000],
 							//Rang2
-							["arifle_mas_g36c",nil,10000],
-							["arifle_mas_m16",nil,10000],
-							["arifle_mas_mk16",nil,10000],
+							["arifle_mas_g36c",nil,100000],
+							["arifle_mas_m16",nil,100000],
+							["arifle_mas_mk16",nil,100000],
+							["arifle_mas_hk416",nil,140000],
+							["arifle_mas_hk416_v",nil,140000],
+							["arifle_mas_hk416_d",nil,140000],
+							
+							["LMG_mas_M249_F",nil,140000],
 							//Rang1
-							["RH_vz61",nil,10000],
-							["RH_fn57",nil,10000],
-							["RH_p226s",nil,10000],
-							["RH_uspm",nil,10000],
+							["RH_vz61",nil,20000],
+							["RH_fn57",nil,20000],
+							["RH_p226s",nil,20000],
+							["RH_uspm",nil,20000],
 							//Rang5
 							
 							//Rang4
@@ -196,8 +210,8 @@ switch(_shop) do
 							["RH_20Rnd_57x28_FN",nil,200],
 							["RH_20Rnd_32cal_vz61",nil,200],
 							["30Rnd_mas_556x45_Stanag",nil,200],
-							["30Rnd_mas_762x39_mag",nil,200]		
-									
+							["30Rnd_mas_762x39_mag",nil,200],
+							["200Rnd_mas_556x45_Stanag",nil,1500]
 									
 						]
 					];
@@ -844,6 +858,7 @@ switch(_shop) do
 						["arifle_mas_hk416",nil,160000],
 						["arifle_mas_hk416_v",nil,160000],
 						["arifle_mas_hk416_d",nil,160000],
+						["30Rnd_mas_556x45_Stanag",nil,1000],
 						//Rang3
 						["RH_deaglem",nil,40000],
 						

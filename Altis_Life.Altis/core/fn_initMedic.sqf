@@ -15,6 +15,13 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
+switch (__GETC__(life_donator)) do {
+
+
+	case 1: {life_paycheck = life_paycheck + 1500;};
+
+	
+};
 
 0 setFog [0, 0.01, 0];
 

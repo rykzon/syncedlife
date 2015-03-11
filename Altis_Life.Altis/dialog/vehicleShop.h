@@ -14,7 +14,7 @@ class Life_Vehicle_Shop_v2
 			idc = -1;
 			x = 0.1;
 			y = 0.2;
-			w = 0.8;
+			w = 1.1;
 			h = (1 / 25);
 		};
 		
@@ -24,7 +24,7 @@ class Life_Vehicle_Shop_v2
 			idc = -1;
 			x = 0.1;
 			y = 0.2 + (11 / 250);
-			w = 0.8;
+			w = 1.1;
 			h = 0.7 - (22 / 250);
 		};
 		
@@ -44,7 +44,7 @@ class Life_Vehicle_Shop_v2
 			text = "$STR_GUI_ShopStock";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			x = 0.11; y = 0.26;
-			w = 0.3;
+			w = 0.603;
 			h = (1 / 25);
 		};
 		
@@ -53,7 +53,7 @@ class Life_Vehicle_Shop_v2
 			idc = 2330;
 			text = "$STR_GUI_VehInfo";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-			x = 0.42; y = 0.26;
+			x = 0.72; y = 0.26;
 			w = 0.46;
 			h = (1 / 25);
 		};
@@ -104,7 +104,7 @@ class Life_Vehicle_Shop_v2
 			
 			//Position & height
 			x = 0.11; y = 0.302;
-			w = 0.303; h = 0.49;
+			w = 0.603; h = 0.49;
 		};
 		
 		class ColorList : Life_RscCombo
@@ -120,7 +120,7 @@ class Life_Vehicle_Shop_v2
 			text = "";
 			sizeEx = 0.035;
 			
-			x = 0.41; y = 0.3;
+			x = 0.71; y = 0.3;
 			w = 0.5; h = 0.5;
 		};
 	};

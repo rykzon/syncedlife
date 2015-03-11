@@ -39,10 +39,16 @@ _mafia = _data select 0;
 		//Hats
 		case 1:
 		{
+		_ret =
+		[
 		
+			["H_Hat_blue",nil,310],
+			["H_Hat_brown",nil,276],
+			["H_Hat_checker",nil,340],
+			["H_Hat_grey",nil,280],
+			["H_Hat_tan",nil,265]
 		
-		
-			
+		];
 		};
 		
 		//Glasses
@@ -61,7 +67,9 @@ _mafia = _data select 0;
 		//Vest
 		case 3:
 		{
-			
+		
+			_ret pushBack ["V_Chestrig_blk",nil,5000];
+			_ret pushBack ["V_TacVest_brn",nil,25000];
 		
 		
 			

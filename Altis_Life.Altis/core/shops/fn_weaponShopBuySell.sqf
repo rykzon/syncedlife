@@ -104,7 +104,7 @@ switch(true) do
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 		life_cash = life_cash - _price;
 		[_item,true] spawn life_fnc_handleItem;
-		[[format ["4|%1 Waffe gekauft: %2",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
+		//[[format ["4|%1 Waffe gekauft: %2",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
 		};	
 };
 [] call life_fnc_saveGear;

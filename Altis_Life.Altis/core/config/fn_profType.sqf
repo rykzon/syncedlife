@@ -35,6 +35,8 @@ case "ironore": { _profName = "Iron_Prof";};
 case "oilu": { _profName = "Oil_Prof";};
 case "rock": { _profName = "Rock_Prof";};
 case "coalu": { _profName = "Coal_Prof";};
+case "malz": { _profName = "Malz_Prof";};
+case "hopfen": { _profName = "Hopfen_Prof";};
 
  
 //license to text
@@ -52,6 +54,8 @@ case "Oil_Prof": { _profName = "Oil";};
 case "Rock_Prof": { _profName = "Rock";};
 case "Fruit_Prof": { _profName = "Fruit";};
 case "Coal_Prof": { _profName = "Coal";};
+case "Malz_Prof": { _profName = "Malz";};
+case "Hopfen_Prof": { _profName = "Hopfen";};
 
 default{""};
 };

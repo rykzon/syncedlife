@@ -74,6 +74,24 @@ switch (true) do
         [] spawn life_fnc_heroin;
     };
 };
+
+		case (_item == "bier"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [1] spawn life_fnc_alkohol;
+    };
+};
+
+
+		case (_item == "schnaps"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [2] spawn life_fnc_alkohol;
+    };
+};
+
 	case (_item == "cocainep"):
 {
     if(([false,_item,1] call life_fnc_handleInv)) then
@@ -103,7 +121,7 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
 	
-	case (_item in ["storagesmall","storagebig"]): {
+	case (_item in ["storagemedium","storagebig1","storagebig2"]): {
 		[_item] call life_fnc_storageBox;
 	};
 	

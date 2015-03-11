@@ -62,6 +62,10 @@ switch (_mode) do
 			case "peach": {"life_inv_peach"};
 			case "diamond": {"life_inv_diamond"};
 			case "diamondc": {"life_inv_diamondr"};
+			case "malz": {"life_inv_malz"};
+			case "hopfen": {"life_inv_hopfen"};
+			case "bier": {"life_inv_bier"};
+			case "schnaps": {"life_inv_schnaps"};
 			case "cocaine": {"life_inv_coke"};
 			case "cocainep": {"life_inv_cokep"};
 			case "spikeStrip": {"life_inv_spikeStrip"};
@@ -118,6 +122,10 @@ switch (_mode) do
 			case "life_inv_copperr": {"copper_r"};
 			case "life_inv_sand": {"sand"};
 			case "life_inv_salt": {"salt"};
+			case "life_inv_malz": {"malz"};
+			case "life_inv_hopfen": {"hopfen"};
+			case "life_inv_bier": {"bier"};
+			case "life_inv_schnaps": {"schnaps"};
 			case "life_inv_bluesyn": {"bluesyn"};
 			case "life_inv_glass": {"glass"};
 			case "life_inv_redgull": {"redgull"};

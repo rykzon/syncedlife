@@ -81,6 +81,24 @@
 <Italian>Proficiency sabbia</Italian>
 <Portuguese>areia de Proficiência </Portuguese>
 </Key>
+<Key ID="STR_Prof_Hopfen">
+<Original>Hopfen Proficiency</Original>
+<English>Hopfen Proficiency</English>
+<German>Hopfen Abbau</German>
+<French>compétence d'sable</French>
+<Italian>Proficiency sabbia</Italian>
+<Portuguese>areia de Proficiência </Portuguese>
+</Key>
+
+<Key ID="STR_Prof_Malz">
+<Original>Malz Proficiency</Original>
+<English>Malz Proficiency</English>
+<German>Malz Abbau</German>
+<French>compétence d'sable</French>
+<Italian>Proficiency sabbia</Italian>
+<Portuguese>areia de Proficiência </Portuguese>
+</Key>
+
 <Key ID="STR_Prof_Rock">
 <Original>Rock Proficiency</Original>
 <English>Rock Proficiency</English>
@@ -3383,6 +3401,41 @@
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
+		
+		<Key ID="STR_Item_Malz">
+			<Original>Malz</Original>
+			<English>Malz</English>
+			<German>Malz</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Hopfen">
+			<Original>Hopfen</Original>
+			<English>Hopfen</English>
+			<German>Hopfen</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Bier">
+			<Original>Bier</Original>
+			<English>Bier</English>
+			<German>Bier</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		
+			<Key ID="STR_Item_Schnaps">
+			<Original>Schnaps</Original>
+			<English>Schnaps</English>
+			<German>Schnaps</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Item_Oil">
 			<Original>Oil</Original>
 			<English>Oil</English>
@@ -3789,7 +3842,7 @@
 			<Italian>Contenitore piccolo</Italian>
 			<Portuguese>Caixa Pequena</Portuguese>
 		</Key>
-		<Key ID="STR_Item_StorageBL">
+		<Key ID="STR_Item_StorageBL1">
 			<Original>Large Storage Box</Original>
 			<English>Large Storage Box</English>
 			<German>Große Lagerbox</German>
@@ -3797,6 +3850,17 @@
 			<Italian>Contenitore grande</Italian>
 			<Portuguese>Caixa Grande</Portuguese>
 		</Key>
+		
+			<Key ID="STR_Item_StorageBL2">
+			<Original>Large Storage Box</Original>
+			<English>Large Storage Box</English>
+			<German>Große Lagerbox</German>
+			<French>Grand Conteneur de stockage</French>
+			<Italian>Contenitore grande</Italian>
+			<Portuguese>Caixa Grande</Portuguese>
+		</Key>
+		
+		
 		<Key ID="STR_Item_CocaineU">
 			<Original>Unprocessed Cocaine</Original>
 			<English>Unprocessed Cocaine</English>
@@ -3857,6 +3921,26 @@
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
 		</Key>
+		
+				<Key ID="STR_License_Bier">
+			<Original>Beer Training</Original>
+			<English>Beer Training</English>
+			<German>Bierbrau Ausbildung</German>
+			<French>Transformation du Pavot</French>
+			<Italian>Processo Eroina</Italian>
+			<Portuguese>Treinamento de Heroina</Portuguese>
+		</Key>
+				<Key ID="STR_License_Schnaps">
+			<Original>Schnaps Training</Original>
+			<English>Schnaps Training</English>
+			<German>Schnapsbrenner Ausbildung</German>
+			<French>Transformation du Pavot</French>
+			<Italian>Processo Eroina</Italian>
+			<Portuguese>Treinamento de Heroina</Portuguese>
+		</Key>
+		
+		
+		
 		<Key ID="STR_License_Oil">
 			<Original>Oil Processing</Original>
 			<English>Oil Processing</English>
@@ -4338,6 +4422,9 @@
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
 		
+		
+		
+		
 			<Key ID="STR_Process_Steel">
 			<Original>Processing Steel</Original>
 			<English>Processing Steel</English>
@@ -4346,6 +4433,26 @@
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
+		
+			<Key ID="STR_Process_Bier">
+			<Original>Beer Steel</Original>
+			<English>Beer Steel</English>
+			<German>Bier wird gebraut</German>
+			<French>Raffinage de Pétrole</French>
+			<Italian>Processando l'Olio</Italian>
+			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		
+			<Key ID="STR_Process_Schnaps">
+			<Original>Processing Schnaps</Original>
+			<English>Processing Schnaps</English>
+			<German>Schnaps wird gebrannt</German>
+			<French>Raffinage de Pétrole</French>
+			<Italian>Processando l'Olio</Italian>
+			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		
+		
 			<Key ID="STR_Process_Bluesyn">
 			<Original>Processing Bluesyn</Original>
 			<English>Processing Bluesyn</English>
@@ -4504,6 +4611,24 @@
 			<Italian>Raccogli Eroina</Italian>
 			<Portuguese>Colher Heroina</Portuguese>
 		</Key>
+		
+			<Key ID="STR_Gather_Malz">
+			<Original>Gather Malz</Original>
+			<English>Gather Malz</English>
+			<German>Malz pflücken</German>
+			<French>Récolter des graines de Pavot</French>
+			<Italian>Raccogli Eroina</Italian>
+			<Portuguese>Colher Heroina</Portuguese>
+		</Key>	<Key ID="STR_Gather_Hopfen">
+			<Original>Gather Hopfen</Original>
+			<English>Gather Hopfen</English>
+			<German>Hopfen pflücken</German>
+			<French>Récolter des graines de Pavot</French>
+			<Italian>Raccogli Eroina</Italian>
+			<Portuguese>Colher Heroina</Portuguese>
+		</Key>
+		
+		
 		<Key ID="STR_Gather_Cannabis">
 			<Original>Gather Cannabis</Original>
 			<English>Gather Cannabis</English>

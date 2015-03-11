@@ -20,7 +20,7 @@ if((_val + _tax) > life_atmcash) exitWith {hint format[localize "STR_ATM_SentMon
 
 life_atmcash = life_atmcash - (_val + _tax);
 
-//[[format ["1|%1 Geld überwiesen an %3: %2.",player getVariable["realname",name player],_val, _unit getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
+[[format ["1|%1 Geld überwiesen an %3: %2.",player getVariable["realname",name player],_val, _unit getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 
 
 [[_val,profileName],"TON_fnc_clientWireTransfer",_unit,false] spawn life_fnc_MP;

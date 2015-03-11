@@ -39,9 +39,9 @@ switch (_mode) do
 			case "sand": {_var = "license_civ_sand"};
 			case "bluesyn": {_var = "license_civ_bluesyn"};
 			
-			case "aSchnaps": {_var = "license_civ_aSchnaps"};
-			case "pSchnaps": {_var = "license_civ_pSchnaps"};
+			case "schnaps": {_var = "license_civ_schnaps"};
 			
+			case "bier": {_var = "license_civ_bier"};
 			case "iron": {_var = "license_civ_iron"};
 			case "copper": {_var = "license_civ_copper"};
 			case "cement": {_var = "license_civ_cement"};
@@ -88,6 +88,8 @@ switch (_mode) do
 			case "license_civ_steel": {_var = "steel"};
 			case "license_civ_plastic": {_var = "plastic"};
 			case "license_civ_coal": {_var = "coal"};
+			case "license_civ_bier": {_var = "bier"};
+			case "license_civ_schnaps": {_var = "schnaps"};
 			default {_var = ""};
 		};
 	};

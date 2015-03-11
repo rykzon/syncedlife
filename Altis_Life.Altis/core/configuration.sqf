@@ -30,6 +30,8 @@ life_respawn_timer = 2; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
+life_i = false;
+life_space = false;
 D41_IsBuying = 0;
 life_removeWanted = false;
 life_action_gathering = false;
@@ -190,6 +192,10 @@ life_inv_items =
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
 	"life_inv_rock",
+	"life_inv_hopfen",
+	"life_inv_malz",
+	"life_inv_bier",
+	"life_inv_schnaps",
 	"life_inv_cement",
 	"life_inv_goldbar",
 	"life_inv_blastingcharge",
@@ -233,7 +239,9 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_steel","civ"],
 	["license_civ_coal","civ"],
-	["license_civ_plastic","civ"]
+	["license_civ_plastic","civ"],
+	["license_civ_bier","civ"],
+	["license_civ_schnaps","civ"]
 ];
 
 //Setup License Variables
@@ -255,7 +263,9 @@ life_prof =
 ["Diamond_Prof","civ"],
 ["Rock_Prof","civ"],
 ["Coal_Prof","civ"],
-["Sand_Prof","civ"]
+["Sand_Prof","civ"],
+["Malz_Prof","civ"],
+["Hopfen_Prof","civ"]
 
 ];
  
@@ -294,7 +304,7 @@ sell_array =
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
-	["peach",150],
+	["peach",life_VPreisPeach],
 	["cocaine",3000],
 	["cocainep",life_VPreisCocainep],
 	["turtle",life_VPreisTurtle],
@@ -315,7 +325,9 @@ sell_array =
 	["strahler",1200],
 	["cement",life_VPreisCement],
 	["goldbar",50000],
-	["zipties",200]
+	["zipties",200],
+	["bier",life_VPreisBier],
+	["schnaps",life_VPreisSchnaps]
 ];};
 //__CONST__(sell_array,sell_array);
 
@@ -349,9 +361,11 @@ buy_array =
 	["blastingcharge",35000],
 	["boltcutter",7500],
 	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",150000],
-	["zipties",2000]
+	["storagesmall",250000],
+	["storagebig",500000],
+	["zipties",2000],
+	["bier",life_KPreisBier],
+	["schnaps",life_KPreisSchnaps]
 ];};
 //__CONST__(buy_array,buy_array);
 

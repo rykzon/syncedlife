@@ -110,4 +110,5 @@ _return = [];
 	_return pushBack [_x select 1,_containers];
 } foreach _houses;
 
+
 missionNamespace setVariable[format["houses_%1",_this],_return];

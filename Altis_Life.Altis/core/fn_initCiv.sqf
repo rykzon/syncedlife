@@ -35,6 +35,13 @@ if(life_is_arrested) then
 
 player addRating 9999999;
 
+switch (__GETC__(life_donator)) do {
+
+
+	case 1: {life_paycheck = life_paycheck + 1500;};
+
+	
+};
 
 
 [] spawn    //basic cop

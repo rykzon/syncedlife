@@ -26,4 +26,4 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 
 [] execVM "\life_server\Functions\Markt\fn_updateStock.sqf";
 [8,true,12] execFSM "core\fsm\timeModule.fsm";
-//[] call compile PreprocessFileLineNumbers "\@Arma3Log\init.sqf";
+[] call compile PreprocessFileLineNumbers "\@Arma3Log\init.sqf";

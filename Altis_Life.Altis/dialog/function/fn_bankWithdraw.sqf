@@ -8,7 +8,7 @@ if(_val < 0) exitwith {};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
 if(_val > life_atmcash) exitWith {hint localize "STR_ATM_NotEnoughFunds"};
 if(_val < 100 && life_atmcash > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}; //Temp fix for something.
-//[[format ["1|%1 Geld abgehoben %2.",player getVariable["realname",name player],_val]],"Arma3Log",false,false] call life_fnc_MP;
+[[format ["1|%1 Geld abgehoben %2.",player getVariable["realname",name player],_val]],"Arma3Log",false,false] call life_fnc_MP;
 life_cash = life_cash + _val;
 life_atmcash = life_atmcash - _val;
 hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];

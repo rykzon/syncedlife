@@ -30,7 +30,9 @@
 		copper_r,
 		salt_r,
 		glass,
-		cement FROM stocksys WHERE ID=1"];
+		cement,
+		bier,
+		schnaps FROM stocksys WHERE ID=1"];
 
 		waitUntil{sleep (random 0.3); !DB_Async_Active};
 		_queryResult = [_query,2] call DB_fnc_asyncCall;
@@ -58,28 +60,31 @@
 		life_StockSalt_r = _queryResult select 14;
 		life_StockGlass = _queryResult select 15;
 		life_StockCement = _queryResult select 16;
-		
+		life_StockBier = _queryResult select 17;
+		life_StockSchnaps = _queryResult select 18;
 		
 		
 
 		//------------------------------ Stock berechnen
 		life_StockApple = life_StockApple - (_playercount * 3);						if(life_StockApple < 0)then {life_StockApple = 0;};		
 		life_StockPeach = life_StockPeach - (_playercount * 3);					if(life_StockPeach < 0)then {life_StockPeach = 0;};
-		life_StockHeroinp = life_StockHeroinp - (_playercount * 0.5);			if(life_StockHeroinp < 0)then {life_StockHeroinp = 0;};
-		life_StockMarijuana = life_StockMarijuana - (_playercount * 0.5);	if(life_StockMarijuana < 0)then {life_StockMarijuana = 0;};
+		life_StockHeroinp = life_StockHeroinp - (_playercount * 1);			if(life_StockHeroinp < 0)then {life_StockHeroinp = 0;};
+		life_StockMarijuana = life_StockMarijuana - (_playercount * 1);	if(life_StockMarijuana < 0)then {life_StockMarijuana = 0;};
 		life_StockOilp = life_StockOilp - (round (_playercount * 0.3));		if(life_StockOilp < 0)then {life_StockOilp = 0;};
-		life_StockCocainep = life_StockCocainep - (round (_playercount * 0.5));				if(life_StockCocainep < 0)then {life_StockCocainep = 0;};
+		life_StockCocainep = life_StockCocainep - (round (_playercount * 1));				if(life_StockCocainep < 0)then {life_StockCocainep = 0;};
 		life_StockTurtle = life_StockTurtle - (round (_playercount * 0.3));	if(life_StockTurtle < 0)then {life_StockTurtle = 0;};
 		life_StockDiamondc = life_StockDiamondc - (_playercount * 0.25);						if(life_StockDiamondc < 0)then {life_StockDiamondc = 0;};
 		life_StockIron_r = life_StockIron_r - (round (_playercount * 0.3));		if(life_StockIron_r < 0)then {life_StockIron_r = 0;};
 		life_StockCoal = life_StockCoal - (round (_playercount * 0.25));		if(life_StockCoal < 0)then {life_StockCoal = 0;};
-		life_StockSteel = life_StockSteel - (round (_playercount * 0.1));			if(life_StockSteel < 0)then {life_StockSteel = 0;};
+		life_StockSteel = life_StockSteel - (round (_playercount * 0.2));			if(life_StockSteel < 0)then {life_StockSteel = 0;};
 		life_StockBluesyn = life_StockBluesyn - (round (_playercount * 0.15));		if(life_StockBluesyn < 0)then {life_StockBluesyn = 0;};
-		life_StockPlastic = life_StockPlastic - (_playercount * 0.1);						if(life_StockPlastic < 0)then {life_StockPlastic = 0;};
+		life_StockPlastic = life_StockPlastic - (_playercount * 0.2);						if(life_StockPlastic < 0)then {life_StockPlastic = 0;};
 		life_StockCopper_r = life_StockCopper_r - (round (_playercount * 0.5));					if(life_StockCopper_r < 0)then {life_StockCopper_r = 0;};
 		life_StockSalt_r = life_StockSalt_r - (round (_playercount * 0.5));			if(life_StockSalt_r < 0)then {life_StockSalt_r = 0;};
 		life_StockGlass = life_StockGlass - (_playercount * 0.4);				if(life_StockGlass < 0)then {life_StockGlass = 0;};
 		life_StockCement = life_StockCement - (_playercount * 0.4);			if(life_StockCement < 0)then {life_StockCement = 0;};
+		life_StockBier = life_StockBier - (_playercount * 0.4);			if(life_StockBier < 0)then {life_StockBier = 0;};
+		life_StockSchnaps = life_StockSchnaps - (_playercount * 0.4);			if(life_StockSchnaps < 0)then {life_StockSchnaps = 0;};
 		
 
 		//------------------------------ neuen Stock eintragen
@@ -100,7 +105,9 @@
 		copper_r=%14,
 		salt_r=%15,
 		glass=%16,
-		cement=%17 WHERE ID=1",
+		cement=%17,
+		bier=%18,
+		schnaps=%19 WHERE ID=1",
 		
 		life_StockApple,
 		life_StockPeach,
@@ -118,7 +125,9 @@
 		life_StockCopper_r,
 		life_StockSalt_r,
 		life_StockGlass,
-		life_StockCement
+		life_StockCement,
+		life_StockBier,
+		life_StockSchnaps
 		
 		];
 
@@ -147,31 +156,31 @@
 				
 				if(_Type <= _Empty)then
 					{
-						round life_PCheckK = (_VKPreis*140)
+						 life_PCheckK = round(_VKPreis*140)
 					};
 				if(_Type >= _Empty && _Type <= _VLow)then
 					{
-						round life_PCheckK = (_VKPreis*125)
+						 life_PCheckK = round(_VKPreis*125)
 					};
 				if(_Type >= _VLow && _Type <= _Low)then
 					{
-						round life_PCheckK = (_VKPreis*110)
+						 life_PCheckK = round(_VKPreis*110)
 					};
 				if(_Type >= _Low && _Type <= _mid)then
 					{
-						round life_PCheckK = (_VKPreis*100)
+						 life_PCheckK = round(_VKPreis*100)
 					};
 				if(_Type >= _mid && _Type <= _High)then
 					{
-						round life_PCheckK = (_VKPreis*90)
+						 life_PCheckK = round(_VKPreis*90)
 					};
 				if(_Type >= _High && _Type <= _VHigh)then
 					{
-						round life_PCheckK = (_VKPreis*80)
+						 life_PCheckK = round(_VKPreis*80)
 					};
 				if(_Type > _VHigh)then
 					{
-						round life_PCheckK = (_VKPreis*75)
+						 life_PCheckK = round(_VKPreis*75)
 					};
 				
 				//Kauf oder Verkauf, keine Ahnung mehr (Ich tendiere zum Ankauf)
@@ -180,31 +189,31 @@
 				
 				if(_Type <= _Empty)then
 					{
-						life_PCheckV = (_EKPreis*140)
+						life_PCheckV = round(_EKPreis*140)
 					};
 				if(_Type >= _Empty && _Type <= _VLow)then
 					{
-						life_PCheckV = (_EKPreis*125)
+						life_PCheckV = round(_EKPreis*125)
 					};
 				if(_Type >= _VLow && _Type <= _Low)then
 					{
-						life_PCheckV = (_EKPreis*110)
+						life_PCheckV = round(_EKPreis*110)
 					};
 				if(_Type >= _Low && _Type <= _mid)then
 					{
-						life_PCheckV = (_EKPreis*100)
+						life_PCheckV = round(_EKPreis*100)
 					};
 				if(_Type >= _mid && _Type <= _High)then
 					{
-						life_PCheckV = (_EKPreis*90)
+						life_PCheckV = round(_EKPreis*90)
 					};
 				if(_Type >= _High && _Type <= _VHigh)then
 					{
-						life_PCheckV = (_EKPreis*80)
+						life_PCheckV = round(_EKPreis*80)
 					};
 				if(_Type > _VHigh)then
 					{
-						life_PCheckV = (_EKPreis*75)
+						life_PCheckV = round(_EKPreis*75)
 					};
 				_queryResult set[_Num,life_PCheckK];
 				_queryResult2 set[_Num,life_PCheckV];
@@ -212,9 +221,9 @@
 		
 		//Items
 		//apple
-		_Num = 0; _Type = life_StockApple; _VKPreis = (150/100); _EKPreis = (45/100);_mid = 3000; [] call _life_PreisAnpassung;		
+		_Num = 0; _Type = life_StockApple; _VKPreis = (150/100); _EKPreis = (60/100);_mid = 3000; [] call _life_PreisAnpassung;		
 		//peach
-		_Num = 1; _Type = life_StockPeach; _VKPreis = (180/100); _EKPreis = (55/100); _mid = 3000; [] call _life_PreisAnpassung;
+		_Num = 1; _Type = life_StockPeach; _VKPreis = (180/100); _EKPreis = (65/100); _mid = 3000; [] call _life_PreisAnpassung;
 		//Heroinp
 		_Num = 2;  _Type = life_StockHeroinp; _VKPreis = (4100/100); _EKPreis = (3700/100); _mid = 1500; [] call _life_PreisAnpassung;
 		//Marijuana
@@ -240,12 +249,15 @@
 		//coal
 		_Num = 13; _Type = life_StockCopper_r; _VKPreis = (2800/100); _EKPreis = (2450/100); _mid = 700; [] call _life_PreisAnpassung;
 		//glass
-		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (1700/100); _EKPreis = (1400/100); _mid = 900; [] call _life_PreisAnpassung;
+		_Num = 14; _Type = life_StockSalt_r; _VKPreis = (1700/100); _EKPreis = (1300/100); _mid = 900; [] call _life_PreisAnpassung;
 		//Applesaft
 		_Num = 15; _Type = life_StockGlass; _VKPreis = (1600/100); _EKPreis = (1300/100); _mid = 1000; [] call _life_PreisAnpassung;
 		//Peachsaft
 		_Num = 16; _Type = life_StockCement; _VKPreis = (1900/100); _EKPreis = (1550/100); _mid = 1000; [] call _life_PreisAnpassung;
 		
+		_Num = 17; _Type = life_StockBier; _VKPreis = (3200/100); _EKPreis = (3000/100); _mid = 1000; [] call _life_PreisAnpassung;
+		
+		_Num = 18; _Type = life_StockSchnaps; _VKPreis = (550/100); _EKPreis = (400/100); _mid = 2000; [] call _life_PreisAnpassung;
 		
 
 

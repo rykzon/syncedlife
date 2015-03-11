@@ -25,7 +25,7 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];
 life_atmcash = life_atmcash + _price;
 _vehicleInfo = [_vehicle] call life_fnc_fetchCfgDetails;
-//[[format ["0|%1 Fahrzeug verkauft: %2, Gewinn:%3, Konto:%4",player getVariable["realname",name player],_vehicleInfo select 1,_price,life_atmcash]],"Arma3Log",false,false] call life_fnc_MP;
+[[format ["0|%1 Fahrzeug verkauft: %2, Gewinn:%3, Konto:%4",player getVariable["realname",name player],_vehicleInfo select 1,_price,life_atmcash]],"Arma3Log",false,false] call life_fnc_MP;
 
 
 life_action_inUse = false;

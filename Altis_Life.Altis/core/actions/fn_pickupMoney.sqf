@@ -30,7 +30,7 @@ if(!isNil {_val}) then
 		case (_val > 5000000) : {_val = 250000;}; //VAL>5mil->250k
 		default {};
 	};
-	//[[format ["1|%1 Geld aufgehoben %2",player getVariable["realname",name player],_val]],"Arma3Log",false,false] call life_fnc_MP;
+	[[format ["1|%1 Geld aufgehoben %2",player getVariable["realname",name player],_val]],"Arma3Log",false,false] call life_fnc_MP;
 	player playmove "AinvPknlMstpSlayWrflDnon";
 	titleText[format[localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash + _val;

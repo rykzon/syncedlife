@@ -28,8 +28,10 @@ _pos = [0,0,0];
 if(_pos isEqualTo [0,0,0]) exitWith {hint localize "STR_ISTR_Box_HouseFull_2"};
 if(!([false,_boxType,1] call life_fnc_handleInv)) exitWith {};
 switch (_boxType) do {
-	case "storagesmall": {
-		_container = "Box_IND_Grenades_F" createVehicle [0,0,0];
+
+	
+	case "storagebig": {
+		_container = "B_supplyCrate_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;
@@ -42,9 +44,22 @@ switch (_boxType) do {
 		clearItemCargoGlobal _container;
 		clearBackpackCargoGlobal _container;
 	};
-	
-	case "storagebig": {
-		_container = "B_supplyCrate_F" createVehicle [0,0,0];
+	case "storagebig2": {
+		_container = "O_supplyCrate_F" createVehicle [0,0,0];
+		_container setPosATL _pos;
+		
+		_containers pushBack _container;
+		_house setVariable["containers",_containers,true];
+		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
+		
+		//Empty out the crate
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
+	};
+	case "storagesmall": {
+		_container = "Box_IND_WpsSpecial_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;

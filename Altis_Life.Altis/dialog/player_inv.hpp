@@ -23,7 +23,7 @@ class playerSettings {
 			x = 0.1;
 			y = 0.2 + (11 / 250);
 			w = 0.8;
-			h = 0.6 - (22 / 250);
+			h = 0.4 - (22 / 250);
 		};
 		
 		class Title : life_RscTitle {
@@ -94,7 +94,7 @@ class playerSettings {
 			sizeEx = 0.030;
 			
 			x = 0.62; y = 0.30;
-			w = 0.275; h = 0.3;
+			w = 0.275; h = 0.2;
 		};
 	
 				
@@ -106,7 +106,7 @@ class playerSettings {
 			idc = money_value;
 			
 			x  = 0.02; y = 0.402;
-			w = .1; h = .030;
+			w = 0.1; h = 0.030;
 		};
 		*/
 		
@@ -118,7 +118,7 @@ class playerSettings {
 			onButtonClick = "[] call life_fnc_useItem;";
 			
 			x = 0.62;
-			y = 0.70;
+			y = 0.51;
 			w = (5.25 / 40);
 			h = (1 / 25);
 			
@@ -130,8 +130,8 @@ class playerSettings {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 			onButtonClick = "[] call life_fnc_removeItem;";
 			
-			x = 0.475;
-			y = 0.70;
+			x = 0.765;
+			y = 0.51;
 			w = (5.25 / 40);
 			h = (1 / 25);
 			
@@ -155,7 +155,7 @@ class playerSettings {
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = 0.1;
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -165,7 +165,7 @@ class playerSettings {
 			text = "$STR_Global_Settings";
 			onButtonClick = "[] call life_fnc_settingsMenu;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -175,7 +175,7 @@ class playerSettings {
 			text = "$STR_PM_MyGang";
 			onButtonClick = "if(isNil ""life_action_gangInUse"") then {if(isNil {(group player) getVariable ""gang_owner""}) then {createDialog ""Life_Create_Gang_Diag"";} else {[] spawn life_fnc_gangMenu;};};";
 			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -184,7 +184,7 @@ class playerSettings {
 		{
 			idc = -1;
 			w = 0.28;
-			h = 0.38;
+			h = 0.25;
 			x = 0.34;
 			y = 0.30;
 			
@@ -197,7 +197,7 @@ class playerSettings {
 					text = "";
 					x = 0;
 					y = 0;
-					w = 0.27; h = 0.65;
+					w = 0.27; h = 0.51;
 				};
 			};
 		};
@@ -207,7 +207,7 @@ class playerSettings {
 			text = "$STR_PM_WantedList";
 			onButtonClick = "[] call life_fnc_wantedMenu";
 			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -218,7 +218,7 @@ class playerSettings {
 			text = "$STR_PM_CellPhone";
 			onButtonClick = "createDialog ""Life_my_smartphone"";";
 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -228,7 +228,7 @@ class playerSettings {
 	text = "$STR_PM_AdminMenu";
 	onButtonClick = "createDialog ""life_admin_menu"";";
 	x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-	y = 0.805;
+	y = 0.605;
 	w = (6.25 / 40);
 	h = (1 / 25);
 };
@@ -248,7 +248,7 @@ class playerSettings {
 			text = "$STR_PM_SyncData";
 			onButtonClick = "[] call SOCK_fnc_syncData;";
 			x = 0.1;
-			y = 0.805;
+			y = 0.605;
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -259,7 +259,7 @@ class ButtonMarket : Life_RscButtonMenu {
             onButtonClick = "[] spawn life_fnc_MarktPreisabfrage;";
             //x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
+			y = 0.6 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
           };
@@ -270,8 +270,8 @@ class ButtonWantedAdd : life_RscButtonMenu {
 			//shortcuts[] = {0x00050000 + 2};
 			text = "Wanted +";
 			onButtonClick = "createDialog ""life_wantedadd2"";";
-		x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.805 + (1/25);
+			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.605;
 			w = (6.25 / 40);
 			h = (1 / 25);
 
@@ -284,7 +284,7 @@ text = "Stufen";
 colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
 onButtonClick = "[] call life_fnc_profSetup;";
 x = 0.11;
-y = 0.70;
+y = 0.51;
 w = (5.75 / 40);
 h = (1 / 25);
  

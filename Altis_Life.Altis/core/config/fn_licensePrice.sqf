@@ -42,4 +42,6 @@ switch (_type) do
 	case "plastic": {50000};
 	case "steel": {45000};
 	case "coal": {15000};
+	case "bier": {30000};
+	case "schnaps": {30000};
 };

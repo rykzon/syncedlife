@@ -158,6 +158,21 @@ while{true} do
 			case "I_Heli_Transport_02_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0005;};
 			case "B_Heli_Transport_03_unarmed_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0006;};
 			case "O_Heli_Light_02_unarmed_F":{_fuelConsumption = _velocityOfVehicle/100000 + 0.0005;};
+			
+			//Air1
+			case "GNT_C185":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "GNT_C185F":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;}; 
+			case "bwi_a3_t6a":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_1":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_2":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_3":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};		
+			case "bwi_a3_t6a_4":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_6":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_7":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_8":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};
+			case "bwi_a3_t6a_9":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};	
+			case "ivory_yak42d_1":{_fuelConsumption = _velocityOfVehicle/100000 - 0.002;};	
+	
 
 			
             default {_fuelConsumption = _velocityOfVehicle/100000 + 0.0001;}

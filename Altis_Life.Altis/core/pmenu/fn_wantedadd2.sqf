@@ -111,7 +111,7 @@ _data = "17";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Belästigung eines Polizisten $1";
+_text = "Belaestigung eines Polizisten $1";
 _data = "18";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -121,7 +121,7 @@ _data = "19";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Töten eines Polizisten $1";
+_text = "Toeten eines Polizisten $1";
 _data = "20";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -248,7 +248,34 @@ _data = "44";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Offenes Tragen von Waffen ab oeffentlichen orten $15000";
+_text = "Offenes Tragen von Waffen in Oeffentlichkeit $15000";
 _data = "45";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Stadion) $50000";
+_data = "46";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Agios) $50000";
+_data = "47";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Lakka) $50000";
+_data = "48";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Anthrakia) $50000";
+_data = "49";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Sofia) $50000";
+_data = "50";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+

@@ -72,6 +72,12 @@ while{true}do
 	life_KPreisClement = life_KPreisliste select 16;
 	life_VPreisCement = life_VPreisliste select 16;
 	
+	life_KPreisBier = life_KPreisliste select 17;
+	life_VPreisBier = life_VPreisliste select 17;
+	
+	life_KPreisSchnaps = life_KPreisliste select 18;
+	life_VPreisSchnaps = life_VPreisliste select 18;
+	
 	
 	sleep 30;
 };
