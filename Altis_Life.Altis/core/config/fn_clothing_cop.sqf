@@ -97,7 +97,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1500]];
 		};
-		if(__GETC__(life_coplevel) >= 6) then
+		if(__GETC__(life_coplevel) >= 6 || license_cop_swat) then
 		{
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
 	
