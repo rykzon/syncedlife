@@ -36526,7 +36526,7 @@ class Mission
 		};
 		class Item270
 		{
-			position[]={8242.8691,55.539425,20667.094};
+			position[]={4998.6226,266.98703,21000.391};
 			name="hopfen_1";
 			text="Hopfen";
 			type="mil_triangle";
@@ -36534,7 +36534,7 @@ class Mission
 		};
 		class Item271
 		{
-			position[]={3741.2529,225.12112,19921.4};
+			position[]={6558.4111,219.70291,18809.389};
 			name="malz_1";
 			text="Malz";
 			type="mil_triangle";

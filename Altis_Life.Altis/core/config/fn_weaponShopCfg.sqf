@@ -72,15 +72,15 @@ switch(_shop) do
 									
 									
 							//Rang2
-							["arifle_mas_g36c",nil,100000],
-							["arifle_mas_m16",nil,100000],
-							["arifle_mas_mk16",nil,100000],
+							["arifle_mas_g36c",nil,90000],
+							["arifle_mas_m16",nil,90000],
+							["arifle_mas_mk16",nil,90000],
 							["RH_vz61",nil,20000],
 							["RH_fn57",nil,20000],
 							["RH_p226s",nil,20000],
-							["arifle_mas_hk416",nil,140000],
-							["arifle_mas_hk416_v",nil,140000],
-							["arifle_mas_hk416_d",nil,140000],
+							["arifle_mas_hk416",nil,90000],
+							["arifle_mas_hk416_v",nil,90000],
+							["arifle_mas_hk416_d",nil,90000],
 							
 								
 							
@@ -118,14 +118,14 @@ switch(_shop) do
 							
 							//Rang3
 							["arifle_mas_akm",nil,150000],
-							["srifle_mas_m110",nil,200000],
+							["srifle_mas_m110",nil,180000],
 							//Rang2
-							["arifle_mas_g36c",nil,100000],
-							["arifle_mas_m16",nil,100000],
-							["arifle_mas_mk16",nil,100000],
-							["arifle_mas_hk416",nil,140000],
-							["arifle_mas_hk416_v",nil,140000],
-							["arifle_mas_hk416_d",nil,140000],
+							["arifle_mas_g36c",nil,90000],
+							["arifle_mas_m16",nil,90000],
+							["arifle_mas_mk16",nil,90000],
+							["arifle_mas_hk416",nil,90000],
+							["arifle_mas_hk416_v",nil,90000],
+							["arifle_mas_hk416_d",nil,90000],
 							["LMG_mas_M249_F",nil,140000],
 							//Rang1
 							["RH_vz61",nil,20000],
@@ -179,14 +179,15 @@ switch(_shop) do
 							["RH_deagles",nil,10000],
 							//Rang3
 							["arifle_mas_akm",nil,150000],
-							["srifle_mas_m110",nil,200000],
+							["srifle_mas_m110",nil,180000],
 							//Rang2
-							["arifle_mas_g36c",nil,100000],
-							["arifle_mas_m16",nil,100000],
-							["arifle_mas_mk16",nil,100000],
-							["arifle_mas_hk416",nil,140000],
-							["arifle_mas_hk416_v",nil,140000],
-							["arifle_mas_hk416_d",nil,140000],
+							["arifle_mas_g36c",nil,90000],
+							["arifle_mas_m16",nil,90000],
+							
+							["arifle_mas_mk16",nil,90000],
+							["arifle_mas_hk416",nil,90000],
+							["arifle_mas_hk416_v",nil,90000],
+							["arifle_mas_hk416_d",nil,90000],
 							
 							["LMG_mas_M249_F",nil,140000],
 							//Rang1

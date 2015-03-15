@@ -121,7 +121,7 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
 	
-	case (_item in ["storagemedium","storagebig1","storagebig2"]): {
+	case (_item in ["storagesmall","storagebig"]): {
 		[_item] call life_fnc_storageBox;
 	};
 	
