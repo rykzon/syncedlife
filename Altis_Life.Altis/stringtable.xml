@@ -3401,7 +3401,14 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
-		
+		<Key ID="STR_Item_Pilze">
+			<Original>Pilze</Original>
+			<English>Pilze</English>
+			<German>Pilze</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>		
 		<Key ID="STR_Item_Malz">
 			<Original>Malz</Original>
 			<English>Malz</English>
@@ -3431,6 +3438,15 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Schnaps</Original>
 			<English>Schnaps</English>
 			<German>Schnaps</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		
+					<Key ID="STR_Item_MagicMushrooms">
+			<Original>MagicMushrooms</Original>
+			<English>MagicMushrooms</English>
+			<German>MagicMushrooms</German>
 			<French>Heroïne</French>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
@@ -3934,6 +3950,15 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Schnaps Training</Original>
 			<English>Schnaps Training</English>
 			<German>Schnapsbrenner Ausbildung</German>
+			<French>Transformation du Pavot</French>
+			<Italian>Processo Eroina</Italian>
+			<Portuguese>Treinamento de Heroina</Portuguese>
+		</Key>
+		
+				<Key ID="STR_License_Pilze">
+			<Original>MagicShrooms Training</Original>
+			<English>MagicShrooms Training</English>
+			<German>MagicShrooms Ausbildung</German>
 			<French>Transformation du Pavot</French>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
@@ -4447,6 +4472,15 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Processing Schnaps</Original>
 			<English>Processing Schnaps</English>
 			<German>Schnaps wird gebrannt</German>
+			<French>Raffinage de Pétrole</French>
+			<Italian>Processando l'Olio</Italian>
+			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		
+					<Key ID="STR_Process_Pilze">
+			<Original>Processing Pilze</Original>
+			<English>Processing Pilze</English>
+			<German>Pilze werden verarbeitet</German>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>

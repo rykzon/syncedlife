@@ -32,7 +32,8 @@
 		glass,
 		cement,
 		bier,
-		schnaps FROM stocksys WHERE ID=1"];
+		schnaps,
+		magicmushrooms		FROM stocksys WHERE ID=1"];
 
 		waitUntil{sleep (random 0.3); !DB_Async_Active};
 		_queryResult = [_query,2] call DB_fnc_asyncCall;
@@ -62,6 +63,7 @@
 		life_StockCement = _queryResult select 16;
 		life_StockBier = _queryResult select 17;
 		life_StockSchnaps = _queryResult select 18;
+		life_StockMagicMushrooms = _queryResult select 19;
 		
 		
 
@@ -85,6 +87,7 @@
 		life_StockCement = life_StockCement - (_playercount * 0.4);			if(life_StockCement < 0)then {life_StockCement = 0;};
 		life_StockBier = life_StockBier - (_playercount * 0.4);			if(life_StockBier < 0)then {life_StockBier = 0;};
 		life_StockSchnaps = life_StockSchnaps - (_playercount * 0.4);			if(life_StockSchnaps < 0)then {life_StockSchnaps = 0;};
+		life_StockMagicMushrooms = life_StockMagicMushrooms - (_playercount * 1);			if(life_StockMagicMushrooms < 0)then {life_StockMagicMushrooms = 0;};
 		
 
 		//------------------------------ neuen Stock eintragen
@@ -107,7 +110,8 @@
 		glass=%16,
 		cement=%17,
 		bier=%18,
-		schnaps=%19 WHERE ID=1",
+		schnaps=%19,
+		magicmushrooms=%20		WHERE ID=1",
 		
 		life_StockApple,
 		life_StockPeach,
@@ -127,7 +131,8 @@
 		life_StockGlass,
 		life_StockCement,
 		life_StockBier,
-		life_StockSchnaps
+		life_StockSchnaps,
+		life_StockMagicMushrooms
 		
 		];
 
@@ -258,6 +263,8 @@
 		_Num = 17; _Type = life_StockBier; _VKPreis = (3200/100); _EKPreis = (3000/100); _mid = 1000; [] call _life_PreisAnpassung;
 		
 		_Num = 18; _Type = life_StockSchnaps; _VKPreis = (550/100); _EKPreis = (400/100); _mid = 2000; [] call _life_PreisAnpassung;
+		
+		_Num = 19; _Type = life_StockMagicMushrooms; _VKPreis = (3800/100); _EKPreis = (3300/100); _mid = 1500; [] call _life_PreisAnpassung;
 		
 
 

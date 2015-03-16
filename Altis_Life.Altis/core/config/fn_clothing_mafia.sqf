@@ -26,7 +26,7 @@ _mafia = _data select 0;
 		{
 					
 					_ret pushBack ["rds_uniform_Functionary2","Brauner Anzug",500];
-					if(__GETC__(life_mafialevel) >= 2 ) then {
+					if(__GETC__(life_mafialevel) >= 4 ) then {
 					_ret pushBack ["rds_uniform_Functionary1","Schwarzer Anzug",1000];
 					};
 					
@@ -69,7 +69,7 @@ _mafia = _data select 0;
 		{
 		
 			_ret pushBack ["V_Chestrig_blk",nil,5000];
-			_ret pushBack ["V_TacVest_brn",nil,25000];
+			_ret pushBack ["V_TacVest_oli",nil,25000];
 		
 		
 			

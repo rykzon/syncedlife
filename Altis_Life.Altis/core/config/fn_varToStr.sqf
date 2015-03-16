@@ -74,6 +74,8 @@ switch (_var) do
 	case "life_inv_hopfen": {(localize "STR_Item_hopfen")};
 	case "life_inv_bier": {(localize "STR_Item_bier")};
 	case "life_inv_schnaps": {(localize "STR_Item_schnaps")};
+	case "life_inv_pilze": {(localize "STR_Item_pilze")};
+	case "life_inv_magicmushrooms": {(localize "STR_Item_magicmushrooms")};
 	
 	
 	
@@ -94,6 +96,7 @@ switch (_var) do
 	case "Coal_Prof": {(localize "STR_Prof_Coal")};
 	case "Malz_Prof": {(localize "STR_Prof_Malz")};
 	case "Hopfen_Prof": {(localize "STR_Prof_Hopfen")};
+	case "Pilze_Prof": {(localize "STR_Prof_Pilze")};
 
 	
 	//License Block
@@ -126,4 +129,5 @@ switch (_var) do
 	case "license_civ_coal": {(localize "STR_License_Coal")};
 	case "license_civ_bier": {(localize "STR_License_Bier")};
 	case "license_civ_schnaps": {(localize "STR_License_Schnaps")};
+	case "license_civ_pilze": {(localize "STR_License_Pilze")};
 };

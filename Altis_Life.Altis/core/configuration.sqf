@@ -196,6 +196,8 @@ life_inv_items =
 	"life_inv_malz",
 	"life_inv_bier",
 	"life_inv_schnaps",
+	"life_inv_pilze",
+	"life_inv_magicmushrooms",
 	"life_inv_cement",
 	"life_inv_goldbar",
 	"life_inv_blastingcharge",
@@ -241,7 +243,8 @@ life_licenses =
 	["license_civ_coal","civ"],
 	["license_civ_plastic","civ"],
 	["license_civ_bier","civ"],
-	["license_civ_schnaps","civ"]
+	["license_civ_schnaps","civ"],
+	["license_civ_pilze","civ"]
 ];
 
 //Setup License Variables
@@ -265,7 +268,8 @@ life_prof =
 ["Coal_Prof","civ"],
 ["Sand_Prof","civ"],
 ["Malz_Prof","civ"],
-["Hopfen_Prof","civ"]
+["Hopfen_Prof","civ"],
+["Pilze_Prof","civ"]
 
 ];
  
@@ -327,7 +331,8 @@ sell_array =
 	["goldbar",50000],
 	["zipties",200],
 	["bier",life_VPreisBier],
-	["schnaps",life_VPreisSchnaps]
+	["schnaps",life_VPreisSchnaps],
+	["magicmushrooms",life_VPreisMagicMushrooms]
 ];};
 //__CONST__(sell_array,sell_array);
 

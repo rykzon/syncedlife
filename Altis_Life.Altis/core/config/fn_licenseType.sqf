@@ -40,7 +40,7 @@ switch (_mode) do
 			case "bluesyn": {_var = "license_civ_bluesyn"};
 			
 			case "schnaps": {_var = "license_civ_schnaps"};
-			
+			case "pilze": {_var = "license_civ_pilze"};
 			case "bier": {_var = "license_civ_bier"};
 			case "iron": {_var = "license_civ_iron"};
 			case "copper": {_var = "license_civ_copper"};
@@ -90,6 +90,7 @@ switch (_mode) do
 			case "license_civ_coal": {_var = "coal"};
 			case "license_civ_bier": {_var = "bier"};
 			case "license_civ_schnaps": {_var = "schnaps"};
+			case "license_civ_pilze": {_var = "pilze"};
 			default {_var = ""};
 		};
 	};

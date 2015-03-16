@@ -66,6 +66,8 @@ switch (_mode) do
 			case "hopfen": {"life_inv_hopfen"};
 			case "bier": {"life_inv_bier"};
 			case "schnaps": {"life_inv_schnaps"};
+			case "pilze": {"life_inv_pilze"};
+			case "magicmushrooms": {"life_inv_magicmushrooms"};
 			case "cocaine": {"life_inv_coke"};
 			case "cocainep": {"life_inv_cokep"};
 			case "spikeStrip": {"life_inv_spikeStrip"};

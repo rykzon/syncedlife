@@ -38,7 +38,7 @@ switch(_shop) do
 			
 			default
 			{
-				["Mafia Shop",
+				["Mafia Anwärter Shop",
 					[   
 							
 							
@@ -66,33 +66,24 @@ switch(_shop) do
 			default
 			{
 					
-				["Mafia Soldat Shop",
+				["Mafia Mobster Shop",
 					[
 							
 									
 									
 							//Rang2
-							["arifle_mas_g36c",nil,90000],
-							["arifle_mas_m16",nil,90000],
-							["arifle_mas_mk16",nil,90000],
-							["RH_vz61",nil,20000],
-							["RH_fn57",nil,20000],
-							["RH_p226s",nil,20000],
-							["arifle_mas_hk416",nil,90000],
-							["arifle_mas_hk416_v",nil,90000],
-							["arifle_mas_hk416_d",nil,90000],
-							
+							["arifle_mas_g36c",nil,50000],
+							["arifle_mas_mk16",nil,50000],
+							["RH_p226s",nil,15000],
 								
 							
 							//Rang2
-							["optic_Aco",nil,200],
-							["optic_Hamr",nil,500],
-							["optic_Arco",nil,500],
-							["30Rnd_mas_556x45_Stanag",nil,1000],
-							["RH_15Rnd_9x19_SIG",nil,500],
-							["RH_20Rnd_57x28_FN",nil,200],
-							["RH_20Rnd_32cal_vz61",nil,200],
-							["30Rnd_mas_556x45_Stanag",nil,200]
+							["optic_Aco",nil,1500],
+							["optic_Hamr",nil,1500],
+							["optic_Arco",nil,1500],
+							["30Rnd_mas_556x45_Stanag",nil,2000],
+							["RH_15Rnd_9x19_SIG",nil,500]
+
 							
 								
 					]
@@ -113,38 +104,33 @@ switch(_shop) do
 				default
 				{
 					
-						["Mafia Capo Shop",
+						["Mafia Soldat Shop",
 							[
 							
 							//Rang3
-							["arifle_mas_akm",nil,150000],
-							["srifle_mas_m110",nil,180000],
+							["arifle_mas_mk16_l",nil,85000],
+							["arifle_mas_ak_74m_sf",nil,55000],
 							//Rang2
-							["arifle_mas_g36c",nil,90000],
-							["arifle_mas_m16",nil,90000],
-							["arifle_mas_mk16",nil,90000],
-							["arifle_mas_hk416",nil,90000],
-							["arifle_mas_hk416_v",nil,90000],
-							["arifle_mas_hk416_d",nil,90000],
-							["LMG_mas_M249_F",nil,140000],
-							//Rang1
-							["RH_vz61",nil,20000],
-							["RH_fn57",nil,20000],
-							["RH_p226s",nil,20000],
+							["arifle_mas_g36c",nil,50000],
+							["arifle_mas_mk16",nil,50000],
+							["RH_p226s",nil,15000],
+							["RH_vz61",nil,15000],
+							["RH_fn57",nil,15000],
+							
 							
 							//Rang3
-							["optic_mas_zeiss",nil,500],
-							["20Rnd_mas_762x51_Stanag",nil,200],
-							["optic_Arco",nil,200],
-							["optic_Hamr",nil,500],
+							["optic_mas_zeiss",nil,1500],
+
 							//Rang2
-							["RH_15Rnd_9x19_SIG",nil,500],
-							["RH_20Rnd_57x28_FN",nil,200],
-							["RH_20Rnd_32cal_vz61",nil,200],
-							["30Rnd_mas_556x45_Stanag",nil,200],
-							["30Rnd_mas_762x39_mag",nil,200],
-							["200Rnd_mas_556x45_Stanag",nil,1500]
-							//Rang1
+							["optic_Aco",nil,1500],
+							["optic_Hamr",nil,1500],
+							["optic_Arco",nil,1500],
+							["30Rnd_mas_556x45_Stanag",nil,2000],
+							["30Rnd_mas_545x39_mag",nil,2000],							
+							["RH_15Rnd_9x19_SIG",nil,500]
+							["RH_20Rnd_57x28_FN",nil,500],
+							["RH_20Rnd_32cal_vz61",nil,500]
+							
 							]
 						];
 				};
@@ -168,52 +154,45 @@ switch(_shop) do
 				{
 					
 				
-					["Mafia Pate Shop",
+					["Mafia Garde Shop",
 						[
 						
 									
 									
-									
-									
-									//Rang4
-							["RH_deagles",nil,10000],
+							//Rang4		
+							["Trixie_CZ550_Rail",nil,100000],
+							["LMG_mas_M249_F",nil,80000],
+							["arifle_mas_hk416_v",nil,80000],
+							["RH_deaglem",nil,30000],
+							
 							//Rang3
-							["arifle_mas_akm",nil,150000],
-							["srifle_mas_m110",nil,180000],
+							["arifle_mas_mk16_l",nil,85000],
+							["arifle_mas_ak_74m_sf",nil,55000],
 							//Rang2
-							["arifle_mas_g36c",nil,90000],
-							["arifle_mas_m16",nil,90000],
+							["arifle_mas_g36c",nil,50000],
+							["arifle_mas_mk16",nil,50000],
+							["RH_p226s",nil,15000],
+							["RH_vz61",nil,15000],
+							["RH_fn57",nil,15000],
 							
-							["arifle_mas_mk16",nil,90000],
-							["arifle_mas_hk416",nil,90000],
-							["arifle_mas_hk416_v",nil,90000],
-							["arifle_mas_hk416_d",nil,90000],
 							
-							["LMG_mas_M249_F",nil,140000],
-							//Rang1
-							["RH_vz61",nil,20000],
-							["RH_fn57",nil,20000],
-							["RH_p226s",nil,20000],
-							["RH_uspm",nil,20000],
-							//Rang5
-							
-							//Rang4
-							["RH_7Rnd_50_AE",nil,500],
 							//Rang3
-							["optic_mas_zeiss",nil,500],
-							["20Rnd_mas_762x51_Stanag",nil,200],
-							["optic_Hamr",nil,500],
-							["optic_Arco",nil,200],
-							["RH_matchsd",nil,200],
+							["optic_mas_zeiss",nil,1500],
+
 							//Rang2
-							["RH_16Rnd_40cal_usp",nil,500],
+							["optic_Aco",nil,1500],
+							["optic_Hamr",nil,1500],
+							["optic_Arco",nil,1500],
+							["200Rnd_mas_556x45_Stanag",nil,2000],
+							["Trixie_CZ550_Mag",nil,2000],
+							["RH_7Rnd_50_AE",nil,2000],
+							["30Rnd_mas_556x45_Stanag",nil,2000],
+							["30Rnd_mas_545x39_mag",nil,2000],							
 							["RH_15Rnd_9x19_SIG",nil,500],
-							["RH_20Rnd_57x28_FN",nil,200],
-							["RH_20Rnd_32cal_vz61",nil,200],
-							["30Rnd_mas_556x45_Stanag",nil,200],
-							["30Rnd_mas_762x39_mag",nil,200],
-							["200Rnd_mas_556x45_Stanag",nil,1500]
-									
+							["RH_20Rnd_57x28_FN",nil,500],
+							["RH_20Rnd_32cal_vz61",nil,500]
+		
+							
 						]
 					];
 				
@@ -223,6 +202,136 @@ switch(_shop) do
 	
 	
 	};
+	
+		case "mafia_5":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (__GETC__(life_mafialevel) < 5): {"Dich kenne ich nicht, verzieh dich!"};
+			//case (_mafia < 5): {"Du musst dir noch einen Namen machen Frischling!"};
+				default
+				{
+					
+				
+					["Mafia Capo Shop",
+						[
+						
+							
+
+							//Rang5
+							["arifle_mas_akm",nil,150000],
+							["srifle_mas_m110",nil,180000],
+									
+							//Rang4		
+							["Trixie_CZ550_Rail",nil,100000],
+							["LMG_mas_M249_F",nil,80000],
+							["arifle_mas_hk416_v",nil,80000],
+							["RH_deaglem",nil,30000],
+							
+							//Rang3
+							["arifle_mas_mk16_l",nil,85000],
+							["arifle_mas_ak_74m_sf",nil,55000],
+							//Rang2
+							["arifle_mas_g36c",nil,50000],
+							["arifle_mas_mk16",nil,50000],
+							["RH_p226s",nil,15000],
+							["RH_vz61",nil,15000],
+							["RH_fn57",nil,15000],
+							
+							
+							//Rang3
+							["optic_mas_zeiss",nil,1500],
+
+							//Rang2
+							["optic_Aco",nil,1500],
+							["optic_Hamr",nil,1500],
+							["optic_Arco",nil,1500],
+							["20Rnd_mas_762x51_Stanag",nil,2000],
+							["200Rnd_mas_556x45_Stanag",nil,2000],
+							["Trixie_CZ550_Mag",nil,2000],
+							["RH_7Rnd_50_AE",nil,2000],
+							["30Rnd_mas_556x45_Stanag",nil,2000],
+							["30Rnd_mas_545x39_mag",nil,2000],							
+							["RH_15Rnd_9x19_SIG",nil,500],
+							["RH_20Rnd_57x28_FN",nil,500],
+							["RH_20Rnd_32cal_vz61",nil,500]
+							
+						]
+					];
+				
+				};
+		};
+	
+	
+	
+	};
+	
+case "mafia_6":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (__GETC__(life_mafialevel) < 6): {"Dich kenne ich nicht, verzieh dich!"};
+			//case (_mafia < 5): {"Du musst dir noch einen Namen machen Frischling!"};
+				default
+				{
+					
+				
+					["Mafia Pate Shop",
+						[
+						
+							
+
+							//Rang5
+							["arifle_mas_akm",nil,150000],
+							["srifle_mas_m110",nil,180000],
+									
+							//Rang4		
+							["Trixie_CZ550_Rail",nil,100000],
+							["LMG_mas_M249_F",nil,80000],
+							["arifle_mas_hk416_v",nil,80000],
+							["RH_deaglem",nil,30000],
+							
+							//Rang3
+							["arifle_mas_mk16_l",nil,85000],
+							["arifle_mas_ak_74m_sf",nil,55000],
+							//Rang2
+							["arifle_mas_g36c",nil,50000],
+							["arifle_mas_mk16",nil,50000],
+							["RH_usp",nil,15000],
+							["RH_p226s",nil,15000],
+							["RH_vz61",nil,15000],
+							["RH_fn57",nil,15000],
+							
+							
+							//Rang3
+							["optic_mas_zeiss",nil,1500],
+
+							//Rang2
+							["optic_Aco",nil,1500],
+							["optic_Hamr",nil,1500],
+							["optic_Arco",nil,1500],
+							["20Rnd_mas_762x51_Stanag",nil,2000],
+							["200Rnd_mas_556x45_Stanag",nil,2000],
+							["Trixie_CZ550_Mag",nil,2000],
+							["RH_7Rnd_50_AE",nil,2000],
+							["30Rnd_mas_556x45_Stanag",nil,2000],
+							["30Rnd_mas_545x39_mag",nil,2000],							
+							["RH_15Rnd_9x19_SIG",nil,500],
+							["RH_20Rnd_57x28_FN",nil,500],
+							["RH_12Rnd_45cal_usp",nil,500],
+							["RH_20Rnd_32cal_vz61",nil,500]
+							
+						]
+					];
+				
+				};
+		};
+	
+	
+	
+	};	
 	
 	
 	

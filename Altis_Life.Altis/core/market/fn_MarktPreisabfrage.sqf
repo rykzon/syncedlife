@@ -20,6 +20,7 @@
 <t color='#ff0000'><t size='1'>Heroin:</t></t> $%34  <t color='#999999'>($3700)</t><br/>
 <t color='#ff0000'><t size='1'>Bluesyn:</t></t> $%36  <t color='#999999'>($9000)</t><br/>
 <t color='#ff0000'><t size='1'>Schildkröten:</t></t> $%38  <t color='#999999'>($3000)</t><br/>
+<t color='#ff0000'><t size='1'>Pilze:</t></t> $%40  <t color='#999999'>($3000)</t><br/>
 ",
 	life_KPreisApple,
 	life_VPreisApple,
@@ -58,5 +59,7 @@
 	life_KPreisBluesyn,
 	life_VPreisBluesyn,
 	life_KPreisTurtle,
-	life_VPreisTurtle
+	life_VPreisTurtle,
+	life_KPreisMagicMushrooms,
+	life_VPreisMagicMushrooms
 ];

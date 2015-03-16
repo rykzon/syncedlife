@@ -78,6 +78,9 @@ while{true}do
 	life_KPreisSchnaps = life_KPreisliste select 18;
 	life_VPreisSchnaps = life_VPreisliste select 18;
 	
+	life_KPreisMagicMushrooms = life_KPreisliste select 19;
+	life_VPreisMagicMushrooms = life_VPreisliste select 19;
+	
 	
 	sleep 30;
 };

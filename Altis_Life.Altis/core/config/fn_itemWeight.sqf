@@ -49,6 +49,8 @@ switch (_item) do
 	case "hopfen": {5};
 	case "malz": {5};
 	case "bier": {4};
+	case "pilze": {5};
+	case "magicmushrooms": {4};
 	case "schnaps": {1};
 	case "copper_r": {3};
 	case "iron_r": {4};
