@@ -323,7 +323,7 @@ class Life_Client_Core
 		class robShop2{};
 		class shopState{};
 		class showLicense{};
-		
+		class mafiaCheck{};
 		class robReserve{};
 		};
 	
@@ -443,7 +443,6 @@ class Life_Client_Core
 		class heroin{};
 		class alkohol{};
 		class pilze{};
-
 		class barrier{};
 		class barricade{};
 		class strahler{};

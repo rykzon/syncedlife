@@ -28,7 +28,7 @@ DB_Async_Active = true;
 // Get Result via 4:x (single message return)  v19 and later
 _queryResult = "";
 _loop = true;
- 
+
 waitUntil{uisleep (random .03); !DB_Async_ExtraLock};
 DB_Async_ExtraLock = true;
 while{_loop} do

@@ -127,7 +127,7 @@ switch(_shop) do
 							["optic_Arco",nil,1500],
 							["30Rnd_mas_556x45_Stanag",nil,2000],
 							["30Rnd_mas_545x39_mag",nil,2000],							
-							["RH_15Rnd_9x19_SIG",nil,500]
+							["RH_15Rnd_9x19_SIG",nil,500],
 							["RH_20Rnd_57x28_FN",nil,500],
 							["RH_20Rnd_32cal_vz61",nil,500]
 							

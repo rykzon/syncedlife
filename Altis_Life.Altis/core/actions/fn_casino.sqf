@@ -7,7 +7,7 @@ _fail = false;
 if !(alive _robber) exitWith {};
 
 _rip = true;
-_kassa = 200000 + round(random 250000); //setting the money in the registry, anywhere from 3000 to 15000. 
+_kassa = 10000 + round(random 25000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 [[2,"DAS KASINO WIRD AUSGERAUBT!!"],"life_fnc_broadcast",nil,false] call life_fnc_MP;
 

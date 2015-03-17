@@ -87,7 +87,7 @@ switch (true) do
 {
     if(([false,_item,1] call life_fnc_handleInv)) then
     {
-        [1] spawn life_fnc_pilze;
+        [] spawn life_fnc_pilze;
     };
 };
 
@@ -129,7 +129,7 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
 	
-	case (_item in ["storagesmall","storagebig"]): {
+	case (_item in ["storagesmall","storagebig","storagebig1","storagemedium"]): {
 		[_item] call life_fnc_storageBox;
 	};
 	

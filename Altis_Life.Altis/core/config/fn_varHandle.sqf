@@ -79,6 +79,7 @@ switch (_mode) do
 			case "defusekit": {"life_inv_defusekit"};
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
+			case "storagebig1": {"life_inv_storagebig1"};
 			case "storagemedium": {"life_inv_storagemedium"};
 			case "zipties": {"life_inv_zipties"};
 		};
@@ -134,6 +135,7 @@ switch (_mode) do
 			case "life_inv_redgull": {"redgull"};
 			case "life_inv_lockpick": {"lockpick"};
 			case "life_inv_tbacon": {"tbacon"};
+			case "life_inv_magicmushrooms": {"magicmushrooms"};
 			case "life_inv_peach": {"peach"};
 			case "life_inv_diamond": {"diamond"};
 			case "life_inv_diamondr": {"diamondc"};
@@ -149,6 +151,7 @@ switch (_mode) do
 			case "life_inv_defusekit": {"defusekit"};
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
+			case "life_inv_storagebig1": {"storagebig1"};
 			case "life_inv_storagemedium": {"storagemedium"};
 			case "life_inv_zipties": {"zipties"};
 		};

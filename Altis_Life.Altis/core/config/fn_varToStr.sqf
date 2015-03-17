@@ -69,6 +69,7 @@ switch (_var) do
 	case "life_inv_defusekit": {(localize "STR_Item_DefuseKit")};
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
+	case "life_inv_storagebig1": {(localize "STR_Item_StorageBL1")};
 	case "life_inv_storagemedium": {(localize "STR_Item_StorageBM")};
 	case "life_inv_zipties": {(localize "STR_Item_zipties")};
 	case "life_inv_malz": {(localize "STR_Item_malz")};

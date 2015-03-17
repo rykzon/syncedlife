@@ -44,6 +44,22 @@ switch (_boxType) do {
 		clearItemCargoGlobal _container;
 		clearBackpackCargoGlobal _container;
 	};
+	
+		case "storagebig1": {
+		_container = "Box_IND_AmmoVeh_F" createVehicle [0,0,0];
+		_container setPosATL _pos;
+		
+		_containers pushBack _container;
+		_house setVariable["containers",_containers,true];
+		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
+		
+		//Empty out the crate
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
+	};
+	
 	case "storagemedium": {
 		_container = "Box_IND_WpsSpecial_F" createVehicle [0,0,0];
 		_container setPosATL _pos;

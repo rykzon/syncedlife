@@ -20,7 +20,7 @@ _return = [];
 {
 	_HouseCheck2 = true;
 	_pos = call compile format["%1",_x select 1];
-	_HouseCheck = nearestObjects [_pos,["Box_IND_Grenades_F","supplyCrate_F","Box_IND_WpsSpecial_F"], 10];
+	_HouseCheck = nearestObjects [_pos,["Box_IND_Grenades_F","supplyCrate_F","Box_IND_WpsSpecial_F","Box_IND_AmmoVeh_F"], 10];
 	if(count _HouseCheck != 0)then{_HouseCheck2 = false;};
 	_house = nearestBuilding _pos;
 	_house allowDamage false;

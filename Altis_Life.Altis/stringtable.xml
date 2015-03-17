@@ -3875,7 +3875,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Caixa Grande</Portuguese>
 		</Key>
 		
-			<Key ID="STR_Item_StorageBL2">
+			<Key ID="STR_Item_StorageBL1">
 			<Original>Large Storage Box</Original>
 			<English>Large Storage Box</English>
 			<German>Große Lagerbox</German>

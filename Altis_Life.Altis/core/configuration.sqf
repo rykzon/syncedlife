@@ -206,6 +206,7 @@ life_inv_items =
 	"life_inv_storagesmall",
 	"life_inv_storagemedium",
 	"life_inv_storagebig",
+	"life_inv_storagebig1",
 	"life_inv_zipties"
 ];
 
@@ -370,6 +371,7 @@ buy_array =
 	["storagesmall",250000],
 	["storagemedium",500000],
 	["storagebig",2500000],
+	["storagebig1",3000000],
 	["zipties",2000],
 	["bier",life_KPreisBier],
 	["schnaps",life_KPreisSchnaps]
