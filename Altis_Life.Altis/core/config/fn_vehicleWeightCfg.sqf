@@ -120,6 +120,7 @@ switch (_className) do
 	//case "Land_CargoBox_V1_F": {5000};
 	case "Box_IND_WpsSpecial_F": {50};
 	case "B_supplyCrate_F": {200};
+	
 	case "O_supplyCrate_F": {900};
 	default {-1};
 };

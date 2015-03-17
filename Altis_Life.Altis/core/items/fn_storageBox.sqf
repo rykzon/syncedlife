@@ -44,8 +44,8 @@ switch (_boxType) do {
 		clearItemCargoGlobal _container;
 		clearBackpackCargoGlobal _container;
 	};
-	case "storagebig2": {
-		_container = "O_supplyCrate_F" createVehicle [0,0,0];
+	case "storagemedium": {
+		_container = "Box_IND_WpsSpecial_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;
@@ -59,7 +59,7 @@ switch (_boxType) do {
 		clearBackpackCargoGlobal _container;
 	};
 	case "storagesmall": {
-		_container = "Box_IND_WpsSpecial_F" createVehicle [0,0,0];
+		_container = "Box_IND_Grenades_F" createVehicle [0,0,0];
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;

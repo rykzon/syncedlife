@@ -3858,6 +3858,14 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Contenitore piccolo</Italian>
 			<Portuguese>Caixa Pequena</Portuguese>
 		</Key>
+			<Key ID="STR_Item_StorageBM">
+			<Original>Medium Storage Box</Original>
+			<English>Medium Storage Box</English>
+			<German>Mittlere Lagerbox</German>
+			<French>Petit Conteneur de stockage</French>
+			<Italian>Contenitore piccolo</Italian>
+			<Portuguese>Caixa Pequena</Portuguese>
+		</Key>
 		<Key ID="STR_Item_StorageBL">
 			<Original>Large Storage Box</Original>
 			<English>Large Storage Box</English>

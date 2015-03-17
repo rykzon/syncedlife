@@ -12,7 +12,7 @@ switch (_shop) do
 {
 
 
-	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig"]]};
+	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig","storagemedium"]]};
 	case "buerger": {["Bürger Markt",["coffee","donuts","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
 	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties"]]};

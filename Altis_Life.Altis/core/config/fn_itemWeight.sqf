@@ -71,6 +71,7 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
+	case "storagemedium": {7};
 	case "zipties": {1};
 	default {1};
 };

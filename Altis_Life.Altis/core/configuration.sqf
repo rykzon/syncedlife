@@ -204,6 +204,7 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
+	"life_inv_storagemedium",
 	"life_inv_storagebig",
 	"life_inv_zipties"
 ];
@@ -367,7 +368,8 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",250000],
-	["storagebig",500000],
+	["storagemedium",500000],
+	["storagebig",2500000],
 	["zipties",2000],
 	["bier",life_KPreisBier],
 	["schnaps",life_KPreisSchnaps]
