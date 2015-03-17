@@ -83,6 +83,14 @@ switch (true) do
     };
 };
 
+		case (_item == "magicmushrooms"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [1] spawn life_fnc_pilze;
+    };
+};
+
 
 		case (_item == "schnaps"):
 {

@@ -442,6 +442,7 @@ class Life_Client_Core
 		class cocaine{};
 		class heroin{};
 		class alkohol{};
+		class pilze{};
 
 		class barrier{};
 		class barricade{};
