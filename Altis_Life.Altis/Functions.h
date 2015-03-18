@@ -323,7 +323,6 @@ class Life_Client_Core
 		class robShop2{};
 		class shopState{};
 		class showLicense{};
-		class mafiaCheck{};
 		class robReserve{};
 		};
 	

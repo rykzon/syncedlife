@@ -13,7 +13,7 @@
 <t color='#9bbc57'><t size='1'>Salz:</t></t> $%20  <t color='#999999'>($1300)</t><br/>
 <t color='#9bbc57'><t size='1'>Glass:</t></t> $%22  <t color='#999999'>($1300)</t><br/>
 <t color='#9bbc57'><t size='1'>Zement:</t></t> $%24  <t color='#999999'>($1550)</t><br/>
-<t color='#9bbc57'><t size='1'>Bier:</t></t> $%26  <t color='#999999'>($3000)</t><br/>
+<t color='#9bbc57'><t size='1'>Bier:</t></t> $%26  <t color='#999999'>($2500)</t><br/>
 <t color='#9bbc57'><t size='1'>Schnaps:</t></t> $%28  <t color='#999999'>($400)</t><br/>
 <t color='#ff0000'><t size='1'>Marijuhana:</t></t> $%30  <t color='#999999'>($2500)</t><br/>
 <t color='#ff0000'><t size='1'>Kokain:</t></t> $%32  <t color='#999999'>($3300)</t><br/>

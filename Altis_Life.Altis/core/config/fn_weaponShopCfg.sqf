@@ -1332,20 +1332,20 @@ case "mafia_6":
 			};
 		};
 	};
-	/*case "gasstation":
+	case "tankstellegebraucht":
 	{
 	
 	["Tankstellenshop",
 		[
 		
-		["ToolKit",nil,250],
-		
+		["ToolKit",nil,5000],
+		["FirstAidKit",nil,1500]
 		
 		
 		]
 	
-	]
-	}*/
+	];
+	};
 	
 	case "genstore":
 	{

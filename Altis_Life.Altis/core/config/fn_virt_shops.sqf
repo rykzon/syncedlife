@@ -12,10 +12,10 @@ switch (_shop) do
 {
 
 
-	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagemedium","storagebig","storagebig1"]]};
-	case "buerger": {["Bürger Markt",["coffee","donuts","redgull","tbacon","lockpick","pickaxe","fuelF","peach"]]};
+	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagemedium"]]};
+	case "buerger": {["Bürger Markt",["coffee","donuts","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagebig1"]]};
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
-	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties"]]};
+	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties","storagebig"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
@@ -34,7 +34,7 @@ switch (_shop) do
 	case "gold": {["Goldankauf",["goldbar"]]};
 	case "coal": {["Kohle Händler",["coalp"]]};
 	case "mike": {["M1kes Bierstube",["bier","schnaps"]]};
-	case "mafiacasino": {["Casino Bar",["bier","schnaps","water","coffee","water","apple","tbacon","redgull"]]};
+	case "mafiacasino": {["Casino Bar",["bier","schnaps","water","coffee","apple","tbacon","redgull"]]};
 	
 	case "plastic": {["Plastik Händler",["plastic"]]};
 	

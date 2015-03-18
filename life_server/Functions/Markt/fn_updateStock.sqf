@@ -260,11 +260,11 @@
 		//Peachsaft
 		_Num = 16; _Type = life_StockCement; _VKPreis = (1900/100); _EKPreis = (1550/100); _mid = 1000; [] call _life_PreisAnpassung;
 		
-		_Num = 17; _Type = life_StockBier; _VKPreis = (3200/100); _EKPreis = (3000/100); _mid = 1000; [] call _life_PreisAnpassung;
+		_Num = 17; _Type = life_StockBier; _VKPreis = (3450/100); _EKPreis = (2500/100); _mid = 1500; [] call _life_PreisAnpassung;
 		
-		_Num = 18; _Type = life_StockSchnaps; _VKPreis = (550/100); _EKPreis = (400/100); _mid = 2000; [] call _life_PreisAnpassung;
+		_Num = 18; _Type = life_StockSchnaps; _VKPreis = (750/100); _EKPreis = (400/100); _mid = 2000; [] call _life_PreisAnpassung;
 		
-		_Num = 19; _Type = life_StockMagicMushrooms; _VKPreis = (3800/100); _EKPreis = (3300/100); _mid = 1500; [] call _life_PreisAnpassung;
+		_Num = 19; _Type = life_StockMagicMushrooms; _VKPreis = (3500/100); _EKPreis = (3000/100); _mid = 1500; [] call _life_PreisAnpassung;
 		
 
 

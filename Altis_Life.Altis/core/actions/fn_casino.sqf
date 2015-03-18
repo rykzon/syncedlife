@@ -41,7 +41,7 @@ if!(alive _robber) exitWith { _fail = true; };
 	life_cash = life_cash + _kassa; //I am using a moneylaundry system on my server, but if you do not change this to life_cash instead.
 	_rip = false;
 	life_use_atm = false;
-	["Karma_Prof",250,0] call life_fnc_addKarma;
+	["Karma_Prof",250,1] call life_fnc_addKarma;
 	sleep (600); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
 	life_use_atm = true; // Robber can not use the ATM at this point.
 	

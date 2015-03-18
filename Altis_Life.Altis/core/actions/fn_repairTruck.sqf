@@ -5,8 +5,11 @@
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
-private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
+private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName","_countrep"];
+_data = missionNamespace getVariable ("Karma_Prof");
+_karma = _data select 1;
 _veh = cursorTarget;
+_countrep = 0;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
@@ -48,6 +51,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
 		player removeItem "ToolKit";
+
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};

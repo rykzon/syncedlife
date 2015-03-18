@@ -135,6 +135,7 @@ switch (_mode) do
 			case "life_inv_redgull": {"redgull"};
 			case "life_inv_lockpick": {"lockpick"};
 			case "life_inv_tbacon": {"tbacon"};
+			case "life_inv_pilze": {"pilze"};
 			case "life_inv_magicmushrooms": {"magicmushrooms"};
 			case "life_inv_peach": {"peach"};
 			case "life_inv_diamond": {"diamond"};
