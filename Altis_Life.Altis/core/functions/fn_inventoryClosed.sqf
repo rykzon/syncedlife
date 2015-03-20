@@ -9,7 +9,7 @@ private["_container"];
 _container = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _container) exitWith {}; //MEH
 
-if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
+if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F","Box_IND_AmmoVeh_F","Box_IND_WpsSpecial_F"]) exitWith {
 	_house = lineIntersectsWith [getPosASL player, ATLtoASL screenToWorld[0.5,0.5]];
 	
 	switch(true) do {

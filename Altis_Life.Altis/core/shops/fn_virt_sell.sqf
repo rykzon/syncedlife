@@ -33,7 +33,11 @@ _StockListe = [
 		"copper_r",
 		"salt_r",
 		"glass",
-		"cement"
+		"cement",
+		"bier",
+		"schnaps",
+		"magicmushrooms"
+		
 		];
 
 _amount = ctrlText 2405;

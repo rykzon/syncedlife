@@ -4171,7 +4171,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="MafiaWaffen";
-					init="this allowDamage false; this enableSimulation false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Soldaten Shop"",life_fnc_weaponShopMenu,""mafia_2""]; this addAction[""Capo Shop"",life_fnc_weaponShopMenu,""mafia_3""]; this addAction[""Boss Shop"",life_fnc_weaponShopMenu,""mafia_4""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Mobster Shop"",life_fnc_weaponShopMenu,""mafia_2""]; this addAction[""Soldaten Shop"",life_fnc_weaponShopMenu,""mafia_3""]; this addAction[""Garde Shop"",life_fnc_weaponShopMenu,""mafia_4""]; this addAction[""Capo Shop"",life_fnc_weaponShopMenu,""mafia_5""];this addAction[""Boss Shop"",life_fnc_weaponShopMenu,""mafia_6""];";
 				};
 			};
 		};

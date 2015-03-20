@@ -7,15 +7,22 @@
 */
 private["_shop"];
 _shop = _this select 0;
+_karma = [] call life_fnc_getKarma;
 
 switch (_shop) do
 {
 
 
 	case "market": {["Synced Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagemedium"]]};
+	if(_karma > 500) then
+	{
 	case "buerger": {["Bürger Markt",["coffee","donuts","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagebig1"]]};
+	};
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
+	if(_karma < -500) then
+	{
 	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties","storagebig"]]};
+	};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};

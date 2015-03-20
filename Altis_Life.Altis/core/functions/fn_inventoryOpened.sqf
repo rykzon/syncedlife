@@ -8,13 +8,13 @@ private["_container","_unit","_exit"];
 if(count _this == 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
-_Sourrounding = nearestObjects [player,["B_supplyCrate_F","Box_IND_Grenades_F"], 4];
+_Sourrounding = nearestObjects [player,["B_supplyCrate_F","Box_IND_Grenades_F","Box_IND_AmmoVeh_F","Box_IND_WpsSpecial_F"], 4];
 
 
 
 	
 _house = nearestBuilding (getPosATL player);
-if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"] && {(_house getVariable ["locked",false])}) then
+if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F","Box_IND_AmmoVeh_F","Box_IND_WpsSpecial_F"] && {(_house getVariable ["locked",false])}) then
 {
 	
 	[[format ["5|%1 Kisten Abuse? Besitzer: %2",player getVariable["realname",name player],_house getVariable "house_owner"]],"Arma3Log",false,false] call life_fnc_MP;
