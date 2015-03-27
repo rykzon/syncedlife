@@ -12,6 +12,7 @@ _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
 
+if (animationState player == "AmovPercMstpSnonWnonDnon_Ease" || player getVariable["surrender",FALSE]) exitWith {}; //yolo
 life_action_gathering = true;
 //Find out what zone we're near
 {

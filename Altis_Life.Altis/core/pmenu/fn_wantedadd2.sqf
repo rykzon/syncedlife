@@ -253,28 +253,38 @@ _data = "45";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Tankstellenraub (Stadion) $50000";
+_text = "Tankstellenraub (Kavala) $50000";
 _data = "46";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Tankstellenraub (Agios) $50000";
+_text = "Tankstellenraub (Stadion) $50000";
 _data = "47";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Tankstellenraub (Lakka) $50000";
+_text = "Tankstellenraub (Agios) $50000";
 _data = "48";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Tankstellenraub (Anthrakia) $50000";
+_text = "Tankstellenraub (Lakka) $50000";
 _data = "49";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Tankstellenraub (Sofia) $50000";
+_text = "Tankstellenraub (Anthrakia) $50000";
 _data = "50";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (DP14) $50000";
+_data = "51";
+_list2 lbAdd format["%1 (%2)",_text,_data];
+_list2 lbSetData [(lbSize _list2)-1,_data];
+
+_text = "Tankstellenraub (Sofia) $50000";
+_data = "52";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 

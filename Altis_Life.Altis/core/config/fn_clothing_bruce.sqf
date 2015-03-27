@@ -42,7 +42,25 @@ switch (_filter) do
 		["U_IG_Guerilla2_2","Green stripped shirt & Pants",650],
 		["U_IG_Guerilla3_1","Brown Jacket & Pants",735],
 		["U_IG_Guerilla2_3","The Outback Rangler",1200],
-		["U_OrestesBody","Surfing On Land",1100]
+		["U_OrestesBody","Surfing On Land",1100],
+		["U_PMC_GTShirt_DJeans","Shirt Gruen",1000],
+		["U_PMC_GTShirt_SJeans","Shirt Gruen",1000],
+		["U_PMC_BlkTShirt_DJeans","Shirt Schwarz",1000],
+		["U_PMC_BlkTShirt_SJeans","Shirt Schwarz",1000],
+		["U_PMC_BluTShirt_SJeans","Shirt Blau",1000],
+		["U_PMC_WTShirt_DJeans","Shirt Weiss",1000],
+		["U_PMC_BluePlaidShirt_BeigeCords","Hemd Blau",2500],
+		["U_PMC_RedPlaidShirt_DenimCords","Hemd Rot",2500],
+		["U_PMC_BlackPoloShirt_BeigeCords","Polo Schwarz",2500],
+		["U_PMC_BluPolo_BgPants","Polo Blau",500],
+		["U_PMC_BluPolo_GrnPants","Polo Blau",500],
+		["U_PMC_BgPolo_GrnPants","Polo Blau",500],
+		["U_PMC_BlckPolo_BgPants","Polo Schwarz",500],
+		["U_PMC_BlckPolo_BluPants","Polo Schwarz",500],
+		["U_PMC_BrnPolo_BgPants","Polo Braun",500],
+		["U_PMC_BrnPolo_BluPants","Polo Braun",500],
+		["U_PMC_GrnPolo_BgPants","Polo Gruen",500]
+
 		
 		
 		];
@@ -81,7 +99,9 @@ switch (_filter) do
 			["H_Cap_grn_BI",nil,150],
 			["H_Cap_oli",nil,150],
 			["H_Cap_red",nil,150],
-			["H_Cap_tan",nil,150]
+			["H_Cap_tan",nil,150],
+			["H_Capbw_pmc",nil,150],
+			["H_Capbw_tan_pmc",nil,150]
 		];
 	};
 	

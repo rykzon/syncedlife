@@ -27,6 +27,14 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam","Gehobene Uniform",550];
+
+			};
+				if(license_cop_swat) then
+		{
+			_ret pushBack ["U_PMC_IndUniformRS_BSBPBB","SWAT Uniform",550];
+			_ret pushBack ["U_PMC_CombatUniformLS_BSGPBB","SWAT Uniform",550];
+			_ret pushBack ["U_PMC_CombatUniformRS_BSGPBB","SWAT Uniform",550];
+			_ret pushBack ["U_PMC_IndUniformLS_BSBPBB","SWAT Uniform",550];
 		};
 	};
 	
@@ -55,6 +63,8 @@ switch (_filter) do
 			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
 			_ret set[count _ret,["H_Booniehat_khk",nil,100]];
 			_ret set[count _ret,["G_Balaclava_blk",nil,100]];
+			_ret set[count _ret,["H_Capbw_pmc",nil,100]];
+			_ret set[count _ret,["H_Capbw_tan_pmc",nil,100]];
 		};
 			
 			
@@ -97,7 +107,7 @@ switch (_filter) do
 		{
 			_ret set[count _ret,["V_TacVest_blk_POLICE",nil,1500]];
 		};
-		if(__GETC__(life_coplevel) >= 6 || license_cop_swat) then
+		if(__GETC__(life_coplevel) >= 6) then
 		{
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
 	

@@ -356,7 +356,6 @@ case "mafia_6":
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
 						["NVGoggles_mas_h",nil,2000]
 						
 					
@@ -964,8 +963,8 @@ case "mafia_6":
 				["Bürger 5",
 					[   
 						//Rang5
-						
-						
+						["Trixie_CZ550",nil,165000],
+						["Trixie_CZ550_Mag",nil,5000],
 						//Rang4
 						["arifle_mas_hk416",nil,160000],
 						["arifle_mas_hk416_v",nil,160000],
@@ -1022,6 +1021,8 @@ case "mafia_6":
 					
 						
 						//Rang5
+						["Trixie_CZ750",nil,650000],
+						["mas_launch_RPG7_F",nil,1750000],
 						
 						//Rang4
 						["arifle_mas_mk16",nil,150000],
@@ -1030,7 +1031,6 @@ case "mafia_6":
 						["LMG_mas_M249_F",nil,170000],
 						["arifle_mas_fal",nil,200000],
 						//Rang3
-						["Trixie_CZ550_Rail",nil,200000],
 						["srifle_mas_m91",nil,220000],
 						
 						["R3F_Famas_F1_DES",nil,120000],
@@ -1058,6 +1058,7 @@ case "mafia_6":
 						["Rangefinder",nil,50000],
 						
 						["200Rnd_mas_556x45_Stanag",nil,1500],
+						["Trixie_10x762_Mag",nil,10000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 						["RH_7Rnd_50_AE",nil,500],
 						["R3F_30Rnd_556x45_FAMAS",nil,500],
@@ -1065,9 +1066,9 @@ case "mafia_6":
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["30Rnd_mas_556x45_Stanag",nil,1000],
-						["Trixie_CZ550_Mag",nil,5000],
 						["100Rnd_mas_545x39_mag",nil,2000],
-						["30Rnd_mas_545x39_mag",nil,800]
+						["30Rnd_mas_545x39_mag",nil,800],
+						["mas_PG7V",nil,75000]
 						
 						
 						
@@ -1094,12 +1095,14 @@ case "mafia_6":
 				["Bandit 4",
 				
 					[   
+					    ["srifle_mas_sr25",nil,450000],
+					    ["hlc_rifle_Bushmaster300",nil,220000],
 						["arifle_mas_mk16",nil,150000],
 						["arifle_mas_mk16_l",nil,175000],
 						["LMG_mas_rpk_F",nil,150000],
 						["LMG_mas_M249_F",nil,170000],
 						//Rang3
-						["Trixie_CZ550_Rail",nil,200000],
+						
 						
 						
 						
@@ -1125,6 +1128,7 @@ case "mafia_6":
 						["optic_Hamr",nil,20000],
 						["Rangefinder",nil,50000],
 						//Rang5
+						["29rnd_300BLK_STANAG",nil,3000],
 						["200Rnd_mas_556x45_Stanag",nil,1500],
 						["R3F_30Rnd_556x45_FAMAS",nil,500],
 						["30Rnd_mas_556x45_Stanag",nil,1000],
@@ -1132,7 +1136,7 @@ case "mafia_6":
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["100Rnd_mas_545x39_mag",nil,2000],
-						["Trixie_CZ550_Mag",nil,5000],
+						["20Rnd_mas_762x51_Stanag",nil,6000],
 						["30Rnd_mas_545x39_mag",nil,800]
 						
 						
@@ -1154,11 +1158,12 @@ case "mafia_6":
 			case (_karma > -3000): {"Dein Karma ist zu hoch!"};
 			default
 			{
-						["Bandit 3",
-						[   
+				["Bandit 3",
+							
+					[   
 						
 						//Rang3
-						["Trixie_CZ550_Rail",nil,200000],
+						["srifle_mas_svd",nil,250000],
 						["srifle_mas_m91",nil,220000],
 						
 						//RAng2
@@ -1187,7 +1192,6 @@ case "mafia_6":
 						["RH_6Rnd_44_Mag",nil,500],
 						["10Rnd_mas_762x54_mag",nil,4500],
 						["100Rnd_mas_545x39_mag",nil,2000],
-						["Trixie_CZ550_Mag",nil,5000],
 						["30Rnd_mas_545x39_mag",nil,800]
 						
 						

@@ -71,6 +71,13 @@ switch(_type) do
 	case "43": {_type = ["Fliegen ohne Positionslichter",5000]};
 	case "44": {_type = ["Illegales Waffenbesitz",25000]};
 	case "45": {_type = ["Offenes Tragen von Waffen ab oeffentlichen orten",15000]};
+    case "46": {_type = ["Tankstellenraub (Kavala)",50000]};
+	case "47": {_type = ["Tankstellenraub (Stadion)",50000]};
+	case "48": {_type = ["Tankstellenraub (Agios)",50000]};
+	case "49": {_type = ["Tankstellenraub (Lakka)",50000]};
+	case "50": {_type = ["Tankstellenraub (Anthrakia)",50000]};
+	case "51": {_type = ["Tankstellenraub (DP14)",50000]};
+	case "52": {_type = ["Tankstellenraub (Sofia)",50000]};
     default {_type = [];};
 };
 

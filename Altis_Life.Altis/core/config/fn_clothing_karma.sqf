@@ -43,6 +43,15 @@ if(_karma > 0) then
 					_ret pushBack ["rds_uniform_Profiteer2",nil,1000];
 					_ret pushBack ["rds_uniform_Profiteer3",nil,1000];
 					_ret pushBack ["rds_uniform_Profiteer4",nil,1000];
+					_ret pushBack ["U_PMC_CombatUniformRS_ChckP_BPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformLS_ChckP_BPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformLS_ChckLB_GPBB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,3000];
+					_ret pushBack ["U_PMC_CombatUniformLS_SSGPSB",nil,3000];
 					};
 				};
 			};
@@ -169,6 +178,30 @@ else
 					_ret pushBack ["U_B_GhillieSuit",nil,50000];
 					_ret pushBack ["U_I_GhillieSuit",nil,50000];
 					_ret pushBack ["U_O_GhillieSuit",nil,50000];
+					_ret pushBack ["U_PMC_CombatUniformRS_GSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformRS_GSSPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformRS_IndPBSBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformRS_SSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformRS_SSGPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformRS_SSGPSB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_GSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_GSSPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_IndPBSBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_SSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_SSGPBB",nil,5000];
+					_ret pushBack ["U_PMC_CombatUniformLS_SSGPSB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_GSGPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_GSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_GSTPTB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_TSTPTB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_TSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformLS_TSGPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_GSGPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_GSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_GSTPTB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_TSTPTB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_TSBPBB",nil,5000];
+					_ret pushBack ["U_PMC_IndUniformRS_TSGPBB",nil,5000];
 					
 					
 						if(_karma <= -6000) then

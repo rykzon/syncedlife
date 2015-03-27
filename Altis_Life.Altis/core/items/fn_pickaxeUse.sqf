@@ -11,7 +11,7 @@ private["_mine","_itemWeight","_diff","_itemName","_val"];
 
 
 if(life_action_gathering) exitWith{};
-
+if (animationState player == "AmovPercMstpSnonWnonDnon_Ease" || player getVariable["surrender",FALSE]) exitWith {}; //yolo
 
 switch (true) do
 {

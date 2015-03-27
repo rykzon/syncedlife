@@ -134,7 +134,13 @@ switch (_shop) do
 			["DAR_TahoeCivSilver",40000],
 			["SAL_AudiCivRed",110000],
 			["SAL_AudiCivSilver",110000],
-			["SAL_77TRANSAMCiv",300000]
+			["SAL_77TRANSAMCiv",300000],
+			["cl3_dodge_chargerum_s_darkred",300000],
+			["cl3_dodge_charger_s_blue",300000],
+			["cl3_dodge_chargerum_f_darkred",300000],
+			["cl3_dodge_charger_o_black",300000],
+			["cl3_dodge_charger_f_black",300000],
+			["cl3_dodge_charger_o_white",300000]
 			
 		];
 	};
@@ -194,6 +200,13 @@ switch (_shop) do
 	//	["C_Offroad_01_F",5000];
 		_return pushBack
 		["DAR_CVPIAux",5000];
+		
+		if(__GETC__(life_coplevel) >= 2) then
+		{
+		_return pushBack
+		["DAR_ExplorerPolice",10000];
+		};
+		
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 		_return pushBack
@@ -208,6 +221,7 @@ switch (_shop) do
 		{
 		_return pushBack 
 		["DAR_ImpalaPoliceDet",25000];
+		
 			
 		};
 		
@@ -216,6 +230,8 @@ switch (_shop) do
 		
 		_return pushBack
 		["cl3_e60_m5_black",25000];
+		_return pushBack
+		["DAR_ExplorerPoliceStealth",25000];
 		
 		};
 	};
@@ -228,6 +244,8 @@ switch (_shop) do
 			["B_Heli_Light_01_F",500000],
 			["O_Heli_Light_02_unarmed_F",1000000],
 			["O_Heli_Transport_04_covered_F",1000000]
+
+	
 	
 			
 		];
@@ -276,6 +294,13 @@ switch (_shop) do
 			["B_Heli_Transport_01_F",40000];
 			
 		};
+		if(license_cop_swat) then
+		{
+		
+		_return pushBack
+			["B_Heli_Transport_01_F",40000];
+			
+		};
 	};
 	
 	case "cop_airhq":
@@ -294,6 +319,14 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return pushBack
+			["B_Heli_Transport_01_F",40000];
+
+			
+		};
+		if(license_cop_swat) then
+		{
+		
+		_return pushBack
 			["B_Heli_Transport_01_F",40000];
 			
 		};
@@ -401,6 +434,7 @@ switch (_shop) do
 		{
 			_return pushBack
 			["B_Heli_Light_01_F",150000];
+
 			
 			
 			
