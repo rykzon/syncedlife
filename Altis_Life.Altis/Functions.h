@@ -196,6 +196,7 @@ class Life_Client_Core
 		class wantedMenu {};
 		class pardon {};
 		class giveItem {};
+		class giveItem2 {};
 		class forceItem {};
 		class giveMoney {};
 		class p_openMenu {};
