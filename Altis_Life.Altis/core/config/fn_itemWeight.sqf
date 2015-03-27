@@ -64,6 +64,7 @@ switch (_item) do
 	case "cocainep": {4};
 	case "spikeStrip": {8};
 	case "rock": {5};
+	case "schlafmittel": {5};
 	case "cement": {4};
 	case "goldbar": {10};
 	case "blastingcharge": {8};

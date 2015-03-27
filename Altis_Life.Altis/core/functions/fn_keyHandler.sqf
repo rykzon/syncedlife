@@ -133,6 +133,10 @@ switch (_code) do
 	
 	//TODO SPIKESTRIP
 	case 3:
+			if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_spikeStrip;
+		};
 	{_handled = true};
 	
 	case 4:

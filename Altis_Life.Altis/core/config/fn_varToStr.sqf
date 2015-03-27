@@ -16,6 +16,7 @@ switch (_var) do
 	case "life_inv_oilu": {(localize "STR_Item_OilU")};
 	case "life_inv_oilp": {(localize "STR_Item_OilP")};
 	case "life_inv_steel": {(localize "STR_Item_Steel")};
+	case "life_inv_schlafmittel": {(localize "STR_Item_Schlafmittel")};
 	case "life_inv_plastic": {(localize "STR_Item_Plastic")};
 	case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
 	case "life_inv_heroinp": {(localize "STR_Item_HeroinP")};

@@ -3452,6 +3452,15 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
 		
+							<Key ID="STR_Item_Schlafmittel">
+			<Original>Schlafmittel</Original>
+			<English>Schlafmittel</English>
+			<German>Schlafmittel</German>
+			<French>Heroïne</French>
+			<Italian>Eroina</Italian>
+			<Portuguese>Heroína</Portuguese>
+		</Key>
+		
 		<Key ID="STR_Item_Oil">
 			<Original>Oil</Original>
 			<English>Oil</English>

@@ -69,6 +69,7 @@ switch (_mode) do
 			case "pilze": {"life_inv_pilze"};
 			case "magicmushrooms": {"life_inv_magicmushrooms"};
 			case "cocaine": {"life_inv_coke"};
+			case "schlafmittel": {"life_inv_schlafmittel"};
 			case "cocainep": {"life_inv_cokep"};
 			case "spikeStrip": {"life_inv_spikeStrip"};
 			case "cement": {"life_inv_cement"};
@@ -142,6 +143,7 @@ switch (_mode) do
 			case "life_inv_diamondr": {"diamondc"};
 			case "life_inv_saltr": {"salt_r"};
 			case "life_inv_coke": {"cocaine"};
+			case "life_inv_schlafmittel": {"schlafmittel"};
 			case "life_inv_cokep": {"cocainep"};
 			case "life_inv_spikeStrip": {"spikeStrip"};
 			case "life_inv_cement": {"cement"};

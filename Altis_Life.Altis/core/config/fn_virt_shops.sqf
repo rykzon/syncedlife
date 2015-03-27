@@ -21,7 +21,7 @@ switch (_shop) do
 	case "tankstelle": {["Tankstelle",["water","apple","redgull","tbacon","fuelF"]]};
 	if(_karma < -500) then
 	{
-	case "bandit": {["Banditen Markt",["water","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties","storagebig"]]};
+	case "bandit": {["Banditen Markt",["water","schlafmittel","apple","redgull","tbacon","fuelF","lockpick","blastingcharge","boltcutter","zipties","storagebig"]]};
 	};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};

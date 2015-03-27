@@ -100,6 +100,15 @@ switch (true) do
     };
 };
 
+		case (_item == "schlafmittel"):
+{   
+	if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+   
+        [] spawn life_fnc_schlafmittel;
+    };
+};
+
 	case (_item == "cocainep"):
 {
     if(([false,_item,1] call life_fnc_handleInv)) then

@@ -2,7 +2,6 @@ private["_item"];
 disableSerialization;
 
 _item = _this select 0;
-
 switch (true) do
 {
 	case (_item == "water" or _item == "coffee"):
@@ -42,6 +41,12 @@ switch (true) do
     
 };
 
+		case (_item == "schlafmittel"):
+{
+   
+        [] spawn life_fnc_schlafmittel;
+    
+};
 
 		case (_item == "schnaps"):
 {
@@ -99,3 +104,4 @@ switch (true) do
 	
 [] call life_fnc_p_updateMenu;
 [] call life_fnc_hudUpdate;
+};
