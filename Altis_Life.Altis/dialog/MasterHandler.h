@@ -39,3 +39,4 @@
 #include "revoke_license.h"
 
 #include "smartphone.hpp"
+#include "channel.hpp"

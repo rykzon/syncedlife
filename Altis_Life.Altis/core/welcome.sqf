@@ -14,7 +14,7 @@ sleep 15; //Wait in seconds before the credits start after player is in-game
 _role1 = "Willkommen auf dem Altis Life Server von:";
 _role1names = ["synced-gaming.de"];
 _role2 = "Eure Admins";
-_role2names = ["Moerti","Guevara","Phil","Macbain","Largo"];
+_role2names = ["Moerti","Guevara","Phil","MacBain (großes B)","Largo"];
 _role3 = "Community Manager";
 _role3names = ["Joe","Charly","Lukas","Caine","Hr. Bommel","Jester","xydra","Little Joe"];
 

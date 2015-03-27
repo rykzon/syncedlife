@@ -196,6 +196,7 @@ class Life_Client_Core
 		class wantedMenu {};
 		class pardon {};
 		class giveItem {};
+		class forceItem {};
 		class giveMoney {};
 		class p_openMenu {};
 		class p_updateMenu {};
@@ -214,6 +215,7 @@ class Life_Client_Core
 		class smartphone {};
 		class newMsg {};
 		class showMsg {};
+		class AAN {};
 		
 	};
 	
@@ -470,6 +472,8 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class calldialog {};
+		class sendChannel {};
 	};
 //##MarketContent
 class Market

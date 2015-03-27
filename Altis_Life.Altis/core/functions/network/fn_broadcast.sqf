@@ -37,6 +37,7 @@ if(_localize) exitWith {
 			case 0: {systemChat _msg;};
 			case 1: {hint _msg;};
 			case 2: {titleText[_msg,"PLAIN"];};
+			case 3: {[_message,(player getVariable["realname",name player])] call life_fnc_AAN;};
 		};
 	};
 };
@@ -50,6 +51,7 @@ if(typeName _type == typeName []) then
 			case 0: {systemChat _message};
 			case 1: {hint format["%1", _message]};
 			case 2: {titleText[format["%1",_message],"PLAIN"];};
+			case 3: {[_message,(player getVariable["realname",name player])] call life_fnc_AAN;};
 		};
 	};
 }
@@ -60,5 +62,6 @@ if(typeName _type == typeName []) then
 		case 0: {systemChat _message};
 		case 1: {hint format["%1", _message]};
 		case 2: {titleText[format["%1",_message],"PLAIN"];};
+		case 3: {[_message,(player getVariable["realname",name player])] call life_fnc_AAN;};
 	};
 };

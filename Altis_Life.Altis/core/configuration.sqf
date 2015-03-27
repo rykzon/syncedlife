@@ -36,7 +36,7 @@ D41_IsBuying = 0;
 life_removeWanted = false;
 life_action_gathering = false;
 life_smartphoneTarget = ObjNull;
-
+life_channel_send = true;
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
