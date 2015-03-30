@@ -22,6 +22,7 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 	_var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
 	_var attachTo [_hs, [-28.0336,-10.0317,0.0889387]]; 
 	detach _var;
+	
 } foreach ["hospital_2","hospital_3"];
 
 [] execVM "\life_server\Functions\Markt\fn_updateStock.sqf";

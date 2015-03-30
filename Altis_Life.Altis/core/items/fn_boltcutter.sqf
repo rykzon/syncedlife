@@ -4,8 +4,10 @@
 	Description:
 	Breaks the lock on a single door (Closet door to the player).
 */
+
 private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui"];
 _building = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if(playersNumber west < 10) exitWith { hint "Hier geht garnichts."};
 if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint "You are not looking at a house door."};
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
@@ -47,10 +49,14 @@ switch (typeOf _building) do {
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-	};
+			if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then {
+				player action ["SwitchWeapon", player, player, 100];
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+			};
 	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];

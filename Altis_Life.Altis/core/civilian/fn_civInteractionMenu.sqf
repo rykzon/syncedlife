@@ -9,6 +9,7 @@
 #define Btn8 37457
 #define Btn9 37458
 #define Btn10 37459
+#define Btn12 37461
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
@@ -33,6 +34,7 @@ _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
+_Btn12 = _display displayCtrl Btn12;
 
 		_Btn5 ctrlShow false;
 		
@@ -40,6 +42,7 @@ _Btn10 = _display displayCtrl Btn10;
 		_Btn8 ctrlShow false;
 		_Btn9 ctrlShow false;
 		_Btn10 ctrlShow false;
+		_Btn12 ctrlShow false;
 		
 
 life_pInact_curTarget = _curTarget;
@@ -87,6 +90,12 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 
 
+};
+
+if(_curTarget getVariable["restrained",false]) then {
+_Btn2 ctrlSetText "Verabreichen";
+_Btn2 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveItemAction2; closeDialog 0;"
+ 
 };
 _Btn6 ctrlSetText "Schlüssel Geben";
 _Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveKeyAction;";

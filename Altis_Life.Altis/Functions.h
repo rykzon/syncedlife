@@ -114,6 +114,7 @@ class Life_Client_Core
 		class untie{};
 		class casino{};
 		class giveItemAction{};
+		class giveItemAction2{};
 		class showLicenseAction{};
 
 		class surrender {}; 
@@ -363,6 +364,7 @@ class Life_Client_Core
 		class ticketPay {};
 		class ticketPrompt {};
 		class copSiren {};
+		class copShowMurder {};
 		class spikeStripEffect {};
 		class radar {};
 		class questionDealer {};
@@ -445,6 +447,7 @@ class Life_Client_Core
 		class heroin{};
 		class alkohol{};
 		class pilze{};
+		class schlafmittel{};
 		class barrier{};
 		class barricade{};
 		class strahler{};

@@ -7,6 +7,7 @@
 	Opens the players virtual inventory menu
 */
 if(!alive player || dialog) exitWith {}; //Prevent them from opening this for exploits while dead.
+if(player getVariable["restrained",false] || player getVariable ["surrender", false]) exitWith { hint "Du bist gefesselt!"; };
 createDialog "playerSettings";
 disableSerialization;
 

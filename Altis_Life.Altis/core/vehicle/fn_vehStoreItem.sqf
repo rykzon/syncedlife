@@ -11,6 +11,12 @@ private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index",
 disableSerialization;
 
 _ctrl = ctrlSelData(3503);
+if((life_trunk_vehicle
+ getVariable ["trunk_in_use",false]) && (life_trunk_vehicle 
+getVariable ["trunk_in_use_by",false] != name player)) exitWith {
+    closeDialog 0; 
+    hint localize "STR_MISC_VehInvUse";
+};
 _num = ctrlText 3506;
 if(!([_num] call TON_fnc_isnumber)) exitWith {hint "Invalid Number format";};
 _num = parseNumber(_num);

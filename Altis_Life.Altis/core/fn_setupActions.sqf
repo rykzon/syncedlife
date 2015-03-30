@@ -39,6 +39,7 @@ switch (playerSide) do
 	life_actions = life_actions + [player addAction["<t color='#00FF00'>Polizeimarke zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5 && isPlayer cursorTarget']];
 	
 	
+	
 	life_actions = life_actions + [player addAction["<t color='#FF0000'>Absperrband einpacken</t>",life_fnc_packUpBarrier,"",0,false,false,"",'
 		_barrier = nearestObjects[getPos player, ["TapeSign_F"],3] select 0; !isNil "_barrier" && !isNil {(_barrier getVariable "item")}']];
 		life_actions = life_actions + [player addAction["<t color='#FF0000'>Strahler einpacken</t>",life_fnc_packUpStrahler,"",0,false,false,"",'

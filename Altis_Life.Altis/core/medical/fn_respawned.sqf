@@ -40,7 +40,7 @@ switch(playerSide) do
 	};
 	waitUntil {scriptDone _handle};
 };
-
+"colorCorrections" ppEffectEnable false;
 //Cleanup of weapon containers near the body & hide it.
 if(!isNull life_corpse) then {
 	private["_containers"];

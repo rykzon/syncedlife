@@ -53,8 +53,7 @@ switch (_shop) do
 			["I_Truck_02_medical_F",25000],
 			["O_Truck_03_medical_F",45000],
 			["C_SUV_01_F",10000],
-			["B_Truck_01_medical_F",60000],
-			["cl3_dodge_charger_emt",10000]
+			["B_Truck_01_medical_F",60000]
 		];
 	};
 	

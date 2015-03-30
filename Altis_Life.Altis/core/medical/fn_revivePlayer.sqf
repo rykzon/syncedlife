@@ -33,10 +33,14 @@ _cP = 0.01;
 //Lets reuse the same thing!
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-	};
+			if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then {
+				player action ["SwitchWeapon", player, player, 100];
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+				player playActionNow "stop";
+				player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+			};
 	sleep 0.15;
 	_cP = _cP + 0.01;
 	_progressBar progressSetPosition _cP;

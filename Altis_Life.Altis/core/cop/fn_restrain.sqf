@@ -9,7 +9,10 @@ private["_cop","_player","_maskiert"];
 _cop = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
 //if(isNull _cop) exitWith {};
-
+player unassignItem "ItemGPS";
+player unassignItem "ItemMap";
+player removeItem "ItemGPS";
+player removeItem "ItemMap";
 //Timer neu geschrieben
 [] spawn
 {

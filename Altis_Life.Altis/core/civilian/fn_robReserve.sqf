@@ -15,7 +15,7 @@ _toFar = false;
 _funds = playersNumber west * 65000;
 
 if(isNull _vault OR _funds == -1) exitWith {}; //Bad data
-if(player distance _vault > 10) exitWith {[[_vault,-1],"TON_fnc_robberyState",false,false] spawn life_fnc_MP; hint "Du musst in der Nähe des Tresors bleiben!"};
+if(player distance _vault > 3) exitWith {[[_vault,-1],"TON_fnc_robberyState",false,false] spawn life_fnc_MP; hint "Du musst in der Nähe des Tresors bleiben!"};
 
 if(_funds < 50000) exitWith{[[_vault,-1],"TON_fnc_robberyState",false,false] spawn life_fnc_MP; hint "Die Bank hat nicht genug Guthaben...";};
 
@@ -32,9 +32,9 @@ while {true} do
 {
 	//Timer display (TO BE REPLACED WITH A NICE GUI LAYER)
 	_countDown = if(round(_timer - time) > 60) then {format["%1 minute(s)",round(round(_timer - time) / 60)]} else {format["%1 second(s)",round(_timer - time)]};
-	hintSilent format["Du musst maximal 15m Abstand halten!\n\nVerbleibende Zeit:\n %1\n\nDistanz: %2m",_countDown,round(player distance _vault)];
+	hintSilent format["Du darfst maximal 3m Abstand halten!\n\nVerbleibende Zeit:\n %1\n\nDistanz: %2m",_countDown,round(player distance _vault)];
 
-	if(player distance _vault > 15) exitWith {_toFar = true;};
+	if(player distance _vault > 3) exitWith {_toFar = true;};
 	if((round(_timer - time)) < 1) exitWith {};
 	if(!alive player) exitWith {};
 	if(life_istazed) exitWith {};

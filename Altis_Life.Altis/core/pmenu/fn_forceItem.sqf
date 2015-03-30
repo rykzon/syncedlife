@@ -98,7 +98,7 @@ switch (true) do
 	
 	default
 	{
-		hint localize "STR_ISTR_NotUsable";
+		hint "Das passt da nicht rein!";
 	};
 };
 	

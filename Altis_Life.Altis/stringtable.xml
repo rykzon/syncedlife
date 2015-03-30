@@ -4224,7 +4224,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
 			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
 			<English>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</English>
-			<German>!!!!! JEMAND BRICHT IN DIE ZENTRALBANK EIN !!!!!!</German>
+			<German>!!!!! JEMAND BRICHT IN DAS GOLDLAGER EIN !!!!!!</German>
 			<French>!!!!! QUELQU'UN TENTE DE S'INTRODUIRe DANS LA RÈSERVE FÈDÈRALE !!!!!!</French>
 			<Italian>!!!!!! QUALCUNO STA CERCANDO DI INTRODURSI NELLA RISERVA FEDERALE !!!!!!</Italian>
 			<Portuguese>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Portuguese>
@@ -4799,7 +4799,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_NOTF_FRRobbery_Success">
 			<Original>$%1 was stolen from the robbery on the federal reserve</Original>
 			<English>$%1 was stolen from the robbery on the federal reserve</English>
-			<German>$%1 wurden von den Räubern aus der Zentralbank gestohlen</German>
+			<German>$%1 wurden von den Räubern aus der Staatsbank gestohlen</German>
 			<French>$%1 a été volé à la réserve fédérale.</French>
 			<Italian>€%1 sono stati rubati durante la rapina alla banca</Italian>
 			<Portuguese>R$%1 foi roubado da Reserva Federal.</Portuguese>

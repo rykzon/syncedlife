@@ -112,6 +112,11 @@ switch (_filter) do
 			_ret set[count _ret,["V_PlateCarrier1_blk",nil,1500]];
 	
 		};
+		if(license_cop_swat) then
+		{
+			_ret pushBack ["V_PlateCarrier1_blk","SWAT Uniform",550];
+		};
+	
 	};
 	
 	//Backpacks

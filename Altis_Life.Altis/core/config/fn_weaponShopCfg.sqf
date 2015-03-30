@@ -370,7 +370,7 @@ case "mafia_6":
 	{
 		switch (true) do
 		{
-			case (playerSide != independent): {"You are not an EMS Medic"};
+			case (playerSide != independent): {"Du bist kein Sanitäter"};
 			default {
 				["Hospital EMS Shop",
 					[
@@ -381,8 +381,8 @@ case "mafia_6":
 						["Medikit",nil,250],
 						["NVGoggles",nil,500],
 						["H_MilCap_gry",nil,100],
-						["B_Bergen_blk",nil,1000],
-						["V_TacVestIR_blk",nil,500]
+						["V_Rangemaster_belt",nil,100],
+						["B_Bergen_blk",nil,1000]
 					]
 				];
 			};

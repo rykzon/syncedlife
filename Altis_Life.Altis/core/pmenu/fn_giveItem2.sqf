@@ -7,11 +7,6 @@
 	removes the item & amount of it from the players virtual
 	inventory.
 */
-#include <macro.h>
-#define Btn1 2623
-
-_Btn1 = _display displayCtrl Btn1;
-_Btn1 ctrlShow false;
 
 
 private["_unit","_val"];
@@ -21,9 +16,7 @@ ctrlShow[2002,false];
 if(isNull life_pInact_curTarget) exitWith{hint "Da ist etwas schiefgelaufen...";};
 _unit = life_pInact_curTarget;
 //_unit = call compile format["%1",_unit];
-if(_unit getVariable["restrained",false]) then {
-_Btn5 ctrlShow true;
-};
+
 
 if((lbCurSel 3005) == -1) exitWith {hint "You didn't select an item you wanted to give.";ctrlShow[2002,true];};
 _item = lbData [3005,(lbCurSel 3005)];

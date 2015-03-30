@@ -8,6 +8,10 @@
 	if the player has room.
 */
 private["_ctrl","_num","_index","_data","_old","_value","_weight","_diff"];
+if((life_trunk_vehicle getVariable ["trunk_in_use",false]) && (life_trunk_vehicle getVariable ["trunk_in_use_by",false] != name player)) exitWith {
+    closeDialog 0; 
+    hint localize "STR_MISC_VehInvUse";
+};
 disableSerialization;
 if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint localize "STR_MISC_VehDoesntExist"};
 if(!alive player) exitwith {closeDialog 0;};

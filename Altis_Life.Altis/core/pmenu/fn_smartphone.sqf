@@ -11,6 +11,7 @@ _data = [_this,1,0,["",[],0]] call BIS_fnc_param;
 
 
 disableSerialization;
+if(player getVariable["restrained",false] || player getVariable ["surrender", false]) exitWith { hint "Du bist gefesselt!"; };
 waitUntil {!isNull findDisplay 88888};
 _display = findDisplay 88888;
 _cPlayerList = _display displayCtrl 88881;

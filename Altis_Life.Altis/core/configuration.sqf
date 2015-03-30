@@ -333,7 +333,6 @@ sell_array =
 	["cement",life_VPreisCement],
 	["goldbar",50000],
 	["zipties",200],
-	["schlafmittel",20000],
 	["bier",life_VPreisBier],
 	["schnaps",life_VPreisSchnaps],
 	["magicmushrooms",life_VPreisMagicMushrooms]
@@ -376,7 +375,8 @@ buy_array =
 	["storagebig1",3000000],
 	["zipties",2000],
 	["bier",life_KPreisBier],
-	["schnaps",life_KPreisSchnaps]
+	["schnaps",life_KPreisSchnaps],
+	["schlafmittel",20000]
 ];};
 //__CONST__(buy_array,buy_array);
 

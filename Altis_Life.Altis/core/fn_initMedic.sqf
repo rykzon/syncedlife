@@ -25,17 +25,18 @@ switch (__GETC__(life_donator)) do {
 
 0 setFog [0, 0.01, 0];
 
-
+[] call life_fnc_medicLoadout;
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
 
 [] spawn    //basic cop
 {
  while {true} do
  {
   waitUntil {uniform player == "U_Rangemaster"};
-  player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
+  player setObjectTextureGlobal [0,"textures\medic_uniform.paa"];
   waitUntil {uniform player != "U_Rangemaster"};
  };
 };

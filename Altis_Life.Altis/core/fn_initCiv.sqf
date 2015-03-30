@@ -43,7 +43,6 @@ switch (__GETC__(life_donator)) do {
 	
 };
 
-
 [] spawn    //basic cop
 {
  while {true} do
@@ -73,3 +72,4 @@ switch (__GETC__(life_donator)) do {
   waitUntil {uniform player !=  "U_B_CombatUniform_mcam"};
  };
 };
+

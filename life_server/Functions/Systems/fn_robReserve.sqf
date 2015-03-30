@@ -23,10 +23,10 @@ if((_vault getVariable["fed_locked",false])) exitWith
 {
 	[[1,"Dieser Tresor wurde vor kurzem von Jemanden ausgeraubt."],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
-if(playersNumber west < 5) exitWith
+/* if(playersNumber west < 5) exitWith
 {
 [[1,"Es sind zu wenig Cops im Dienst!"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
-};
+}; */
 
 if(_unit < 1) exitWith {}; //Bad unit number passed?!
 _vault setVariable["fed_rob_ip",true,true];

@@ -84,19 +84,7 @@ class Life_give_item {
 			w = (9 / 40);
 			h = (1 / 25);
 		};
-		
-		class EatIT : Life_RscButtonMenu 
-		{
-			idc = 2623;
-			text = "Einführen";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] spawn life_fnc_giveItem2";
-			x = 0.47;
-			y = 0.36;
-			w = (9 / 40);
-			h = (1 / 25);
-		};
-		
+
 				
 			
 		
